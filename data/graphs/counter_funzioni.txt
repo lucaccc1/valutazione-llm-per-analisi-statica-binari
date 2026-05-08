@@ -1,0 +1,35 @@
+\begin{table}[h]
+    \centering
+    \small
+    \begin{tabular}{lcc}
+        \hline
+        \textbf{Categoria (Dominio)} & \textbf{Numero di File} & \textbf{Numero di Funzioni} \\
+        \hline
+        Audio & 1 & 4 \\
+        Cipher & 2 & 10 \\
+        Client_server & 10 & 18 \\
+        Conversions & 21 & 63 \\
+        Data_structures & 32 & 237 \\
+        Developer_tools & 1 & 13 \\
+        Dynamic_programming & 2 & 8 \\
+        Games & 3 & 26 \\
+        Geometry & 2 & 16 \\
+        Graphics & 1 & 3 \\
+        Greedy_approach & 1 & 5 \\
+        Hash & 6 & 24 \\
+        Leetcode & 1 & 4 \\
+        Machine_learning & 4 & 44 \\
+        Math & 23 & 65 \\
+        Misc & 16 & 82 \\
+        Numerical_methods & 18 & 68 \\
+        Process_scheduling_algorithms & 1 & 11 \\
+        Searching & 13 & 35 \\
+        Sorting & 34 & 142 \\
+        \hline
+        \textbf{Totale} & \textbf{192} & \textbf{878} \\
+        \hline
+    \end{tabular}
+    \vspace{10pt}
+    \caption{Distribuzione delle funzioni e dei file nel dataset suddivise per dominio di appartenenza.}
+    \label{tab:distribuzione_domini}
+\end{table}
