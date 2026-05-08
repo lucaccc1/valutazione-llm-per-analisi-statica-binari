@@ -5,7 +5,7 @@
         "ground_truth_name": "run_length_encode",
         "ai_predicted_name": "compress_string",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 42,
             "execution_time": 29.34
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "run_length_decoding_tests",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 27,
             "execution_time": 11.96
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 6,
             "execution_time": 7.88
         },

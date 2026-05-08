@@ -5,7 +5,7 @@
         "ground_truth_name": "u128_fill",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 5.24
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "u128_increment",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 5.58
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "G",
         "ai_predicted_name": "mix_and_hash",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 12.35
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "F",
         "ai_predicted_name": "sub_4007BB",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 51,
             "execution_time": 8.78
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "BLAKE2B",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 46,
             "execution_time": 32.72
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "blake2b",
         "ai_predicted_name": "xor",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 65,
             "execution_time": 8.92
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "assert_bytes",
         "ai_predicted_name": "assert_bytes",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 7.33
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "test_all_functions",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 92,
             "execution_time": 13.28
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 6.58
         },

@@ -5,7 +5,7 @@
         "ground_truth_name": "patienceSort",
         "ai_predicted_name": "heapsort",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 64,
             "execution_time": 20.85
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "printArray",
         "ai_predicted_name": "print_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 5.95
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "testArray",
         "ai_predicted_name": "test_array",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 101,
             "execution_time": 9.33
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "test_array",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 66,
             "execution_time": 10.05
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "sort",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 55,
             "execution_time": 7.46
         },

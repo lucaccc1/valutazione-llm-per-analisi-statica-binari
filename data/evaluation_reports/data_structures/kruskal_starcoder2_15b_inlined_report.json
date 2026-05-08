@@ -5,7 +5,7 @@
         "ground_truth_name": "createGraph",
         "ai_predicted_name": "sub_400496",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 7.63
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "find",
         "ai_predicted_name": "calculate_something",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 6,
             "execution_time": 4.92
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "Union",
         "ai_predicted_name": "merge",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 40,
             "execution_time": 7.58
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "myComp",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 13.01
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "KruskalMST",
         "ai_predicted_name": "get_minimum_spanning_tree",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 108,
             "execution_time": 14.1
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "kruskals",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 106,
             "execution_time": 10.85
         },

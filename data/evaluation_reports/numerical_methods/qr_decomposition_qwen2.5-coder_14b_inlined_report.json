@@ -5,7 +5,7 @@
         "ground_truth_name": "print_matrix",
         "ai_predicted_name": "print_matrix",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 12.24
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "vector_dot",
         "ai_predicted_name": "dot_product",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 13.29
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "vector_mag",
         "ai_predicted_name": "compute_square_root_of_dot_product",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 9.71
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "vector_proj",
         "ai_predicted_name": "scale_vectors",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 29,
             "execution_time": 11.9
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "vector_sub",
         "ai_predicted_name": "subtract_double_arrays",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 11.89
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "qr_decompose",
         "ai_predicted_name": "calculate_inverse",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 106,
             "execution_time": 49.87
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 154,
             "execution_time": 44.9
         },

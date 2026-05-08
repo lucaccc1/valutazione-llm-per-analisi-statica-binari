@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 42,
             "execution_time": 30.15
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "create",
         "ai_predicted_name": "reset_pointer",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 5.44
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "update_linked_list",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 20,
             "execution_time": 14.16
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "pop",
         "ai_predicted_name": "pop_from_stack",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 10.41
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "peek",
         "ai_predicted_name": "peek_from_stack",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 5.99
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "size",
         "ai_predicted_name": "get_constant_value",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 7.37
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "isEmpty",
         "ai_predicted_name": "is_condition_met",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 6.65
         },

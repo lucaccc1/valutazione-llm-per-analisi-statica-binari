@@ -5,7 +5,7 @@
         "ground_truth_name": "validEntryLineColumn",
         "ai_predicted_name": "is_valid_input",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 3.4
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "validatePosition",
         "ai_predicted_name": "validate_matrix",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 5.41
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "canShoot",
         "ai_predicted_name": "validate_index",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 3.33
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "positionBoat",
         "ai_predicted_name": "process_input",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 115,
             "execution_time": 14.27
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "printMessage",
         "ai_predicted_name": "print_header",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 1.95
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "printMessageScore",
         "ai_predicted_name": "print_scores",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 2.94
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "printTable",
         "ai_predicted_name": "switch_case_handler",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 41,
             "execution_time": 3.92
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "printsTray",
         "ai_predicted_name": "print_ascii_art",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 40,
             "execution_time": 8.42
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "shoot",
         "ai_predicted_name": "process_indexed_value",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 33,
             "execution_time": 3.85
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "calculateScore",
         "ai_predicted_name": "sub_4010D6",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 141,
             "execution_time": 19.52
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "printPositioning",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 226,
             "execution_time": 78.28
         },
@@ -225,7 +225,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 135,
             "execution_time": 52.52
         },

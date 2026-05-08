@@ -5,7 +5,7 @@
         "ground_truth_name": "create_node",
         "ai_predicted_name": "allocate_and_link",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 3.92
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "insert_at_head",
         "ai_predicted_name": "init_struct",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 4.56
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "insert_at_tail",
         "ai_predicted_name": "allocate_and_manage",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 32,
             "execution_time": 6.03
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "delete_from_head",
         "ai_predicted_name": "process_pointer",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 28,
             "execution_time": 3.78
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "delete_from_tail",
         "ai_predicted_name": "free_or_return",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 26,
             "execution_time": 2.58
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "getsize",
         "ai_predicted_name": "calculate_length",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 3.56
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "display_list",
         "ai_predicted_name": "print_linked_list",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 3.49
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "get",
         "ai_predicted_name": "process_pointer_chain",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 3.42
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 274,
             "execution_time": 40.85
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 125,
             "execution_time": 6.38
         },

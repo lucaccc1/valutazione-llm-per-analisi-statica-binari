@@ -32,7 +32,7 @@ def carica_dati(base_dir):
                     'Size_Category': dim_info.get('category', 'UNKNOWN'),
                     'LOC': dim_info.get('lines_of_code', 0),
                     'Inlined_Count': record.get('inlined_count', 0),
-                    'Execution_Time': dim_info.get('execution_time', 0.0) 
+                    'Execution_Time': dim_info.get('execution_time', 0.0)
                 }
 
                 if record.get('error_flag', False):
@@ -54,10 +54,12 @@ def carica_dati(base_dir):
     metriche_colonne = ['Exact Match', 'Levenshtein', 'Jaccard', 'Cosine', 'LLM Judge']
     df_plot = df.melt(id_vars=['Category', 'Model', 'Input_Type'], value_vars=metriche_colonne, var_name='Metric', value_name='Score')
     df['Inlined_Count'] = pd.to_numeric(df['Inlined_Count'], errors='coerce').fillna(0).astype(int)
-    df_funzioni = df.pivot_table(index=['GT_Name', 'Address', 'Size_Category', 'Input_Type'], columns='Model', values='LLM Judge').reset_index().dropna()
+    df['collision_id'] = df.groupby(['Model', 'Input_Type', 'GT_Name', 'Address']).cumcount()
+    df_funzioni = df.pivot_table(index=['collision_id', 'GT_Name', 'Address', 'Size_Category', 'Input_Type'], columns='Model', values='LLM Judge').reset_index()
     modelli_presenti = [m for m in modelli_attesi if m in df_funzioni.columns]
-    df_funzioni['Average_Score'] = df_funzioni[modelli_presenti].mean(axis=1)
-    df_funzioni['Variance'] = df_funzioni[modelli_presenti].var(axis=1)
+    df_funzioni['Average_Score'] = df_funzioni[modelli_presenti].mean(axis=1, numeric_only=True)
+    df_funzioni['Variance'] = df_funzioni[modelli_presenti].var(axis=1, numeric_only=True).fillna(0.0)
+    df_funzioni = df_funzioni.drop(columns=['collision_id'])
     funzioni_controverse = df_funzioni.sort_values(by='Variance', ascending=False)
 
     return df, df_plot, df_funzioni, funzioni_controverse, modelli_presenti, metriche_colonne

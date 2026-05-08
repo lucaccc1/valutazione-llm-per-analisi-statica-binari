@@ -5,7 +5,7 @@
         "ground_truth_name": "binarysearch1",
         "ai_predicted_name": "binary_search",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 9.79
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "binarysearch2",
         "ai_predicted_name": "binary_search",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 5.42
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "test",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 34,
             "execution_time": 6.63
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 3.29
         },

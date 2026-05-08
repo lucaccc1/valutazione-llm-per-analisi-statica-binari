@@ -5,7 +5,7 @@
         "ground_truth_name": "minimum",
         "ai_predicted_name": "find_minimum_word",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 18,
             "execution_time": 12.31
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "prim",
         "ai_predicted_name": "min_spanning_tree",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 44,
             "execution_time": 16.67
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "test",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 61,
             "execution_time": 6.91
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "user_graph",
         "ai_predicted_name": "user_graph",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 40,
             "execution_time": 14.6
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 9.46
         },

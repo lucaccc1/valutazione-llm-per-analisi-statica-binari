@@ -5,7 +5,7 @@
         "ground_truth_name": "createGraph",
         "ai_predicted_name": "initialize_distance_matrix",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 8.93
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "addEdge",
         "ai_predicted_name": "set_board_cell",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 10.5
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "minDistance",
         "ai_predicted_name": "find_min_number",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 7.83
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "print",
         "ai_predicted_name": "print_distances",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 18,
             "execution_time": 4.85
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "Dijkstra",
         "ai_predicted_name": "find_shortest_path",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 91,
             "execution_time": 8.91
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "dijkstra",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 121,
             "execution_time": 21.43
         },

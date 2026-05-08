@@ -5,7 +5,7 @@
         "ground_truth_name": "convert_to_decimal",
         "ai_predicted_name": "convert_to_base_2",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 15,
             "execution_time": 10.88
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "tests",
         "ai_predicted_name": "run_tests",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 48,
             "execution_time": 11.61
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 38,
             "execution_time": 9.31
         },

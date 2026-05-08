@@ -5,7 +5,7 @@
         "ground_truth_name": "save_nd_data",
         "ai_predicted_name": "save_matrix",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 6.99
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "kohonen_get_min_1d",
         "ai_predicted_name": "find_minimum",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 10.0
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "kohonen_update_weights",
         "ai_predicted_name": "update_data",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 65,
             "execution_time": 9.23
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "kohonen_som_tracer",
         "ai_predicted_name": "choose_centroids",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 69,
             "execution_time": 13.77
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "test_circle",
         "ai_predicted_name": "generate_random_coordinates",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 28,
             "execution_time": 7.55
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "test1",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 132,
             "execution_time": 8.79
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "test_lamniscate",
         "ai_predicted_name": "generate_random_points",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 30,
             "execution_time": 7.24
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "test2",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 131,
             "execution_time": 10.07
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "test_3d_classes",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 50,
             "execution_time": 3.52
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "test3",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 151,
             "execution_time": 14.86
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "get_clock_diff",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 4.99
         },
@@ -225,7 +225,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "analyze_and_train_neural_networks",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 166,
             "execution_time": 27.5
         },

@@ -5,7 +5,7 @@
         "ground_truth_name": "sdbm",
         "ai_predicted_name": "calculate_hash",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 9.05
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "test_sdbm",
         "ai_predicted_name": "test_sdbm",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 10.92
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 8.57
         },

@@ -5,7 +5,7 @@
         "ground_truth_name": "init",
         "ai_predicted_name": "allocate_and_initialize",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 4.12
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "delete",
         "ai_predicted_name": "free_memory",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 2.23
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "clear",
         "ai_predicted_name": "init_and_set",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 28,
             "execution_time": 4.0
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "len",
         "ai_predicted_name": "identity",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 2.16
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "append_integer",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 4.43
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "get",
         "ai_predicted_name": "get_element",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 2.08
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "set",
         "ai_predicted_name": "compare_and_store",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 5.82
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "next",
         "ai_predicted_name": "increment_and_access",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 6,
             "execution_time": 2.44
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "begin",
         "ai_predicted_name": "get_pointer_value",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 3.17
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "print",
         "ai_predicted_name": "print_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 3.78
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 94,
             "execution_time": 6.29
         },
@@ -225,7 +225,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 108,
             "execution_time": 6.72
         },

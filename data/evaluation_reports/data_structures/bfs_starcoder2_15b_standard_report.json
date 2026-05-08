@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "bfs",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 28,
             "execution_time": 13.08
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "bfs",
         "ai_predicted_name": "bfs",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 6.79
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "createNode",
         "ai_predicted_name": "new_element",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 4.99
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "createGraph",
         "ai_predicted_name": "init",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 7.38
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "addEdge",
         "ai_predicted_name": "link_nodes",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 8.91
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "createQueue",
         "ai_predicted_name": "create_socket",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 4.09
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "isEmpty",
         "ai_predicted_name": "is_socket_closed",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 4.59
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "enqueue",
         "ai_predicted_name": "enqueue",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 7.92
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "dequeue",
         "ai_predicted_name": "dequeue",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 20,
             "execution_time": 5.16
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "pollQueue",
         "ai_predicted_name": "get_field",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 4.9
         },

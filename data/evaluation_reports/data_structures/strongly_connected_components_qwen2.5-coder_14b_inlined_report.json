@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 92,
             "execution_time": 19.05
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "fillOrder",
         "ai_predicted_name": "process_nodes",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 26,
             "execution_time": 13.11
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "transpose",
         "ai_predicted_name": "process_data_structure",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 47,
             "execution_time": 13.0
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "dfs",
         "ai_predicted_name": "process_arguments",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 17,
             "execution_time": 11.23
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "scc",
         "ai_predicted_name": "process_data_structure",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 107,
             "execution_time": 17.3
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "createNode",
         "ai_predicted_name": "allocate_and_initialize",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 7.19
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "createGraph",
         "ai_predicted_name": "allocate_and_initialize_arrays",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 9.3
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "addEdge",
         "ai_predicted_name": "allocate_and_update",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 10.5
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "printGraph",
         "ai_predicted_name": "print_adjacency_list",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 11.62
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "createStack",
         "ai_predicted_name": "allocate_structure",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 5.43
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "update_argument",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 9.37
         },
@@ -225,7 +225,7 @@
         "ground_truth_name": "pop",
         "ai_predicted_name": "decrement_and_retrieve",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 9.08
         },

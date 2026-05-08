@@ -5,7 +5,7 @@
         "ground_truth_name": "create_stack",
         "ai_predicted_name": "create_stack",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 3.65
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "double_array",
         "ai_predicted_name": "copy_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 2.87
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "shrink_array",
         "ai_predicted_name": "copy_and_pad",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 4.41
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "push_to_stack",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 5.75
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "pop",
         "ai_predicted_name": "pop_from_stack",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 4.61
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "peek",
         "ai_predicted_name": "check_stack_underflow",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 4.22
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "show_capacity",
         "ai_predicted_name": "identity",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 2.25
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "isempty",
         "ai_predicted_name": "is_exit_code",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 2.44
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "stack_size",
         "ai_predicted_name": "sub_40084E",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 2.64
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 85,
             "execution_time": 9.7
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 3.19
         },

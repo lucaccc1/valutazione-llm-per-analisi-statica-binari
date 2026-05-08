@@ -5,7 +5,7 @@
         "ground_truth_name": "swap",
         "ai_predicted_name": "swap",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 7.34
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "merge",
         "ai_predicted_name": "merge",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 48,
             "execution_time": 15.57
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "merge_sort",
         "ai_predicted_name": "mergesort",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 81,
             "execution_time": 7.56
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "sort_array",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 57,
             "execution_time": 9.98
         },

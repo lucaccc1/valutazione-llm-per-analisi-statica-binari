@@ -5,7 +5,7 @@
         "ground_truth_name": "interpolationSearch",
         "ai_predicted_name": "binary_search",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 24,
             "execution_time": 11.88
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "binary_search",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 65,
             "execution_time": 7.47
         },

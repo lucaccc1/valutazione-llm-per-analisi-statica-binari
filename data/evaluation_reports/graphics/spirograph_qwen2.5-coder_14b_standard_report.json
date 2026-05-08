@@ -5,7 +5,7 @@
         "ground_truth_name": "spirograph",
         "ai_predicted_name": "compute_waveform",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 27.39
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "generate_csv",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 36,
             "execution_time": 19.39
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 7.87
         },

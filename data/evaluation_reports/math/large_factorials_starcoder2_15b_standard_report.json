@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "calculate_factorial",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 41,
             "execution_time": 7.21
         },

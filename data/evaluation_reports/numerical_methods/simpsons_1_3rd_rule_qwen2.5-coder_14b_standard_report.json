@@ -5,7 +5,7 @@
         "ground_truth_name": "f",
         "ai_predicted_name": "calculate_cubic",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 5.69
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "integrate_function",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 49,
             "execution_time": 38.22
         },

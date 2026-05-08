@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 42,
             "execution_time": 7.62
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "singlemode",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 51,
             "execution_time": 12.13
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "doublemode",
         "ai_predicted_name": "tic_tac_toe",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 56,
             "execution_time": 16.88
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "check_placex",
         "ai_predicted_name": "read_valid_move",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 20,
             "execution_time": 8.63
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "placex",
         "ai_predicted_name": "process_index",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 8.44
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "place",
         "ai_predicted_name": "generate_computer_position",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 6.72
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "placey",
         "ai_predicted_name": "process_input",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 12.02
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "checkwin",
         "ai_predicted_name": "determine_special_value",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 60,
             "execution_time": 33.48
         },

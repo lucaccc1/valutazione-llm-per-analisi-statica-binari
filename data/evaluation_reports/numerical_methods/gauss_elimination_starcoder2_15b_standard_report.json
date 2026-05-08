@@ -5,7 +5,7 @@
         "ground_truth_name": "display",
         "ai_predicted_name": "print_matrix",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 17,
             "execution_time": 6.56
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "interchange",
         "ai_predicted_name": "find_largest_element",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 25,
             "execution_time": 13.81
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "eliminate",
         "ai_predicted_name": "backsubstitute",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 18,
             "execution_time": 7.67
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "gauss_elimination",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 55,
             "execution_time": 9.74
         },

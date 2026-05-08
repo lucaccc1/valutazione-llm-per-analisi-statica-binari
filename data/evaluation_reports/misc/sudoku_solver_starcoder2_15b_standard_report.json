@@ -5,7 +5,7 @@
         "ground_truth_name": "OKrow",
         "ai_predicted_name": "match_byte",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 5.39
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "OKcol",
         "ai_predicted_name": "is_not_in_string",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 10.86
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "OKbox",
         "ai_predicted_name": "is_valid",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 7.36
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "OK",
         "ai_predicted_name": "send_receive_parse",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 8.13
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "print",
         "ai_predicted_name": "print_matrix",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 7.94
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "get_next_unknown",
         "ai_predicted_name": "find_empty_location",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 8.15
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "solve",
         "ai_predicted_name": "solve_sudoku",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 36,
             "execution_time": 8.99
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "solve",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 50,
             "execution_time": 13.68
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "validate_square",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 27,
             "execution_time": 12.75
         },

@@ -5,7 +5,7 @@
         "ground_truth_name": "adler32",
         "ai_predicted_name": "calculate_checksum",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 15,
             "execution_time": 10.79
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "test_adler32",
         "ai_predicted_name": "test_adler32",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 21.35
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 8.65
         },

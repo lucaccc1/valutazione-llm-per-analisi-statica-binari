@@ -5,7 +5,7 @@
         "ground_truth_name": "sdbm",
         "ai_predicted_name": "djb2_hash",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 7.66
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "test_sdbm",
         "ai_predicted_name": "test_sdbm",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 27,
             "execution_time": 5.32
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "test_sdbm",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 6.85
         },

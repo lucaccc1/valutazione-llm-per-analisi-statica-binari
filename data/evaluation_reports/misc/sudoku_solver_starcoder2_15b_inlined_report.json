@@ -5,7 +5,7 @@
         "ground_truth_name": "OKrow",
         "ai_predicted_name": "is_valid",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 6.06
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "OKcol",
         "ai_predicted_name": "check_for_bad_char",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 4.93
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "OKbox",
         "ai_predicted_name": "find_char_in_matrix",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 8.52
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "OK",
         "ai_predicted_name": "detect_color",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 63,
             "execution_time": 13.16
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "print",
         "ai_predicted_name": "display_grid",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 7.91
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "get_next_unknown",
         "ai_predicted_name": "find_empty_cell",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 8.85
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "solve",
         "ai_predicted_name": "sub_400830",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 74,
             "execution_time": 9.27
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "test",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 91,
             "execution_time": 8.1
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "find_solution",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 147,
             "execution_time": 12.49
         },

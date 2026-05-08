@@ -5,7 +5,7 @@
         "ground_truth_name": "vector_sub",
         "ai_predicted_name": "subtract_float_arrays",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 10.24
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "vector_add",
         "ai_predicted_name": "add_float_pairs",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 8.82
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "dot_prod",
         "ai_predicted_name": "calculate_dot_product",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 7.76
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "vector_prod",
         "ai_predicted_name": "calculate_cross_product",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 8.5
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "print_vector",
         "ai_predicted_name": "format_vector_string",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 9.03
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "vector_norm",
         "ai_predicted_name": "calculate_dot_product_and_sqrt",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 18,
             "execution_time": 10.93
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "unit_vec",
         "ai_predicted_name": "normalize_vector",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 10.74
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "get_cross_matrix",
         "ai_predicted_name": "transform_data",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 14.15
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "get_angle",
         "ai_predicted_name": "calculate_angle",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 44,
             "execution_time": 17.4
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "calculate_vector_properties",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 111,
             "execution_time": 30.63
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 63,
             "execution_time": 10.4
         },

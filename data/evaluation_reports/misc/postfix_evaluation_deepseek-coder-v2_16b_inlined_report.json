@@ -5,7 +5,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "increment_and_store",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 3.53
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "pop",
         "ai_predicted_name": "read_from_stack",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 5.03
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "evaluate",
         "ai_predicted_name": "process_input",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 101,
             "execution_time": 11.06
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 110,
             "execution_time": 8.04
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 45,
             "execution_time": 4.72
         },

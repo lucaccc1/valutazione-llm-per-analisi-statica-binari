@@ -5,7 +5,7 @@
         "ground_truth_name": "newNode",
         "ai_predicted_name": "allocate_and_init",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 4.4
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "insert",
         "ai_predicted_name": "initialize_and_manage",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 33,
             "execution_time": 3.08
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "getMax",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 2.0
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "delete",
         "ai_predicted_name": "process_array",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 59,
             "execution_time": 5.78
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "find",
         "ai_predicted_name": "recursive_comparison",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 3.9
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "height",
         "ai_predicted_name": "recursive_comparison",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 5.18
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "purge",
         "ai_predicted_name": "process_arguments",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 3.23
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "inOrder",
         "ai_predicted_name": "print_recursive",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 3.52
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 197,
             "execution_time": 12.33
         },

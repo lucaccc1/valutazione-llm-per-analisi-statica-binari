@@ -5,7 +5,7 @@
         "ground_truth_name": "jump_search",
         "ai_predicted_name": "search_index_by_value",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 47,
             "execution_time": 29.88
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "jump_search_test",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 93,
             "execution_time": 12.85
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 51,
             "execution_time": 10.27
         },

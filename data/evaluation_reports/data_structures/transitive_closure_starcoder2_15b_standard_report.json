@@ -5,7 +5,7 @@
         "ground_truth_name": "warshall",
         "ai_predicted_name": "mark_directly_connected",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 38,
             "execution_time": 10.65
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "print_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 8.42
         },

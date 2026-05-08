@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "compute_postfix_expression",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 7.45
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "append_to_buffer",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 15,
             "execution_time": 8.36
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "pop",
         "ai_predicted_name": "stack_pop",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 5.48
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "isOprnd",
         "ai_predicted_name": "is_alphanumeric",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 4.11
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "isEmpty",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 3.68
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "convert",
         "ai_predicted_name": "parse_string",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 60,
             "execution_time": 6.81
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "getPrecedence",
         "ai_predicted_name": "is_math_char",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 6.81
         },

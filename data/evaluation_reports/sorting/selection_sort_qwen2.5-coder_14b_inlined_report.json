@@ -5,7 +5,7 @@
         "ground_truth_name": "swap",
         "ai_predicted_name": "swap_integers",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 13.2
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "selectionSort",
         "ai_predicted_name": "selection_sort",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 39,
             "execution_time": 14.56
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "perform_selection_sort",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 47,
             "execution_time": 12.61
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 33,
             "execution_time": 10.07
         },

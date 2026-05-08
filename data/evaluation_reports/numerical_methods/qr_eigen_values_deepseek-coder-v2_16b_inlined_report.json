@@ -5,7 +5,7 @@
         "ground_truth_name": "print_matrix",
         "ai_predicted_name": "print_matrix",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 3.84
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "vector_dot",
         "ai_predicted_name": "multiply_sum",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 3.45
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "vector_mag",
         "ai_predicted_name": "calculate_weighted_sum",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 4.21
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "vector_proj",
         "ai_predicted_name": "matrix_multiply",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 29,
             "execution_time": 4.84
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "vector_sub",
         "ai_predicted_name": "subtract_arrays",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 5.68
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "qr_decompose",
         "ai_predicted_name": "matrix_multiplication",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 106,
             "execution_time": 15.89
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "create_matrix",
         "ai_predicted_name": "fill_matrix",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 4.52
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "mat_mul",
         "ai_predicted_name": "matrix_multiplication",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 27,
             "execution_time": 5.41
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "eigen_values",
         "ai_predicted_name": "calculate_eigenvalues",
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 213,
             "execution_time": 53.31
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "test1",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 160,
             "execution_time": 16.7
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "test2",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 182,
             "execution_time": 32.38
         },
@@ -225,7 +225,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 336,
             "execution_time": 4.57
         },

@@ -5,7 +5,7 @@
         "ground_truth_name": "getBig",
         "ai_predicted_name": "insert_item_by_index",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 9.2
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "getSmall",
         "ai_predicted_name": "find_min_index",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 9.3
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "swap",
         "ai_predicted_name": "swap_integers",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 8.85
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "random_quick",
         "ai_predicted_name": "quicksort",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 42,
             "execution_time": 14.34
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "sort_integers",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 3.37
         },

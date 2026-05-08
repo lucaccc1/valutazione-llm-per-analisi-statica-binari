@@ -5,7 +5,7 @@
         "ground_truth_name": "func",
         "ai_predicted_name": "sub_4004A6",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 15.31
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "d_func",
         "ai_predicted_name": "sum_doubles",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 6.61
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 86,
             "execution_time": 20.78
         },

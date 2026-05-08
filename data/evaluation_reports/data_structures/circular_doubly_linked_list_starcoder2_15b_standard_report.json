@@ -5,7 +5,7 @@
         "ground_truth_name": "create_node",
         "ai_predicted_name": "linked_list__new",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 5.16
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "insert_at_head",
         "ai_predicted_name": "add_node",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 8.07
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "insert_at_tail",
         "ai_predicted_name": "enqueue",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 17,
             "execution_time": 9.09
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "delete_from_head",
         "ai_predicted_name": "list_remove",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 28,
             "execution_time": 7.4
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "delete_from_tail",
         "ai_predicted_name": "remove_node",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 26,
             "execution_time": 6.25
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "getsize",
         "ai_predicted_name": "list_length",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 8.09
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "display_list",
         "ai_predicted_name": "print_list",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 4.58
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "get",
         "ai_predicted_name": "return_Nth_element",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 7.85
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "run_tests",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 115,
             "execution_time": 14.46
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 3.57
         },

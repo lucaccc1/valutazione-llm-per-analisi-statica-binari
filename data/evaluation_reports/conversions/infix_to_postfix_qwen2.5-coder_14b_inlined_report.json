@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 76,
             "execution_time": 12.92
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "increment_and_store",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 15,
             "execution_time": 9.14
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "pop",
         "ai_predicted_name": "pop_stack_element",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 6.17
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "isOprnd",
         "ai_predicted_name": "is_valid_ascii_character",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 5.76
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "isEmpty",
         "ai_predicted_name": "check_error",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 8.02
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "convert",
         "ai_predicted_name": "process_and_filter_string",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 124,
             "execution_time": 30.69
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "getPrecedence",
         "ai_predicted_name": "compare_characters",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 8.56
         },

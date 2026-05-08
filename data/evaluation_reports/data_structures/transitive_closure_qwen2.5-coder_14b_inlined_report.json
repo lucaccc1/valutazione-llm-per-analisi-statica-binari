@@ -5,7 +5,7 @@
         "ground_truth_name": "warshall",
         "ai_predicted_name": "process_matrices",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 38,
             "execution_time": 14.17
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 57,
             "execution_time": 13.47
         },

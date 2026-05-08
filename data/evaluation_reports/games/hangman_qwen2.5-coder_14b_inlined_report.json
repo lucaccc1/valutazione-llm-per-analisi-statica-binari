@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "hangman_game",
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 218,
             "execution_time": 36.13
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "new_guess",
         "ai_predicted_name": "check_letter_guessed",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 12.34
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "in_word",
         "ai_predicted_name": "check_char_in_buffer",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 10.18
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "new_game",
         "ai_predicted_name": "load_random_word",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 77,
             "execution_time": 62.85
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "won",
         "ai_predicted_name": "display_game_result",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 8.1
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "picture",
         "ai_predicted_name": "print_duck_art",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 38,
             "execution_time": 8.83
         },

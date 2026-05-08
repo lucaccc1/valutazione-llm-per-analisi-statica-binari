@@ -5,7 +5,7 @@
         "ground_truth_name": "endProgramAbruptly",
         "ai_predicted_name": "print_error",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 4.32
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "freeTreeMemory",
         "ai_predicted_name": "free_tree",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 5.66
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "getPointerToWord",
         "ai_predicted_name": "normalize_word",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 6.25
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "closeFile",
         "ai_predicted_name": "close_file",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 4.93
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "allocateMemoryForNode",
         "ai_predicted_name": "allocate_structure",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 4.32
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "writeContentOfTreeToFile",
         "ai_predicted_name": "print_tree",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 18,
             "execution_time": 6.54
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "addWordToTree",
         "ai_predicted_name": "insert_into_tree",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 60,
             "execution_time": 6.88
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "readWordsInFileToTree",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 87,
             "execution_time": 6.19
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "words_alphabetical",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 181,
             "execution_time": 10.43
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 89,
             "execution_time": 8.96
         },

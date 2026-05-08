@@ -5,7 +5,7 @@
         "ground_truth_name": "swap",
         "ai_predicted_name": "swap_first_byte",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 8.38
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "findIndex",
         "ai_predicted_name": "recursive_min",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 6.86
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "selectionSort",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 45,
             "execution_time": 6.07
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 37,
             "execution_time": 5.14
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 8.0
         },

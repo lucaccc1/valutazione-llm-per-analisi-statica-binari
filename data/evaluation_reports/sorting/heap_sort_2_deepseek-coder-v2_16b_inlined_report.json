@@ -5,7 +5,7 @@
         "ground_truth_name": "swap",
         "ai_predicted_name": "swap_chars",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 4.55
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "heapifyDown",
         "ai_predicted_name": "swap_elements",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 37,
             "execution_time": 5.28
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "heapifyUp",
         "ai_predicted_name": "swap_characters",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 32,
             "execution_time": 5.59
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "heapSort",
         "ai_predicted_name": "heap_sort",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 80,
             "execution_time": 9.51
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "sub_4006d2",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 43,
             "execution_time": 5.73
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 4.74
         },

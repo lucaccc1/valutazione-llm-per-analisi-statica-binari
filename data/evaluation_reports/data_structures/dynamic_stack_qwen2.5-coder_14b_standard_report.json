@@ -5,7 +5,7 @@
         "ground_truth_name": "create_stack",
         "ai_predicted_name": "create_stack",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 8.07
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "double_array",
         "ai_predicted_name": "resize_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 11.59
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "shrink_array",
         "ai_predicted_name": "update_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 11.08
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "update_element",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 9.09
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "pop",
         "ai_predicted_name": "stack_pop",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 7.59
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "peek",
         "ai_predicted_name": "get_stack_element",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 6.15
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "show_capacity",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 5.75
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "isempty",
         "ai_predicted_name": "check_error_code",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 6.15
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "stack_size",
         "ai_predicted_name": "increment_by_one",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 5.86
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "test_dynamic_stack",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 85,
             "execution_time": 35.39
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 8.22
         },

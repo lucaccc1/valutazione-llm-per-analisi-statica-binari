@@ -5,7 +5,7 @@
         "ground_truth_name": "free_poly",
         "ai_predicted_name": "free_linked_list",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 8.7
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "create_polynomial",
         "ai_predicted_name": "add_element_to_list",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 12.2
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "poly_add",
         "ai_predicted_name": "merge_sorted_lists",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 65,
             "execution_time": 13.45
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "display_polynomial",
         "ai_predicted_name": "print_polynomial",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 7.59
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "test1",
         "ai_predicted_name": "add_polynomials",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 148,
             "execution_time": 19.54
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "test2",
         "ai_predicted_name": "add_polynomials",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 151,
             "execution_time": 19.97
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "test3",
         "ai_predicted_name": "add_polynomials",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 148,
             "execution_time": 18.49
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 105,
             "execution_time": 11.18
         },

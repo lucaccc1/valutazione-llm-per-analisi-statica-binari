@@ -5,7 +5,7 @@
         "ground_truth_name": "power_of_ten",
         "ai_predicted_name": "exponential",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 5.24
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "is_number",
         "ai_predicted_name": "parse_argument",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 4.67
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "get_ch",
         "ai_predicted_name": "get_byte",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 5.21
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "unget_ch",
         "ai_predicted_name": "send_message",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 3.69
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "get_number_of_digits",
         "ai_predicted_name": "count_digits",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 6.21
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "put_char",
         "ai_predicted_name": "send",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 3.98
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "reverse_str",
         "ai_predicted_name": "reverse_buffer",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 11.7
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "print_int_value",
         "ai_predicted_name": "print_number",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 82,
             "execution_time": 10.61
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "print_double_value",
         "ai_predicted_name": "print_number",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 98,
             "execution_time": 10.0
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "print_string",
         "ai_predicted_name": "print_substring",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 43,
             "execution_time": 7.15
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "get_width_and_precision",
         "ai_predicted_name": "parse_num",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 42,
             "execution_time": 7.53
         },
@@ -225,7 +225,7 @@
         "ground_truth_name": "min_printf",
         "ai_predicted_name": "printf",
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 262,
             "execution_time": 22.1
         },
@@ -245,7 +245,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 149,
             "execution_time": 12.21
         },

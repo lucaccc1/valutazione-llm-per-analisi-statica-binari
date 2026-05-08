@@ -5,7 +5,7 @@
         "ground_truth_name": "u128_fill",
         "ai_predicted_name": "initialize_value",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 10.03
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "u128_increment",
         "ai_predicted_name": "increment_and_add",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 10.72
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "G",
         "ai_predicted_name": "xor_and_rotate_operations",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 18.39
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "F",
         "ai_predicted_name": "process_data",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 78,
             "execution_time": 31.52
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "BLAKE2B",
         "ai_predicted_name": "process_data",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 115,
             "execution_time": 32.08
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "blake2b",
         "ai_predicted_name": "process_data",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 128,
             "execution_time": 54.79
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "assert_bytes",
         "ai_predicted_name": "compare_byte_arrays",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 14.06
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "run_tests",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 186,
             "execution_time": 49.76
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 102,
             "execution_time": 13.86
         },

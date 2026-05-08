@@ -5,7 +5,7 @@
         "ground_truth_name": "new_number",
         "ai_predicted_name": "allocate_and_initialize",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 6.1
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "delete_number",
         "ai_predicted_name": "free_resources",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 5.82
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "add_digit",
         "ai_predicted_name": "append_digit_to_buffer",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 15,
             "execution_time": 9.26
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "multiply",
         "ai_predicted_name": "process_data",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 33,
             "execution_time": 13.29
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 29,
             "execution_time": 16.52
         },

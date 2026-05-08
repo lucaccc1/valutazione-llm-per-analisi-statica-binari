@@ -5,7 +5,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "push_character",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 7.59
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "pop",
         "ai_predicted_name": "pop_stack_byte",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 10.21
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "isEmpty",
         "ai_predicted_name": "is_feature_disabled",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 7.07
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "Top",
         "ai_predicted_name": "get_flag_status",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 9.85
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "priority",
         "ai_predicted_name": "check_operator",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 6.21
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "convert",
         "ai_predicted_name": "process_expression",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 95,
             "execution_time": 13.51
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "run_tests",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 66,
             "execution_time": 8.82
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 82,
             "execution_time": 14.48
         },

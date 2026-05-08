@@ -5,7 +5,7 @@
         "ground_truth_name": "stats_computer1",
         "ai_predicted_name": "compute_mean_and_stddev",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 32,
             "execution_time": 10.88
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "stats_computer2",
         "ai_predicted_name": "compute_stats",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 8.9
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "test_function",
         "ai_predicted_name": "calculate_summary_statistics",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 130,
             "execution_time": 9.5
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 171,
             "execution_time": 8.88
         },

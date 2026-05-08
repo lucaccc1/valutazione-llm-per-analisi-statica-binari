@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 27,
             "execution_time": 5.41
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "topologicalSortHelper",
         "ai_predicted_name": "process_graph",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 3.49
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "topologicalSort",
         "ai_predicted_name": "process_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 5.08
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "createNode",
         "ai_predicted_name": "allocate_and_initialize",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 2.46
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "createGraph",
         "ai_predicted_name": "allocate_memory",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 4.13
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "addEdge",
         "ai_predicted_name": "handle_data",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 5.26
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "printGraph",
         "ai_predicted_name": "print_adjacency_list",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 4.54
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "createStack",
         "ai_predicted_name": "allocate_memory",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 2.34
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "increment_and_store",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 4.75
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "pop",
         "ai_predicted_name": "dereference_array",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 3.43
         },

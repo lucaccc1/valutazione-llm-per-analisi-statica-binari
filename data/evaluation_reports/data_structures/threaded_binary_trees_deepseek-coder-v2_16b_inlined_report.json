@@ -5,7 +5,7 @@
         "ground_truth_name": "create_node",
         "ai_predicted_name": "allocate_and_initialize",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 3.3
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "insert_bt",
         "ai_predicted_name": "find_or_insert_value",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 56,
             "execution_time": 6.38
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "search",
         "ai_predicted_name": "find_element",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 4.0
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "inorder_display",
         "ai_predicted_name": "recursive_print",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 3.9
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "postorder_display",
         "ai_predicted_name": "print_values",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 4.02
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "preorder_display",
         "ai_predicted_name": "recursive_print",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 3.89
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "delete_bt",
         "ai_predicted_name": "find_and_free",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 79,
             "execution_time": 9.68
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 246,
             "execution_time": 15.26
         },

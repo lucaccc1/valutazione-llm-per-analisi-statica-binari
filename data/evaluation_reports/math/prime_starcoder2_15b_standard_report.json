@@ -5,7 +5,7 @@
         "ground_truth_name": "isPrime",
         "ai_predicted_name": "is_prime",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 17,
             "execution_time": 7.01
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "test_isPrime",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 64,
             "execution_time": 14.46
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 3.3
         },

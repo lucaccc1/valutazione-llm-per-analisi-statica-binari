@@ -5,7 +5,7 @@
         "ground_truth_name": "octalToBinary",
         "ai_predicted_name": "binary_to_decimal",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 24,
             "execution_time": 8.18
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "octal_to_binary_converter",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 5.66
         },

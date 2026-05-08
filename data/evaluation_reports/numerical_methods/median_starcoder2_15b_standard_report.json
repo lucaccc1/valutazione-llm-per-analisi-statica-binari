@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "generate_sorted_median_of_randoms",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 40,
             "execution_time": 13.56
         },

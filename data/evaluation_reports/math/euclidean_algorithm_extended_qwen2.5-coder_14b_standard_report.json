@@ -5,7 +5,7 @@
         "ground_truth_name": "xy_push",
         "ai_predicted_name": "swap_and_return",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 7.97
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "calculate_next_xy",
         "ai_predicted_name": "update_pointer",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 6.7
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "extended_euclidean_algorithm",
         "ai_predicted_name": "gcd_with_extended_euclidean",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 42,
             "execution_time": 25.31
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "single_test",
         "ai_predicted_name": "verify_gcd_result",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 16.35
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "run_tests",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 16.25
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 8.21
         },

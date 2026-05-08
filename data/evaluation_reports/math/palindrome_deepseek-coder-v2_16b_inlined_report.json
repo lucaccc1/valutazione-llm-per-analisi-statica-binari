@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 35,
             "execution_time": 4.84
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "isPalindrome",
         "ai_predicted_name": "is_palindrome",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 3.59
         },

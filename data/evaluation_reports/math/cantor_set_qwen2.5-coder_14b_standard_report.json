@@ -5,7 +5,7 @@
         "ground_truth_name": "propagate",
         "ai_predicted_name": "process_data",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 17,
             "execution_time": 9.71
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "print",
         "ai_predicted_name": "print_double_pairs",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 6.05
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "free_memory",
         "ai_predicted_name": "free_linked_list",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 5.98
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "process_numbers",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 43,
             "execution_time": 16.81
         },

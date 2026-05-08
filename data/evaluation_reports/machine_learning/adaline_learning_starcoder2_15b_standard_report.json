@@ -5,7 +5,7 @@
         "ground_truth_name": "new_adaline",
         "ai_predicted_name": "init",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 30,
             "execution_time": 11.89
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "delete_adaline",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 3.11
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "adaline_activation",
         "ai_predicted_name": "my_func",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 4.85
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "adaline_get_weights_str",
         "ai_predicted_name": "format_vector",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 4.81
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "adaline_predict",
         "ai_predicted_name": "sum_elements",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 5.93
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "adaline_fit_sample",
         "ai_predicted_name": "vector_scale_by_value",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 15,
             "execution_time": 10.71
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "adaline_fit",
         "ai_predicted_name": "train",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 6.29
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "test1",
         "ai_predicted_name": "adaline_learn",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 72,
             "execution_time": 10.84
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "test2",
         "ai_predicted_name": "train_perceptron",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 77,
             "execution_time": 10.44
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "test3",
         "ai_predicted_name": "fit_adaline_model",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 89,
             "execution_time": 11.09
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 9.6
         },

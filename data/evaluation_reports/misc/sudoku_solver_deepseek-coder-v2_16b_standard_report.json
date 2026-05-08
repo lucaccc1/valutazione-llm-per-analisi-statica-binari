@@ -5,7 +5,7 @@
         "ground_truth_name": "OKrow",
         "ai_predicted_name": "check_array_element",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 4.26
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "OKcol",
         "ai_predicted_name": "check_byte_at_offset",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 10.1
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "OKbox",
         "ai_predicted_name": "compare_arrays",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 8.29
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "OK",
         "ai_predicted_name": "process_data",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 6.15
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "print",
         "ai_predicted_name": "print_memory_contents",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 14.39
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "get_next_unknown",
         "ai_predicted_name": "find_first_zero",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 6.0
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "solve",
         "ai_predicted_name": "process_coordinates",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 36,
             "execution_time": 11.48
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 50,
             "execution_time": 15.96
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 27,
             "execution_time": 13.76
         },

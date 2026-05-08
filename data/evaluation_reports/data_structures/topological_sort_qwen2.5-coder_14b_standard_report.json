@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 27,
             "execution_time": 17.82
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "topologicalSortHelper",
         "ai_predicted_name": "update_status_recursively",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 10.5
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "topologicalSort",
         "ai_predicted_name": "process_arguments",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 12.24
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "createNode",
         "ai_predicted_name": "allocate_and_store_value",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 6.98
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "createGraph",
         "ai_predicted_name": "initialize_data_structures",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 9.47
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "addEdge",
         "ai_predicted_name": "update_array_element",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 10.4
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "printGraph",
         "ai_predicted_name": "print_adjacency_list",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 12.38
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "createStack",
         "ai_predicted_name": "allocate_and_initialize_struct",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 6.38
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "update_argument",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 7.55
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "pop",
         "ai_predicted_name": "decrement_and_get_value",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 7.69
         },

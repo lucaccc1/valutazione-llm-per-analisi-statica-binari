@@ -5,7 +5,7 @@
         "ground_truth_name": "minimum",
         "ai_predicted_name": "find_min_index",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 18,
             "execution_time": 12.01
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "prim",
         "ai_predicted_name": "find_shortest_path",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 67,
             "execution_time": 29.49
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "test_minimum_spanning_tree",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 110,
             "execution_time": 22.67
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "user_graph",
         "ai_predicted_name": "prim_minimum_spanning_tree",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 89,
             "execution_time": 24.59
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 121,
             "execution_time": 18.9
         },

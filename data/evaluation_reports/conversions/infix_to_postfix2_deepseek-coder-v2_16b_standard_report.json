@@ -5,7 +5,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "increment_and_store",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 4.32
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "pop",
         "ai_predicted_name": "get_stack_item",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 3.61
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "isEmpty",
         "ai_predicted_name": "check_connection",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 2.86
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "Top",
         "ai_predicted_name": "get_byte",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 2.54
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "priority",
         "ai_predicted_name": "check_operator",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 2.33
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "convert",
         "ai_predicted_name": "decompile_string",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 40,
             "execution_time": 7.65
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "run_tests",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 4.81
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 4.06
         },

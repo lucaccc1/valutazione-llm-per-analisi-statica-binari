@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 38,
             "execution_time": 4.72
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "saisie",
         "ai_predicted_name": "read_string",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 2.23
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "miroir",
         "ai_predicted_name": "reverse_string",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 32,
             "execution_time": 6.0
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "compte",
         "ai_predicted_name": "calculate_string_length",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 3.89
         },

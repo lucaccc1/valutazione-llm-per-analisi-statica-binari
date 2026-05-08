@@ -5,7 +5,7 @@
         "ground_truth_name": "rot13",
         "ai_predicted_name": "transform_string",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 9.76
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "run_rot13_tests",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 59,
             "execution_time": 13.55
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 42,
             "execution_time": 9.34
         },

@@ -5,7 +5,7 @@
         "ground_truth_name": "createnode",
         "ai_predicted_name": "allocate_buffer",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 4.54
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "insert",
         "ai_predicted_name": "insert",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 39,
             "execution_time": 10.53
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "deletion",
         "ai_predicted_name": "delete",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 38,
             "execution_time": 5.03
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "viewlist",
         "ai_predicted_name": "print_list",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 20,
             "execution_time": 6.88
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "delete_nth_element",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 96,
             "execution_time": 9.28
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "test_linked_list",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 185,
             "execution_time": 13.53
         },

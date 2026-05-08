@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "stack_management",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 88,
             "execution_time": 7.89
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "insert",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 4.93
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "pop",
         "ai_predicted_name": "pop_element",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 5.16
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "display",
         "ai_predicted_name": "print_stack",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 20,
             "execution_time": 6.23
         },

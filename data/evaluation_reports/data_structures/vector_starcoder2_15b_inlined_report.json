@@ -5,7 +5,7 @@
         "ground_truth_name": "init",
         "ai_predicted_name": "create_some_object",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 5.13
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "delete",
         "ai_predicted_name": "destroy_socket",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 4.51
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "clear",
         "ai_predicted_name": "reset",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 28,
             "execution_time": 4.21
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "len",
         "ai_predicted_name": "chosen_name",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 3.53
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "push_front",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 6.7
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "get",
         "ai_predicted_name": "get_element_at",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 8.39
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "set",
         "ai_predicted_name": "set_value",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 9.19
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "next",
         "ai_predicted_name": "read_next_element",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 6,
             "execution_time": 7.86
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "begin",
         "ai_predicted_name": "sub_400688",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 5.63
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "print",
         "ai_predicted_name": "print_numbers",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 6.4
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "test",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 94,
             "execution_time": 6.6
         },
@@ -225,7 +225,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 108,
             "execution_time": 8.69
         },

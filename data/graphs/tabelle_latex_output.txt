@@ -1,22 +1,3 @@
-% TABELLA 4: IMPATTO DELL'INLINING (GLOBALE)
-% ==========================================
-\begin{table}
-\caption{Impatto Inlining sulle performance predittive.}
-\label{tab:judge_inlining}
-\begin{tabular}{lrrr}
-\toprule
-Model & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b \\
-Inlining_Group &  &  &  \\
-\midrule
-0 (Nodi Foglia) & 0.844 & 0.930 & 0.746 \\
-1-2 Funzioni & 0.840 & 0.967 & 0.766 \\
-3-5 Funzioni & 0.844 & 0.922 & 0.710 \\
->5 Funzioni & 0.444 & 0.833 & 0.632 \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-
 % TABELLA 1: CONFRONTO GLOBALE (INLINED)
 % ==========================================
 \begin{table}
@@ -39,34 +20,34 @@ LLM Judge & 0.829 & 0.944 & 0.751 \\
 % TABELLA 2: METRICHE PER DOMINIO (INLINED)
 % ==========================================
 \begin{table}
-\caption{Metriche di valutazione dettagliate per dominio applicativo (Contesto: Inlined).}
+\caption{Metriche per dominio (Contesto: Inlined).}
 \label{tab:metriche_dominio_inlined}
-\begin{tabular}{lrrrrrrrrrrrrrrr}
+\begin{tabular}{lrrrrrrrrrrrrrrrr}
 \toprule
- & \multicolumn{3}{r}{Exact Match} & \multicolumn{3}{r}{Levenshtein} & \multicolumn{3}{r}{Jaccard} & \multicolumn{3}{r}{Cosine} & \multicolumn{3}{r}{LLM Judge} \\
-Model & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b \\
-Dominio / Categoria &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+ & N & \multicolumn{3}{r}{Exact Match} & \multicolumn{3}{r}{Levenshtein} & \multicolumn{3}{r}{Jaccard} & \multicolumn{3}{r}{Cosine} & \multicolumn{3}{r}{LLM Judge} \\
+Model &  & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b \\
+Dominio / Categoria &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
 \midrule
-Audio & 0.250 & 0.250 & 0.250 & 0.455 & 0.383 & 0.385 & 0.250 & 0.250 & 0.250 & 0.275 & 0.250 & 0.268 & 1.000 & 1.000 & 0.500 \\
-Cipher & 0.200 & 0.200 & 0.200 & 0.407 & 0.555 & 0.404 & 0.250 & 0.450 & 0.300 & 0.309 & 0.453 & 0.345 & 0.800 & 1.000 & 0.600 \\
-Client_server & 0.556 & 0.444 & 0.056 & 0.651 & 0.549 & 0.176 & 0.556 & 0.444 & 0.056 & 0.556 & 0.444 & 0.056 & 0.889 & 1.000 & 0.722 \\
-Conversions & 0.333 & 0.286 & 0.143 & 0.520 & 0.529 & 0.398 & 0.423 & 0.463 & 0.325 & 0.418 & 0.425 & 0.288 & 0.762 & 0.921 & 0.746 \\
-Data_structures & 0.135 & 0.127 & 0.076 & 0.386 & 0.416 & 0.342 & 0.231 & 0.300 & 0.226 & 0.243 & 0.272 & 0.206 & 0.785 & 0.916 & 0.709 \\
-Developer_tools & 0.077 & 0.077 & 0.077 & 0.405 & 0.555 & 0.541 & 0.250 & 0.429 & 0.301 & 0.288 & 0.466 & 0.399 & 0.615 & 0.923 & 0.846 \\
-Dynamic_programming & 0.250 & 0.250 & 0.250 & 0.421 & 0.407 & 0.422 & 0.354 & 0.438 & 0.375 & 0.318 & 0.348 & 0.349 & 0.875 & 1.000 & 0.875 \\
-Games & 0.077 & 0.038 & 0.000 & 0.370 & 0.394 & 0.270 & 0.176 & 0.183 & 0.087 & 0.208 & 0.209 & 0.083 & 0.731 & 0.962 & 0.808 \\
-Geometry & 0.250 & 0.250 & 0.250 & 0.514 & 0.578 & 0.464 & 0.364 & 0.479 & 0.312 & 0.414 & 0.492 & 0.395 & 0.938 & 1.000 & 0.688 \\
-Graphics & 0.333 & 0.333 & 0.333 & 0.467 & 0.497 & 0.597 & 0.333 & 0.333 & 0.333 & 0.357 & 0.357 & 0.477 & 1.000 & 1.000 & 1.000 \\
-Greedy_approach & 0.200 & 0.200 & 0.000 & 0.448 & 0.392 & 0.182 & 0.400 & 0.400 & 0.200 & 0.356 & 0.312 & 0.128 & 1.000 & 1.000 & 0.600 \\
-Hash & 0.292 & 0.333 & 0.167 & 0.395 & 0.498 & 0.254 & 0.354 & 0.417 & 0.208 & 0.337 & 0.448 & 0.193 & 0.958 & 1.000 & 0.750 \\
-Leetcode & 0.250 & 0.250 & 0.250 & 0.438 & 0.573 & 0.497 & 0.250 & 0.583 & 0.500 & 0.292 & 0.497 & 0.385 & 0.750 & 1.000 & 0.750 \\
-Machine_learning & 0.068 & 0.068 & 0.023 & 0.304 & 0.341 & 0.251 & 0.076 & 0.087 & 0.060 & 0.148 & 0.164 & 0.104 & 0.773 & 0.955 & 0.682 \\
-Math & 0.369 & 0.338 & 0.154 & 0.587 & 0.608 & 0.424 & 0.477 & 0.515 & 0.338 & 0.491 & 0.522 & 0.302 & 0.877 & 0.985 & 0.769 \\
-Misc & 0.183 & 0.171 & 0.195 & 0.391 & 0.442 & 0.394 & 0.244 & 0.319 & 0.268 & 0.270 & 0.322 & 0.277 & 0.829 & 0.951 & 0.707 \\
-Numerical_methods & 0.265 & 0.191 & 0.147 & 0.451 & 0.471 & 0.406 & 0.292 & 0.289 & 0.228 & 0.326 & 0.336 & 0.282 & 0.838 & 0.956 & 0.765 \\
-Process_scheduling_algorithms & 0.091 & 0.091 & 0.182 & 0.369 & 0.562 & 0.533 & 0.182 & 0.409 & 0.545 & 0.191 & 0.446 & 0.423 & 0.909 & 1.000 & 1.000 \\
-Searching & 0.371 & 0.371 & 0.229 & 0.573 & 0.645 & 0.481 & 0.414 & 0.557 & 0.305 & 0.463 & 0.567 & 0.351 & 0.971 & 0.971 & 0.771 \\
-Sorting & 0.246 & 0.232 & 0.162 & 0.553 & 0.536 & 0.441 & 0.491 & 0.499 & 0.349 & 0.445 & 0.444 & 0.346 & 0.866 & 0.923 & 0.831 \\
+Audio & 4 & 0.250 & 0.250 & 0.250 & 0.455 & 0.383 & 0.385 & 0.250 & 0.250 & 0.250 & 0.275 & 0.250 & 0.268 & 1.000 & 1.000 & 0.500 \\
+Cipher & 10 & 0.200 & 0.200 & 0.200 & 0.407 & 0.555 & 0.404 & 0.250 & 0.450 & 0.300 & 0.309 & 0.453 & 0.345 & 0.800 & 1.000 & 0.600 \\
+Client_server & 18 & 0.556 & 0.444 & 0.056 & 0.651 & 0.549 & 0.176 & 0.556 & 0.444 & 0.056 & 0.556 & 0.444 & 0.056 & 0.889 & 1.000 & 0.722 \\
+Conversions & 63 & 0.333 & 0.286 & 0.143 & 0.520 & 0.529 & 0.398 & 0.423 & 0.463 & 0.325 & 0.418 & 0.425 & 0.288 & 0.762 & 0.921 & 0.746 \\
+Data_structures & 237 & 0.135 & 0.127 & 0.076 & 0.386 & 0.416 & 0.342 & 0.231 & 0.300 & 0.226 & 0.243 & 0.272 & 0.206 & 0.785 & 0.916 & 0.709 \\
+Developer_tools & 13 & 0.077 & 0.077 & 0.077 & 0.405 & 0.555 & 0.541 & 0.250 & 0.429 & 0.301 & 0.288 & 0.466 & 0.399 & 0.615 & 0.923 & 0.846 \\
+Dynamic_programming & 8 & 0.250 & 0.250 & 0.250 & 0.421 & 0.407 & 0.422 & 0.354 & 0.438 & 0.375 & 0.318 & 0.348 & 0.349 & 0.875 & 1.000 & 0.875 \\
+Games & 26 & 0.077 & 0.038 & 0.000 & 0.370 & 0.394 & 0.270 & 0.176 & 0.183 & 0.087 & 0.208 & 0.209 & 0.083 & 0.731 & 0.962 & 0.808 \\
+Geometry & 16 & 0.250 & 0.250 & 0.250 & 0.514 & 0.578 & 0.464 & 0.364 & 0.479 & 0.312 & 0.414 & 0.492 & 0.395 & 0.938 & 1.000 & 0.688 \\
+Graphics & 3 & 0.333 & 0.333 & 0.333 & 0.467 & 0.497 & 0.597 & 0.333 & 0.333 & 0.333 & 0.357 & 0.357 & 0.477 & 1.000 & 1.000 & 1.000 \\
+Greedy_approach & 5 & 0.200 & 0.200 & 0.000 & 0.448 & 0.392 & 0.182 & 0.400 & 0.400 & 0.200 & 0.356 & 0.312 & 0.128 & 1.000 & 1.000 & 0.600 \\
+Hash & 24 & 0.292 & 0.333 & 0.167 & 0.395 & 0.498 & 0.254 & 0.354 & 0.417 & 0.208 & 0.337 & 0.448 & 0.193 & 0.958 & 1.000 & 0.750 \\
+Leetcode & 4 & 0.250 & 0.250 & 0.250 & 0.438 & 0.573 & 0.497 & 0.250 & 0.583 & 0.500 & 0.292 & 0.497 & 0.385 & 0.750 & 1.000 & 0.750 \\
+Machine_learning & 44 & 0.068 & 0.068 & 0.023 & 0.304 & 0.341 & 0.251 & 0.076 & 0.087 & 0.060 & 0.148 & 0.164 & 0.104 & 0.773 & 0.955 & 0.682 \\
+Math & 65 & 0.369 & 0.338 & 0.154 & 0.587 & 0.608 & 0.424 & 0.477 & 0.515 & 0.338 & 0.491 & 0.522 & 0.302 & 0.877 & 0.985 & 0.769 \\
+Misc & 82 & 0.183 & 0.171 & 0.195 & 0.391 & 0.442 & 0.394 & 0.244 & 0.319 & 0.268 & 0.270 & 0.322 & 0.277 & 0.829 & 0.951 & 0.707 \\
+Numerical_methods & 68 & 0.265 & 0.191 & 0.147 & 0.451 & 0.471 & 0.406 & 0.292 & 0.289 & 0.228 & 0.326 & 0.336 & 0.282 & 0.838 & 0.956 & 0.765 \\
+Process_scheduling_algorithms & 11 & 0.091 & 0.091 & 0.182 & 0.369 & 0.562 & 0.533 & 0.182 & 0.409 & 0.545 & 0.191 & 0.446 & 0.423 & 0.909 & 1.000 & 1.000 \\
+Searching & 35 & 0.371 & 0.371 & 0.229 & 0.573 & 0.645 & 0.481 & 0.414 & 0.557 & 0.305 & 0.463 & 0.567 & 0.351 & 0.971 & 0.971 & 0.771 \\
+Sorting & 142 & 0.246 & 0.232 & 0.162 & 0.553 & 0.536 & 0.441 & 0.491 & 0.499 & 0.349 & 0.445 & 0.444 & 0.346 & 0.866 & 0.923 & 0.831 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -77,14 +58,35 @@ Sorting & 0.246 & 0.232 & 0.162 & 0.553 & 0.536 & 0.441 & 0.491 & 0.499 & 0.349 
 \begin{table}
 \caption{LLM Judge per dimensione (Contesto: Inlined).}
 \label{tab:judge_size_inlined}
-\begin{tabular}{lrrr}
+\begin{tabular}{lrrrr}
 \toprule
-Model & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b \\
-Size_Category &  &  &  \\
+Model & N & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b \\
+Size_Category &  &  &  &  \\
 \midrule
-SMALL & 0.866 & 0.965 & 0.674 \\
-MEDIUM & 0.832 & 0.934 & 0.812 \\
-LARGE & 0.800 & 0.947 & 0.698 \\
+1-10 & 172 & 0.866 & 0.965 & 0.674 \\
+11-50 & 441 & 0.832 & 0.934 & 0.812 \\
+51-100 & 156 & 0.821 & 0.968 & 0.731 \\
+101-200 & 84 & 0.881 & 0.976 & 0.714 \\
+200+ & 25 & 0.400 & 0.720 & 0.440 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% TABELLA 4: IMPATTO INLINING (INLINED)
+% ==========================================
+\begin{table}
+\caption{Impatto Inlining (Contesto: Inlined).}
+\label{tab:judge_inlining_inlined}
+\begin{tabular}{lrrrr}
+\toprule
+Model & N & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b \\
+Inlining_Group &  &  &  &  \\
+\midrule
+0 (Nodi Foglia) & 459 & 0.834 & 0.935 & 0.750 \\
+1-2 Funzioni & 337 & 0.840 & 0.967 & 0.766 \\
+3-5 Funzioni & 63 & 0.844 & 0.922 & 0.710 \\
+>5 Funzioni & 18 & 0.444 & 0.833 & 0.632 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -99,16 +101,16 @@ LARGE & 0.800 & 0.947 & 0.698 \\
 \toprule
 GT_Name & Size_Category & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b \\
 \midrule
-LeftRightRotate & LARGE & 0.0 & 0.0 & 0.0 \\
-checkForCase2 & LARGE & 0.0 & 0.0 & 0.0 \\
-down_heapify & LARGE & 0.0 & 0.0 & 0.0 \\
-heapifyUp & MEDIUM & 0.0 & 0.0 & 0.0 \\
-main & LARGE & 0.0 & 0.0 & 0.0 \\
-main & LARGE & 0.0 & 0.0 & 0.0 \\
-main & LARGE & 0.0 & 0.0 & 0.0 \\
-med3func & MEDIUM & 0.0 & 0.0 & 0.0 \\
-octalToBinary & MEDIUM & 0.0 & 0.0 & 0.0 \\
-pop & LARGE & 0.0 & 0.0 & 0.0 \\
+LeftRightRotate & 51-100 & 0.0 & 0.0 & 0.0 \\
+checkForCase2 & 200+ & 0.0 & 0.0 & 0.0 \\
+down_heapify & 51-100 & 0.0 & 0.0 & 0.0 \\
+heapifyUp & 11-50 & 0.0 & 0.0 & 0.0 \\
+main & 200+ & 0.0 & 0.0 & 0.0 \\
+main & 200+ & 0.0 & 0.0 & 0.0 \\
+main & 200+ & 0.0 & 0.0 & 0.0 \\
+med3func & 11-50 & 0.0 & 0.0 & 0.0 \\
+octalToBinary & 11-50 & 0.0 & 0.0 & 0.0 \\
+pop & 51-100 & 0.0 & 0.0 & 0.0 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -117,16 +119,18 @@ pop & LARGE & 0.0 & 0.0 & 0.0 \\
 % TABELLA 7: EFFICIENZA TEMPORALE (INLINED)
 % ==========================================
 \begin{table}
-\caption{Tempo di esecuzione in secondi (Contesto: Inlined).}
+\caption{Tempi di esecuzione (Contesto: Inlined).}
 \label{tab:execution_time_inlined}
-\begin{tabular}{lrrr}
+\begin{tabular}{lrrrr}
 \toprule
-Model & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b \\
-Size_Category &  &  &  \\
+Model & N & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b \\
+Size_Category &  &  &  &  \\
 \midrule
-SMALL & 3.26 & 8.14 & 5.73 \\
-MEDIUM & 5.37 & 13.28 & 7.73 \\
-LARGE & 18.46 & 24.35 & 13.15 \\
+1-10 & 172 & 3.26 & 8.14 & 5.73 \\
+11-50 & 441 & 5.37 & 13.28 & 7.73 \\
+51-100 & 156 & 10.41 & 18.97 & 10.41 \\
+101-200 & 84 & 17.52 & 27.86 & 17.94 \\
+200+ & 25 & 74.03 & 46.12 & 14.14 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -135,15 +139,15 @@ LARGE & 18.46 & 24.35 & 13.15 \\
 % TABELLA 8: MATRICE DI ACCORDO (INLINED)
 % ==========================================
 \begin{table}
-\caption{Matrice di accordo percentuale tra i modelli (Contesto: Inlined).}
+\caption{Matrice di accordo (Contesto: Inlined).}
 \label{tab:accordo_modelli_inlined}
 \begin{tabular}{lrrr}
 \toprule
  & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b \\
 \midrule
-deepseek-coder-v2_16b & 100.0 & 82.7 & 71.9 \\
-qwen2.5-coder_14b & 82.7 & 100.0 & 73.4 \\
-starcoder2_15b & 71.9 & 73.4 & 100.0 \\
+deepseek-coder-v2_16b & 100.0 & 83.5 & 73.0 \\
+qwen2.5-coder_14b & 83.5 & 100.0 & 74.5 \\
+starcoder2_15b & 73.0 & 74.5 & 100.0 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -152,16 +156,16 @@ starcoder2_15b & 71.9 & 73.4 & 100.0 \\
 % TABELLA 9: WIN RATE CONTROVERSI (INLINED)
 % ==========================================
 \begin{table}
-\caption{Percentuale di successo sui casi controversi (Contesto: Inlined).}
+\caption{Successo su casi controversi (Contesto: Inlined, n=303).}
 \label{tab:winrate_controversi_inlined}
 \begin{tabular}{lr}
 \toprule
  & Win Rate (%) \\
 Model &  \\
 \midrule
-deepseek-coder-v2_16b & 55.3 \\
+deepseek-coder-v2_16b & 55.4 \\
 qwen2.5-coder_14b & 88.8 \\
-starcoder2_15b & 33.8 \\
+starcoder2_15b & 32.7 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -189,34 +193,34 @@ LLM Judge & 0.850 & 0.927 & 0.744 \\
 % TABELLA 2: METRICHE PER DOMINIO (STANDARD)
 % ==========================================
 \begin{table}
-\caption{Metriche di valutazione dettagliate per dominio applicativo (Contesto: Standard).}
+\caption{Metriche per dominio (Contesto: Standard).}
 \label{tab:metriche_dominio_standard}
-\begin{tabular}{lrrrrrrrrrrrrrrr}
+\begin{tabular}{lrrrrrrrrrrrrrrrr}
 \toprule
- & \multicolumn{3}{r}{Exact Match} & \multicolumn{3}{r}{Levenshtein} & \multicolumn{3}{r}{Jaccard} & \multicolumn{3}{r}{Cosine} & \multicolumn{3}{r}{LLM Judge} \\
-Model & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b \\
-Dominio / Categoria &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+ & N & \multicolumn{3}{r}{Exact Match} & \multicolumn{3}{r}{Levenshtein} & \multicolumn{3}{r}{Jaccard} & \multicolumn{3}{r}{Cosine} & \multicolumn{3}{r}{LLM Judge} \\
+Model &  & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b \\
+Dominio / Categoria &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
 \midrule
-Audio & 0.250 & 0.250 & 0.250 & 0.407 & 0.500 & 0.393 & 0.250 & 0.250 & 0.250 & 0.250 & 0.360 & 0.260 & 1.000 & 1.000 & 1.000 \\
-Cipher & 0.200 & 0.200 & 0.300 & 0.419 & 0.444 & 0.584 & 0.250 & 0.350 & 0.500 & 0.315 & 0.368 & 0.445 & 0.900 & 0.900 & 1.000 \\
-Client_server & 0.611 & 0.500 & 0.167 & 0.714 & 0.612 & 0.249 & 0.667 & 0.500 & 0.167 & 0.638 & 0.504 & 0.172 & 0.944 & 1.000 & 0.611 \\
-Conversions & 0.333 & 0.286 & 0.159 & 0.547 & 0.532 & 0.335 & 0.439 & 0.468 & 0.249 & 0.422 & 0.419 & 0.235 & 0.841 & 0.905 & 0.603 \\
-Data_structures & 0.139 & 0.135 & 0.131 & 0.388 & 0.410 & 0.396 & 0.244 & 0.294 & 0.280 & 0.241 & 0.268 & 0.258 & 0.793 & 0.907 & 0.768 \\
-Developer_tools & 0.077 & 0.077 & 0.000 & 0.427 & 0.564 & 0.422 & 0.250 & 0.378 & 0.243 & 0.267 & 0.456 & 0.268 & 0.769 & 0.846 & 0.769 \\
-Dynamic_programming & 0.250 & 0.250 & 0.250 & 0.380 & 0.448 & 0.383 & 0.354 & 0.562 & 0.250 & 0.321 & 0.390 & 0.290 & 0.875 & 1.000 & 0.625 \\
-Games & 0.115 & 0.077 & 0.038 & 0.419 & 0.425 & 0.317 & 0.195 & 0.154 & 0.176 & 0.226 & 0.245 & 0.167 & 0.923 & 1.000 & 0.769 \\
-Geometry & 0.250 & 0.250 & 0.250 & 0.517 & 0.556 & 0.515 & 0.364 & 0.427 & 0.396 & 0.412 & 0.471 & 0.403 & 0.938 & 1.000 & 0.688 \\
-Graphics & 0.333 & 0.333 & 0.333 & 0.453 & 0.537 & 0.500 & 0.333 & 0.333 & 0.333 & 0.357 & 0.367 & 0.347 & 1.000 & 1.000 & 1.000 \\
-Greedy_approach & 0.200 & 0.200 & 0.600 & 0.488 & 0.474 & 0.754 & 0.400 & 0.400 & 0.800 & 0.384 & 0.340 & 0.726 & 0.800 & 0.800 & 1.000 \\
-Hash & 0.292 & 0.333 & 0.375 & 0.385 & 0.487 & 0.406 & 0.312 & 0.438 & 0.417 & 0.333 & 0.432 & 0.391 & 0.917 & 1.000 & 0.542 \\
-Leetcode & 0.250 & 0.250 & 0.000 & 0.453 & 0.518 & 0.372 & 0.250 & 0.500 & 0.083 & 0.290 & 0.380 & 0.195 & 0.750 & 1.000 & 0.250 \\
-Machine_learning & 0.091 & 0.091 & 0.068 & 0.337 & 0.388 & 0.304 & 0.091 & 0.110 & 0.083 & 0.172 & 0.199 & 0.128 & 0.841 & 1.000 & 0.773 \\
-Math & 0.385 & 0.338 & 0.231 & 0.608 & 0.600 & 0.495 & 0.520 & 0.510 & 0.400 & 0.526 & 0.515 & 0.401 & 0.846 & 0.923 & 0.738 \\
-Misc & 0.207 & 0.183 & 0.122 & 0.456 & 0.449 & 0.373 & 0.299 & 0.309 & 0.266 & 0.326 & 0.330 & 0.265 & 0.805 & 0.927 & 0.732 \\
-Numerical_methods & 0.279 & 0.191 & 0.118 & 0.499 & 0.467 & 0.354 & 0.331 & 0.257 & 0.169 & 0.376 & 0.323 & 0.205 & 0.868 & 0.971 & 0.721 \\
-Process_scheduling_algorithms & 0.091 & 0.091 & 0.091 & 0.520 & 0.555 & 0.340 & 0.318 & 0.409 & 0.227 & 0.383 & 0.452 & 0.221 & 0.818 & 1.000 & 0.909 \\
-Searching & 0.400 & 0.371 & 0.171 & 0.637 & 0.667 & 0.475 & 0.486 & 0.514 & 0.300 & 0.527 & 0.578 & 0.376 & 1.000 & 0.971 & 0.800 \\
-Sorting & 0.246 & 0.232 & 0.204 & 0.529 & 0.520 & 0.490 & 0.494 & 0.464 & 0.378 & 0.423 & 0.413 & 0.368 & 0.887 & 0.873 & 0.782 \\
+Audio & 4 & 0.250 & 0.250 & 0.250 & 0.407 & 0.500 & 0.393 & 0.250 & 0.250 & 0.250 & 0.250 & 0.360 & 0.260 & 1.000 & 1.000 & 1.000 \\
+Cipher & 10 & 0.200 & 0.200 & 0.300 & 0.419 & 0.444 & 0.584 & 0.250 & 0.350 & 0.500 & 0.315 & 0.368 & 0.445 & 0.900 & 0.900 & 1.000 \\
+Client_server & 18 & 0.611 & 0.500 & 0.167 & 0.714 & 0.612 & 0.249 & 0.667 & 0.500 & 0.167 & 0.638 & 0.504 & 0.172 & 0.944 & 1.000 & 0.611 \\
+Conversions & 63 & 0.333 & 0.286 & 0.159 & 0.547 & 0.532 & 0.335 & 0.439 & 0.468 & 0.249 & 0.422 & 0.419 & 0.235 & 0.841 & 0.905 & 0.603 \\
+Data_structures & 237 & 0.139 & 0.135 & 0.131 & 0.388 & 0.410 & 0.396 & 0.244 & 0.294 & 0.280 & 0.241 & 0.268 & 0.258 & 0.793 & 0.907 & 0.768 \\
+Developer_tools & 13 & 0.077 & 0.077 & 0.000 & 0.427 & 0.564 & 0.422 & 0.250 & 0.378 & 0.243 & 0.267 & 0.456 & 0.268 & 0.769 & 0.846 & 0.769 \\
+Dynamic_programming & 8 & 0.250 & 0.250 & 0.250 & 0.380 & 0.448 & 0.383 & 0.354 & 0.562 & 0.250 & 0.321 & 0.390 & 0.290 & 0.875 & 1.000 & 0.625 \\
+Games & 26 & 0.115 & 0.077 & 0.038 & 0.419 & 0.425 & 0.317 & 0.195 & 0.154 & 0.176 & 0.226 & 0.245 & 0.167 & 0.923 & 1.000 & 0.769 \\
+Geometry & 16 & 0.250 & 0.250 & 0.250 & 0.517 & 0.556 & 0.515 & 0.364 & 0.427 & 0.396 & 0.412 & 0.471 & 0.403 & 0.938 & 1.000 & 0.688 \\
+Graphics & 3 & 0.333 & 0.333 & 0.333 & 0.453 & 0.537 & 0.500 & 0.333 & 0.333 & 0.333 & 0.357 & 0.367 & 0.347 & 1.000 & 1.000 & 1.000 \\
+Greedy_approach & 5 & 0.200 & 0.200 & 0.600 & 0.488 & 0.474 & 0.754 & 0.400 & 0.400 & 0.800 & 0.384 & 0.340 & 0.726 & 0.800 & 0.800 & 1.000 \\
+Hash & 24 & 0.292 & 0.333 & 0.375 & 0.385 & 0.487 & 0.406 & 0.312 & 0.438 & 0.417 & 0.333 & 0.432 & 0.391 & 0.917 & 1.000 & 0.542 \\
+Leetcode & 4 & 0.250 & 0.250 & 0.000 & 0.453 & 0.518 & 0.372 & 0.250 & 0.500 & 0.083 & 0.290 & 0.380 & 0.195 & 0.750 & 1.000 & 0.250 \\
+Machine_learning & 44 & 0.091 & 0.091 & 0.068 & 0.337 & 0.388 & 0.304 & 0.091 & 0.110 & 0.083 & 0.172 & 0.199 & 0.128 & 0.841 & 1.000 & 0.773 \\
+Math & 65 & 0.385 & 0.338 & 0.231 & 0.608 & 0.600 & 0.495 & 0.520 & 0.510 & 0.400 & 0.526 & 0.515 & 0.401 & 0.846 & 0.923 & 0.738 \\
+Misc & 82 & 0.207 & 0.183 & 0.122 & 0.456 & 0.449 & 0.373 & 0.299 & 0.309 & 0.266 & 0.326 & 0.330 & 0.265 & 0.805 & 0.927 & 0.732 \\
+Numerical_methods & 68 & 0.279 & 0.191 & 0.118 & 0.499 & 0.467 & 0.354 & 0.331 & 0.257 & 0.169 & 0.376 & 0.323 & 0.205 & 0.868 & 0.971 & 0.721 \\
+Process_scheduling_algorithms & 11 & 0.091 & 0.091 & 0.091 & 0.520 & 0.555 & 0.340 & 0.318 & 0.409 & 0.227 & 0.383 & 0.452 & 0.221 & 0.818 & 1.000 & 0.909 \\
+Searching & 35 & 0.400 & 0.371 & 0.171 & 0.637 & 0.667 & 0.475 & 0.486 & 0.514 & 0.300 & 0.527 & 0.578 & 0.376 & 1.000 & 0.971 & 0.800 \\
+Sorting & 142 & 0.246 & 0.232 & 0.204 & 0.529 & 0.520 & 0.490 & 0.494 & 0.464 & 0.378 & 0.423 & 0.413 & 0.368 & 0.887 & 0.873 & 0.782 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -227,14 +231,32 @@ Sorting & 0.246 & 0.232 & 0.204 & 0.529 & 0.520 & 0.490 & 0.494 & 0.464 & 0.378 
 \begin{table}
 \caption{LLM Judge per dimensione (Contesto: Standard).}
 \label{tab:judge_size_standard}
-\begin{tabular}{lrrr}
+\begin{tabular}{lrrrr}
 \toprule
-Model & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b \\
-Size_Category &  &  &  \\
+Model & N & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b \\
+Size_Category &  &  &  &  \\
 \midrule
-SMALL & 0.876 & 0.956 & 0.684 \\
-MEDIUM & 0.866 & 0.911 & 0.777 \\
-LARGE & 0.681 & 0.945 & 0.714 \\
+1-10 & 250 & 0.876 & 0.956 & 0.684 \\
+11-50 & 537 & 0.866 & 0.911 & 0.777 \\
+51-100 & 77 & 0.714 & 0.935 & 0.727 \\
+101-200 & 12 & 0.500 & 1.000 & 0.667 \\
+200+ & 2 & 0.500 & 1.000 & 0.500 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% TABELLA 4: IMPATTO INLINING (STANDARD)
+% ==========================================
+\begin{table}
+\caption{Impatto Inlining (Contesto: Standard).}
+\label{tab:judge_inlining_standard}
+\begin{tabular}{lrrrr}
+\toprule
+Model & N & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b \\
+Inlining_Group &  &  &  &  \\
+\midrule
+0 (Nodi Foglia) & 878 & 0.850 & 0.927 & 0.744 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -249,16 +271,16 @@ LARGE & 0.681 & 0.945 & 0.714 \\
 \toprule
 GT_Name & Size_Category & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b \\
 \midrule
-addEdge & MEDIUM & 0.0 & 0.0 & 0.0 \\
-build_maxheap & SMALL & 0.0 & 0.0 & 0.0 \\
-delete & LARGE & 0.0 & 0.0 & 0.0 \\
-down_heapify & LARGE & 0.0 & 0.0 & 0.0 \\
-find & SMALL & 0.0 & 0.0 & 0.0 \\
-findIndex & MEDIUM & 0.0 & 0.0 & 0.0 \\
-height & MEDIUM & 0.0 & 0.0 & 0.0 \\
-lcm & SMALL & 0.0 & 0.0 & 0.0 \\
-longestSub & LARGE & 0.0 & 0.0 & 0.0 \\
-lu_decomposition & MEDIUM & 0.0 & 0.0 & 0.0 \\
+addEdge & 11-50 & 0.0 & 0.0 & 0.0 \\
+build_maxheap & 1-10 & 0.0 & 0.0 & 0.0 \\
+delete & 51-100 & 0.0 & 0.0 & 0.0 \\
+down_heapify & 51-100 & 0.0 & 0.0 & 0.0 \\
+find & 1-10 & 0.0 & 0.0 & 0.0 \\
+findIndex & 11-50 & 0.0 & 0.0 & 0.0 \\
+height & 11-50 & 0.0 & 0.0 & 0.0 \\
+lcm & 1-10 & 0.0 & 0.0 & 0.0 \\
+longestSub & 51-100 & 0.0 & 0.0 & 0.0 \\
+lu_decomposition & 11-50 & 0.0 & 0.0 & 0.0 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -267,16 +289,18 @@ lu_decomposition & MEDIUM & 0.0 & 0.0 & 0.0 \\
 % TABELLA 7: EFFICIENZA TEMPORALE (STANDARD)
 % ==========================================
 \begin{table}
-\caption{Tempo di esecuzione in secondi (Contesto: Standard).}
+\caption{Tempi di esecuzione (Contesto: Standard).}
 \label{tab:execution_time_standard}
-\begin{tabular}{lrrr}
+\begin{tabular}{lrrrr}
 \toprule
-Model & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b \\
-Size_Category &  &  &  \\
+Model & N & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b \\
+Size_Category &  &  &  &  \\
 \midrule
-SMALL & 4.73 & 7.95 & 6.19 \\
-MEDIUM & 8.94 & 13.78 & 8.43 \\
-LARGE & 21.58 & 31.33 & 14.60 \\
+1-10 & 250 & 4.73 & 7.95 & 6.19 \\
+11-50 & 537 & 8.94 & 13.78 & 8.43 \\
+51-100 & 77 & 18.87 & 28.60 & 13.05 \\
+101-200 & 12 & 29.19 & 39.21 & 16.79 \\
+200+ & 2 & 80.34 & 89.18 & 60.99 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -285,15 +309,15 @@ LARGE & 21.58 & 31.33 & 14.60 \\
 % TABELLA 8: MATRICE DI ACCORDO (STANDARD)
 % ==========================================
 \begin{table}
-\caption{Matrice di accordo percentuale tra i modelli (Contesto: Standard).}
+\caption{Matrice di accordo (Contesto: Standard).}
 \label{tab:accordo_modelli_standard}
 \begin{tabular}{lrrr}
 \toprule
  & deepseek-coder-v2_16b & qwen2.5-coder_14b & starcoder2_15b \\
 \midrule
-deepseek-coder-v2_16b & 100.0 & 85.6 & 70.4 \\
-qwen2.5-coder_14b & 85.6 & 100.0 & 72.6 \\
-starcoder2_15b & 70.4 & 72.6 & 100.0 \\
+deepseek-coder-v2_16b & 100.0 & 86.3 & 71.6 \\
+qwen2.5-coder_14b & 86.3 & 100.0 & 73.7 \\
+starcoder2_15b & 71.6 & 73.7 & 100.0 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -302,16 +326,16 @@ starcoder2_15b & 70.4 & 72.6 & 100.0 \\
 % TABELLA 9: WIN RATE CONTROVERSI (STANDARD)
 % ==========================================
 \begin{table}
-\caption{Percentuale di successo sui casi controversi (Contesto: Standard).}
+\caption{Successo su casi controversi (Contesto: Standard, n=300).}
 \label{tab:winrate_controversi_standard}
 \begin{tabular}{lr}
 \toprule
  & Win Rate (%) \\
 Model &  \\
 \midrule
-deepseek-coder-v2_16b & 62.1 \\
-qwen2.5-coder_14b & 85.3 \\
-starcoder2_15b & 34.3 \\
+deepseek-coder-v2_16b & 62.3 \\
+qwen2.5-coder_14b & 85.0 \\
+starcoder2_15b & 31.3 \\
 \bottomrule
 \end{tabular}
 \end{table}

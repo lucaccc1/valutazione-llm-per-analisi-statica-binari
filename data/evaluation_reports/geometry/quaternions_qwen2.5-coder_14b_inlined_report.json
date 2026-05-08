@@ -5,7 +5,7 @@
         "ground_truth_name": "quat_from_euler",
         "ai_predicted_name": "quat_from_euler",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 65,
             "execution_time": 63.24
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "euler_from_quat",
         "ai_predicted_name": "euler_from_quaternion",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 42,
             "execution_time": 26.56
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "quaternion_multiply",
         "ai_predicted_name": "quaternion_multiply",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 12.11
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "test_quaternion_conversion",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 150,
             "execution_time": 37.64
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 45,
             "execution_time": 15.8
         },

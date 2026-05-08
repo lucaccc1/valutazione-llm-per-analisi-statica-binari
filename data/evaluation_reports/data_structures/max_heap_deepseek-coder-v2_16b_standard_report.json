@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 37,
             "execution_time": 5.6
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "create_heap",
         "ai_predicted_name": "allocate_memory",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 3.38
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "down_heapify",
         "ai_predicted_name": "process_data",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 51,
             "execution_time": 11.11
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "up_heapify",
         "ai_predicted_name": "find_max_in_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 5.63
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "append_to_dynamic_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 17,
             "execution_time": 5.79
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "pop",
         "ai_predicted_name": "process_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 4.68
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "top",
         "ai_predicted_name": "sub_400A98",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 2.48
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "empty",
         "ai_predicted_name": "check_validity",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 2.55
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "size",
         "ai_predicted_name": "read_value",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 2.43
         },

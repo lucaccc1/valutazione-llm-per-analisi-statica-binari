@@ -5,7 +5,7 @@
         "ground_truth_name": "createGraph",
         "ai_predicted_name": "initialize_data_structure",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 14.48
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "addEdge",
         "ai_predicted_name": "set_value_at_index",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 11.11
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "print",
         "ai_predicted_name": "print_distance_matrix",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 11.77
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "FloydWarshall",
         "ai_predicted_name": "floyd_warshall_shortest_path",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 61,
             "execution_time": 40.3
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 28,
             "execution_time": 18.29
         },

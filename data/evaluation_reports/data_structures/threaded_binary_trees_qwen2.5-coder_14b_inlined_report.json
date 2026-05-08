@@ -5,7 +5,7 @@
         "ground_truth_name": "create_node",
         "ai_predicted_name": "allocate_and_initialize_structure",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 7.95
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "insert_bt",
         "ai_predicted_name": "insert_node",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 56,
             "execution_time": 14.36
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "search",
         "ai_predicted_name": "search_element",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 9.41
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "inorder_display",
         "ai_predicted_name": "process_arguments",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 7.31
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "postorder_display",
         "ai_predicted_name": "print_tree_structure",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 7.71
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "preorder_display",
         "ai_predicted_name": "process_tree",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 7.62
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "delete_bt",
         "ai_predicted_name": "remove_element_from_list",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 79,
             "execution_time": 18.05
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "binary_threaded_tree_operations",
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 246,
             "execution_time": 19.9
         },

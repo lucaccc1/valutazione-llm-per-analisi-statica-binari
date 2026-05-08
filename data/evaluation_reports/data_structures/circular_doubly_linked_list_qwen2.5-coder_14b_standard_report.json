@@ -5,7 +5,7 @@
         "ground_truth_name": "create_node",
         "ai_predicted_name": "allocate_structure",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 7.24
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "insert_at_head",
         "ai_predicted_name": "update_data_structure",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 10.59
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "insert_at_tail",
         "ai_predicted_name": "initialize_structure",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 17,
             "execution_time": 10.34
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "delete_from_head",
         "ai_predicted_name": "free_node",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 28,
             "execution_time": 8.99
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "delete_from_tail",
         "ai_predicted_name": "remove_element_from_list",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 26,
             "execution_time": 9.26
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "getsize",
         "ai_predicted_name": "count_elements",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 8.8
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "display_list",
         "ai_predicted_name": "print_linked_list_contents",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 8.17
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "get",
         "ai_predicted_name": "deref_chain",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 11.13
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "circular_doubly_linked_list_tests",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 115,
             "execution_time": 36.28
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 7.85
         },

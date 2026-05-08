@@ -5,7 +5,7 @@
         "ground_truth_name": "show_data",
         "ai_predicted_name": "print_array",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 8.6
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "shell_sort",
         "ai_predicted_name": "sort_integers",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 36,
             "execution_time": 20.56
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 16.97
         },

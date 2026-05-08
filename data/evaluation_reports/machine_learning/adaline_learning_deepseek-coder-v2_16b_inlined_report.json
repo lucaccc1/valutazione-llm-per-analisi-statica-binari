@@ -5,7 +5,7 @@
         "ground_truth_name": "new_adaline",
         "ai_predicted_name": "initialize_weights",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 30,
             "execution_time": 4.55
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "delete_adaline",
         "ai_predicted_name": "free_memory",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 2.14
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "adaline_activation",
         "ai_predicted_name": "is_positive",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 2.92
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "adaline_get_weights_str",
         "ai_predicted_name": "format_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 3.9
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "adaline_predict",
         "ai_predicted_name": "compute_weighted_sum",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 24,
             "execution_time": 5.73
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "adaline_fit_sample",
         "ai_predicted_name": "calculate_and_distribute",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 32,
             "execution_time": 4.8
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "adaline_fit",
         "ai_predicted_name": "train_model",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 60,
             "execution_time": 8.92
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "test1",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 173,
             "execution_time": 15.5
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "test2",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 178,
             "execution_time": 16.31
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "test3",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 190,
             "execution_time": 53.12
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 268,
             "execution_time": null
         },

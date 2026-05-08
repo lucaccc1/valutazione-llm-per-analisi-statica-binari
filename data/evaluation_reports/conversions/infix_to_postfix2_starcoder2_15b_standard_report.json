@@ -5,7 +5,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "add_to_stack",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 5.14
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "pop",
         "ai_predicted_name": "pop",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 3.15
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "isEmpty",
         "ai_predicted_name": "is_negative",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 4.75
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "Top",
         "ai_predicted_name": "get_current_cell",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 5.78
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "priority",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 4.98
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "convert",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 40,
             "execution_time": 8.6
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 4.85
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "infix_to_postfix",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 7.18
         },

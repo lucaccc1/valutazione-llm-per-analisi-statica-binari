@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 107,
             "execution_time": 26.56
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "create_heap",
         "ai_predicted_name": "initialize_data_structure",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 6.91
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "down_heapify",
         "ai_predicted_name": "recursive_sort",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 51,
             "execution_time": 20.53
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "up_heapify",
         "ai_predicted_name": "find_max_value",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 12.23
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "insert_element_sorted",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 43,
             "execution_time": 10.06
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "pop",
         "ai_predicted_name": "update_array",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 78,
             "execution_time": 9.78
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "top",
         "ai_predicted_name": "get_option_value",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 6.49
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "empty",
         "ai_predicted_name": "check_status",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 6.17
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "size",
         "ai_predicted_name": "get_value_at_offset",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 6.25
         },

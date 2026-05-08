@@ -5,7 +5,7 @@
         "ground_truth_name": "duplicateNumber",
         "ai_predicted_name": "find_fixed_point",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 24,
             "execution_time": 12.79
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "test_floyd_cycle_detection",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 57,
             "execution_time": 11.46
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 38,
             "execution_time": 8.84
         },

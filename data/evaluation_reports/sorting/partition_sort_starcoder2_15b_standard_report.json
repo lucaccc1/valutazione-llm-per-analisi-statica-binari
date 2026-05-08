@@ -5,7 +5,7 @@
         "ground_truth_name": "swap",
         "ai_predicted_name": "swap",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 5.55
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "partition",
         "ai_predicted_name": "partition",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 9.84
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "partitionSort",
         "ai_predicted_name": "sub_400582",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 5.46
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "printArray",
         "ai_predicted_name": "print_integers",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 6.97
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "sort_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 18,
             "execution_time": 6.67
         },

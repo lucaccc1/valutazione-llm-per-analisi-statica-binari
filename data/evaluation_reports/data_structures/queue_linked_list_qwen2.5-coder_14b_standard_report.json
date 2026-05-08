@@ -5,7 +5,7 @@
         "ground_truth_name": "createqueue",
         "ai_predicted_name": "reset_globals",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 5.17
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "empty",
         "ai_predicted_name": "is_flag_unset",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 6.69
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "insert",
         "ai_predicted_name": "insert_element",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 27,
             "execution_time": 8.26
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "removes",
         "ai_predicted_name": "dequeue_element",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 18,
             "execution_time": 7.07
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "show",
         "ai_predicted_name": "display_queue",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 5.47
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "destroyqueue",
         "ai_predicted_name": "initialize_globals",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 5.31
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 35,
             "execution_time": 11.13
         },

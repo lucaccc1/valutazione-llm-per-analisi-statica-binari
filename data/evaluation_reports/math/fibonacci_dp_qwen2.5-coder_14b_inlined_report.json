@@ -5,7 +5,7 @@
         "ground_truth_name": "fib",
         "ai_predicted_name": "calculate_fibonacci",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 20,
             "execution_time": 10.45
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 43,
             "execution_time": 11.58
         },

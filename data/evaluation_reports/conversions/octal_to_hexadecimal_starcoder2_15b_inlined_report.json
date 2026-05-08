@@ -5,7 +5,7 @@
         "ground_truth_name": "octalToDecimal",
         "ai_predicted_name": "convert_octal_to_decimal",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 7.26
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "octalToHexadecimal",
         "ai_predicted_name": "int_to_hex_str",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 7.15
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "test_octal_to_hex",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 38,
             "execution_time": 6.32
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 54,
             "execution_time": 10.19
         },

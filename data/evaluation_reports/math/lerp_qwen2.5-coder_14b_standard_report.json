@@ -5,7 +5,7 @@
         "ground_truth_name": "lerp",
         "ai_predicted_name": "scale_and_offset",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 9.13
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "lerp_precise",
         "ai_predicted_name": "calculate_weighted_average",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 8.28
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 16.82
         },

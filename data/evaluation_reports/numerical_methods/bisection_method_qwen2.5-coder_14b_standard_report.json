@@ -5,7 +5,7 @@
         "ground_truth_name": "sign",
         "ai_predicted_name": "compare_signs",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 17,
             "execution_time": 20.33
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "func",
         "ai_predicted_name": "calculate_expression",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 5.45
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "bisection",
         "ai_predicted_name": "binary_search_root",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 15.46
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "run_tests",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 56.49
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 8.79
         },

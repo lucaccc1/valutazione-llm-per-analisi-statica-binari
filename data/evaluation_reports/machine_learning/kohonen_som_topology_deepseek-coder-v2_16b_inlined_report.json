@@ -5,7 +5,7 @@
         "ground_truth_name": "kohonen_data_3d",
         "ai_predicted_name": "calculate_value",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 6.24
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "save_2d_data",
         "ai_predicted_name": "write_double_matrix",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 4.6
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "save_u_matrix",
         "ai_predicted_name": "write_matrix",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 91,
             "execution_time": 34.58
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "get_min_2d",
         "ai_predicted_name": "find_minimum_in_matrix",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 24,
             "execution_time": 5.88
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "kohonen_update_weights",
         "ai_predicted_name": "calculate_matrix",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 105,
             "execution_time": 10.06
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "kohonen_som",
         "ai_predicted_name": "train_model",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 110,
             "execution_time": 15.44
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "test_2d_classes",
         "ai_predicted_name": "generate_modified_randoms",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 46,
             "execution_time": 20.26
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "test1",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 272,
             "execution_time": 89.13
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "test_3d_classes1",
         "ai_predicted_name": "process_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 50,
             "execution_time": 18.05
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "test2",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 276,
             "execution_time": 128.28
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "test_3d_classes2",
         "ai_predicted_name": "process_data",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 66,
             "execution_time": 31.34
         },
@@ -225,7 +225,7 @@
         "ground_truth_name": "test3",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 292,
             "execution_time": 46.9
         },
@@ -245,7 +245,7 @@
         "ground_truth_name": "get_clock_diff",
         "ai_predicted_name": "calculate_time_difference",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 3.26
         },
@@ -265,7 +265,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 223,
             "execution_time": 41.72
         },

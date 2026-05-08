@@ -5,7 +5,7 @@
         "ground_truth_name": "newNode",
         "ai_predicted_name": "allocate_structure",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 11.05
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "isLeaf",
         "ai_predicted_name": "check_conditions",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 5.68
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "leftRotate",
         "ai_predicted_name": "update_node_links",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 10.17
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "rightRotate",
         "ai_predicted_name": "update_linked_list",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 9.71
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "checkNode",
         "ai_predicted_name": "update_node_structure",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 137,
             "execution_time": 17.19
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "insertNode",
         "ai_predicted_name": "update_list_node",
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 208,
             "execution_time": 17.27
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "checkForCase2",
         "ai_predicted_name": "update_node_status",
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 225,
             "execution_time": 57.56
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "deleteNode",
         "ai_predicted_name": "remove_node_from_tree",
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 259,
             "execution_time": 21.15
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "printInorder",
         "ai_predicted_name": "process_struct",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 7.98
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "checkBlack",
         "ai_predicted_name": "process_nodes",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 9.35
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "binary_tree_manager",
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 224,
             "execution_time": 18.52
         },

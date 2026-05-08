@@ -5,7 +5,7 @@
         "ground_truth_name": "merge",
         "ai_predicted_name": "swap_nodes",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 27,
             "execution_time": 11.47
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "printlist",
         "ai_predicted_name": "print_number_sequence",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 8.24
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 44,
             "execution_time": 26.44
         },

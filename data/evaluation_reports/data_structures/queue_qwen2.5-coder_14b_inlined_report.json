@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 41,
             "execution_time": 8.72
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "create",
         "ai_predicted_name": "reset_counters",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 11.36
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "enque",
         "ai_predicted_name": "allocate_and_link_node",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 9.69
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "deque",
         "ai_predicted_name": "dequeue_element",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 17,
             "execution_time": 10.14
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "size",
         "ai_predicted_name": "get_constant_value",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 7.7
         },

@@ -5,7 +5,7 @@
         "ground_truth_name": "swap",
         "ai_predicted_name": "swap_integers",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 11.3
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "partition",
         "ai_predicted_name": "merge_sort",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 14.09
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "partitionSort",
         "ai_predicted_name": "recursive_search",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 12.22
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "printArray",
         "ai_predicted_name": "print_array",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 8.89
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 18,
             "execution_time": 15.23
         },

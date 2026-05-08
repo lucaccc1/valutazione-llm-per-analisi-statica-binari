@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 157,
             "execution_time": 15.47
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "singlemode",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 168,
             "execution_time": 12.09
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "doublemode",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 173,
             "execution_time": 34.41
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "check_placex",
         "ai_predicted_name": "read_numbered_input",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 20,
             "execution_time": 4.32
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "placex",
         "ai_predicted_name": "validate_move",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 48,
             "execution_time": 8.17
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "place",
         "ai_predicted_name": "generate_computer_position",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 4.69
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "placey",
         "ai_predicted_name": "allocate_memory",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 74,
             "execution_time": 7.54
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "checkwin",
         "ai_predicted_name": "sub_400BAB",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 60,
             "execution_time": 29.19
         },

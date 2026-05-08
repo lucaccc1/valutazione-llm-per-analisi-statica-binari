@@ -5,7 +5,7 @@
         "ground_truth_name": "xor8",
         "ai_predicted_name": "calculate_checksum",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 8.18
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "test_xor8",
         "ai_predicted_name": "run_tests",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 13.88
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 8.01
         },

@@ -5,7 +5,7 @@
         "ground_truth_name": "swap",
         "ai_predicted_name": "swap",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 7.27
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "part",
         "ai_predicted_name": "partition",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 35,
             "execution_time": 8.44
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "rselect",
         "ai_predicted_name": "chosen_name",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 45,
             "execution_time": 8.94
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "find_nth_element",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 45,
             "execution_time": 11.98
         },

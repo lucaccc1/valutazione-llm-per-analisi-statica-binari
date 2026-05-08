@@ -5,7 +5,7 @@
         "ground_truth_name": "func",
         "ai_predicted_name": "subtract_floats",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 25,
             "execution_time": 6.76
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "d_func",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 6.77
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 209,
             "execution_time": 13.24
         },

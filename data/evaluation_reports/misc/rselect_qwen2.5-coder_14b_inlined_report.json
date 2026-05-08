@@ -5,7 +5,7 @@
         "ground_truth_name": "swap",
         "ai_predicted_name": "swap_values",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 11.53
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "part",
         "ai_predicted_name": "sort_and_adjust_indices",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 35,
             "execution_time": 17.66
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "rselect",
         "ai_predicted_name": "binary_search_with_random_pivot",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 45,
             "execution_time": 18.34
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "search_sorted_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 45,
             "execution_time": 19.39
         },

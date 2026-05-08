@@ -5,7 +5,7 @@
         "ground_truth_name": "display",
         "ai_predicted_name": "print_array_elements",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 9.53
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "bead_sort",
         "ai_predicted_name": "process_data_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 48,
             "execution_time": 30.13
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 84,
             "execution_time": 14.6
         },

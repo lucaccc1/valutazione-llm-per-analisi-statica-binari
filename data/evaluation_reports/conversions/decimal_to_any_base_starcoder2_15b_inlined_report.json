@@ -5,7 +5,7 @@
         "ground_truth_name": "isbad_alphabet",
         "ai_predicted_name": "contains_duplicates",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 15,
             "execution_time": 7.56
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "converted_len",
         "ai_predicted_name": "fibonacci",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 8.45
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "convertion",
         "ai_predicted_name": "convert_to_base",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 8.59
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "decimal_to_anybase",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 58,
             "execution_time": 9.55
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "sub_4006AA",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 85,
             "execution_time": 6.49
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "test_decimal_to_any",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 75,
             "execution_time": 6.84
         },

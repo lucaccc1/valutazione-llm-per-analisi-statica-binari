@@ -5,7 +5,7 @@
         "ground_truth_name": "createqueue",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 7.17
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "empty",
         "ai_predicted_name": "is_zero",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 4.99
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "insert",
         "ai_predicted_name": "insert_new_node",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 36,
             "execution_time": 7.61
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "removes",
         "ai_predicted_name": "remove_node",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 27,
             "execution_time": 7.7
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "show",
         "ai_predicted_name": "print_queue",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 20,
             "execution_time": 4.85
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "destroyqueue",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 3.76
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "queue",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 126,
             "execution_time": 11.03
         },

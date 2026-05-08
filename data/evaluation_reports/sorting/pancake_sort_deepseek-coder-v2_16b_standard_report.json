@@ -5,7 +5,7 @@
         "ground_truth_name": "flip",
         "ai_predicted_name": "swap_array_elements",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 17,
             "execution_time": 5.34
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "findMax",
         "ai_predicted_name": "find_max_index",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 7.13
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "pancakeSort",
         "ai_predicted_name": "calculate_result",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 9.32
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "display",
         "ai_predicted_name": "print_integers",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 6.4
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 5.87
         },

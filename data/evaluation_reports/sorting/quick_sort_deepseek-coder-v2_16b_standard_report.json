@@ -5,7 +5,7 @@
         "ground_truth_name": "display",
         "ai_predicted_name": "print_array",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 6.41
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "swap",
         "ai_predicted_name": "swap_integers",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 9.53
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "partition",
         "ai_predicted_name": "sort_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 10.11
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "quickSort",
         "ai_predicted_name": "recursive_comparison",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 7.86
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 7.78
         },

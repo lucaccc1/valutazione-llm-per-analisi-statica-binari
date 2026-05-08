@@ -5,7 +5,7 @@
         "ground_truth_name": "newNode",
         "ai_predicted_name": "allocate_and_initialize",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 4.35
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "insert",
         "ai_predicted_name": "process_data",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 18,
             "execution_time": 3.64
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "getMax",
         "ai_predicted_name": "recursive_dereference",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 2.61
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "delete",
         "ai_predicted_name": "process_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 47,
             "execution_time": 5.43
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "find",
         "ai_predicted_name": "sub_recursive",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 3.38
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "height",
         "ai_predicted_name": "recursive_comparison",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 4.96
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "purge",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 2.57
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "inOrder",
         "ai_predicted_name": "process_data",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 4.01
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 65,
             "execution_time": 5.15
         },

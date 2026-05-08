@@ -5,7 +5,7 @@
         "ground_truth_name": "validEntryLineColumn",
         "ai_predicted_name": "is_valid_index",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 5.71
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "validatePosition",
         "ai_predicted_name": "check_ship",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 8.81
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "canShoot",
         "ai_predicted_name": "is_valid_cell",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 7.93
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "positionBoat",
         "ai_predicted_name": "place_ship",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 158,
             "execution_time": 15.47
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "printMessage",
         "ai_predicted_name": "print_message",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 4.41
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "printMessageScore",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 6.7
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "printTable",
         "ai_predicted_name": "get_char",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 41,
             "execution_time": 6.57
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "printsTray",
         "ai_predicted_name": "display_board",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 86,
             "execution_time": 5.31
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "shoot",
         "ai_predicted_name": "change_value",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 33,
             "execution_time": 8.04
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "calculateScore",
         "ai_predicted_name": "update_grid",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 141,
             "execution_time": 10.7
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "printPositioning",
         "ai_predicted_name": "print_player_place_boats",
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 239,
             "execution_time": 14.64
         },
@@ -225,7 +225,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 748,
             "execution_time": 8.79
         },

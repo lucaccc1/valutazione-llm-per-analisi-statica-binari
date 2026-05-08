@@ -5,7 +5,7 @@
         "ground_truth_name": "three_digits",
         "ai_predicted_name": "reverse",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 7.8
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "convert_from_decimal_to_octal",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 38,
             "execution_time": 15.17
         },

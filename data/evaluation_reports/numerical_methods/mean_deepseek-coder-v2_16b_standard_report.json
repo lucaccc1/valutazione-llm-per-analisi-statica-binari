@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "generate_and_calculate_random_numbers",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 33,
             "execution_time": 13.53
         },

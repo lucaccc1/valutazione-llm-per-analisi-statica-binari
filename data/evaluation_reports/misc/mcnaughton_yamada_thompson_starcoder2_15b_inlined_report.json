@@ -5,7 +5,7 @@
         "ground_truth_name": "isLiteral",
         "ai_predicted_name": "is_valid_token",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 4.95
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "preProcessing",
         "ai_predicted_name": "escape_specials",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 54,
             "execution_time": 8.92
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "indexOf",
         "ai_predicted_name": "find_closing",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 6.41
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "subString",
         "ai_predicted_name": "extract_subrange",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 8.57
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "buildAST",
         "ai_predicted_name": "parse_expression",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 135,
             "execution_time": 14.86
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "redirect",
         "ai_predicted_name": "rename_node",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 20,
             "execution_time": 8.37
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "compileFromAST",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 242,
             "execution_time": 15.34
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "addState",
         "ai_predicted_name": "append_to_list",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 8.19
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "addRule",
         "ai_predicted_name": "enqueue",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 7.93
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "postProcessing",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 74,
             "execution_time": 16.9
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "contains",
         "ai_predicted_name": "contains",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 7.98
         },
@@ -225,7 +225,7 @@
         "ground_truth_name": "findEmpty",
         "ai_predicted_name": "collect_tree_paths",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 40,
             "execution_time": 10.19
         },
@@ -245,7 +245,7 @@
         "ground_truth_name": "transit",
         "ai_predicted_name": "sub_401234",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 104,
             "execution_time": 19.77
         },
@@ -265,7 +265,7 @@
         "ground_truth_name": "isAccepting",
         "ai_predicted_name": "has_flag",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 3.9
         },
@@ -285,7 +285,7 @@
         "ground_truth_name": "testHelper",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 435,
             "execution_time": 12.21
         },
@@ -305,7 +305,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "test_regex",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 53,
             "execution_time": 5.24
         },
@@ -325,7 +325,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 26,
             "execution_time": 7.95
         },
@@ -345,7 +345,7 @@
         "ground_truth_name": "createNode",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 4.46
         },
@@ -365,7 +365,7 @@
         "ground_truth_name": "destroyNode",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 3.05
         },
@@ -385,7 +385,7 @@
         "ground_truth_name": "createRule",
         "ai_predicted_name": "create_node",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 5.53
         },
@@ -405,7 +405,7 @@
         "ground_truth_name": "destroyRule",
         "ai_predicted_name": "close",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 4.27
         },
@@ -425,7 +425,7 @@
         "ground_truth_name": "createState",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 14.22
         },
@@ -445,7 +445,7 @@
         "ground_truth_name": "destroyState",
         "ai_predicted_name": "free_resources",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 4.64
         },
@@ -465,7 +465,7 @@
         "ground_truth_name": "createNFA",
         "ai_predicted_name": "parse_headers",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 53,
             "execution_time": 7.76
         },
@@ -485,7 +485,7 @@
         "ground_truth_name": "destroyNFA",
         "ai_predicted_name": "free_binary_tree",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 38,
             "execution_time": 5.06
         },

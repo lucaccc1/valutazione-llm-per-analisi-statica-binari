@@ -5,7 +5,7 @@
         "ground_truth_name": "hex_to_oct",
         "ai_predicted_name": "reverse_hex",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 66,
             "execution_time": 16.72
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 83,
             "execution_time": 8.86
         },

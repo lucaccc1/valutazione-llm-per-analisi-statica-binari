@@ -5,7 +5,7 @@
         "ground_truth_name": "fib",
         "ai_predicted_name": "fibonacci",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 4.11
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "getInput",
         "ai_predicted_name": "read_valid_digit",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 9.13
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "test_fibonacci",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 34,
             "execution_time": 6.23
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "fibonacci",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 83,
             "execution_time": 12.19
         },

@@ -5,7 +5,7 @@
         "ground_truth_name": "poly_function",
         "ai_predicted_name": "sum",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 8.93
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "complex_str",
         "ai_predicted_name": "format_complex",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 5.5
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "check_termination",
         "ai_predicted_name": "parse_arg",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 5.17
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 274,
             "execution_time": 8.94
         },

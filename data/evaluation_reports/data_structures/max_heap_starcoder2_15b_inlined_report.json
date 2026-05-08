@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "stack",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 107,
             "execution_time": 6.89
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "create_heap",
         "ai_predicted_name": "initialize_vector",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 8.89
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "down_heapify",
         "ai_predicted_name": "swap",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 51,
             "execution_time": 6.47
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "up_heapify",
         "ai_predicted_name": "sort_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 7.11
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "add_item",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 43,
             "execution_time": 7.99
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "pop",
         "ai_predicted_name": "sort",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 78,
             "execution_time": 9.74
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "top",
         "ai_predicted_name": "get_default_value",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 4.29
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "empty",
         "ai_predicted_name": "is_zero",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 4.19
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "size",
         "ai_predicted_name": "get_age",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 3.77
         },

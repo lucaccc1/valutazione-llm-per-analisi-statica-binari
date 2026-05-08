@@ -5,7 +5,7 @@
         "ground_truth_name": "matrixChainOrder",
         "ai_predicted_name": "calculate_minimum_path_sum",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 43,
             "execution_time": 26.54
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "printSolution",
         "ai_predicted_name": "recursive_print",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 11.15
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "matrix_chain_order_test",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 24,
             "execution_time": 11.22
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 8.11
         },

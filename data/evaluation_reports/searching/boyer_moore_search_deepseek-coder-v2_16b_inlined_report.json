@@ -5,7 +5,7 @@
         "ground_truth_name": "max",
         "ai_predicted_name": "compare_values",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 2.28
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "computeArray",
         "ai_predicted_name": "initialize_mapping",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 17,
             "execution_time": 4.72
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "boyer_moore_search",
         "ai_predicted_name": "find_pattern",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 73,
             "execution_time": 13.2
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 64,
             "execution_time": 11.79
         },

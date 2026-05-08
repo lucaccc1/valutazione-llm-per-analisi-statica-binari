@@ -5,7 +5,7 @@
         "ground_truth_name": "swap",
         "ai_predicted_name": "swap_pointers",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 10.65
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "compare",
         "ai_predicted_name": "compare_characters",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 7.3
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "PrintSortedPermutations",
         "ai_predicted_name": "lexicographically_sort_permutations",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 50,
             "execution_time": 17.21
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 59,
             "execution_time": 12.82
         },

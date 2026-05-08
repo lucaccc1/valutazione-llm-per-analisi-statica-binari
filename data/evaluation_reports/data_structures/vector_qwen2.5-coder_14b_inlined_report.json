@@ -5,7 +5,7 @@
         "ground_truth_name": "init",
         "ai_predicted_name": "allocate_and_initialize_struct",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 10.07
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "delete",
         "ai_predicted_name": "free_resource",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 5.95
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "clear",
         "ai_predicted_name": "reset_state",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 28,
             "execution_time": 6.3
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "len",
         "ai_predicted_name": "return_arg",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 5.49
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "add_element_to_array",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 8.05
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "get",
         "ai_predicted_name": "get_element_from_array",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 7.56
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "set",
         "ai_predicted_name": "update_min_value",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 10.2
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "next",
         "ai_predicted_name": "get_next_value",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 6,
             "execution_time": 10.56
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "begin",
         "ai_predicted_name": "get_argument",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 5.55
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "print",
         "ai_predicted_name": "print_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 8.97
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "vector_test",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 94,
             "execution_time": 7.69
         },
@@ -225,7 +225,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 108,
             "execution_time": 13.45
         },

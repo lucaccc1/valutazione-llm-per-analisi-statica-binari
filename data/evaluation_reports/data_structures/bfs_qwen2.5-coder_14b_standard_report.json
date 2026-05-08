@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 28,
             "execution_time": 19.0
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "bfs",
         "ai_predicted_name": "bfs_traversal",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 15.12
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "createNode",
         "ai_predicted_name": "allocate_and_store_int",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 7.73
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "createGraph",
         "ai_predicted_name": "allocate_and_initialize",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 9.14
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "addEdge",
         "ai_predicted_name": "update_linked_list",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 8.21
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "createQueue",
         "ai_predicted_name": "allocate_and_initialize_structure",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 6.24
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "isEmpty",
         "ai_predicted_name": "is_error",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 5.19
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "enqueue",
         "ai_predicted_name": "enqueue_element",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 7.93
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "dequeue",
         "ai_predicted_name": "dequeue_element",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 20,
             "execution_time": 7.7
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "pollQueue",
         "ai_predicted_name": "get_nested_value",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 5.67
         },

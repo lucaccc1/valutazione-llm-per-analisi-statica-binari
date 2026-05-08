@@ -5,7 +5,7 @@
         "ground_truth_name": "createnode",
         "ai_predicted_name": "malloc_memory",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 1.71
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "insert",
         "ai_predicted_name": "store_data",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 39,
             "execution_time": 5.1
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "deletion",
         "ai_predicted_name": "process_memory_allocation",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 38,
             "execution_time": 5.82
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "viewlist",
         "ai_predicted_name": "print_list",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 20,
             "execution_time": 2.74
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 96,
             "execution_time": 6.06
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 185,
             "execution_time": 16.2
         },

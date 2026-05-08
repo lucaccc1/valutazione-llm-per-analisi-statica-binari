@@ -5,7 +5,7 @@
         "ground_truth_name": "exponential_search",
         "ai_predicted_name": "find_closest_power_of_two",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 13.53
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "binary_search",
         "ai_predicted_name": "binary_search_index",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 13.75
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 8.14
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "run_tests",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 84,
             "execution_time": 18.14
         },

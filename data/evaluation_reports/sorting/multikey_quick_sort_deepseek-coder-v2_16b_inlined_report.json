@@ -5,7 +5,7 @@
         "ground_truth_name": "vecswap",
         "ai_predicted_name": "swap_elements",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 18,
             "execution_time": 4.23
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "ssort1",
         "ai_predicted_name": "quicksort",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 99,
             "execution_time": 40.2
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "ssort1main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 85,
             "execution_time": 5.47
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "vecswap2",
         "ai_predicted_name": "process_data",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 20,
             "execution_time": 5.36
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "med3func",
         "ai_predicted_name": "compare_addresses",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 41,
             "execution_time": 6.2
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "inssort",
         "ai_predicted_name": "sort_subarray",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 30,
             "execution_time": 7.0
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "ssort2",
         "ai_predicted_name": "sort_array",
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 201,
             "execution_time": 53.11
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "ssort2main",
         "ai_predicted_name": "sort_array",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 108,
             "execution_time": 9.44
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "insert1",
         "ai_predicted_name": "process_data",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 4.01
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "cleanup1",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 1.77
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "insert2",
         "ai_predicted_name": "process_input",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 63,
             "execution_time": 9.01
         },
@@ -225,7 +225,7 @@
         "ground_truth_name": "cleanup2",
         "ai_predicted_name": "process_memory",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 3.97
         },
@@ -245,7 +245,7 @@
         "ground_truth_name": "search1",
         "ai_predicted_name": "find_null_byte",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 29,
             "execution_time": 3.98
         },
@@ -265,7 +265,7 @@
         "ground_truth_name": "search2",
         "ai_predicted_name": "find_pattern",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 6.22
         },
@@ -285,7 +285,7 @@
         "ground_truth_name": "pmsearch",
         "ai_predicted_name": "process_data",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 25,
             "execution_time": 5.94
         },
@@ -305,7 +305,7 @@
         "ground_truth_name": "nearsearch",
         "ai_predicted_name": "process_data",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 32,
             "execution_time": 5.63
         },
@@ -325,7 +325,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 3.28
         },

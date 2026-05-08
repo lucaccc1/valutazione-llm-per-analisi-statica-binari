@@ -5,7 +5,7 @@
         "ground_truth_name": "convert",
         "ai_predicted_name": "interleave_characters",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 57,
             "execution_time": 37.46
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "testZigZag",
         "ai_predicted_name": "test_zigzag_conversion",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 73,
             "execution_time": 15.32
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "test_zigzag_conversion",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 35,
             "execution_time": 10.4
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 29,
             "execution_time": 10.62
         },

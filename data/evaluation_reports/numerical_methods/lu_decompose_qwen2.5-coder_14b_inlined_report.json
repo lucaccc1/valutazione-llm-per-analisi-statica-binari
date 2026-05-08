@@ -5,7 +5,7 @@
         "ground_truth_name": "lu_decomposition",
         "ai_predicted_name": "matrix_gauss_jordan_elimination",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 37,
             "execution_time": 30.13
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "display",
         "ai_predicted_name": "print_matrix",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 17,
             "execution_time": 12.19
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 107,
             "execution_time": 28.12
         },

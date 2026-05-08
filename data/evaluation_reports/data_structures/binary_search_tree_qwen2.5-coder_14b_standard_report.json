@@ -5,7 +5,7 @@
         "ground_truth_name": "newNode",
         "ai_predicted_name": "allocate_struct",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 7.07
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "insert",
         "ai_predicted_name": "process_data_structure",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 18,
             "execution_time": 9.14
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "getMax",
         "ai_predicted_name": "resolve_base_address",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 6.03
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "delete",
         "ai_predicted_name": "manage_memory",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 47,
             "execution_time": 12.47
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "find",
         "ai_predicted_name": "check_index_bounds",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 7.52
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "height",
         "ai_predicted_name": "compare_values",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 9.4
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "purge",
         "ai_predicted_name": "recursive_free",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 5.68
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "inOrder",
         "ai_predicted_name": "process_node",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 7.56
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 65,
             "execution_time": 15.4
         },

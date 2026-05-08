@@ -5,7 +5,7 @@
         "ground_truth_name": "propagate",
         "ai_predicted_name": "sub_4004D6",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 17,
             "execution_time": 7.37
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "print",
         "ai_predicted_name": "print_points",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 5.72
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "free_memory",
         "ai_predicted_name": "free_list",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 4.56
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 43,
             "execution_time": 3.4
         },

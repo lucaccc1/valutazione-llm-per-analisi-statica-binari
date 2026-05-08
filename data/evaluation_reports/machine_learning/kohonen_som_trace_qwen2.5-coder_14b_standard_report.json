@@ -5,7 +5,7 @@
         "ground_truth_name": "save_nd_data",
         "ai_predicted_name": "write_matrix_to_file",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 16.97
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "kohonen_get_min_1d",
         "ai_predicted_name": "find_minimum_double",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 10.55
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "kohonen_update_weights",
         "ai_predicted_name": "process_and_adjust_data",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 41,
             "execution_time": 30.9
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "kohonen_som_tracer",
         "ai_predicted_name": "decremental_processing",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 22.2
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "test_circle",
         "ai_predicted_name": "generate_random_points",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 13.72
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "test1",
         "ai_predicted_name": "process_data",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 41,
             "execution_time": 16.59
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "test_lamniscate",
         "ai_predicted_name": "initialize_array_with_random_values",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 16.44
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "test2",
         "ai_predicted_name": "process_and_save_data",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 38,
             "execution_time": 14.99
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "test_3d_classes",
         "ai_predicted_name": "generate_random_points",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 41,
             "execution_time": 23.95
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "test3",
         "ai_predicted_name": "process_and_save_data",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 38,
             "execution_time": 15.34
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "get_clock_diff",
         "ai_predicted_name": "calculate_difference_in_seconds",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 7.54
         },
@@ -225,7 +225,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 27.59
         },

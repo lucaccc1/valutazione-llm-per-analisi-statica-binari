@@ -5,7 +5,7 @@
         "ground_truth_name": "new_number",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 8.07
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "delete_number",
         "ai_predicted_name": "destroy_socket",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 4.33
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "add_digit",
         "ai_predicted_name": "append_digit",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 15,
             "execution_time": 5.81
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "multiply",
         "ai_predicted_name": "add_two_numbers",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 33,
             "execution_time": 7.41
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "factorial",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 29,
             "execution_time": 5.78
         },

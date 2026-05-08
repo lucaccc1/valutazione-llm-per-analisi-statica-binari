@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "infix_to_postfix",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 76,
             "execution_time": 5.4
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "consume_input",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 15,
             "execution_time": 6.13
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "pop",
         "ai_predicted_name": "pop_stack",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 8.11
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "isOprnd",
         "ai_predicted_name": "is_alphanumeric",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 4.87
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "isEmpty",
         "ai_predicted_name": "is_socket",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 4.46
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "convert",
         "ai_predicted_name": "infix_to_postfix",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 124,
             "execution_time": 8.57
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "getPrecedence",
         "ai_predicted_name": "is_operator",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 6.85
         },

@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 41,
             "execution_time": 2.7
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "create",
         "ai_predicted_name": "name1",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 3.75
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "enque",
         "ai_predicted_name": "append_to_list",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 5.42
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "deque",
         "ai_predicted_name": "dequeue",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 17,
             "execution_time": 4.52
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "size",
         "ai_predicted_name": "read_input",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 4.37
         },

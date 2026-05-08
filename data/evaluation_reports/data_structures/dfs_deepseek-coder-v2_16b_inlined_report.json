@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 87,
             "execution_time": 10.4
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "dfs",
         "ai_predicted_name": "print_index",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 17,
             "execution_time": 5.31
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "createNode",
         "ai_predicted_name": "allocate_and_initialize",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 2.42
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "createGraph",
         "ai_predicted_name": "allocate_memory",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 3.05
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "addEdge",
         "ai_predicted_name": "copy_matrix",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 27,
             "execution_time": 4.38
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "printGraph",
         "ai_predicted_name": "print_adjacency_list",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 5.69
         },

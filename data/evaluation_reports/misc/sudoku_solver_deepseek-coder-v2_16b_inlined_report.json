@@ -5,7 +5,7 @@
         "ground_truth_name": "OKrow",
         "ai_predicted_name": "check_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 3.05
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "OKcol",
         "ai_predicted_name": "check_value",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 3.27
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "OKbox",
         "ai_predicted_name": "compare_matrices",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 4.18
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "OK",
         "ai_predicted_name": "find_unique",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 63,
             "execution_time": 5.55
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "print",
         "ai_predicted_name": "print_binary_data",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 5.07
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "get_next_unknown",
         "ai_predicted_name": "find_first_zero",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 4.05
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "solve",
         "ai_predicted_name": "find_matrix_value",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 74,
             "execution_time": 8.8
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 91,
             "execution_time": 22.67
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 147,
             "execution_time": 14.9
         },

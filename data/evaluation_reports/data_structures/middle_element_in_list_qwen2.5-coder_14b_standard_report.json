@@ -5,7 +5,7 @@
         "ground_truth_name": "printMiddle",
         "ai_predicted_name": "print_middle_element",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 20,
             "execution_time": 10.56
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "wrap_value",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 9.64
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "printList",
         "ai_predicted_name": "print_list",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 5.67
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 10.83
         },

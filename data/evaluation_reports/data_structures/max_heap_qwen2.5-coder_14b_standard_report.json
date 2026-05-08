@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 37,
             "execution_time": 20.37
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "create_heap",
         "ai_predicted_name": "allocate_and_initialize_structure",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 6.56
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "down_heapify",
         "ai_predicted_name": "find_max_value_index",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 51,
             "execution_time": 23.28
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "up_heapify",
         "ai_predicted_name": "find_max_value_index",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 14.28
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "insert_element_into_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 17,
             "execution_time": 9.78
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "pop",
         "ai_predicted_name": "update_array_element",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 9.28
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "top",
         "ai_predicted_name": "get_status_code",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 6.09
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "empty",
         "ai_predicted_name": "check_flag",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 5.93
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "size",
         "ai_predicted_name": "get_flags",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 5.34
         },

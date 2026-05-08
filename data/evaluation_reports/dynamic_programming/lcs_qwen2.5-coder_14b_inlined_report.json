@@ -5,7 +5,7 @@
         "ground_truth_name": "lcslen",
         "ai_predicted_name": "process_matrix",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 34,
             "execution_time": 19.92
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "lcsbuild",
         "ai_predicted_name": "extract_data",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 38,
             "execution_time": 19.41
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "longest_common_subsequence_test",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 148,
             "execution_time": 21.09
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 78,
             "execution_time": 9.81
         },

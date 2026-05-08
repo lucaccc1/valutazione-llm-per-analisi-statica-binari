@@ -5,7 +5,7 @@
         "ground_truth_name": "to_polar",
         "ai_predicted_name": "calculate_angle",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 51,
             "execution_time": 10.15
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "get_rand",
         "ai_predicted_name": "generate_random_number",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 3.75
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 93,
             "execution_time": 16.09
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 40,
             "execution_time": 5.75
         },

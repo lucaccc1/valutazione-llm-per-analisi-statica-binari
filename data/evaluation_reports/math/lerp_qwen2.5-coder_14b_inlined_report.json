@@ -5,7 +5,7 @@
         "ground_truth_name": "lerp",
         "ai_predicted_name": "scale_and_offset",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 9.3
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "lerp_precise",
         "ai_predicted_name": "interpolate_value",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 9.61
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 18.81
         },

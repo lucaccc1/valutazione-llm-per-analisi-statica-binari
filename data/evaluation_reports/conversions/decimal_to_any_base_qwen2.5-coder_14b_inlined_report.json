@@ -5,7 +5,7 @@
         "ground_truth_name": "isbad_alphabet",
         "ai_predicted_name": "check_unique_characters",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 15,
             "execution_time": 9.87
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "converted_len",
         "ai_predicted_name": "calculate_division_steps",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 7.84
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "convertion",
         "ai_predicted_name": "calculate_remainder_and_adjust",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 10.26
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "decimal_to_anybase",
         "ai_predicted_name": "generate_base_n_string",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 58,
             "execution_time": 13.52
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "run_conversion_tests",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 85,
             "execution_time": 40.47
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 75,
             "execution_time": 10.9
         },

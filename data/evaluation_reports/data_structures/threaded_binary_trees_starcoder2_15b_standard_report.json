@@ -5,7 +5,7 @@
         "ground_truth_name": "create_node",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 3.28
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "insert_bt",
         "ai_predicted_name": "insert_into_binary_tree",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 41,
             "execution_time": 10.84
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "search",
         "ai_predicted_name": "search_binary_tree",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 6.32
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "inorder_display",
         "ai_predicted_name": "print_btree_preorder",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 5.88
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "postorder_display",
         "ai_predicted_name": "print_tree",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 5.58
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "preorder_display",
         "ai_predicted_name": "print_btree",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 5.61
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "delete_bt",
         "ai_predicted_name": "delete_from_binary_tree",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 79,
             "execution_time": 8.59
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 56,
             "execution_time": 11.88
         },

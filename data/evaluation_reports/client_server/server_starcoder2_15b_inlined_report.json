@@ -5,7 +5,7 @@
         "ground_truth_name": "func",
         "ai_predicted_name": "handle_client",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 38,
             "execution_time": 12.8
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "handle_client",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 86,
             "execution_time": 15.08
         },

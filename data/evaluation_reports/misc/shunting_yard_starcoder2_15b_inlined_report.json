@@ -5,7 +5,7 @@
         "ground_truth_name": "getPrecedence",
         "ai_predicted_name": "parse_operator",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 4.55
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "getAssociativity",
         "ai_predicted_name": "is_valid_operator",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 25,
             "execution_time": 4.06
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "shuntingYard",
         "ai_predicted_name": "infix_to_postfix",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 160,
             "execution_time": 9.89
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 140,
             "execution_time": 4.05
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "test_shunting_yard",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 41,
             "execution_time": 8.56
         },

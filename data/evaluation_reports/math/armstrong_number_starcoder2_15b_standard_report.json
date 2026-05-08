@@ -5,7 +5,7 @@
         "ground_truth_name": "power",
         "ai_predicted_name": "multiply",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 7.45
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "order",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 3.8
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "isArmstrong",
         "ai_predicted_name": "is_armstrong",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 8.26
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 6.25
         },

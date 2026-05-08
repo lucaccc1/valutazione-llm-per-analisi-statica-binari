@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "get_sum_of_digits",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 8.69
         },

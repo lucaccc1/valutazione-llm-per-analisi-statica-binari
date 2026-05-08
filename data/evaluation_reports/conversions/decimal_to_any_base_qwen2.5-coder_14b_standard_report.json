@@ -5,7 +5,7 @@
         "ground_truth_name": "isbad_alphabet",
         "ai_predicted_name": "contains_duplicate_characters",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 15,
             "execution_time": 9.34
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "converted_len",
         "ai_predicted_name": "compute_remainder_depth",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 7.32
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "convertion",
         "ai_predicted_name": "calculate_index",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 9.7
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "decimal_to_anybase",
         "ai_predicted_name": "process_string",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 15,
             "execution_time": 12.49
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "run_tests",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 65,
             "execution_time": 20.88
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 8.69
         },

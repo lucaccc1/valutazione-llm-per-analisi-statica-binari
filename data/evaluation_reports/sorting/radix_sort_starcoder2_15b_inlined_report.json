@@ -5,7 +5,7 @@
         "ground_truth_name": "largest",
         "ai_predicted_name": "largest",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 7.88
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "RadixSort",
         "ai_predicted_name": "sort",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 65,
             "execution_time": 8.29
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "sort_integer_array",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 70,
             "execution_time": 10.24
         },

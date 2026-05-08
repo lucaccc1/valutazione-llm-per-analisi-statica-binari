@@ -5,7 +5,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 4.09
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "pop",
         "ai_predicted_name": "pop",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 5.07
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "isEmpty",
         "ai_predicted_name": "is_socket_closed",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 4.74
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "Top",
         "ai_predicted_name": "get_current_flag_char",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 7.4
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "priority",
         "ai_predicted_name": "is_valid_operator",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 4.66
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "convert",
         "ai_predicted_name": "shunting_yard",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 95,
             "execution_time": 10.47
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "parse_parentheses",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 66,
             "execution_time": 7.14
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "evaluate_expression",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 82,
             "execution_time": 8.35
         },

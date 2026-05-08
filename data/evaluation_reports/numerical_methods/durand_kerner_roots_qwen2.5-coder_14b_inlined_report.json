@@ -5,7 +5,7 @@
         "ground_truth_name": "poly_function",
         "ai_predicted_name": "compute_weighted_sum",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 24.1
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "complex_str",
         "ai_predicted_name": "format_complex_number",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 9.85
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "check_termination",
         "ai_predicted_name": "compare_and_update_value",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 9.64
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "polynomial_root_finder",
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 274,
             "execution_time": 103.43
         },

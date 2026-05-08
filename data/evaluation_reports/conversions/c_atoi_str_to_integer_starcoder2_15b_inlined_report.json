@@ -5,7 +5,7 @@
         "ground_truth_name": "c_atoi",
         "ai_predicted_name": "atoi",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 34,
             "execution_time": 5.33
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "test_c_atoi",
         "ai_predicted_name": "test_c_atoi",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 89,
             "execution_time": 11.36
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 109,
             "execution_time": 9.38
         },

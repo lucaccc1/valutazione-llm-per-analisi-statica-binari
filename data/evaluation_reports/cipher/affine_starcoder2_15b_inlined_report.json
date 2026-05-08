@@ -5,7 +5,7 @@
         "ground_truth_name": "modular_multiplicative_inverse",
         "ai_predicted_name": "extended_gcd",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 29,
             "execution_time": 10.12
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "inverse_key",
         "ai_predicted_name": "calculate_checksum",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 42,
             "execution_time": 7.97
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "affine_encrypt",
         "ai_predicted_name": "sub_4005EE",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 5.44
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "affine_decrypt",
         "ai_predicted_name": "crypt",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 29,
             "execution_time": 5.87
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "test_string",
         "ai_predicted_name": "test_string",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 54,
             "execution_time": 6.8
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "tests",
         "ai_predicted_name": "test_affine_cipher",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 36,
             "execution_time": 9.76
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 25,
             "execution_time": 4.68
         },

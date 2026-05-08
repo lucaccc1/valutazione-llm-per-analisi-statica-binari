@@ -5,7 +5,7 @@
         "ground_truth_name": "pid_step",
         "ai_predicted_name": "calculate_weighted_sum",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 13.83
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "pid_controller_example",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 45,
             "execution_time": 23.79
         },

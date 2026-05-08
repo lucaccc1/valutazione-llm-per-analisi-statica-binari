@@ -5,7 +5,7 @@
         "ground_truth_name": "int_to_string",
         "ai_predicted_name": "transform_and_reverse_string",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 29,
             "execution_time": 22.71
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "test_int_to_string_conversions",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 77,
             "execution_time": 16.91
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 57,
             "execution_time": 10.56
         },

@@ -5,7 +5,7 @@
         "ground_truth_name": "find",
         "ai_predicted_name": "calculate_recursive",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 3.69
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "join",
         "ai_predicted_name": "sub_40055E",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 27,
             "execution_time": 4.18
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 61,
             "execution_time": 11.11
         },

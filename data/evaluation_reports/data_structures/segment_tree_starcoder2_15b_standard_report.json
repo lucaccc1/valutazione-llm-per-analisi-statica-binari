@@ -5,7 +5,7 @@
         "ground_truth_name": "segment_tree_build",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 7.57
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "segment_tree_update",
         "ai_predicted_name": "heapsort",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 9.38
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "segment_tree_query",
         "ai_predicted_name": "compute_matrix_from_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 27,
             "execution_time": 10.2
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "segment_tree_init",
         "ai_predicted_name": "make_multi_part",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 17,
             "execution_time": 9.71
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "segment_tree_dispose",
         "ai_predicted_name": "free_args",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 4.7
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "segment_tree_print_int",
         "ai_predicted_name": "print_integers",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 7.33
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "minimum",
         "ai_predicted_name": "get_min",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 7.74
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "compute_max_subarray",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 37,
             "execution_time": 12.13
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "setup",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 3.95
         },

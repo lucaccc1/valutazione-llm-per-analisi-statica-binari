@@ -5,7 +5,7 @@
         "ground_truth_name": "segment_tree_build",
         "ai_predicted_name": "swap_adjacent_elements",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 9.27
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "segment_tree_update",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 9.6
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "segment_tree_query",
         "ai_predicted_name": "reverse",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 27,
             "execution_time": 8.8
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "segment_tree_init",
         "ai_predicted_name": "generate_random_buffer",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 17,
             "execution_time": 7.59
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "segment_tree_dispose",
         "ai_predicted_name": "free_buffer",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 5.2
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "segment_tree_print_int",
         "ai_predicted_name": "print_numbers",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 5.94
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "minimum",
         "ai_predicted_name": "sub_400909",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 7.84
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "perform_segment_tree_operation",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 160,
             "execution_time": 11.96
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "test_data_structures",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 47,
             "execution_time": 13.23
         },

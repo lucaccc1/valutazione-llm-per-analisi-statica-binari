@@ -5,7 +5,7 @@
         "ground_truth_name": "newNode",
         "ai_predicted_name": "initialize_socket",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 4.71
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "insert",
         "ai_predicted_name": "insert_node",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 33,
             "execution_time": 7.91
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "getMax",
         "ai_predicted_name": "find_next",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 3.73
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "delete",
         "ai_predicted_name": "delete_node",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 59,
             "execution_time": 7.17
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "find",
         "ai_predicted_name": "is_leaf",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 5.69
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "height",
         "ai_predicted_name": "fictitious_name",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 4.51
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "purge",
         "ai_predicted_name": "free_tree",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 11,
             "execution_time": 4.35
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "inOrder",
         "ai_predicted_name": "print_binary_tree",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 5.73
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 197,
             "execution_time": 8.4
         },

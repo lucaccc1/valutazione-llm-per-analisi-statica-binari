@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "count_and_print_frequencies",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 42,
             "execution_time": 18.43
         },

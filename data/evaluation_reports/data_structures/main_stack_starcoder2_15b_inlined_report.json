@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "interactive_menu",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 130,
             "execution_time": 15.44
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 8.06
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "pop",
         "ai_predicted_name": "pop_stack",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 5.2
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "peek",
         "ai_predicted_name": "print_stack_top",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 6.33
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "update",
         "ai_predicted_name": "insert_item",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 6.11
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "display",
         "ai_predicted_name": "show_stack",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 7.71
         },

@@ -5,7 +5,7 @@
         "ground_truth_name": "createGraph",
         "ai_predicted_name": "allocate_and_initialize_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 14.07
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "addEdge",
         "ai_predicted_name": "set_value",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 11.08
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "minDistance",
         "ai_predicted_name": "find_min_non_zero_index",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 12.85
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "print",
         "ai_predicted_name": "print_distances",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 18,
             "execution_time": 11.06
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "Dijkstra",
         "ai_predicted_name": "shortest_path",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 49,
             "execution_time": 33.55
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 21.31
         },

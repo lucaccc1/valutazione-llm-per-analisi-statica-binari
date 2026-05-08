@@ -5,7 +5,7 @@
         "ground_truth_name": "crc32",
         "ai_predicted_name": "hash",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 15,
             "execution_time": 7.79
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "test_crc32",
         "ai_predicted_name": "test_crc32",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 32,
             "execution_time": 6.15
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "test_crc32",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 5.38
         },

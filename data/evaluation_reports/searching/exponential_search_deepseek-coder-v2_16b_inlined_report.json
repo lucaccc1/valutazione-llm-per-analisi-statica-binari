@@ -5,7 +5,7 @@
         "ground_truth_name": "exponential_search",
         "ai_predicted_name": "find_index",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 32,
             "execution_time": 4.69
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "binary_search",
         "ai_predicted_name": "find_index",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 3.26
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 94,
             "execution_time": 6.34
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 103,
             "execution_time": 13.57
         },

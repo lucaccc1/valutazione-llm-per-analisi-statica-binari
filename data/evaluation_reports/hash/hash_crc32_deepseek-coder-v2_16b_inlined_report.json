@@ -5,7 +5,7 @@
         "ground_truth_name": "crc32",
         "ai_predicted_name": "crc32_calculate",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 15,
             "execution_time": 5.16
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "test_crc32",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 32,
             "execution_time": 5.35
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 4.98
         },

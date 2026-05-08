@@ -5,7 +5,7 @@
         "ground_truth_name": "longestSub",
         "ai_predicted_name": "sub_400486",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 74,
             "execution_time": 18.77
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 103,
             "execution_time": 6.37
         },

@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 92,
             "execution_time": 16.08
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "fillOrder",
         "ai_predicted_name": "topological_sort",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 26,
             "execution_time": 8.14
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "transpose",
         "ai_predicted_name": "build_graph",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 47,
             "execution_time": 8.17
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "dfs",
         "ai_predicted_name": "traverse",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 17,
             "execution_time": 5.24
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "scc",
         "ai_predicted_name": "analyze_dependencies",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 107,
             "execution_time": 6.74
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "createNode",
         "ai_predicted_name": "create_node",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 5.32
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "createGraph",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 2.35
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "addEdge",
         "ai_predicted_name": "add_item",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 5.36
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "printGraph",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 6.11
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "createStack",
         "ai_predicted_name": "chosen_name",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 8.48
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 5.85
         },
@@ -225,7 +225,7 @@
         "ground_truth_name": "pop",
         "ai_predicted_name": "pop_element",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 5.92
         },

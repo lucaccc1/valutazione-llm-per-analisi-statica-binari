@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 157,
             "execution_time": 20.76
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "singlemode",
         "ai_predicted_name": "tic_tac_toe_game",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 168,
             "execution_time": 26.76
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "doublemode",
         "ai_predicted_name": "play_tic_tac_toe",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 173,
             "execution_time": 29.92
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "check_placex",
         "ai_predicted_name": "get_valid_move",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 20,
             "execution_time": 8.14
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "placex",
         "ai_predicted_name": "process_user_input",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 48,
             "execution_time": 13.43
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "place",
         "ai_predicted_name": "place_computer_on_board",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 10.23
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "placey",
         "ai_predicted_name": "process_move",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 74,
             "execution_time": 12.57
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "checkwin",
         "ai_predicted_name": "check_special_sequences",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 60,
             "execution_time": 43.11
         },

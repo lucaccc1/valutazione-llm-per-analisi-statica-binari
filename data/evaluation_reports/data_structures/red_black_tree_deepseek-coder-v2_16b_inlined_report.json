@@ -5,7 +5,7 @@
         "ground_truth_name": "newNode",
         "ai_predicted_name": "allocate_and_initialize",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 3.39
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "isLeaf",
         "ai_predicted_name": "check_condition",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 2.31
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "leftRotate",
         "ai_predicted_name": "manipulate_data",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 6.16
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "rightRotate",
         "ai_predicted_name": "process_data",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 6.27
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "checkNode",
         "ai_predicted_name": "process_data",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 137,
             "execution_time": 20.28
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "insertNode",
         "ai_predicted_name": "process_linked_list",
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 208,
             "execution_time": 13.59
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "checkForCase2",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 225,
             "execution_time": 75.59
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "deleteNode",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 259,
             "execution_time": 15.81
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "printInorder",
         "ai_predicted_name": "process_data",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 3.97
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "checkBlack",
         "ai_predicted_name": "process_data",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 2.47
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "200+",
             "lines_of_code": 224,
             "execution_time": 20.04
         },

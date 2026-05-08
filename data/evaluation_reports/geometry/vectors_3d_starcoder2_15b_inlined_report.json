@@ -5,7 +5,7 @@
         "ground_truth_name": "vector_sub",
         "ai_predicted_name": "subtract",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 3.93
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "vector_add",
         "ai_predicted_name": "add_vec2f",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 8.86
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "dot_prod",
         "ai_predicted_name": "dot_product",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 5.38
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "vector_prod",
         "ai_predicted_name": "cross_product",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 6.19
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "print_vector",
         "ai_predicted_name": "print_vector",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 6.71
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "vector_norm",
         "ai_predicted_name": "calculate_magnitude",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 18,
             "execution_time": 9.48
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "unit_vec",
         "ai_predicted_name": "normalize_vec2",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 5.71
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "get_cross_matrix",
         "ai_predicted_name": "transform_input",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 6.5
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "get_angle",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 44,
             "execution_time": 8.76
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "calculate_triangle_angles",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 111,
             "execution_time": 27.95
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 63,
             "execution_time": 7.93
         },

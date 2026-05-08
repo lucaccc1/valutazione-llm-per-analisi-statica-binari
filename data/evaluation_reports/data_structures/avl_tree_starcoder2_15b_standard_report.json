@@ -5,7 +5,7 @@
         "ground_truth_name": "max",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 5.17
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "newNode",
         "ai_predicted_name": "alloc_node",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 18,
             "execution_time": 7.37
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "nodeHeight",
         "ai_predicted_name": "get_user_id",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 5.24
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "heightDiff",
         "ai_predicted_name": "compute_something",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 5.55
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "minNode",
         "ai_predicted_name": "find_tail",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 6,
             "execution_time": 4.51
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "printAVL",
         "ai_predicted_name": "recursive_node_printer",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 6.3
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "rightRotate",
         "ai_predicted_name": "reverse_list_order",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 12.82
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "leftRotate",
         "ai_predicted_name": "swap_buffers",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 8.61
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "LeftRightRotate",
         "ai_predicted_name": "parse_config",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 3.86
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "RightLeftRotate",
         "ai_predicted_name": "parse_and_send_message",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 5,
             "execution_time": 5.24
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "insert",
         "ai_predicted_name": "insert_element_into_binary_tree",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 33,
             "execution_time": 7.36
         },
@@ -225,7 +225,7 @@
         "ground_truth_name": "delete",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 72,
             "execution_time": 7.46
         },
@@ -245,7 +245,7 @@
         "ground_truth_name": "findNode",
         "ai_predicted_name": "find_binary_tree_node",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 6.99
         },
@@ -265,7 +265,7 @@
         "ground_truth_name": "printPreOrder",
         "ai_predicted_name": "print_tree",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 5.84
         },
@@ -285,7 +285,7 @@
         "ground_truth_name": "printInOrder",
         "ai_predicted_name": "walk_binary_tree",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 5.85
         },
@@ -305,7 +305,7 @@
         "ground_truth_name": "printPostOrder",
         "ai_predicted_name": "print_tree",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 5.05
         },
@@ -325,7 +325,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 110,
             "execution_time": 9.92
         },

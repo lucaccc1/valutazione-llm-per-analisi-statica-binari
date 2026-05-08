@@ -5,7 +5,7 @@
         "ground_truth_name": "power",
         "ai_predicted_name": "calculate_power",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 9.25
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "order",
         "ai_predicted_name": "count_digits",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 7.09
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "isArmstrong",
         "ai_predicted_name": "is_number_palindrome",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 12.35
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 8.72
         },

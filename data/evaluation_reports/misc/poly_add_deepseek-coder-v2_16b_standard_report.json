@@ -5,7 +5,7 @@
         "ground_truth_name": "free_poly",
         "ai_predicted_name": "free_memory",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 5.67
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "create_polynomial",
         "ai_predicted_name": "allocate_and_initialize",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 6.92
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "poly_add",
         "ai_predicted_name": "process_data",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 65,
             "execution_time": 7.1
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "display_polynomial",
         "ai_predicted_name": "print_polynomial",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 14,
             "execution_time": 8.32
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "test1",
         "ai_predicted_name": "polynomial_addition",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 28,
             "execution_time": 11.24
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "test2",
         "ai_predicted_name": "test_polynomial",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 11.04
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "test3",
         "ai_predicted_name": "test_polynomial",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 28,
             "execution_time": 10.21
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 7,
             "execution_time": 6.12
         },

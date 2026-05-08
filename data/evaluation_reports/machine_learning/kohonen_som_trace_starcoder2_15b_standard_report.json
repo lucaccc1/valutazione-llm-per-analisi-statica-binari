@@ -5,7 +5,7 @@
         "ground_truth_name": "save_nd_data",
         "ai_predicted_name": "write_matrix_csv",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 8.38
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "kohonen_get_min_1d",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 8.39
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "kohonen_update_weights",
         "ai_predicted_name": "update_data",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 41,
             "execution_time": 12.04
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "kohonen_som_tracer",
         "ai_predicted_name": "run_simulation",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 12.9
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "test_circle",
         "ai_predicted_name": "initialize_coordinates",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 4.44
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "test1",
         "ai_predicted_name": "generate_weights",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 41,
             "execution_time": 7.79
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "test_lamniscate",
         "ai_predicted_name": "generate_points",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 13.22
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "test2",
         "ai_predicted_name": "do_something",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 38,
             "execution_time": 6.59
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "test_3d_classes",
         "ai_predicted_name": "assign_random_point",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 41,
             "execution_time": 11.01
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "test3",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 38,
             "execution_time": 8.93
         },
@@ -205,7 +205,7 @@
         "ground_truth_name": "get_clock_diff",
         "ai_predicted_name": "compute_elapsed",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 6.7
         },
@@ -225,7 +225,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 31,
             "execution_time": 6.9
         },

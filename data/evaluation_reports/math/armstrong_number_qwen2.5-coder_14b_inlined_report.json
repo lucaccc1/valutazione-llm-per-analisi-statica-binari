@@ -5,7 +5,7 @@
         "ground_truth_name": "power",
         "ai_predicted_name": "exponentiate",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 10.65
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "order",
         "ai_predicted_name": "count_digits",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 12,
             "execution_time": 7.26
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "isArmstrong",
         "ai_predicted_name": "is_special_number",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 48,
             "execution_time": 12.72
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 33,
             "execution_time": 9.05
         },

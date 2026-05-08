@@ -5,7 +5,7 @@
         "ground_truth_name": "calculateNearst",
         "ai_predicted_name": "find_closest_point",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 20,
             "execution_time": 13.48
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "calculateCentroid",
         "ai_predicted_name": "compute_statistics",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 46,
             "execution_time": 24.5
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "kMeans",
         "ai_predicted_name": "aggregate_data",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 91,
             "execution_time": 38.8
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "printEPS",
         "ai_predicted_name": "generate_eps",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 69,
             "execution_time": 30.26
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "generate_random_points",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 11.85
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "test2",
         "ai_predicted_name": "generate_and_process_vectors",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 11.75
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 9.35
         },

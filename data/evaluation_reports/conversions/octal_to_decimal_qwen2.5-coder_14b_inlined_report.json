@@ -5,7 +5,7 @@
         "ground_truth_name": "convertValue",
         "ai_predicted_name": "calculate_power_of_eight",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 7.84
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "toDecimal",
         "ai_predicted_name": "calculate_weighted_sum_of_digits",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 25,
             "execution_time": 11.17
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 32,
             "execution_time": 12.63
         },

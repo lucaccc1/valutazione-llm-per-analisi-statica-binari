@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "start_game",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 157,
             "execution_time": 10.99
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "singlemode",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 168,
             "execution_time": 419.6
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "doublemode",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 173,
             "execution_time": 16.93
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "check_placex",
         "ai_predicted_name": "make_move",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 20,
             "execution_time": 5.59
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "placex",
         "ai_predicted_name": "select_x",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 48,
             "execution_time": 11.12
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "place",
         "ai_predicted_name": "computer_turn",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 3.04
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "placey",
         "ai_predicted_name": "choose_square",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 74,
             "execution_time": 6.23
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "checkwin",
         "ai_predicted_name": "compare_and_return_value",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 60,
             "execution_time": 30.52
         },

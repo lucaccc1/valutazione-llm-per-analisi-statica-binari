@@ -5,7 +5,7 @@
         "ground_truth_name": "max_heapify",
         "ai_predicted_name": "find_min_value",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 19,
             "execution_time": 14.63
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "heapsort",
         "ai_predicted_name": "heap_sort",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 40,
             "execution_time": 12.86
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "build_maxheap",
         "ai_predicted_name": "find_min_in_array",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 34,
             "execution_time": 11.82
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 55,
             "execution_time": 13.46
         },

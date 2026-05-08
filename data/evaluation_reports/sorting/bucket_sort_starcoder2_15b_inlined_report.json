@@ -5,7 +5,7 @@
         "ground_truth_name": "BucketSort",
         "ai_predicted_name": "bucket_sort",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 139,
             "execution_time": 21.03
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "InsertionSort",
         "ai_predicted_name": "merge_sorted_lists",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 43,
             "execution_time": 16.41
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "getBucketIndex",
         "ai_predicted_name": "calculate_some_value",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 5.16
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "print",
         "ai_predicted_name": "print_integers",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 4.49
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "printBuckets",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 13,
             "execution_time": 5.36
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "sort_array",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 105,
             "execution_time": 11.8
         },

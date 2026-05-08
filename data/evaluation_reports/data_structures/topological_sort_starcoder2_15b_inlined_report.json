@@ -5,7 +5,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "topological_sort",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 86,
             "execution_time": 9.83
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "topologicalSortHelper",
         "ai_predicted_name": "topological_sort",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 26,
             "execution_time": 6.66
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "topologicalSort",
         "ai_predicted_name": "topological_sort",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 64,
             "execution_time": 8.32
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "createNode",
         "ai_predicted_name": "new_user",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 4.15
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "createGraph",
         "ai_predicted_name": "initialize_state",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 16,
             "execution_time": 9.28
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "addEdge",
         "ai_predicted_name": "link_list_item",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 23,
             "execution_time": 7.13
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "printGraph",
         "ai_predicted_name": "print_graph",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 5.34
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "createStack",
         "ai_predicted_name": "new_connection",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 8,
             "execution_time": 4.53
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "push",
         "ai_predicted_name": "append_arg",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 8.35
         },
@@ -185,7 +185,7 @@
         "ground_truth_name": "pop",
         "ai_predicted_name": "get_nth_node",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 5.4
         },

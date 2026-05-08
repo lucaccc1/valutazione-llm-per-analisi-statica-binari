@@ -5,7 +5,7 @@
         "ground_truth_name": "sign",
         "ai_predicted_name": "calculate_result",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 17,
             "execution_time": 10.58
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "func",
         "ai_predicted_name": "calculate_polynomial",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 4,
             "execution_time": 1.97
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "bisection",
         "ai_predicted_name": "binary_search",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 48,
             "execution_time": 9.7
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 40,
             "execution_time": 6.58
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": "main",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 26,
             "execution_time": 3.59
         },

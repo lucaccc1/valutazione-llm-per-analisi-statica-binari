@@ -5,7 +5,7 @@
         "ground_truth_name": "u128_fill",
         "ai_predicted_name": "copy_qword",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 9,
             "execution_time": 7.58
         },
@@ -25,7 +25,7 @@
         "ground_truth_name": "u128_increment",
         "ai_predicted_name": "add_to_buffer",
         "dimension": {
-            "category": "SMALL",
+            "category": "1-10",
             "lines_of_code": 10,
             "execution_time": 6.56
         },
@@ -45,7 +45,7 @@
         "ground_truth_name": "G",
         "ai_predicted_name": "update_state",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 22,
             "execution_time": 13.65
         },
@@ -65,7 +65,7 @@
         "ground_truth_name": "F",
         "ai_predicted_name": "crypto_crypt",
         "dimension": {
-            "category": "LARGE",
+            "category": "51-100",
             "lines_of_code": 78,
             "execution_time": 14.69
         },
@@ -85,7 +85,7 @@
         "ground_truth_name": "BLAKE2B",
         "ai_predicted_name": "chosen_name",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 115,
             "execution_time": 14.24
         },
@@ -105,7 +105,7 @@
         "ground_truth_name": "blake2b",
         "ai_predicted_name": "chosen_name",
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 128,
             "execution_time": 12.42
         },
@@ -125,7 +125,7 @@
         "ground_truth_name": "assert_bytes",
         "ai_predicted_name": "assert_bytes",
         "dimension": {
-            "category": "MEDIUM",
+            "category": "11-50",
             "lines_of_code": 21,
             "execution_time": 7.26
         },
@@ -145,7 +145,7 @@
         "ground_truth_name": "test",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 186,
             "execution_time": 6.94
         },
@@ -165,7 +165,7 @@
         "ground_truth_name": "main",
         "ai_predicted_name": null,
         "dimension": {
-            "category": "LARGE",
+            "category": "101-200",
             "lines_of_code": 102,
             "execution_time": 5.2
         },
