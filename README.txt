@@ -4,6 +4,9 @@ compila il dataset (se hai aggiunto nuovi file c)
 estrai i json con ida in background
 ./scripts/run_ida.sh
 
+inliner per i json strippati
+./scripts/ida/inliner.py
+
 avvia l'analisi dell'ia
 python scripts/ai_engine/client.py
 
