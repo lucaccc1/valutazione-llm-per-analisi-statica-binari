@@ -1,0 +1,67 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x400420": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x400460": {
+        "nome_corrente": "sub_400460",
+        "codice_decompilato": "FILE **sub_400460()\n{\n  return &stdin;\n}\n",
+        "variabili": {}
+    },
+    "0x4004d0": {
+        "nome_corrente": "sub_4004D0",
+        "codice_decompilato": "FILE **sub_4004D0()\n{\n  FILE **result; // rax\n\n  if ( !byte_403068 )\n  {\n    result = sub_400460();\n    byte_403068 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400500": {
+        "nome_corrente": "sub_400500",
+        "codice_decompilato": "__int64 sub_400500()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x400506": {
+        "nome_corrente": "error",
+        "codice_decompilato": "void __noreturn error()\n{\n  perror(\"Socket Creation Failed\");\n  exit(1);\n}\n",
+        "variabili": {}
+    },
+    "0x40051e": {
+        "nome_corrente": "main",
+        "codice_decompilato": "void __fastcall __noreturn main(int a1, char **a2, char **a3)\n{\n  socklen_t addr_len; // [rsp+Ch] [rbp-824h] BYREF\n  sockaddr addr; // [rsp+10h] [rbp-820h] BYREF\n  char buf[1024]; // [rsp+20h] [rbp-810h] BYREF\n  char s[1036]; // [rsp+420h] [rbp-410h] BYREF\n  int fd; // [rsp+82Ch] [rbp-4h]\n\n  addr_len = 16;\n  fd = socket(2, 2, 0);\n  addr = 0;\n  addr.sa_family = 2;\n  *(_WORD *)addr.sa_data = htons(0x2710u);\n  *(_DWORD *)&addr.sa_data[2] = htonl(0);\n  puts(\"Client is running...\");\n  connect(fd, &addr, 0x10u);\n  puts(\"Client is Connected Successfully...\");\n  while ( 1 )\n  {\n    puts(\"\\nEnter Command To Be Executed Remotely: \");\n    fgets(s, 1024, stdin);\n    sendto(fd, s, 0x400u, 0, &addr, addr_len);\n    recvfrom(fd, buf, 0x400u, 0, &addr, &addr_len);\n    printf(\"Server Reply: %s\\n\", buf);\n  }\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "addr_len": "",
+            "addr": "",
+            "buf": "",
+            "s": "",
+            "fd": ""
+        }
+    },
+    "0x400650": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

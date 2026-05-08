@@ -1,0 +1,42 @@
+[
+    {
+        "address": "0x400486",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 32,
+            "execution_time": 8.19
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x4004c6",
+        "ida_stripped_name": "sub_4004C6",
+        "ground_truth_name": "decimal2Octal",
+        "ai_predicted_name": "print_binary_digits",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 18,
+            "execution_time": 4.71
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.19,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    }
+]

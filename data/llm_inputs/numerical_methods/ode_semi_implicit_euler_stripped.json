@@ -1,0 +1,114 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x400420": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x400460": {
+        "nome_corrente": "sub_400460",
+        "codice_decompilato": "int (**sub_400460())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n",
+        "variabili": {}
+    },
+    "0x4004d0": {
+        "nome_corrente": "sub_4004D0",
+        "codice_decompilato": "int (**sub_4004D0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  int (**result)(int (*)(int, char **, char **), int, char **, void (*)(void), void (*)(void), void (*)(void), void *); // rax\n\n  if ( !byte_40305C )\n  {\n    result = sub_400460();\n    byte_40305C = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400500": {
+        "nome_corrente": "sub_400500",
+        "codice_decompilato": "__int64 sub_400500()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x400506": {
+        "nome_corrente": "sub_400506",
+        "codice_decompilato": "__int64 __fastcall sub_400506(__int64 a1, __int64 a2, __int64 a3)\n{\n  __int64 result; // rax\n\n  *(_QWORD *)a3 = *(_QWORD *)(a2 + 8);\n  result = a3 + 8;\n  *(double *)(a3 + 8) = *(double *)a2 * (-1.0 * 1.0);\n  return result;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a2": "",
+            "a1": "",
+            "result": ""
+        }
+    },
+    "0x400569": {
+        "nome_corrente": "sub_400569",
+        "codice_decompilato": "__int64 __fastcall sub_400569(double *a1, double *a2)\n{\n  __int64 result; // rax\n\n  *a2 = cos(*a1);\n  *(double *)&result = sin(*a1);\n  a2[1] = -*(double *)&result;\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "result": ""
+        }
+    },
+    "0x4005d0": {
+        "nome_corrente": "sub_4005D0",
+        "codice_decompilato": "double *__fastcall sub_4005D0(double *a1, double *a2, double *a3, double a4)\n{\n  double *result; // rax\n  int i; // [rsp+2Ch] [rbp-4h]\n\n  sub_400506((__int64)a1, (__int64)a2, (__int64)a3);\n  *a2 = *a3 * a4 + *a2;\n  sub_400506((__int64)a1, (__int64)a2, (__int64)a3);\n  for ( i = 1; i <= 1; ++i )\n    a2[i] = a3[i] * a4 + a2[i];\n  result = a1;\n  *a1 = *a1 + a4;\n  return result;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "a4": "",
+            "result": "",
+            "i": ""
+        }
+    },
+    "0x4006b4": {
+        "nome_corrente": "sub_4006B4",
+        "codice_decompilato": "double __fastcall sub_4006B4(double *a1, char a2, double a3, double a4, double a5)\n{\n  double v6; // [rsp+38h] [rbp-38h] BYREF\n  double v7[3]; // [rsp+40h] [rbp-30h] BYREF\n  clock_t v8; // [rsp+58h] [rbp-18h]\n  clock_t v9; // [rsp+60h] [rbp-10h]\n  FILE *stream; // [rsp+68h] [rbp-8h]\n\n  stream = 0;\n  if ( !a2 || (stream = fopen(\"semi_implicit_euler.csv\", \"w+\")) != 0 )\n  {\n    v9 = clock();\n    v6 = a4;\n    do\n    {\n      if ( a2 && stream )\n        fprintf(stream, \"%.4g,%.4g,%.4g\\n\", v6, *a1, a1[1]);\n      sub_4005D0(&v6, a1, v7, a3);\n      v6 = v6 + a3;\n    }\n    while ( a5 >= v6 );\n    v8 = clock();\n    if ( a2 )\n    {\n      if ( stream )\n        fclose(stream);\n    }\n    return (double)((int)v8 - (int)v9) / 1000000.0;\n  }\n  else\n  {\n    perror(\"Error! \");\n    return -1.0;\n  }\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "a5": "",
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "v9": "",
+            "stream": ""
+        }
+    },
+    "0x4007ef": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  double v4; // [rsp+10h] [rbp-60h] BYREF\n  double v5; // [rsp+18h] [rbp-58h] BYREF\n  double v6[3]; // [rsp+20h] [rbp-50h] BYREF\n  clock_t v7; // [rsp+38h] [rbp-38h]\n  clock_t v8; // [rsp+40h] [rbp-30h]\n  double *v9; // [rsp+48h] [rbp-28h]\n  FILE *stream; // [rsp+50h] [rbp-20h]\n  double v11; // [rsp+58h] [rbp-18h]\n  double v12; // [rsp+60h] [rbp-10h]\n  double v13; // [rsp+68h] [rbp-8h]\n\n  v13 = 0.0;\n  v12 = 10.0;\n  v6[0] = 1.0;\n  v6[1] = 0.0;\n  if ( a1 == 1 )\n  {\n    printf(\"\\nEnter the step size: \");\n    __isoc23_scanf(\"%lg\", &v5);\n  }\n  else\n  {\n    v5 = atof(a2[1]);\n  }\n  v11 = sub_4006B4(v6, 1, v5, v13, v12);\n  printf(\"\\tTime = %.6g ms\\n\", v11);\n  stream = fopen(\"exact.csv\", \"w+\");\n  if ( stream )\n  {\n    v4 = v13;\n    v9 = v6;\n    puts(\"Finding exact solution\");\n    v8 = clock();\n    do\n    {\n      fprintf(stream, \"%.4g,%.4g,%.4g\\n\", v4, *v9, v9[1]);\n      sub_400569(&v4, v9);\n      v4 = v5 + v4;\n    }\n    while ( v12 >= v4 );\n    v7 = clock();\n    v11 = (double)(int)((v7 - v8) / 1000000);\n    printf(\"\\tTime = %.6g ms\\n\", v11);\n    fclose(stream);\n    return 0;\n  }\n  else\n  {\n    perror(\"Error! \");\n    return 0xFFFFFFFFLL;\n  }\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "v9": "",
+            "stream": "",
+            "v11": "",
+            "v12": "",
+            "v13": ""
+        }
+    },
+    "0x4009f0": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

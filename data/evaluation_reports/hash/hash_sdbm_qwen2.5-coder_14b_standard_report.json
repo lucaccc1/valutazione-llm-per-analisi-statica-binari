@@ -1,0 +1,62 @@
+[
+    {
+        "address": "0x400476",
+        "ida_stripped_name": "sub_400476",
+        "ground_truth_name": "sdbm",
+        "ai_predicted_name": "calculate_hash",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 10,
+            "execution_time": 9.05
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.11,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4004dd",
+        "ida_stripped_name": "sub_4004DD",
+        "ground_truth_name": "test_sdbm",
+        "ai_predicted_name": "test_sdbm",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 12,
+            "execution_time": 10.92
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4005b6",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 5,
+            "execution_time": 8.57
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "address": "0x400496",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "sort_elements",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 44,
+            "execution_time": 14.18
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.24,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x400574",
+        "ida_stripped_name": "sub_400574",
+        "ground_truth_name": "stoogesort",
+        "ai_predicted_name": "sort_array",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 22,
+            "execution_time": 13.98
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.4,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.29,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    }
+]

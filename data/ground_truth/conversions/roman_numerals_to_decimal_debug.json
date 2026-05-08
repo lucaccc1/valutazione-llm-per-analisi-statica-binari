@@ -1,0 +1,45 @@
+{
+    "0x400496": {
+        "nome_funzione_originale": "symbol",
+        "variabili": {
+            "a1": "",
+            "value": ""
+        }
+    },
+    "0x40052b": {
+        "nome_funzione_originale": "roman_to_decimal",
+        "variabili": {
+            "input": "",
+            "v1": "",
+            "v2": "",
+            "i": "",
+            "result": ""
+        }
+    },
+    "0x400650": {
+        "nome_funzione_originale": "test",
+        "variabili": {
+            "input3": "",
+            "input2": "",
+            "input": "",
+            "output": "",
+            "expected": ""
+        }
+    },
+    "0x40081f": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": ""
+        }
+    },
+    "0x403038": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403040": {
+        "nome_funzione_originale": "strlen",
+        "variabili": {}
+    }
+}

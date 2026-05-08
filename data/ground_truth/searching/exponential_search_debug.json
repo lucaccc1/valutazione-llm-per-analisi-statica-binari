@@ -1,0 +1,47 @@
+{
+    "0x400476": {
+        "nome_funzione_originale": "exponential_search",
+        "variabili": {
+            "arr": "",
+            "length": "",
+            "n": "",
+            "lower_bound": "",
+            "upper_bound": ""
+        }
+    },
+    "0x400501": {
+        "nome_funzione_originale": "binary_search",
+        "variabili": {
+            "arr": "",
+            "l_index": "",
+            "r_index": "",
+            "n": "",
+            "middle_index": ""
+        }
+    },
+    "0x4005cd": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": ""
+        }
+    },
+    "0x4005dd": {
+        "nome_funzione_originale": "test",
+        "variabili": {
+            "arr_middle": "",
+            "arr_last_n": "",
+            "arr_first_n": "",
+            "arr_last_2": "",
+            "arr_first_2": "",
+            "arr_one": "",
+            "arr_found": "",
+            "arr_empty": ""
+        }
+    },
+    "0x403028": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    }
+}

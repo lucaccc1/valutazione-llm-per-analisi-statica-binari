@@ -1,0 +1,93 @@
+{
+    "0x400496": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "dst": "",
+            "src": "",
+            "source": "",
+            "edges": "",
+            "vertices": "",
+            "graph": "",
+            "i": ""
+        }
+    },
+    "0x40059f": {
+        "nome_funzione_originale": "bfs",
+        "variabili": {
+            "graph": "",
+            "startVertex": "",
+            "v2": "",
+            "adjVertex": "",
+            "q": "",
+            "temp": ""
+        }
+    },
+    "0x4006c1": {
+        "nome_funzione_originale": "createNode",
+        "variabili": {
+            "v": "",
+            "result": ""
+        }
+    },
+    "0x4006f5": {
+        "nome_funzione_originale": "createGraph",
+        "variabili": {
+            "vertices": "",
+            "graph": "",
+            "i": ""
+        }
+    },
+    "0x4007a1": {
+        "nome_funzione_originale": "addEdge",
+        "variabili": {
+            "graph": "",
+            "src": "",
+            "dest": "",
+            "Node": "",
+            "newNode": ""
+        }
+    },
+    "0x40084a": {
+        "nome_funzione_originale": "createQueue",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400882": {
+        "nome_funzione_originale": "isEmpty",
+        "variabili": {
+            "q": ""
+        }
+    },
+    "0x4008a7": {
+        "nome_funzione_originale": "enqueue",
+        "variabili": {
+            "q": "",
+            "value": ""
+        }
+    },
+    "0x400924": {
+        "nome_funzione_originale": "dequeue",
+        "variabili": {
+            "q": "",
+            "item": ""
+        }
+    },
+    "0x4009c5": {
+        "nome_funzione_originale": "pollQueue",
+        "variabili": {
+            "q": ""
+        }
+    },
+    "0x403038": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403050": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    }
+}

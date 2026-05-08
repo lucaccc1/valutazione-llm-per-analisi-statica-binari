@@ -1,0 +1,54 @@
+{
+    "0x400486": {
+        "nome_funzione_originale": "flip",
+        "variabili": {
+            "arr": "",
+            "i": "",
+            "temp": "",
+            "start": ""
+        }
+    },
+    "0x40050d": {
+        "nome_funzione_originale": "findMax",
+        "variabili": {
+            "arr": "",
+            "n": "",
+            "i": "",
+            "maxElementIdx": ""
+        }
+    },
+    "0x40056f": {
+        "nome_funzione_originale": "pancakeSort",
+        "variabili": {
+            "arr": "",
+            "n": "",
+            "maxElementIdx": ""
+        }
+    },
+    "0x4005d8": {
+        "nome_funzione_originale": "display",
+        "variabili": {
+            "arr": "",
+            "n": "",
+            "i": ""
+        }
+    },
+    "0x400630": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "arr": "",
+            "i": ""
+        }
+    },
+    "0x403028": {
+        "nome_funzione_originale": "putchar",
+        "variabili": {}
+    },
+    "0x403040": {
+        "nome_funzione_originale": "rand",
+        "variabili": {}
+    }
+}

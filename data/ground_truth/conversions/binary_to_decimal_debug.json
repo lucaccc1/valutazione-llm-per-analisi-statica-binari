@@ -1,0 +1,30 @@
+{
+    "0x400486": {
+        "nome_funzione_originale": "convert_to_decimal",
+        "variabili": {
+            "number": "",
+            "i": "",
+            "decimal_number": ""
+        }
+    },
+    "0x400575": {
+        "nome_funzione_originale": "tests",
+        "variabili": {}
+    },
+    "0x400726": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": ""
+        }
+    },
+    "0x403030": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403038": {
+        "nome_funzione_originale": "pow",
+        "variabili": {}
+    }
+}

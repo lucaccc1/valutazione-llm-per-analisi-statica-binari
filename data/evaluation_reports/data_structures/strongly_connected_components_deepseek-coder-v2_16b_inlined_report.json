@@ -1,0 +1,242 @@
+[
+    {
+        "address": "0x4004a6",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 92,
+            "execution_time": 12.68
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 3
+    },
+    {
+        "address": "0x40059e",
+        "ida_stripped_name": "sub_40059E",
+        "ground_truth_name": "fillOrder",
+        "ai_predicted_name": "process_nodes",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 26,
+            "execution_time": 3.68
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.27,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.05,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x400652",
+        "ida_stripped_name": "sub_400652",
+        "ground_truth_name": "transpose",
+        "ai_predicted_name": "process_array",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 47,
+            "execution_time": 6.87
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.27,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.05,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 2
+    },
+    {
+        "address": "0x4006dc",
+        "ida_stripped_name": "sub_4006DC",
+        "ground_truth_name": "dfs",
+        "ai_predicted_name": "print_indices",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 17,
+            "execution_time": 3.57
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.25,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40078c",
+        "ida_stripped_name": "sub_40078C",
+        "ground_truth_name": "scc",
+        "ai_predicted_name": "process_data",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 107,
+            "execution_time": 13.7
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.13,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 5
+    },
+    {
+        "address": "0x40085a",
+        "ida_stripped_name": "sub_40085A",
+        "ground_truth_name": "createNode",
+        "ai_predicted_name": "allocate_and_initialize",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 9,
+            "execution_time": 2.88
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.42,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.11,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40088e",
+        "ida_stripped_name": "sub_40088E",
+        "ground_truth_name": "createGraph",
+        "ai_predicted_name": "allocate_memory",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 16,
+            "execution_time": 3.61
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.38,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.13,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40093a",
+        "ida_stripped_name": "sub_40093A",
+        "ground_truth_name": "addEdge",
+        "ai_predicted_name": "allocate_and_assign",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 23,
+            "execution_time": 5.5
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.31,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x400999",
+        "ida_stripped_name": "sub_400999",
+        "ground_truth_name": "printGraph",
+        "ai_predicted_name": "print_adjacency_list",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 22,
+            "execution_time": 5.17
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.4,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.28,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400a27",
+        "ida_stripped_name": "sub_400A27",
+        "ground_truth_name": "createStack",
+        "ai_predicted_name": "allocate_memory",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 8,
+            "execution_time": 2.17
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.31,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.13,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400a51",
+        "ida_stripped_name": "sub_400A51",
+        "ground_truth_name": "push",
+        "ai_predicted_name": "increment_and_store",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 9,
+            "execution_time": 3.73
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.09,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400a8d",
+        "ida_stripped_name": "sub_400A8D",
+        "ground_truth_name": "pop",
+        "ai_predicted_name": "get_array_element",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 10,
+            "execution_time": 3.85
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    }
+]

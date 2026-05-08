@@ -1,0 +1,82 @@
+[
+    {
+        "address": "0x4004b6",
+        "ida_stripped_name": "sub_4004B6",
+        "ground_truth_name": "swap",
+        "ai_predicted_name": "swap_values",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 11,
+            "execution_time": 11.53
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.53,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 0.51,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4004e3",
+        "ida_stripped_name": "sub_4004E3",
+        "ground_truth_name": "part",
+        "ai_predicted_name": "sort_and_adjust_indices",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 35,
+            "execution_time": 17.66
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.15,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.06,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x4005fe",
+        "ida_stripped_name": "sub_4005FE",
+        "ground_truth_name": "rselect",
+        "ai_predicted_name": "binary_search_with_random_pivot",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 45,
+            "execution_time": 18.34
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.26,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.04,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x400711",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "search_sorted_array",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 45,
+            "execution_time": 19.39
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.09,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    }
+]

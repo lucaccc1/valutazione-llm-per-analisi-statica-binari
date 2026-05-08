@@ -1,0 +1,90 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x400410": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x400450": {
+        "nome_corrente": "sub_400450",
+        "codice_decompilato": "void *sub_400450()\n{\n  return &unk_403058;\n}\n",
+        "variabili": {}
+    },
+    "0x4004c0": {
+        "nome_corrente": "sub_4004C0",
+        "codice_decompilato": "void *sub_4004C0()\n{\n  void *result; // rax\n\n  if ( !byte_403068 )\n  {\n    result = sub_400450();\n    byte_403068 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x4004f0": {
+        "nome_corrente": "sub_4004F0",
+        "codice_decompilato": "__int64 sub_4004F0()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x4004f6": {
+        "nome_corrente": "sub_4004F6",
+        "codice_decompilato": "double *__fastcall sub_4004F6(double *a1, double *a2, double a3, double a4)\n{\n  double *result; // rax\n  double v6; // [rsp+28h] [rbp-8h]\n\n  v6 = 0.0;\n  *a1 = sqrt(a3 * a3 + a4 * a4);\n  if ( a3 == 0.0 )\n  {\n    if ( a4 <= 0.0 )\n      v6 = -1.570796326794897;\n    else\n      v6 = 1.570796326794897;\n  }\n  else if ( a4 != 0.0 )\n  {\n    *a2 = atan(a4 / a3);\n    if ( a3 > 0.0 && a4 > 0.0 || -a4 == a3 )\n    {\n      v6 = *a2;\n    }\n    else if ( a3 >= 0.0 || a4 <= 0.0 )\n    {\n      if ( a3 >= 0.0 || a4 >= 0.0 )\n      {\n        if ( a3 <= 0.0 || a4 >= 0.0 )\n          fwrite(\"Should not reach here!\\n\", 1u, 0x17u, stderr);\n        else\n          v6 = 6.283185307179586 - *a2;\n      }\n      else\n      {\n        v6 = *a2 - 3.141592653589793;\n      }\n    }\n    else\n    {\n      v6 = *a2 + 3.141592653589793;\n    }\n  }\n  if ( a4 == 0.0 )\n  {\n    if ( a3 <= 0.0 )\n      v6 = -3.141592653589793;\n    else\n      v6 = 0.0;\n  }\n  result = a2;\n  *a2 = v6;\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "result": "",
+            "v6": ""
+        }
+    },
+    "0x40072f": {
+        "nome_corrente": "sub_40072F",
+        "codice_decompilato": "double __fastcall sub_40072F(double a1, double a2)\n{\n  return (a2 - a1) * ((double)rand() / 2147483647.0) + a1;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": ""
+        }
+    },
+    "0x400775": {
+        "nome_corrente": "sub_400775",
+        "codice_decompilato": "__int64 sub_400775()\n{\n  __int64 result; // rax\n  double v1; // [rsp+18h] [rbp-28h] BYREF\n  double v2; // [rsp+20h] [rbp-20h] BYREF\n  double y; // [rsp+28h] [rbp-18h]\n  double x; // [rsp+30h] [rbp-10h]\n  int v5; // [rsp+38h] [rbp-8h]\n  int i; // [rsp+3Ch] [rbp-4h]\n\n  srand(0xAu);\n  v5 = 5;\n  for ( i = 0; ; ++i )\n  {\n    result = (unsigned int)i;\n    if ( i >= v5 )\n      break;\n    printf(\"Test %d.... \", i);\n    x = sub_40072F(-5.0, 5.0);\n    y = sub_40072F(-5.0, 5.0);\n    printf(\"(%.2g, %.2g).... \", x, y);\n    sub_4004F6(&v2, &v1, x, y);\n    if ( fabs(v2 - hypot(x, y)) >= 0.01 )\n      __assert_fail(\"fabs(r - hypot(x, y)) < 0.01\", \"dataset/src/math/cartesian_to_polar.c\", 0x6Fu, \"test\");\n    if ( fabs(v1 - atan2(y, x)) >= 0.01 )\n      __assert_fail(\"fabs(theta - atan2(y, x)) < 0.01\", \"dataset/src/math/cartesian_to_polar.c\", 0x70u, \"test\");\n    puts(\"passed\");\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": "",
+            "v1": "",
+            "v2": "",
+            "y": "",
+            "x": "",
+            "v5": "",
+            "i": ""
+        }
+    },
+    "0x400920": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(__int64 a1, char **a2, char **a3)\n{\n  sub_400775(a1, a2, a3);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": ""
+        }
+    },
+    "0x400930": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

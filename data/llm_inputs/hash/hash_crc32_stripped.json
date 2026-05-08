@@ -1,0 +1,72 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x400390": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x4003d0": {
+        "nome_corrente": "sub_4003D0",
+        "codice_decompilato": "int (**sub_4003D0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n",
+        "variabili": {}
+    },
+    "0x400440": {
+        "nome_corrente": "sub_400440",
+        "codice_decompilato": "int (**sub_400440())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  int (**result)(int (*)(int, char **, char **), int, char **, void (*)(void), void (*)(void), void (*)(void), void *); // rax\n\n  if ( !byte_403014 )\n  {\n    result = sub_4003D0();\n    byte_403014 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400470": {
+        "nome_corrente": "sub_400470",
+        "codice_decompilato": "__int64 sub_400470()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x400476": {
+        "nome_corrente": "sub_400476",
+        "codice_decompilato": "__int64 __fastcall sub_400476(__int64 a1)\n{\n  char j; // [rsp+17h] [rbp-11h]\n  __int64 i; // [rsp+18h] [rbp-10h]\n  unsigned int v4; // [rsp+24h] [rbp-4h]\n\n  v4 = -1;\n  for ( i = 0; *(_BYTE *)(a1 + i); ++i )\n  {\n    v4 ^= *(unsigned __int8 *)(a1 + i);\n    for ( j = 8; j; --j )\n      v4 = (v4 >> 1) ^ -(v4 & 1) & 0xEDB88320;\n  }\n  return ~v4;\n}\n",
+        "variabili": {
+            "a1": "",
+            "j": "",
+            "i": "",
+            "v4": ""
+        }
+    },
+    "0x4004ee": {
+        "nome_corrente": "sub_4004EE",
+        "codice_decompilato": "int sub_4004EE()\n{\n  if ( (unsigned int)sub_400476((__int64)\"Hello World\") != 1243066710 )\n    __assert_fail(\"crc32(\\\"Hello World\\\") == 1243066710\", \"dataset/src/hash/hash_crc32.c\", 0x2Cu, \"test_crc32\");\n  if ( (unsigned int)sub_400476((__int64)\"Hello World!\") != 472456355 )\n    __assert_fail(\"crc32(\\\"Hello World!\\\") == 472456355\", \"dataset/src/hash/hash_crc32.c\", 0x2Du, \"test_crc32\");\n  if ( (unsigned int)sub_400476((__int64)\"Hello world\") != -1948869038 )\n    __assert_fail(\"crc32(\\\"Hello world\\\") == 2346098258\", \"dataset/src/hash/hash_crc32.c\", 0x2Eu, \"test_crc32\");\n  if ( (unsigned int)sub_400476((__int64)\"Hello world!\") != 461707669 )\n    __assert_fail(\"crc32(\\\"Hello world!\\\") == 461707669\", \"dataset/src/hash/hash_crc32.c\", 0x2Fu, \"test_crc32\");\n  return puts(\"Tests passed\");\n}\n",
+        "variabili": {}
+    },
+    "0x4005a7": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  sub_4004EE();\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": ""
+        }
+    },
+    "0x4005b8": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

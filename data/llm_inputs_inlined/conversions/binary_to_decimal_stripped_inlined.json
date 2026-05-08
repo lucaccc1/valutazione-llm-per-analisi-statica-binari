@@ -1,0 +1,81 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4003a0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4003e0": {
+        "nome_corrente": "sub_4003E0",
+        "codice_decompilato": "int (**sub_4003E0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400450": {
+        "nome_corrente": "sub_400450",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4003E0 ===\nint (**sub_4003E0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n// === END INLINED FUNCTION: sub_4003E0 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nint (**sub_400450())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  int (**result)(int (*)(int, char **, char **), int, char **, void (*)(void), void (*)(void), void (*)(void), void *); // rax\n\n  if ( !byte_40301C )\n  {\n    result = sub_4003E0();\n    byte_40301C = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400480": {
+        "nome_corrente": "sub_400480",
+        "codice_decompilato": "__int64 sub_400480()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400486": {
+        "nome_corrente": "sub_400486",
+        "codice_decompilato": "__int64 __fastcall sub_400486(unsigned __int64 a1)\n{\n  int v3; // [rsp+18h] [rbp-8h]\n  int v4; // [rsp+1Ch] [rbp-4h]\n\n  v4 = 0;\n  v3 = 0;\n  while ( a1 )\n  {\n    v4 = (int)((double)v4 + (double)(a1 % 0xA) * pow(2.0, (double)v3));\n    a1 /= 0xAu;\n    ++v3;\n  }\n  return (unsigned int)v4;\n}\n",
+        "variabili": {
+            "a1": "",
+            "v3": "",
+            "v4": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400575": {
+        "nome_corrente": "sub_400575",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400486 ===\n__int64 __fastcall sub_400486(unsigned __int64 a1)\n{\n  int v3; // [rsp+18h] [rbp-8h]\n  int v4; // [rsp+1Ch] [rbp-4h]\n\n  v4 = 0;\n  v3 = 0;\n  while ( a1 )\n  {\n    v4 = (int)((double)v4 + (double)(a1 % 0xA) * pow(2.0, (double)v3));\n    a1 /= 0xAu;\n    ++v3;\n  }\n  return (unsigned int)v4;\n}\n// === END INLINED FUNCTION: sub_400486 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nint sub_400575()\n{\n  if ( (unsigned int)sub_400486(0x6Fu) != 7 )\n    __assert_fail(\"convert_to_decimal(111) == 7\", \"dataset/src/conversions/binary_to_decimal.c\", 0x2Eu, \"tests\");\n  if ( (unsigned int)sub_400486(0x65u) != 5 )\n    __assert_fail(\"convert_to_decimal(101) == 5\", \"dataset/src/conversions/binary_to_decimal.c\", 0x2Fu, \"tests\");\n  if ( (unsigned int)sub_400486(0x3F2u) != 10 )\n    __assert_fail(\"convert_to_decimal(1010) == 10\", \"dataset/src/conversions/binary_to_decimal.c\", 0x30u, \"tests\");\n  if ( (unsigned int)sub_400486(0x44Du) != 13 )\n    __assert_fail(\"convert_to_decimal(1101) == 13\", \"dataset/src/conversions/binary_to_decimal.c\", 0x31u, \"tests\");\n  if ( (unsigned int)sub_400486(0x186A1u) != 33 )\n    __assert_fail(\"convert_to_decimal(100001) == 33\", \"dataset/src/conversions/binary_to_decimal.c\", 0x32u, \"tests\");\n  if ( (unsigned int)sub_400486(0x9A2109u) != 169 )\n    __assert_fail(\"convert_to_decimal(10101001) == 169\", \"dataset/src/conversions/binary_to_decimal.c\", 0x33u, \"tests\");\n  if ( (unsigned int)sub_400486(0x1B1A2u) != 58 )\n    __assert_fail(\"convert_to_decimal(111010) == 58\", \"dataset/src/conversions/binary_to_decimal.c\", 0x34u, \"tests\");\n  if ( (unsigned int)sub_400486(0x5F5E100u) != 256 )\n    __assert_fail(\"convert_to_decimal(100000000) == 256\", \"dataset/src/conversions/binary_to_decimal.c\", 0x35u, \"tests\");\n  if ( (unsigned int)sub_400486(0x2540BE400uLL) != 1024 )\n    __assert_fail(\n      \"convert_to_decimal(10000000000) == 1024\",\n      \"dataset/src/conversions/binary_to_decimal.c\",\n      0x36u,\n      \"tests\");\n  if ( (unsigned int)sub_400486(0x606D15Fu) != 375 )\n    __assert_fail(\"convert_to_decimal(101110111) == 375\", \"dataset/src/conversions/binary_to_decimal.c\", 0x37u, \"tests\");\n  return puts(\"All tests have successfully passed!\");\n}\n",
+        "variabili": {},
+        "inlined_count": 1
+    },
+    "0x400726": {
+        "nome_corrente": "main",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400575 ===\nint sub_400575()\n{\n  if ( (unsigned int)sub_400486(0x6Fu) != 7 )\n    __assert_fail(\"convert_to_decimal(111) == 7\", \"dataset/src/conversions/binary_to_decimal.c\", 0x2Eu, \"tests\");\n  if ( (unsigned int)sub_400486(0x65u) != 5 )\n    __assert_fail(\"convert_to_decimal(101) == 5\", \"dataset/src/conversions/binary_to_decimal.c\", 0x2Fu, \"tests\");\n  if ( (unsigned int)sub_400486(0x3F2u) != 10 )\n    __assert_fail(\"convert_to_decimal(1010) == 10\", \"dataset/src/conversions/binary_to_decimal.c\", 0x30u, \"tests\");\n  if ( (unsigned int)sub_400486(0x44Du) != 13 )\n    __assert_fail(\"convert_to_decimal(1101) == 13\", \"dataset/src/conversions/binary_to_decimal.c\", 0x31u, \"tests\");\n  if ( (unsigned int)sub_400486(0x186A1u) != 33 )\n    __assert_fail(\"convert_to_decimal(100001) == 33\", \"dataset/src/conversions/binary_to_decimal.c\", 0x32u, \"tests\");\n  if ( (unsigned int)sub_400486(0x9A2109u) != 169 )\n    __assert_fail(\"convert_to_decimal(10101001) == 169\", \"dataset/src/conversions/binary_to_decimal.c\", 0x33u, \"tests\");\n  if ( (unsigned int)sub_400486(0x1B1A2u) != 58 )\n    __assert_fail(\"convert_to_decimal(111010) == 58\", \"dataset/src/conversions/binary_to_decimal.c\", 0x34u, \"tests\");\n  if ( (unsigned int)sub_400486(0x5F5E100u) != 256 )\n    __assert_fail(\"convert_to_decimal(100000000) == 256\", \"dataset/src/conversions/binary_to_decimal.c\", 0x35u, \"tests\");\n  if ( (unsigned int)sub_400486(0x2540BE400uLL) != 1024 )\n    __assert_fail(\n      \"convert_to_decimal(10000000000) == 1024\",\n      \"dataset/src/conversions/binary_to_decimal.c\",\n      0x36u,\n      \"tests\");\n  if ( (unsigned int)sub_400486(0x606D15Fu) != 375 )\n    __assert_fail(\"convert_to_decimal(101110111) == 375\", \"dataset/src/conversions/binary_to_decimal.c\", 0x37u, \"tests\");\n  return puts(\"All tests have successfully passed!\");\n}\n// === END INLINED FUNCTION: sub_400575 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  sub_400575();\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400738": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

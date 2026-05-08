@@ -1,0 +1,95 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x400390": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x4003d0": {
+        "nome_corrente": "sub_4003D0",
+        "codice_decompilato": "int (**sub_4003D0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n",
+        "variabili": {}
+    },
+    "0x400440": {
+        "nome_corrente": "sub_400440",
+        "codice_decompilato": "int (**sub_400440())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  int (**result)(int (*)(int, char **, char **), int, char **, void (*)(void), void (*)(void), void (*)(void), void *); // rax\n\n  if ( !byte_403014 )\n  {\n    result = sub_4003D0();\n    byte_403014 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400470": {
+        "nome_corrente": "sub_400470",
+        "codice_decompilato": "__int64 sub_400470()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x400476": {
+        "nome_corrente": "sub_400476",
+        "codice_decompilato": "double __fastcall sub_400476(double a1, double a2)\n{\n  _BOOL4 v2; // edx\n  _BOOL4 v3; // eax\n  int v4; // eax\n  _BOOL4 v5; // edx\n  int v6; // eax\n  _BOOL4 v7; // edx\n\n  v2 = a1 > 0.0 && a2 > 0.0;\n  v3 = a1 < 0.0 && a2 < 0.0;\n  v4 = v2 + v3;\n  v5 = a1 > 0.0 && a2 < 0.0;\n  v6 = v4 - v5;\n  v7 = a1 < 0.0 && a2 > 0.0;\n  return (double)(v6 - v7);\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "v2": "",
+            "v3": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": ""
+        }
+    },
+    "0x40052c": {
+        "nome_corrente": "sub_40052C",
+        "codice_decompilato": "double __fastcall sub_40052C(double a1)\n{\n  return a1 + a1 + a1 * a1 * a1 - 10.0;\n}\n",
+        "variabili": {
+            "a1": ""
+        }
+    },
+    "0x400562": {
+        "nome_corrente": "sub_400562",
+        "codice_decompilato": "double __fastcall sub_400562(double a1, double a2, double a3)\n{\n  double v4; // rbx\n  double v5; // xmm0_8\n  int i; // [rsp+34h] [rbp-Ch]\n\n  for ( i = 1; i <= 50; ++i )\n  {\n    if ( fabs(sub_40052C((a1 + a2) / 2.0)) < 0.0001 || a3 > (a1 + a2) / 2.0 - a1 )\n      return (a1 + a2) / 2.0;\n    v4 = sub_40052C(a1);\n    v5 = sub_40052C((a1 + a2) / 2.0);\n    if ( sub_400476(v5, v4) <= 0.0 )\n      a2 = (a1 + a2) / 2.0;\n    else\n      a1 = (a1 + a2) / 2.0;\n  }\n  return -1.0;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "v4": "",
+            "v5": "",
+            "i": ""
+        }
+    },
+    "0x400670": {
+        "nome_corrente": "sub_400670",
+        "codice_decompilato": "int sub_400670()\n{\n  if ( fabs(sub_400562(1.0, 2.0, 0.0001) - 1.847473) >= 0.0001 )\n    __assert_fail(\n      \"fabs(bisection(1.0, 2.0, 0.0001) - 1.847473) < EPSILON\",\n      \"dataset/src/numerical_methods/bisection_method.c\",\n      0x5Fu,\n      \"test\");\n  if ( fabs(sub_400562(100.0, 250.0, 0.0001) - 249.999928) >= 0.0001 )\n    __assert_fail(\n      \"fabs(bisection(100.0, 250.0, 0.0001) - 249.999928) < EPSILON\",\n      \"dataset/src/numerical_methods/bisection_method.c\",\n      0x61u,\n      \"test\");\n  return puts(\"All tests have successfully passed!\");\n}\n",
+        "variabili": {}
+    },
+    "0x400765": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  sub_400670();\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": ""
+        }
+    },
+    "0x400778": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

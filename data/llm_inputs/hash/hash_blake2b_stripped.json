@@ -1,0 +1,182 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_403FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x4003c0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x400400": {
+        "nome_corrente": "sub_400400",
+        "codice_decompilato": "void (**sub_400400())(void *ptr)\n{\n  return &free;\n}\n",
+        "variabili": {}
+    },
+    "0x400470": {
+        "nome_corrente": "sub_400470",
+        "codice_decompilato": "void (**sub_400470())(void *ptr)\n{\n  void (**result)(void *); // rax\n\n  if ( !byte_40402C )\n  {\n    result = sub_400400();\n    byte_40402C = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x4004a0": {
+        "nome_corrente": "sub_4004A0",
+        "codice_decompilato": "__int64 sub_4004A0()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x4004a6": {
+        "nome_corrente": "sub_4004A6",
+        "codice_decompilato": "_QWORD *__fastcall sub_4004A6(_QWORD *a1, __int64 a2)\n{\n  _QWORD *result; // rax\n\n  *a1 = a2;\n  result = a1 + 1;\n  a1[1] = 0;\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "result": ""
+        }
+    },
+    "0x4004cf": {
+        "nome_corrente": "sub_4004CF",
+        "codice_decompilato": "_QWORD *__fastcall sub_4004CF(_QWORD *a1, unsigned __int64 a2)\n{\n  _QWORD *result; // rax\n\n  if ( a2 >= ~*a1 )\n    ++a1[1];\n  result = a1;\n  *a1 += a2;\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "result": ""
+        }
+    },
+    "0x400515": {
+        "nome_corrente": "sub_400515",
+        "codice_decompilato": "__int64 __fastcall sub_400515(\n        __int64 a1,\n        unsigned __int8 a2,\n        unsigned __int8 a3,\n        unsigned __int8 a4,\n        unsigned __int8 a5,\n        __int64 a6,\n        __int64 a7)\n{\n  __int64 result; // rax\n\n  *(_QWORD *)(8LL * a2 + a1) += a6 + *(_QWORD *)(8LL * a3 + a1);\n  *(_QWORD *)(8LL * a5 + a1) = __ROR8__(*(_QWORD *)(8LL * a2 + a1) ^ *(_QWORD *)(8LL * a5 + a1), 32);\n  *(_QWORD *)(8LL * a4 + a1) += *(_QWORD *)(8LL * a5 + a1);\n  *(_QWORD *)(8LL * a3 + a1) = __ROR8__(*(_QWORD *)(8LL * a4 + a1) ^ *(_QWORD *)(8LL * a3 + a1), 24);\n  *(_QWORD *)(8LL * a2 + a1) += a7 + *(_QWORD *)(8LL * a3 + a1);\n  *(_QWORD *)(8LL * a5 + a1) = __ROR8__(*(_QWORD *)(8LL * a2 + a1) ^ *(_QWORD *)(8LL * a5 + a1), 16);\n  *(_QWORD *)(8LL * a4 + a1) += *(_QWORD *)(8LL * a5 + a1);\n  result = __ROR8__(*(_QWORD *)(8LL * a4 + a1) ^ *(_QWORD *)(8LL * a3 + a1), 63);\n  *(_QWORD *)(8LL * a3 + a1) = result;\n  return result;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a4": "",
+            "a1": "",
+            "a2": "",
+            "a5": "",
+            "a6": "",
+            "a7": "",
+            "result": ""
+        }
+    },
+    "0x4007bb": {
+        "nome_corrente": "sub_4007BB",
+        "codice_decompilato": "__int64 __fastcall sub_4007BB(__int64 a1, __int64 a2, _QWORD *a3, int a4)\n{\n  __int64 result; // rax\n  _QWORD v5[12]; // [rsp+20h] [rbp-90h] BYREF\n  __int64 v6; // [rsp+80h] [rbp-30h]\n  __int64 v7; // [rsp+88h] [rbp-28h]\n  __int64 v8; // [rsp+90h] [rbp-20h]\n  unsigned __int8 *v9; // [rsp+A0h] [rbp-10h]\n  int i; // [rsp+ACh] [rbp-4h]\n\n  for ( i = 0; i <= 7; ++i )\n    v5[i] = *(_QWORD *)(8LL * i + a1);\n  while ( i <= 15 )\n  {\n    v5[i] = qword_4022A0[i - 8];\n    ++i;\n  }\n  v6 ^= *a3;\n  result = v7 ^ a3[1];\n  v7 = result;\n  if ( a4 )\n  {\n    result = ~v8;\n    v8 = ~v8;\n  }\n  for ( i = 0; i <= 11; ++i )\n  {\n    v9 = (unsigned __int8 *)(16LL * i + 4203232);\n    sub_400515(\n      (__int64)v5,\n      0,\n      4u,\n      8u,\n      0xCu,\n      *(_QWORD *)(8LL * byte_4022E0[16 * i] + a2),\n      *(_QWORD *)(8LL * byte_4022E0[16 * i + 1] + a2));\n    sub_400515((__int64)v5, 1u, 5u, 9u, 0xDu, *(_QWORD *)(8LL * v9[2] + a2), *(_QWORD *)(8LL * v9[3] + a2));\n    sub_400515((__int64)v5, 2u, 6u, 0xAu, 0xEu, *(_QWORD *)(8LL * v9[4] + a2), *(_QWORD *)(8LL * v9[5] + a2));\n    sub_400515((__int64)v5, 3u, 7u, 0xBu, 0xFu, *(_QWORD *)(8LL * v9[6] + a2), *(_QWORD *)(8LL * v9[7] + a2));\n    sub_400515((__int64)v5, 0, 5u, 0xAu, 0xFu, *(_QWORD *)(8LL * v9[8] + a2), *(_QWORD *)(8LL * v9[9] + a2));\n    sub_400515((__int64)v5, 1u, 6u, 0xBu, 0xCu, *(_QWORD *)(8LL * v9[10] + a2), *(_QWORD *)(8LL * v9[11] + a2));\n    sub_400515((__int64)v5, 2u, 7u, 8u, 0xDu, *(_QWORD *)(8LL * v9[12] + a2), *(_QWORD *)(8LL * v9[13] + a2));\n    result = sub_400515((__int64)v5, 3u, 4u, 9u, 0xEu, *(_QWORD *)(8LL * v9[14] + a2), *(_QWORD *)(8LL * v9[15] + a2));\n  }\n  for ( i = 0; i <= 7; ++i )\n  {\n    result = 8LL * i + a1;\n    *(_QWORD *)result ^= v5[i + 8] ^ v5[i];\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a4": "",
+            "a1": "",
+            "a2": "",
+            "result": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "v9": "",
+            "i": ""
+        }
+    },
+    "0x400cad": {
+        "nome_corrente": "sub_400CAD",
+        "codice_decompilato": "__int64 __fastcall sub_400CAD(\n        __int64 a1,\n        __int64 a2,\n        unsigned __int64 a3,\n        _QWORD *a4,\n        unsigned __int8 a5,\n        unsigned __int8 a6)\n{\n  _QWORD v11[2]; // [rsp+30h] [rbp-80h] BYREF\n  _QWORD v12[10]; // [rsp+40h] [rbp-70h] BYREF\n  __int64 v13; // [rsp+90h] [rbp-20h]\n  __int16 v14; // [rsp+9Eh] [rbp-12h]\n  unsigned __int64 j; // [rsp+A0h] [rbp-10h]\n  unsigned __int64 i; // [rsp+A8h] [rbp-8h]\n\n  v11[0] = 0;\n  v11[1] = 0;\n  for ( i = 0; i <= 7; ++i )\n    v12[i] = qword_4022A0[i];\n  v12[0] ^= (a5 << 8) ^ 0x1010000 ^ (unsigned int)a6;\n  if ( a3 > 1 )\n  {\n    for ( i = 0; i < a3 - 1; ++i )\n    {\n      sub_4004CF(v11, 0x80u);\n      sub_4007BB((__int64)v12, (i << 7) + a2, v11, 0);\n    }\n  }\n  if ( a5 )\n    sub_4004CF(a4, 0x80u);\n  sub_4007BB((__int64)v12, (a3 << 7) - 128 + a2, a4, 1);\n  for ( i = 0; i < a6; ++i )\n  {\n    if ( (i & 7) == 0 )\n    {\n      for ( j = 0; j <= 7; ++j )\n      {\n        v14 = 8 * j;\n        v13 = 255LL << (8 * (unsigned __int8)j);\n        *((_BYTE *)&v12[9] + j) = ((unsigned __int64)v13 & v12[i >> 3]) >> (8 * (unsigned __int8)j);\n      }\n    }\n    *(_BYTE *)(a1 + i) = *((_BYTE *)&v12[9] + (i & 7));\n  }\n  return 0;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a4": "",
+            "a1": "",
+            "a2": "",
+            "a5": "",
+            "a6": "",
+            "v11": "",
+            "v12": "",
+            "v13": "",
+            "v14": "",
+            "j": "",
+            "i": ""
+        }
+    },
+    "0x400eb3": {
+        "nome_corrente": "sub_400EB3",
+        "codice_decompilato": "void *__fastcall sub_400EB3(__int64 a1, unsigned __int64 a2, __int64 a3, char a4, char a5)\n{\n  char v5; // al\n  char v6; // al\n  size_t v7; // rax\n  unsigned __int8 v9; // [rsp+0h] [rbp-70h]\n  unsigned __int8 v11; // [rsp+4h] [rbp-6Ch]\n  _QWORD v14[2]; // [rsp+20h] [rbp-50h] BYREF\n  unsigned __int64 v15; // [rsp+30h] [rbp-40h]\n  unsigned __int64 v16; // [rsp+38h] [rbp-38h]\n  unsigned __int64 v17; // [rsp+40h] [rbp-30h]\n  _BOOL8 v18; // [rsp+48h] [rbp-28h]\n  void *ptr; // [rsp+50h] [rbp-20h]\n  size_t nmemb; // [rsp+58h] [rbp-18h]\n  void *v21; // [rsp+60h] [rbp-10h]\n  unsigned __int64 i; // [rsp+68h] [rbp-8h]\n\n  v21 = 0;\n  if ( !a1 )\n    a2 = 0;\n  if ( !a3 )\n    a4 = 0;\n  v5 = a4;\n  if ( (unsigned __int8)a4 > 0x40u )\n    v5 = 64;\n  v11 = v5;\n  v6 = a5;\n  if ( (unsigned __int8)a5 > 0x40u )\n    v6 = 64;\n  v9 = v6;\n  v7 = (a2 >> 7) + ((a2 & 0x7F) != 0) + (v11 >> 7) + ((v11 & 0x7F) != 0);\n  if ( !v7 )\n    v7 = 1;\n  nmemb = v7;\n  ptr = calloc(v7, 0x80u);\n  if ( !ptr )\n    return 0;\n  v21 = malloc(v9);\n  if ( v21 )\n  {\n    for ( i = 0; i < v11; ++i )\n    {\n      v17 = (unsigned __int64)*(unsigned __int8 *)(a3 + i) << (8 * ((unsigned __int8)i & 7u));\n      v15 = (i & 0x7F) >> 3;\n      *((_QWORD *)ptr + v15) |= v17;\n    }\n    v18 = v11 != 0;\n    for ( i = 0; i < a2; ++i )\n    {\n      v17 = (unsigned __int64)*(unsigned __int8 *)(a1 + i) << (8 * ((unsigned __int8)i & 7u));\n      v16 = (i >> 7) + v18;\n      v15 = (i & 0x7F) >> 3;\n      *((_QWORD *)ptr + 16 * v16 + v15) |= v17;\n    }\n    sub_4004A6(v14, a2);\n    sub_400CAD((__int64)v21, (__int64)ptr, nmemb, v14, v11, v9);\n    free(ptr);\n    return v21;\n  }\n  else\n  {\n    free(ptr);\n    return 0;\n  }\n}\n",
+        "variabili": {
+            "a3": "",
+            "a4": "",
+            "a1": "",
+            "a2": "",
+            "a5": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v9": "",
+            "v11": "",
+            "v14": "",
+            "v15": "",
+            "v16": "",
+            "v17": "",
+            "v18": "",
+            "ptr": "",
+            "nmemb": "",
+            "v21": "",
+            "i": ""
+        }
+    },
+    "0x401124": {
+        "nome_corrente": "sub_401124",
+        "codice_decompilato": "__int64 __fastcall sub_401124(__int64 a1, __int64 a2, unsigned __int8 a3)\n{\n  __int64 result; // rax\n  unsigned __int8 i; // [rsp+2Fh] [rbp-1h]\n\n  if ( !a1 )\n    __assert_fail(\"expected != NULL\", \"dataset/src/hash/hash_blake2b.c\", 0x1B5u, \"assert_bytes\");\n  if ( !a2 )\n    __assert_fail(\"actual != NULL\", \"dataset/src/hash/hash_blake2b.c\", 0x1B6u, \"assert_bytes\");\n  if ( !a3 )\n    __assert_fail(\"len > 0\", \"dataset/src/hash/hash_blake2b.c\", 0x1B7u, \"assert_bytes\");\n  for ( i = 0; ; ++i )\n  {\n    result = i;\n    if ( i >= a3 )\n      break;\n    if ( *(_BYTE *)(i + a1) != *(_BYTE *)(i + a2) )\n      __assert_fail(\"expected[i] == actual[i]\", \"dataset/src/hash/hash_blake2b.c\", 0x1BBu, \"assert_bytes\");\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "result": "",
+            "i": ""
+        }
+    },
+    "0x4011ee": {
+        "nome_corrente": "sub_4011EE",
+        "codice_decompilato": "int sub_4011EE()\n{\n  _QWORD v1[8]; // [rsp+0h] [rbp-240h] BYREF\n  _QWORD v2[4]; // [rsp+40h] [rbp-200h] BYREF\n  _DWORD v3[10]; // [rsp+60h] [rbp-1E0h] BYREF\n  __int64 v4; // [rsp+88h] [rbp-1B8h]\n  __int64 v5; // [rsp+90h] [rbp-1B0h]\n  __int64 v6; // [rsp+98h] [rbp-1A8h]\n  _QWORD v7[4]; // [rsp+A0h] [rbp-1A0h] BYREF\n  _QWORD v8[8]; // [rsp+C0h] [rbp-180h] BYREF\n  _QWORD v9[4]; // [rsp+100h] [rbp-140h] BYREF\n  _QWORD v10[4]; // [rsp+120h] [rbp-120h] BYREF\n  char v11; // [rsp+14Fh] [rbp-F1h] BYREF\n  _QWORD v12[8]; // [rsp+150h] [rbp-F0h] BYREF\n  _QWORD v13[4]; // [rsp+190h] [rbp-B0h] BYREF\n  _QWORD v14[4]; // [rsp+1B0h] [rbp-90h] BYREF\n  _QWORD v15[8]; // [rsp+1D0h] [rbp-70h] BYREF\n  _BYTE v16[33]; // [rsp+215h] [rbp-2Bh] BYREF\n\n  v16[4] = 0;\n  *(_WORD *)&v16[5] = 0;\n  *(_DWORD *)&v16[7] = 0;\n  strcpy(v16, \"abc\");\n  v15[0] = 0xD4D1C983FA580BALL;\n  v15[1] = 0xE9F6129FB697276ALL;\n  v15[2] = 0xB7C45A68142F214CLL;\n  v15[3] = 0xD1A2FFDB6FBB124BLL;\n  v15[4] = 0x2D79AB2A39C5877DLL;\n  v15[5] = 0x95CC3345DED552C2LL;\n  v15[6] = 0x5A92F1DBA88AD318LL;\n  v15[7] = 0x239900D4ED8623B9LL;\n  *(_QWORD *)&v16[3] = sub_400EB3((__int64)v16, 3u, 0, 0, 64);\n  sub_401124((__int64)v15, *(__int64 *)&v16[3], 0x40u);\n  free(*(void **)&v16[3]);\n  v13[0] = 0x706050403020100LL;\n  v13[1] = 0xF0E0D0C0B0A0908LL;\n  v13[2] = 0x1716151413121110LL;\n  v13[3] = 0x1F1E1D1C1B1A1918LL;\n  qmemcpy(v14, \" !\\\"#$%&'()*+,-./0123456789:;<=>?\", sizeof(v14));\n  v12[0] = 0x8E86B10077B6EB10LL;\n  v12[1] = 0x9046CF7A981744FBLL;\n  v12[2] = 0xC290A5B72F979DAELL;\n  v12[3] = 0x8647AA9A797128F0LL;\n  v12[4] = 0x98EBF4F0E896E9B5LL;\n  v12[5] = 0x2F2DF405B014C21FLL;\n  v12[6] = 0xDF531639993423F4LL;\n  v12[7] = 0x6815C53FC1CBEF7ALL;\n  *(_QWORD *)&v16[3] = sub_400EB3(0, 0, (__int64)v13, 64, 64);\n  sub_401124((__int64)v12, *(__int64 *)&v16[3], 0x40u);\n  free(*(void **)&v16[3]);\n  v11 = 0;\n  v9[0] = 0x706050403020100LL;\n  v9[1] = 0xF0E0D0C0B0A0908LL;\n  v9[2] = 0x1716151413121110LL;\n  v9[3] = 0x1F1E1D1C1B1A1918LL;\n  qmemcpy(v10, \" !\\\"#$%&'()*+,-./0123456789:;<=>?\", sizeof(v10));\n  v8[0] = 0xF630DDE4D16D1F96LL;\n  v8[1] = 0xE4782E510C690139LL;\n  v8[2] = 0x3C7C19ED42475EB4LL;\n  v8[3] = 0xE4F225FD49C5455ELL;\n  v8[4] = 0x2B4930FEC90B7B18LL;\n  v8[5] = 0xF3B0F94EBCD0B016LL;\n  v8[6] = 0xF15E9AC0FA03704CLL;\n  v8[7] = 0xBDCE340243692E53LL;\n  *(_QWORD *)&v16[3] = sub_400EB3((__int64)&v11, 1u, (__int64)v9, 64, 64);\n  sub_401124((__int64)v8, *(__int64 *)&v16[3], 0x40u);\n  free(*(void **)&v16[3]);\n  BYTE1(v3[8]) = 1;\n  HIWORD(v3[8]) = 770;\n  v3[9] = 117835012;\n  v4 = 0xF0E0D0C0B0A0908LL;\n  v5 = 0x1716151413121110LL;\n  v6 = 0x1F1E1D1C1B1A1918LL;\n  qmemcpy(v7, \" !\\\"#$%&'()*+,-./0123456789:;<=>?\", sizeof(v7));\n  v2[0] = 0x706050403020100LL;\n  v2[1] = 0xF0E0D0C0B0A0908LL;\n  v2[2] = 0x1716151413121110LL;\n  v2[3] = 0x1F1E1D1C1B1A1918LL;\n  strcpy((char *)v3, \" !\\\"#$%&'()*+,-./0123456789:;<=>?\");\n  v1[0] = 0x2F971706806D6765LL;\n  v1[1] = 0x671C4E51B9E487BDLL;\n  v1[2] = 0xBFD39610337A2B40LL;\n  v1[3] = 0xAB7453B9ABF122ACLL;\n  v1[4] = 0xD3EAB09A6EF142C9LL;\n  v1[5] = 0x9E5A66819C9873BLL;\n  v1[6] = 0xF43E7B7807FF19E1LL;\n  v1[7] = 0x22306ECFDCDCE183LL;\n  *(_QWORD *)&v16[3] = sub_400EB3((__int64)&v3[8], 0x40u, (__int64)v2, 64, 64);\n  sub_401124((__int64)v1, *(__int64 *)&v16[3], 0x40u);\n  free(*(void **)&v16[3]);\n  return puts(\"All tests have successfully passed!\");\n}\n",
+        "variabili": {
+            "v1": "",
+            "v2": "",
+            "v3": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "v9": "",
+            "v10": "",
+            "v11": "",
+            "v12": "",
+            "v13": "",
+            "v14": "",
+            "v15": "",
+            "v16": ""
+        }
+    },
+    "0x4016f2": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  sub_4011EE();\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": ""
+        }
+    },
+    "0x401704": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

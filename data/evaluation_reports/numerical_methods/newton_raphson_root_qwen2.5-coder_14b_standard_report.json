@@ -1,0 +1,62 @@
+[
+    {
+        "address": "0x4004a6",
+        "ida_stripped_name": "sub_4004A6",
+        "ground_truth_name": "func",
+        "ai_predicted_name": "transform_data",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 12,
+            "execution_time": 18.91
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.11,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400527",
+        "ida_stripped_name": "sub_400527",
+        "ground_truth_name": "d_func",
+        "ai_predicted_name": "double_value",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 8,
+            "execution_time": 7.57
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.33,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400579",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "solve_equation",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 86,
+            "execution_time": 68.71
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.33,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    }
+]

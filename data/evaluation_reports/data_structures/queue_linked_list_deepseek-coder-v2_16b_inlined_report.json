@@ -1,0 +1,142 @@
+[
+    {
+        "address": "0x4004c6",
+        "ida_stripped_name": "sub_4004C6",
+        "ground_truth_name": "createqueue",
+        "ai_predicted_name": "initialize_variables",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 9,
+            "execution_time": 3.2
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.19,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4004e6",
+        "ida_stripped_name": "sub_4004E6",
+        "ground_truth_name": "empty",
+        "ai_predicted_name": "check_global_variable",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 4,
+            "execution_time": 3.59
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.08,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400504",
+        "ida_stripped_name": "sub_400504",
+        "ground_truth_name": "insert",
+        "ai_predicted_name": "allocate_and_check",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 36,
+            "execution_time": 4.87
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.17,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x40058e",
+        "ida_stripped_name": "sub_40058E",
+        "ground_truth_name": "removes",
+        "ai_predicted_name": "queue_remove",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 27,
+            "execution_time": 4.28
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.63,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.57,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x400604",
+        "ida_stripped_name": "sub_400604",
+        "ground_truth_name": "show",
+        "ai_predicted_name": "print_queue",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 20,
+            "execution_time": 3.25
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x40066f",
+        "ida_stripped_name": "sub_40066F",
+        "ground_truth_name": "destroyqueue",
+        "ai_predicted_name": "initialize_variables",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 9,
+            "execution_time": 2.04
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.19,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.03,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40068f",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 126,
+            "execution_time": 7.39
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 5
+    }
+]

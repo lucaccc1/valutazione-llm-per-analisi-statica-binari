@@ -1,0 +1,29 @@
+{
+    "0x4004a6": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "v3": "",
+            "n": "",
+            "a": "",
+            "temp": "",
+            "median": "",
+            "j": "",
+            "i": ""
+        }
+    },
+    "0x403038": {
+        "nome_funzione_originale": "putchar",
+        "variabili": {}
+    },
+    "0x403048": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403060": {
+        "nome_funzione_originale": "rand",
+        "variabili": {}
+    }
+}

@@ -1,0 +1,222 @@
+[
+    {
+        "address": "0x4004a6",
+        "ida_stripped_name": "sub_4004A6",
+        "ground_truth_name": "create_stack",
+        "ai_predicted_name": "create_stack",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 11,
+            "execution_time": 5.77
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40050c",
+        "ida_stripped_name": "sub_40050C",
+        "ground_truth_name": "double_array",
+        "ai_predicted_name": "extend_capacity",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 13,
+            "execution_time": 5.12
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.37,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4005aa",
+        "ida_stripped_name": "sub_4005AA",
+        "ground_truth_name": "shrink_array",
+        "ai_predicted_name": "compress_data",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 13,
+            "execution_time": 8.25
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.32,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40064f",
+        "ida_stripped_name": "sub_40064F",
+        "ground_truth_name": "push",
+        "ai_predicted_name": "push",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 29,
+            "execution_time": 4.96
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x400705",
+        "ida_stripped_name": "sub_400705",
+        "ground_truth_name": "pop",
+        "ai_predicted_name": "stack_pop",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 37,
+            "execution_time": 5.84
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.5,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 0.45,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x4007d7",
+        "ida_stripped_name": "sub_4007D7",
+        "ground_truth_name": "peek",
+        "ai_predicted_name": "pop",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 7,
+            "execution_time": 7.4
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.29,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40081c",
+        "ida_stripped_name": "sub_40081C",
+        "ground_truth_name": "show_capacity",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 4,
+            "execution_time": 3.41
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.24,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40082c",
+        "ida_stripped_name": "sub_40082C",
+        "ground_truth_name": "isempty",
+        "ai_predicted_name": "is_socket_closed",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 4,
+            "execution_time": 4.77
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.35,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.11,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40084e",
+        "ida_stripped_name": "sub_40084E",
+        "ground_truth_name": "stack_size",
+        "ai_predicted_name": "add_1",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 4,
+            "execution_time": 3.82
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.27,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400862",
+        "ida_stripped_name": "sub_400862",
+        "ground_truth_name": "test",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 168,
+            "execution_time": 13.0
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 7
+    },
+    {
+        "address": "0x400c1f",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "test_dynamic_stack",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 95,
+            "execution_time": 15.14
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.18,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    }
+]

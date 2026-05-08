@@ -1,0 +1,83 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4003a0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4003e0": {
+        "nome_corrente": "sub_4003E0",
+        "codice_decompilato": "int (**sub_4003E0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400450": {
+        "nome_corrente": "sub_400450",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4003E0 ===\nint (**sub_4003E0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n// === END INLINED FUNCTION: sub_4003E0 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nint (**sub_400450())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  int (**result)(int (*)(int, char **, char **), int, char **, void (*)(void), void (*)(void), void (*)(void), void *); // rax\n\n  if ( !byte_40301C )\n  {\n    result = sub_4003E0();\n    byte_40301C = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400480": {
+        "nome_corrente": "sub_400480",
+        "codice_decompilato": "__int64 sub_400480()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400486": {
+        "nome_corrente": "sub_400486",
+        "codice_decompilato": "__int64 __fastcall sub_400486(__int64 a1, int a2, int a3)\n{\n  unsigned int v4; // [rsp+14h] [rbp-Ch]\n  int v5; // [rsp+18h] [rbp-8h]\n  int v6; // [rsp+1Ch] [rbp-4h]\n\n  v6 = 0;\n  v5 = a2 - 1;\n  while ( v6 <= v5 && a3 >= *(_DWORD *)(4LL * v6 + a1) && a3 <= *(_DWORD *)(4LL * v5 + a1) )\n  {\n    v4 = (a3 - *(_DWORD *)(4LL * v6 + a1)) * (v5 - v6) / (*(_DWORD *)(4LL * v5 + a1) - *(_DWORD *)(4LL * v6 + a1)) + v6;\n    if ( a3 <= *(_DWORD *)(4LL * (int)v4 + a1) )\n    {\n      if ( a3 >= *(_DWORD *)(4LL * (int)v4 + a1) )\n        return v4;\n      v5 = v4 - 1;\n    }\n    else\n    {\n      v6 = v4 + 1;\n    }\n  }\n  return 0xFFFFFFFFLL;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v4": "",
+            "v5": "",
+            "v6": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4005a4": {
+        "nome_corrente": "main",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400486 ===\n__int64 __fastcall sub_400486(__int64 a1, int a2, int a3)\n{\n  unsigned int v4; // [rsp+14h] [rbp-Ch]\n  int v5; // [rsp+18h] [rbp-8h]\n  int v6; // [rsp+1Ch] [rbp-4h]\n\n  v6 = 0;\n  v5 = a2 - 1;\n  while ( v6 <= v5 && a3 >= *(_DWORD *)(4LL * v6 + a1) && a3 <= *(_DWORD *)(4LL * v5 + a1) )\n  {\n    v4 = (a3 - *(_DWORD *)(4LL * v6 + a1)) * (v5 - v6) / (*(_DWORD *)(4LL * v5 + a1) - *(_DWORD *)(4LL * v6 + a1)) + v6;\n    if ( a3 <= *(_DWORD *)(4LL * (int)v4 + a1) )\n    {\n      if ( a3 >= *(_DWORD *)(4LL * (int)v4 + a1) )\n        return v4;\n      v5 = v4 - 1;\n    }\n    else\n    {\n      v6 = v4 + 1;\n    }\n  }\n  return 0xFFFFFFFFLL;\n}\n// === END INLINED FUNCTION: sub_400486 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  _DWORD v4[16]; // [rsp+0h] [rbp-50h] BYREF\n  int v5; // [rsp+40h] [rbp-10h] BYREF\n  int v6; // [rsp+44h] [rbp-Ch]\n  int v7; // [rsp+48h] [rbp-8h]\n  int i; // [rsp+4Ch] [rbp-4h]\n\n  v4[0] = 10;\n  v4[1] = 12;\n  v4[2] = 13;\n  v4[3] = 16;\n  v4[4] = 18;\n  v4[5] = 19;\n  v4[6] = 20;\n  v4[7] = 21;\n  v4[8] = 22;\n  v4[9] = 23;\n  v4[10] = 24;\n  v4[11] = 33;\n  v4[12] = 35;\n  v4[13] = 42;\n  v4[14] = 47;\n  v7 = 15;\n  printf(\"Array: \");\n  for ( i = 0; i < v7; ++i )\n    printf(\"%d \", v4[i]);\n  printf(\"\\nEnter the number to be searched: \");\n  __isoc23_scanf(\"%d\", &v5);\n  v6 = sub_400486((__int64)v4, v7, v5);\n  if ( v6 == -1 )\n    puts(\"Element not found.\");\n  else\n    printf(\"Element found at position: %d\\n\", v6);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "i": ""
+        },
+        "inlined_count": 1
+    },
+    "0x4006c4": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

@@ -1,0 +1,222 @@
+[
+    {
+        "address": "0x4004a6",
+        "ida_stripped_name": "sub_4004A6",
+        "ground_truth_name": "newNode",
+        "ai_predicted_name": "allocate_structure",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 12,
+            "execution_time": 11.05
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.16,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4004fe",
+        "ida_stripped_name": "sub_4004FE",
+        "ground_truth_name": "isLeaf",
+        "ai_predicted_name": "check_conditions",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 4,
+            "execution_time": 5.68
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.18,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40052e",
+        "ida_stripped_name": "sub_40052E",
+        "ground_truth_name": "leftRotate",
+        "ai_predicted_name": "update_node_links",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 22,
+            "execution_time": 10.17
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.22,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.13,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4005d4",
+        "ida_stripped_name": "sub_4005D4",
+        "ground_truth_name": "rightRotate",
+        "ai_predicted_name": "update_linked_list",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 22,
+            "execution_time": 9.71
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.21,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.11,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40067a",
+        "ida_stripped_name": "sub_40067A",
+        "ground_truth_name": "checkNode",
+        "ai_predicted_name": "update_node_structure",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 137,
+            "execution_time": 17.19
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.33,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.2,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400ace",
+        "ida_stripped_name": "sub_400ACE",
+        "ground_truth_name": "insertNode",
+        "ai_predicted_name": "update_list_node",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 208,
+            "execution_time": 17.27
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.54,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.23,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 2
+    },
+    {
+        "address": "0x400bec",
+        "ida_stripped_name": "sub_400BEC",
+        "ground_truth_name": "checkForCase2",
+        "ai_predicted_name": "update_node_status",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 225,
+            "execution_time": 57.56
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.26,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 2
+    },
+    {
+        "address": "0x40122b",
+        "ida_stripped_name": "sub_40122B",
+        "ground_truth_name": "deleteNode",
+        "ai_predicted_name": "remove_node_from_tree",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 259,
+            "execution_time": 21.15
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.39,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.21,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x4014b7",
+        "ida_stripped_name": "sub_4014B7",
+        "ground_truth_name": "printInorder",
+        "ai_predicted_name": "process_struct",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 12,
+            "execution_time": 7.98
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.38,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.04,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40150b",
+        "ida_stripped_name": "sub_40150B",
+        "ground_truth_name": "checkBlack",
+        "ai_predicted_name": "process_nodes",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 12,
+            "execution_time": 9.35
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.17,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x401572",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "binary_tree_manager",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 224,
+            "execution_time": 18.52
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.26,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.15,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 4
+    }
+]

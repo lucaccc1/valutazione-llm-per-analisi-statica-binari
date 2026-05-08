@@ -1,0 +1,68 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4003a0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4003e0": {
+        "nome_corrente": "sub_4003E0",
+        "codice_decompilato": "int (**sub_4003E0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400450": {
+        "nome_corrente": "sub_400450",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4003E0 ===\nint (**sub_4003E0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n// === END INLINED FUNCTION: sub_4003E0 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nint (**sub_400450())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  int (**result)(int (*)(int, char **, char **), int, char **, void (*)(void), void (*)(void), void (*)(void), void *); // rax\n\n  if ( !byte_40301C )\n  {\n    result = sub_4003E0();\n    byte_40301C = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400480": {
+        "nome_corrente": "sub_400480",
+        "codice_decompilato": "__int64 sub_400480()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400486": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  __int64 v4; // [rsp+18h] [rbp-18h] BYREF\n  __int64 v5; // [rsp+20h] [rbp-10h]\n  unsigned __int64 v6; // [rsp+28h] [rbp-8h]\n\n  v5 = 0;\n  if ( a1 == 2 )\n  {\n    v4 = __isoc23_strtoull(a2[1], 0, 10);\n  }\n  else\n  {\n    printf(\"Enter starting number: \");\n    __isoc23_scanf(\"%lu\", &v4);\n  }\n  v6 = v4;\n  while ( v6 != 1 )\n  {\n    ++v5;\n    printf(\"%llu->\", v6);\n    if ( (v6 & 1) != 0 )\n      v6 = 3 * v6 + 1;\n    else\n      v6 >>= 1;\n  }\n  printf(\"1\\nNumber of steps: %llu\\n\", v5);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": "",
+            "v5": "",
+            "v6": ""
+        },
+        "inlined_count": 0
+    },
+    "0x40055c": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

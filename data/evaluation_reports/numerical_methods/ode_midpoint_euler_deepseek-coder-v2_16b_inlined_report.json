@@ -1,0 +1,102 @@
+[
+    {
+        "address": "0x400506",
+        "ida_stripped_name": "sub_400506",
+        "ground_truth_name": "problem",
+        "ai_predicted_name": "copy_and_negate",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 9,
+            "execution_time": 4.02
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.18,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400569",
+        "ida_stripped_name": "sub_400569",
+        "ground_truth_name": "exact_solution",
+        "ai_predicted_name": "compute_trigonometric_values",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 9,
+            "execution_time": 5.12
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.33,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.08,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4005d0",
+        "ida_stripped_name": "sub_4005D0",
+        "ground_truth_name": "midpoint_euler_step",
+        "ai_predicted_name": "process_data",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 33,
+            "execution_time": 5.24
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.32,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x400708",
+        "ida_stripped_name": "sub_400708",
+        "ground_truth_name": "midpoint_euler",
+        "ai_predicted_name": "calculate_midpoint",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 59,
+            "execution_time": 6.47
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.5,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.49,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x400843",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 106,
+            "execution_time": 14.96
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 2
+    }
+]

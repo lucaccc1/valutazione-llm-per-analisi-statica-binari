@@ -1,0 +1,78 @@
+{
+    "0x4004b6": {
+        "nome_funzione_originale": "BucketSort",
+        "variabili": {
+            "arr": "",
+            "v1": "",
+            "current": "",
+            "pos": "",
+            "tmp": "",
+            "buckets": "",
+            "node_0": "",
+            "node": "",
+            "j": "",
+            "i": "",
+            "ia": "",
+            "ib": "",
+            "ic": "",
+            "id": "",
+            "ie": "",
+            "ig": ""
+        }
+    },
+    "0x400791": {
+        "nome_funzione_originale": "InsertionSort",
+        "variabili": {
+            "list": "",
+            "tmp": "",
+            "tmp_0": "",
+            "ptr": "",
+            "nodeList": "",
+            "k": ""
+        }
+    },
+    "0x4008cb": {
+        "nome_funzione_originale": "getBucketIndex",
+        "variabili": {
+            "value": ""
+        }
+    },
+    "0x4008ef": {
+        "nome_funzione_originale": "print",
+        "variabili": {
+            "ar": "",
+            "i": ""
+        }
+    },
+    "0x400942": {
+        "nome_funzione_originale": "printBuckets",
+        "variabili": {
+            "list": ""
+        }
+    },
+    "0x400986": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "array": ""
+        }
+    },
+    "0x403040": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x403048": {
+        "nome_funzione_originale": "putchar",
+        "variabili": {}
+    },
+    "0x403058": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403070": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "0x400476": {
+        "nome_funzione_originale": "sign",
+        "variabili": {
+            "a": "",
+            "b": "",
+            "v2": "",
+            "v3": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": ""
+        }
+    },
+    "0x40052c": {
+        "nome_funzione_originale": "func",
+        "variabili": {
+            "x": ""
+        }
+    },
+    "0x400562": {
+        "nome_funzione_originale": "bisection",
+        "variabili": {
+            "x_left": "",
+            "x_right": "",
+            "tolerance": "",
+            "v4": "",
+            "v5": "",
+            "n": ""
+        }
+    },
+    "0x400670": {
+        "nome_funzione_originale": "test",
+        "variabili": {}
+    },
+    "0x400765": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": ""
+        }
+    },
+    "0x403028": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    }
+}

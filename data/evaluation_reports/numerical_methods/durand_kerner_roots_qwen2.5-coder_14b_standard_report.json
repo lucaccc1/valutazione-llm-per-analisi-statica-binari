@@ -1,0 +1,82 @@
+[
+    {
+        "address": "0x400576",
+        "ida_stripped_name": "sub_400576",
+        "ground_truth_name": "poly_function",
+        "ai_predicted_name": "calculate_sum_of_powers",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 23,
+            "execution_time": 18.44
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.22,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.03,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4006b0",
+        "ida_stripped_name": "sub_4006B0",
+        "ground_truth_name": "complex_str",
+        "ai_predicted_name": "format_complex_number",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 5,
+            "execution_time": 8.81
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.56,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.48,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4006fd",
+        "ida_stripped_name": "sub_4006FD",
+        "ground_truth_name": "check_termination",
+        "ai_predicted_name": "check_and_update_value",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 7,
+            "execution_time": 9.01
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.46,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.31,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400740",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "solve_polynomial_roots",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 214,
+            "execution_time": 93.75
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.15,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    }
+]

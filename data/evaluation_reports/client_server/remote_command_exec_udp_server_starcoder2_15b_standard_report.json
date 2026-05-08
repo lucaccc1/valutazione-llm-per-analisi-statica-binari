@@ -1,0 +1,42 @@
+[
+    {
+        "address": "0x4004f6",
+        "ida_stripped_name": "error",
+        "ground_truth_name": "error",
+        "ai_predicted_name": null,
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 5,
+            "execution_time": 4.75
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40050e",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "run_server",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 29,
+            "execution_time": 14.74
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.14,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    }
+]

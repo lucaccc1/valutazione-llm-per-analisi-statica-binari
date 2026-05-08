@@ -1,0 +1,172 @@
+{
+    "0x400576": {
+        "nome_funzione_originale": "poly_function",
+        "variabili": {
+            "retstr": "",
+            "coeffs": "",
+            "degree": "",
+            "x": "",
+            "result": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "n": ""
+        }
+    },
+    "0x4006b0": {
+        "nome_funzione_originale": "complex_str",
+        "variabili": {
+            "x": ""
+        }
+    },
+    "0x4006fd": {
+        "nome_funzione_originale": "check_termination",
+        "variabili": {
+            "delta": ""
+        }
+    },
+    "0x400740": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "v4": "",
+            "v5": "",
+            "_RT1": "",
+            "_RAX": "",
+            "_CF": "",
+            "_ZF": "",
+            "_PF": "",
+            "_RDX": "",
+            "p_real": "",
+            "v19": "",
+            "v23": "",
+            "v27": "",
+            "v28": "",
+            "v29": "",
+            "v30": "",
+            "v32": "",
+            "v33": "",
+            "v37": "",
+            "v39": "",
+            "v41": "",
+            "x": "",
+            "xa": "",
+            "xb": "",
+            "xc": "",
+            "xd": "",
+            "xe": "",
+            "xf": "",
+            "x_16": "",
+            "x_16a": "",
+            "x_16b": "",
+            "x_16c": "",
+            "x_16d": "",
+            "x_16e": "",
+            "v55": "",
+            "v56": "",
+            "v57": "",
+            "v58": "",
+            "v59": "",
+            "v60": "",
+            "v61": "",
+            "v62": "",
+            "v63": "",
+            "v64": "",
+            "end_time": "",
+            "numerator": "",
+            "numerator_16": "",
+            "delta": "",
+            "deltaa": "",
+            "delta_16": "",
+            "delta_16a": "",
+            "start_time": "",
+            "log_file": "",
+            "degree": "",
+            "s0": "",
+            "coeffs": "",
+            "denominator": "",
+            "denominatora": "",
+            "denominator_16": "",
+            "denominator_16a": "",
+            "iter": "",
+            "tol_condition": "",
+            "tmp": "",
+            "i": "",
+            "n": "",
+            "na": "",
+            "nb": "",
+            "nc": "",
+            "nd": ""
+        }
+    },
+    "0x404120": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x404130": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x404138": {
+        "nome_funzione_originale": "strtod",
+        "variabili": {}
+    },
+    "0x404140": {
+        "nome_funzione_originale": "fmaxl",
+        "variabili": {}
+    },
+    "0x404148": {
+        "nome_funzione_originale": "clock",
+        "variabili": {}
+    },
+    "0x404150": {
+        "nome_funzione_originale": "fclose",
+        "variabili": {}
+    },
+    "0x404160": {
+        "nome_funzione_originale": "cpow",
+        "variabili": {}
+    },
+    "0x404168": {
+        "nome_funzione_originale": "cabsl",
+        "variabili": {}
+    },
+    "0x404170": {
+        "nome_funzione_originale": "srand",
+        "variabili": {}
+    },
+    "0x404178": {
+        "nome_funzione_originale": "fprintf",
+        "variabili": {}
+    },
+    "0x404180": {
+        "nome_funzione_originale": "time",
+        "variabili": {}
+    },
+    "0x404188": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    },
+    "0x404190": {
+        "nome_funzione_originale": "fopen",
+        "variabili": {}
+    },
+    "0x404198": {
+        "nome_funzione_originale": "perror",
+        "variabili": {}
+    },
+    "0x4041a0": {
+        "nome_funzione_originale": "sprintf",
+        "variabili": {}
+    },
+    "0x4041a8": {
+        "nome_funzione_originale": "fwrite",
+        "variabili": {}
+    },
+    "0x4041b0": {
+        "nome_funzione_originale": "rand",
+        "variabili": {}
+    }
+}

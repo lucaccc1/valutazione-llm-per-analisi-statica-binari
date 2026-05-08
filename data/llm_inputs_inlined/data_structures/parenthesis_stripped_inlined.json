@@ -1,0 +1,107 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4003c0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400400": {
+        "nome_corrente": "sub_400400",
+        "codice_decompilato": "char *sub_400400()\n{\n  return &byte_403030;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400470": {
+        "nome_corrente": "sub_400470",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400400 ===\nchar *sub_400400()\n{\n  return &byte_403030;\n}\n// === END INLINED FUNCTION: sub_400400 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nchar *sub_400470()\n{\n  char *result; // rax\n\n  if ( !byte_403030 )\n  {\n    result = sub_400400();\n    byte_403030 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x4004a0": {
+        "nome_corrente": "sub_4004A0",
+        "codice_decompilato": "__int64 sub_4004A0()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4004a6": {
+        "nome_corrente": "sub_4004A6",
+        "codice_decompilato": "__int64 __fastcall sub_4004A6(char a1)\n{\n  _QWORD *v2; // [rsp+10h] [rbp-10h]\n  __int64 v3; // [rsp+18h] [rbp-8h]\n\n  v3 = qword_403040;\n  v2 = malloc(0x10u);\n  *(_BYTE *)v2 = a1;\n  if ( qword_403040 )\n  {\n    v2[1] = v3;\n    qword_403040 = (__int64)v2;\n  }\n  else\n  {\n    qword_403040 = (__int64)v2;\n    v2[1] = 0;\n  }\n  return (unsigned int)++dword_403038;\n}\n",
+        "variabili": {
+            "a1": "",
+            "v2": "",
+            "v3": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400546": {
+        "nome_corrente": "sub_400546",
+        "codice_decompilato": "__int64 sub_400546()\n{\n  unsigned __int8 v1; // [rsp+7h] [rbp-9h]\n  void *ptr; // [rsp+8h] [rbp-8h]\n\n  ptr = (void *)qword_403040;\n  v1 = *(_BYTE *)qword_403040;\n  qword_403040 = *(_QWORD *)(qword_403040 + 8);\n  free(ptr);\n  --dword_403038;\n  return v1;\n}\n",
+        "variabili": {
+            "v1": "",
+            "ptr": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400593": {
+        "nome_corrente": "sub_400593",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400546 ===\n__int64 sub_400546()\n{\n  unsigned __int8 v1; // [rsp+7h] [rbp-9h]\n  void *ptr; // [rsp+8h] [rbp-8h]\n\n  ptr = (void *)qword_403040;\n  v1 = *(_BYTE *)qword_403040;\n  qword_403040 = *(_QWORD *)(qword_403040 + 8);\n  free(ptr);\n  --dword_403038;\n  return v1;\n}\n// === END INLINED FUNCTION: sub_400546 ===\n\n// === START INLINED FUNCTION: sub_4004A6 ===\n__int64 __fastcall sub_4004A6(char a1)\n{\n  _QWORD *v2; // [rsp+10h] [rbp-10h]\n  __int64 v3; // [rsp+18h] [rbp-8h]\n\n  v3 = qword_403040;\n  v2 = malloc(0x10u);\n  *(_BYTE *)v2 = a1;\n  if ( qword_403040 )\n  {\n    v2[1] = v3;\n    qword_403040 = (__int64)v2;\n  }\n  else\n  {\n    qword_403040 = (__int64)v2;\n    v2[1] = 0;\n  }\n  return (unsigned int)++dword_403038;\n}\n// === END INLINED FUNCTION: sub_4004A6 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n_BOOL8 __fastcall sub_400593(__int64 a1)\n{\n  char v2; // [rsp+1Bh] [rbp-5h]\n  int i; // [rsp+1Ch] [rbp-4h]\n\n  for ( i = 0; *(_BYTE *)(i + a1); ++i )\n  {\n    if ( *(_BYTE *)(i + a1) == 123 || *(_BYTE *)(i + a1) == 40 || *(_BYTE *)(i + a1) == 91 )\n    {\n      sub_4004A6(*(_BYTE *)(i + a1));\n    }\n    else\n    {\n      if ( dword_403038 <= 0 )\n        return 0;\n      v2 = sub_400546();\n      if ( v2 == 123 && *(_BYTE *)(i + a1) != 125 )\n        return 0;\n      if ( v2 == 91 && *(_BYTE *)(i + a1) != 93 )\n        return 0;\n      if ( v2 == 40 && *(_BYTE *)(i + a1) != 41 )\n        return 0;\n    }\n  }\n  return dword_403038 == 0;\n}\n",
+        "variabili": {
+            "a1": "",
+            "v2": "",
+            "i": ""
+        },
+        "inlined_count": 2
+    },
+    "0x4006ae": {
+        "nome_corrente": "sub_4006AE",
+        "codice_decompilato": "__int64 sub_4006AE()\n{\n  __int64 result; // rax\n  void *ptr; // [rsp+0h] [rbp-10h]\n  __int64 v2; // [rsp+8h] [rbp-8h]\n\n  v2 = qword_403040;\n  result = (unsigned int)dword_403038;\n  if ( dword_403038 > 0 )\n  {\n    while ( 1 )\n    {\n      result = *(_QWORD *)(v2 + 8);\n      if ( !result )\n        break;\n      ptr = (void *)v2;\n      v2 = *(_QWORD *)(v2 + 8);\n      free(ptr);\n    }\n    dword_403038 = 0;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": "",
+            "ptr": "",
+            "v2": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400707": {
+        "nome_corrente": "main",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4006AE ===\n__int64 sub_4006AE()\n{\n  __int64 result; // rax\n  void *ptr; // [rsp+0h] [rbp-10h]\n  __int64 v2; // [rsp+8h] [rbp-8h]\n\n  v2 = qword_403040;\n  result = (unsigned int)dword_403038;\n  if ( dword_403038 > 0 )\n  {\n    while ( 1 )\n    {\n      result = *(_QWORD *)(v2 + 8);\n      if ( !result )\n        break;\n      ptr = (void *)v2;\n      v2 = *(_QWORD *)(v2 + 8);\n      free(ptr);\n    }\n    dword_403038 = 0;\n  }\n  return result;\n}\n// === END INLINED FUNCTION: sub_4006AE ===\n\n// === START INLINED FUNCTION: sub_400593 ===\n_BOOL8 __fastcall sub_400593(__int64 a1)\n{\n  char v2; // [rsp+1Bh] [rbp-5h]\n  int i; // [rsp+1Ch] [rbp-4h]\n\n  for ( i = 0; *(_BYTE *)(i + a1); ++i )\n  {\n    if ( *(_BYTE *)(i + a1) == 123 || *(_BYTE *)(i + a1) == 40 || *(_BYTE *)(i + a1) == 91 )\n    {\n      sub_4004A6(*(_BYTE *)(i + a1));\n    }\n    else\n    {\n      if ( dword_403038 <= 0 )\n        return 0;\n      v2 = sub_400546();\n      if ( v2 == 123 && *(_BYTE *)(i + a1) != 125 )\n        return 0;\n      if ( v2 == 91 && *(_BYTE *)(i + a1) != 93 )\n        return 0;\n      if ( v2 == 40 && *(_BYTE *)(i + a1) != 41 )\n        return 0;\n    }\n  }\n  return dword_403038 == 0;\n}\n// === END INLINED FUNCTION: sub_400593 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  _BYTE v4[104]; // [rsp+0h] [rbp-70h] BYREF\n  int v5; // [rsp+68h] [rbp-8h] BYREF\n  int i; // [rsp+6Ch] [rbp-4h]\n\n  puts(\"\\t\\tBalanced parenthesis\\n\");\n  printf(\"\\nPlease enter the number of processing rounds? \");\n  __isoc23_scanf(\"%d\", &v5);\n  for ( i = 0; i < v5; ++i )\n  {\n    printf(\"\\nPlease enter the expression? \");\n    __isoc23_scanf(\"%s\", v4);\n    if ( sub_400593((__int64)v4) )\n      puts(\"\\nYES\");\n    else\n      puts(\"\\nNO\");\n    sub_4006AE();\n  }\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": "",
+            "v5": "",
+            "i": ""
+        },
+        "inlined_count": 2
+    },
+    "0x4007ac": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

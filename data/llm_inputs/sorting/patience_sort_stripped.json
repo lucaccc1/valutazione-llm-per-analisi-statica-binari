@@ -1,0 +1,106 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x4003e0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x400420": {
+        "nome_corrente": "sub_400420",
+        "codice_decompilato": "void (**sub_400420())(void *ptr)\n{\n  return &free;\n}\n",
+        "variabili": {}
+    },
+    "0x400490": {
+        "nome_corrente": "sub_400490",
+        "codice_decompilato": "void (**sub_400490())(void *ptr)\n{\n  void (**result)(void *); // rax\n\n  if ( !byte_40303C )\n  {\n    result = sub_400420();\n    byte_40303C = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x4004c0": {
+        "nome_corrente": "sub_4004C0",
+        "codice_decompilato": "__int64 sub_4004C0()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x4004c6": {
+        "nome_corrente": "sub_4004C6",
+        "codice_decompilato": "void __fastcall sub_4004C6(_DWORD *a1, int a2)\n{\n  int *ptr; // [rsp+10h] [rbp-50h]\n  _DWORD **v3; // [rsp+18h] [rbp-48h]\n  int jj; // [rsp+24h] [rbp-3Ch]\n  int ii; // [rsp+28h] [rbp-38h]\n  int n; // [rsp+2Ch] [rbp-34h]\n  int m; // [rsp+30h] [rbp-30h]\n  int v8; // [rsp+34h] [rbp-2Ch]\n  int v9; // [rsp+38h] [rbp-28h]\n  int k; // [rsp+3Ch] [rbp-24h]\n  int v11; // [rsp+40h] [rbp-20h]\n  int j; // [rsp+44h] [rbp-1Ch]\n  int v13; // [rsp+48h] [rbp-18h]\n  int i; // [rsp+4Ch] [rbp-14h]\n\n  v3 = (_DWORD **)malloc(8LL * a2);\n  for ( i = 0; i < a2; ++i )\n    v3[i] = malloc(4LL * a2);\n  ptr = (int *)calloc(a2, 4u);\n  **v3 = *a1;\n  v13 = 1;\n  for ( j = 1; j < a2; ++j )\n  {\n    v11 = 1;\n    for ( k = 0; k < v13; ++k )\n    {\n      if ( v3[k][ptr[k]] > a1[j] )\n      {\n        v3[k][++ptr[k]] = a1[j];\n        v11 = 0;\n        break;\n      }\n    }\n    if ( v11 )\n      *v3[v13++] = a1[j];\n  }\n  for ( m = 0; m < a2; ++m )\n  {\n    for ( n = 0; n < v13; ++n )\n    {\n      if ( ptr[n] >= 0 )\n      {\n        v9 = v3[n][ptr[n]];\n        v8 = n;\n        break;\n      }\n    }\n    for ( ii = 0; ii < v13; ++ii )\n    {\n      if ( ptr[ii] >= 0 && v9 > v3[ii][ptr[ii]] )\n      {\n        v9 = v3[ii][ptr[ii]];\n        v8 = ii;\n      }\n    }\n    a1[m] = v9;\n    --ptr[v8];\n  }\n  free(ptr);\n  for ( jj = 0; jj < a2; ++jj )\n    free(v3[jj]);\n  free(v3);\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "ptr": "",
+            "v3": "",
+            "jj": "",
+            "ii": "",
+            "n": "",
+            "m": "",
+            "v8": "",
+            "v9": "",
+            "k": "",
+            "v11": "",
+            "j": "",
+            "v13": "",
+            "i": ""
+        }
+    },
+    "0x40086f": {
+        "nome_corrente": "sub_40086F",
+        "codice_decompilato": "int __fastcall sub_40086F(__int64 a1, int a2)\n{\n  int i; // [rsp+1Ch] [rbp-4h]\n\n  printf(\"Array:\");\n  for ( i = 0; i < a2; ++i )\n  {\n    printf(\"%d\", *(_DWORD *)(4LL * i + a1));\n    if ( i != a2 - 1 )\n      putchar(44);\n  }\n  return putchar(10);\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "i": ""
+        }
+    },
+    "0x4008eb": {
+        "nome_corrente": "sub_4008EB",
+        "codice_decompilato": "int __fastcall sub_4008EB(_DWORD *a1, int a2)\n{\n  int i; // [rsp+1Ch] [rbp-4h]\n\n  puts(\"Before sorting:\");\n  sub_40086F((__int64)a1, a2);\n  sub_4004C6(a1, a2);\n  puts(\"After sorting:\");\n  sub_40086F((__int64)a1, a2);\n  for ( i = 0; i < a2 - 1; ++i )\n  {\n    if ( a1[i] > a1[i + 1] )\n      __assert_fail(\"array[i] <= array[i + 1]\", \"dataset/src/sorting/patience_sort.c\", 0x82u, \"testArray\");\n  }\n  return puts(\"All assertions have passed!\\n\");\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "i": ""
+        }
+    },
+    "0x4009b3": {
+        "nome_corrente": "sub_4009B3",
+        "codice_decompilato": "int sub_4009B3()\n{\n  _DWORD v1[8]; // [rsp+0h] [rbp-80h] BYREF\n  _DWORD v2[8]; // [rsp+20h] [rbp-60h] BYREF\n  _DWORD v3[8]; // [rsp+40h] [rbp-40h] BYREF\n  _DWORD v4[8]; // [rsp+60h] [rbp-20h] BYREF\n\n  v4[0] = 2;\n  v4[1] = 8;\n  v4[2] = 7;\n  v4[3] = 1;\n  v4[4] = 3;\n  v4[5] = 5;\n  v4[6] = 6;\n  v4[7] = 4;\n  v3[0] = 2;\n  v3[1] = 2;\n  v3[2] = 5;\n  v3[3] = 1;\n  v3[4] = 3;\n  v3[5] = 5;\n  v3[6] = 6;\n  v3[7] = 4;\n  v2[0] = 1;\n  v2[1] = 2;\n  v2[2] = 3;\n  v2[3] = 4;\n  v2[4] = 5;\n  v2[5] = 6;\n  v2[6] = 7;\n  v2[7] = 8;\n  v1[0] = 8;\n  v1[1] = 7;\n  v1[2] = 6;\n  v1[3] = 5;\n  v1[4] = 4;\n  v1[5] = 3;\n  v1[6] = 2;\n  v1[7] = 1;\n  sub_4008EB(v4, 8);\n  sub_4008EB(v3, 8);\n  sub_4008EB(v2, 8);\n  sub_4008EB(v1, 8);\n  return puts(\"Testing successfully completed!\");\n}\n",
+        "variabili": {
+            "v1": "",
+            "v2": "",
+            "v3": "",
+            "v4": ""
+        }
+    },
+    "0x400aec": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  sub_4009B3();\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": ""
+        }
+    },
+    "0x400afc": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

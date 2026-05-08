@@ -1,0 +1,202 @@
+[
+    {
+        "address": "0x4004a6",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "topological_sort",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 86,
+            "execution_time": 9.83
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.1,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 3
+    },
+    {
+        "address": "0x40059e",
+        "ida_stripped_name": "sub_40059E",
+        "ground_truth_name": "topologicalSortHelper",
+        "ai_predicted_name": "topological_sort",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 26,
+            "execution_time": 6.66
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.81,
+            "jaccard_index": 0.67,
+            "cosine_similarity": 0.71,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x400652",
+        "ida_stripped_name": "sub_400652",
+        "ground_truth_name": "topologicalSort",
+        "ai_predicted_name": "topological_sort",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 64,
+            "execution_time": 8.32
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.97,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 0.86,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 3
+    },
+    {
+        "address": "0x4006e8",
+        "ida_stripped_name": "sub_4006E8",
+        "ground_truth_name": "createNode",
+        "ai_predicted_name": "new_user",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 9,
+            "execution_time": 4.15
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.22,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40071c",
+        "ida_stripped_name": "sub_40071C",
+        "ground_truth_name": "createGraph",
+        "ai_predicted_name": "initialize_state",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 16,
+            "execution_time": 9.28
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.3,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.13,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4007c8",
+        "ida_stripped_name": "sub_4007C8",
+        "ground_truth_name": "addEdge",
+        "ai_predicted_name": "link_list_item",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 23,
+            "execution_time": 7.13
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.1,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x400827",
+        "ida_stripped_name": "sub_400827",
+        "ground_truth_name": "printGraph",
+        "ai_predicted_name": "print_graph",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 22,
+            "execution_time": 5.34
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.95,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 0.78,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4008b5",
+        "ida_stripped_name": "sub_4008B5",
+        "ground_truth_name": "createStack",
+        "ai_predicted_name": "new_connection",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 8,
+            "execution_time": 4.53
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.24,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4008df",
+        "ida_stripped_name": "sub_4008DF",
+        "ground_truth_name": "push",
+        "ai_predicted_name": "append_arg",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 9,
+            "execution_time": 8.35
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.14,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40091b",
+        "ida_stripped_name": "sub_40091B",
+        "ground_truth_name": "pop",
+        "ai_predicted_name": "get_nth_node",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 10,
+            "execution_time": 5.4
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.13,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    }
+]

@@ -1,0 +1,100 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4003e0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400420": {
+        "nome_corrente": "sub_400420",
+        "codice_decompilato": "void (**sub_400420())(void *ptr)\n{\n  return &free;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400490": {
+        "nome_corrente": "sub_400490",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400420 ===\nvoid (**sub_400420())(void *ptr)\n{\n  return &free;\n}\n// === END INLINED FUNCTION: sub_400420 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid (**sub_400490())(void *ptr)\n{\n  void (**result)(void *); // rax\n\n  if ( !byte_40303C )\n  {\n    result = sub_400420();\n    byte_40303C = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x4004c0": {
+        "nome_corrente": "sub_4004C0",
+        "codice_decompilato": "__int64 sub_4004C0()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4004c6": {
+        "nome_corrente": "sub_4004C6",
+        "codice_decompilato": "char *__fastcall sub_4004C6(char *a1, char *a2)\n{\n  char *result; // rax\n  char v3; // [rsp+1Fh] [rbp-1h]\n\n  v3 = *a1;\n  *a1 = *a2;\n  result = a2;\n  *a2 = v3;\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "result": "",
+            "v3": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4004f6": {
+        "nome_corrente": "compar",
+        "codice_decompilato": "__int64 __fastcall compar(char *a1, char *a2)\n{\n  return (unsigned int)(*a1 - *a2);\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": ""
+        },
+        "inlined_count": 0
+    },
+    "0x40051c": {
+        "nome_corrente": "sub_40051C",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4004C6 ===\nchar *__fastcall sub_4004C6(char *a1, char *a2)\n{\n  char *result; // rax\n  char v3; // [rsp+1Fh] [rbp-1h]\n\n  v3 = *a1;\n  *a1 = *a2;\n  result = a2;\n  *a2 = v3;\n  return result;\n}\n// === END INLINED FUNCTION: sub_4004C6 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid __fastcall sub_40051C(char *a1)\n{\n  int v1; // [rsp+1Ch] [rbp-14h]\n  int j; // [rsp+20h] [rbp-10h]\n  int v3; // [rsp+24h] [rbp-Ch]\n  int i; // [rsp+28h] [rbp-8h]\n  int v5; // [rsp+2Ch] [rbp-4h]\n\n  v1 = strlen(a1);\n  qsort(a1, v1, 1u, (__compar_fn_t)compar);\n  v5 = 1;\n  do\n  {\n    puts(a1);\n    for ( i = v1 - 2; i >= 0 && a1[i] >= a1[i + 1]; --i )\n      ;\n    if ( i < 0 )\n    {\n      v5 = 0;\n    }\n    else\n    {\n      v3 = i + 1;\n      for ( j = i + 1; j < v1 && a1[j]; ++j )\n      {\n        if ( a1[j] > a1[i] && a1[j] < a1[v3] )\n          v3 = j;\n      }\n      sub_4004C6(&a1[i], &a1[v3]);\n      qsort(&a1[i + 1], v1 - i - 1, 1u, (__compar_fn_t)compar);\n    }\n  }\n  while ( v5 );\n}\n",
+        "variabili": {
+            "a1": "",
+            "v1": "",
+            "j": "",
+            "v3": "",
+            "i": "",
+            "v5": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400696": {
+        "nome_corrente": "main",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_40051C ===\nvoid __fastcall sub_40051C(char *a1)\n{\n  int v1; // [rsp+1Ch] [rbp-14h]\n  int j; // [rsp+20h] [rbp-10h]\n  int v3; // [rsp+24h] [rbp-Ch]\n  int i; // [rsp+28h] [rbp-8h]\n  int v5; // [rsp+2Ch] [rbp-4h]\n\n  v1 = strlen(a1);\n  qsort(a1, v1, 1u, (__compar_fn_t)compar);\n  v5 = 1;\n  do\n  {\n    puts(a1);\n    for ( i = v1 - 2; i >= 0 && a1[i] >= a1[i + 1]; --i )\n      ;\n    if ( i < 0 )\n    {\n      v5 = 0;\n    }\n    else\n    {\n      v3 = i + 1;\n      for ( j = i + 1; j < v1 && a1[j]; ++j )\n      {\n        if ( a1[j] > a1[i] && a1[j] < a1[v3] )\n          v3 = j;\n      }\n      sub_4004C6(&a1[i], &a1[v3]);\n      qsort(&a1[i + 1], v1 - i - 1, 1u, (__compar_fn_t)compar);\n    }\n  }\n  while ( v5 );\n}\n// === END INLINED FUNCTION: sub_40051C ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  int v4; // [rsp+4h] [rbp-Ch] BYREF\n  void *ptr; // [rsp+8h] [rbp-8h]\n\n  __isoc23_scanf(byte_4012F8, &v4, a3);\n  if ( v4 > 0 && v4 <= 999 )\n  {\n    ptr = malloc(v4);\n    __isoc23_scanf(\"%s\", ptr);\n    sub_40051C((char *)ptr);\n    free(ptr);\n    return 0;\n  }\n  else\n  {\n    perror(\"Input number out of range: >0 and <1000\\n\");\n    return 0xFFFFFFFFLL;\n  }\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": "",
+            "ptr": ""
+        },
+        "inlined_count": 1
+    },
+    "0x40071c": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

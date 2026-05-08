@@ -1,0 +1,85 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4003a0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4003e0": {
+        "nome_corrente": "sub_4003E0",
+        "codice_decompilato": "int (**sub_4003E0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400450": {
+        "nome_corrente": "sub_400450",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4003E0 ===\nint (**sub_4003E0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n// === END INLINED FUNCTION: sub_4003E0 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nint (**sub_400450())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  int (**result)(int (*)(int, char **, char **), int, char **, void (*)(void), void (*)(void), void (*)(void), void *); // rax\n\n  if ( !byte_40301C )\n  {\n    result = sub_4003E0();\n    byte_40301C = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400480": {
+        "nome_corrente": "sub_400480",
+        "codice_decompilato": "__int64 sub_400480()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400486": {
+        "nome_corrente": "sub_400486",
+        "codice_decompilato": "__int64 __fastcall sub_400486(__int64 a1)\n{\n  __int64 result; // rax\n  int i; // [rsp+14h] [rbp-4h]\n\n  for ( i = 0; ; ++i )\n  {\n    result = *(unsigned __int8 *)(i + a1);\n    if ( !(_BYTE)result )\n      break;\n    if ( *(char *)(i + a1) <= 64 || *(char *)(i + a1) > 90 )\n    {\n      if ( *(char *)(i + a1) > 96 && *(char *)(i + a1) <= 122 )\n        *(_BYTE *)(i + a1) = (*(char *)(i + a1) - 84) % 26 + 97;\n    }\n    else\n    {\n      *(_BYTE *)(i + a1) = (*(char *)(i + a1) - 52) % 26 + 65;\n    }\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "result": "",
+            "i": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4005a2": {
+        "nome_corrente": "sub_4005A2",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400486 ===\n__int64 __fastcall sub_400486(__int64 a1)\n{\n  __int64 result; // rax\n  int i; // [rsp+14h] [rbp-4h]\n\n  for ( i = 0; ; ++i )\n  {\n    result = *(unsigned __int8 *)(i + a1);\n    if ( !(_BYTE)result )\n      break;\n    if ( *(char *)(i + a1) <= 64 || *(char *)(i + a1) > 90 )\n    {\n      if ( *(char *)(i + a1) > 96 && *(char *)(i + a1) <= 122 )\n        *(_BYTE *)(i + a1) = (*(char *)(i + a1) - 84) % 26 + 97;\n    }\n    else\n    {\n      *(_BYTE *)(i + a1) = (*(char *)(i + a1) - 52) % 26 + 65;\n    }\n  }\n  return result;\n}\n// === END INLINED FUNCTION: sub_400486 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nint sub_4005A2()\n{\n  char v1[48]; // [rsp+0h] [rbp-80h] BYREF\n  char v2[48]; // [rsp+30h] [rbp-50h] BYREF\n  char s1[32]; // [rsp+60h] [rbp-20h] BYREF\n\n  strcpy(s1, \"The more I C, the less I see.\");\n  sub_400486((__int64)s1);\n  if ( strcmp(s1, \"Gur zber V P, gur yrff V frr.\") )\n    __assert_fail(\n      \"strcmp(test_01, \\\"Gur zber V P, gur yrff V frr.\\\") == 0\",\n      \"dataset/src/cipher/rot13.c\",\n      0x28u,\n      \"test\");\n  strcpy(v2, \"Which witch switched the Swiss wristwatches?\");\n  sub_400486((__int64)v2);\n  if ( strcmp(v2, \"Juvpu jvgpu fjvgpurq gur Fjvff jevfgjngpurf?\") )\n    __assert_fail(\n      \"strcmp(test_02, \\\"Juvpu jvgpu fjvgpurq gur Fjvff jevfgjngpurf?\\\") == 0\",\n      \"dataset/src/cipher/rot13.c\",\n      0x2Cu,\n      \"test\");\n  strcpy(v1, \"Juvpu jvgpu fjvgpurq gur Fjvff jevfgjngpurf?\");\n  sub_400486((__int64)v1);\n  if ( strcmp(v1, \"Which witch switched the Swiss wristwatches?\") )\n    __assert_fail(\n      \"strcmp(test_03, \\\"Which witch switched the Swiss wristwatches?\\\") == 0\",\n      \"dataset/src/cipher/rot13.c\",\n      0x30u,\n      \"test\");\n  return puts(\"All tests have successfully passed!\");\n}\n",
+        "variabili": {
+            "v1": "",
+            "v2": "",
+            "s1": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400745": {
+        "nome_corrente": "main",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4005A2 ===\nint sub_4005A2()\n{\n  char v1[48]; // [rsp+0h] [rbp-80h] BYREF\n  char v2[48]; // [rsp+30h] [rbp-50h] BYREF\n  char s1[32]; // [rsp+60h] [rbp-20h] BYREF\n\n  strcpy(s1, \"The more I C, the less I see.\");\n  sub_400486((__int64)s1);\n  if ( strcmp(s1, \"Gur zber V P, gur yrff V frr.\") )\n    __assert_fail(\n      \"strcmp(test_01, \\\"Gur zber V P, gur yrff V frr.\\\") == 0\",\n      \"dataset/src/cipher/rot13.c\",\n      0x28u,\n      \"test\");\n  strcpy(v2, \"Which witch switched the Swiss wristwatches?\");\n  sub_400486((__int64)v2);\n  if ( strcmp(v2, \"Juvpu jvgpu fjvgpurq gur Fjvff jevfgjngpurf?\") )\n    __assert_fail(\n      \"strcmp(test_02, \\\"Juvpu jvgpu fjvgpurq gur Fjvff jevfgjngpurf?\\\") == 0\",\n      \"dataset/src/cipher/rot13.c\",\n      0x2Cu,\n      \"test\");\n  strcpy(v1, \"Juvpu jvgpu fjvgpurq gur Fjvff jevfgjngpurf?\");\n  sub_400486((__int64)v1);\n  if ( strcmp(v1, \"Which witch switched the Swiss wristwatches?\") )\n    __assert_fail(\n      \"strcmp(test_03, \\\"Which witch switched the Swiss wristwatches?\\\") == 0\",\n      \"dataset/src/cipher/rot13.c\",\n      0x30u,\n      \"test\");\n  return puts(\"All tests have successfully passed!\");\n}\n// === END INLINED FUNCTION: sub_4005A2 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  sub_4005A2();\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400758": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

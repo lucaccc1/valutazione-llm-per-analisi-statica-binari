@@ -1,0 +1,115 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4003d0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400410": {
+        "nome_corrente": "sub_400410",
+        "codice_decompilato": "char *sub_400410()\n{\n  return &byte_403038;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400480": {
+        "nome_corrente": "sub_400480",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400410 ===\nchar *sub_400410()\n{\n  return &byte_403038;\n}\n// === END INLINED FUNCTION: sub_400410 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nchar *sub_400480()\n{\n  char *result; // rax\n\n  if ( !byte_403038 )\n  {\n    result = sub_400410();\n    byte_403038 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x4004b0": {
+        "nome_corrente": "sub_4004B0",
+        "codice_decompilato": "__int64 sub_4004B0()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4004b6": {
+        "nome_corrente": "sub_4004B6",
+        "codice_decompilato": "void *sub_4004B6()\n{\n  return malloc(0x10u);\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4004d2": {
+        "nome_corrente": "sub_4004D2",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4004B6 ===\nvoid *sub_4004B6()\n{\n  return malloc(0x10u);\n}\n// === END INLINED FUNCTION: sub_4004B6 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall sub_4004D2(int a1, int a2)\n{\n  _QWORD *v3; // [rsp+18h] [rbp-18h]\n  int i; // [rsp+24h] [rbp-Ch]\n  __int64 v5; // [rsp+28h] [rbp-8h]\n\n  v3 = sub_4004B6();\n  *(_DWORD *)v3 = a2;\n  if ( a1 == 1 )\n  {\n    v3[1] = 0;\n    if ( qword_403040 )\n      v3[1] = qword_403040;\n    qword_403040 = (__int64)v3;\n  }\n  else\n  {\n    v5 = qword_403040;\n    for ( i = 2; i < a1 && v5; ++i )\n      v5 = *(_QWORD *)(v5 + 8);\n    if ( !v5 )\n    {\n      printf(\"Position not found!\");\n      return 0;\n    }\n    v3[1] = *(_QWORD *)(v5 + 8);\n    *(_QWORD *)(v5 + 8) = v3;\n  }\n  return 0;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "i": "",
+            "v5": ""
+        },
+        "inlined_count": 1
+    },
+    "0x4005b2": {
+        "nome_corrente": "sub_4005B2",
+        "codice_decompilato": "__int64 __fastcall sub_4005B2(int a1)\n{\n  void *ptr; // [rsp+10h] [rbp-20h]\n  _QWORD *v3; // [rsp+18h] [rbp-18h]\n  int i; // [rsp+24h] [rbp-Ch]\n  __int64 v5; // [rsp+28h] [rbp-8h]\n\n  if ( qword_403040 )\n  {\n    if ( a1 == 1 )\n    {\n      ptr = (void *)qword_403040;\n      qword_403040 = *(_QWORD *)(qword_403040 + 8);\n      free(ptr);\n    }\n    else\n    {\n      v5 = qword_403040;\n      for ( i = 2; i < a1; ++i )\n      {\n        if ( !v5 )\n        {\n          printf(\"Position not found!\");\n          return 0;\n        }\n        v5 = *(_QWORD *)(v5 + 8);\n      }\n      v3 = *(_QWORD **)(v5 + 8);\n      *(_QWORD *)(v5 + 8) = v3[1];\n      free(v3);\n    }\n  }\n  else\n  {\n    printf(\"\\nlist is empty\");\n  }\n  return 0;\n}\n",
+        "variabili": {
+            "a1": "",
+            "ptr": "",
+            "v3": "",
+            "i": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400686": {
+        "nome_corrente": "sub_400686",
+        "codice_decompilato": "int sub_400686()\n{\n  __int64 v0; // rax\n  __int64 i; // [rsp+8h] [rbp-8h]\n\n  if ( qword_403040 )\n  {\n    LODWORD(v0) = qword_403040;\n    for ( i = qword_403040; i; i = v0 )\n    {\n      printf(\"%d \", *(_DWORD *)i);\n      v0 = *(_QWORD *)(i + 8);\n    }\n  }\n  else\n  {\n    LODWORD(v0) = printf(\"\\nlist is empty\");\n  }\n  return v0;\n}\n",
+        "variabili": {
+            "v0": "",
+            "i": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4006e5": {
+        "nome_corrente": "sub_4006E5",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4004D2 ===\n__int64 __fastcall sub_4004D2(int a1, int a2)\n{\n  _QWORD *v3; // [rsp+18h] [rbp-18h]\n  int i; // [rsp+24h] [rbp-Ch]\n  __int64 v5; // [rsp+28h] [rbp-8h]\n\n  v3 = sub_4004B6();\n  *(_DWORD *)v3 = a2;\n  if ( a1 == 1 )\n  {\n    v3[1] = 0;\n    if ( qword_403040 )\n      v3[1] = qword_403040;\n    qword_403040 = (__int64)v3;\n  }\n  else\n  {\n    v5 = qword_403040;\n    for ( i = 2; i < a1 && v5; ++i )\n      v5 = *(_QWORD *)(v5 + 8);\n    if ( !v5 )\n    {\n      printf(\"Position not found!\");\n      return 0;\n    }\n    v3[1] = *(_QWORD *)(v5 + 8);\n    *(_QWORD *)(v5 + 8) = v3;\n  }\n  return 0;\n}\n// === END INLINED FUNCTION: sub_4004D2 ===\n\n// === START INLINED FUNCTION: sub_4005B2 ===\n__int64 __fastcall sub_4005B2(int a1)\n{\n  void *ptr; // [rsp+10h] [rbp-20h]\n  _QWORD *v3; // [rsp+18h] [rbp-18h]\n  int i; // [rsp+24h] [rbp-Ch]\n  __int64 v5; // [rsp+28h] [rbp-8h]\n\n  if ( qword_403040 )\n  {\n    if ( a1 == 1 )\n    {\n      ptr = (void *)qword_403040;\n      qword_403040 = *(_QWORD *)(qword_403040 + 8);\n      free(ptr);\n    }\n    else\n    {\n      v5 = qword_403040;\n      for ( i = 2; i < a1; ++i )\n      {\n        if ( !v5 )\n        {\n          printf(\"Position not found!\");\n          return 0;\n        }\n        v5 = *(_QWORD *)(v5 + 8);\n      }\n      v3 = *(_QWORD **)(v5 + 8);\n      *(_QWORD *)(v5 + 8) = v3[1];\n      free(v3);\n    }\n  }\n  else\n  {\n    printf(\"\\nlist is empty\");\n  }\n  return 0;\n}\n// === END INLINED FUNCTION: sub_4005B2 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nint sub_4006E5()\n{\n  sub_4004D2(1, 39);\n  if ( *(_DWORD *)qword_403040 != 39 )\n    __assert_fail(\n      \"start->info == 39\",\n      \"dataset/src/data_structures/linked_list/singly_link_list_deletion.c\",\n      0x79u,\n      \"test\");\n  sub_4004D2(2, 10);\n  sub_4004D2(3, 11);\n  sub_4005B2(1);\n  if ( *(_DWORD *)qword_403040 == 39 )\n    __assert_fail(\n      \"start->info != 39\",\n      \"dataset/src/data_structures/linked_list/singly_link_list_deletion.c\",\n      0x7Du,\n      \"test\");\n  return puts(\"Self-tests successfully passed!\");\n}\n",
+        "variabili": {},
+        "inlined_count": 2
+    },
+    "0x40077b": {
+        "nome_corrente": "main",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4004D2 ===\n__int64 __fastcall sub_4004D2(int a1, int a2)\n{\n  _QWORD *v3; // [rsp+18h] [rbp-18h]\n  int i; // [rsp+24h] [rbp-Ch]\n  __int64 v5; // [rsp+28h] [rbp-8h]\n\n  v3 = sub_4004B6();\n  *(_DWORD *)v3 = a2;\n  if ( a1 == 1 )\n  {\n    v3[1] = 0;\n    if ( qword_403040 )\n      v3[1] = qword_403040;\n    qword_403040 = (__int64)v3;\n  }\n  else\n  {\n    v5 = qword_403040;\n    for ( i = 2; i < a1 && v5; ++i )\n      v5 = *(_QWORD *)(v5 + 8);\n    if ( !v5 )\n    {\n      printf(\"Position not found!\");\n      return 0;\n    }\n    v3[1] = *(_QWORD *)(v5 + 8);\n    *(_QWORD *)(v5 + 8) = v3;\n  }\n  return 0;\n}\n// === END INLINED FUNCTION: sub_4004D2 ===\n\n// === START INLINED FUNCTION: sub_400686 ===\nint sub_400686()\n{\n  __int64 v0; // rax\n  __int64 i; // [rsp+8h] [rbp-8h]\n\n  if ( qword_403040 )\n  {\n    LODWORD(v0) = qword_403040;\n    for ( i = qword_403040; i; i = v0 )\n    {\n      printf(\"%d \", *(_DWORD *)i);\n      v0 = *(_QWORD *)(i + 8);\n    }\n  }\n  else\n  {\n    LODWORD(v0) = printf(\"\\nlist is empty\");\n  }\n  return v0;\n}\n// === END INLINED FUNCTION: sub_400686 ===\n\n// === START INLINED FUNCTION: sub_4006E5 ===\nint sub_4006E5()\n{\n  sub_4004D2(1, 39);\n  if ( *(_DWORD *)qword_403040 != 39 )\n    __assert_fail(\n      \"start->info == 39\",\n      \"dataset/src/data_structures/linked_list/singly_link_list_deletion.c\",\n      0x79u,\n      \"test\");\n  sub_4004D2(2, 10);\n  sub_4004D2(3, 11);\n  sub_4005B2(1);\n  if ( *(_DWORD *)qword_403040 == 39 )\n    __assert_fail(\n      \"start->info != 39\",\n      \"dataset/src/data_structures/linked_list/singly_link_list_deletion.c\",\n      0x7Du,\n      \"test\");\n  return puts(\"Self-tests successfully passed!\");\n}\n// === END INLINED FUNCTION: sub_4006E5 ===\n\n// === START INLINED FUNCTION: sub_4005B2 ===\n__int64 __fastcall sub_4005B2(int a1)\n{\n  void *ptr; // [rsp+10h] [rbp-20h]\n  _QWORD *v3; // [rsp+18h] [rbp-18h]\n  int i; // [rsp+24h] [rbp-Ch]\n  __int64 v5; // [rsp+28h] [rbp-8h]\n\n  if ( qword_403040 )\n  {\n    if ( a1 == 1 )\n    {\n      ptr = (void *)qword_403040;\n      qword_403040 = *(_QWORD *)(qword_403040 + 8);\n      free(ptr);\n    }\n    else\n    {\n      v5 = qword_403040;\n      for ( i = 2; i < a1; ++i )\n      {\n        if ( !v5 )\n        {\n          printf(\"Position not found!\");\n          return 0;\n        }\n        v5 = *(_QWORD *)(v5 + 8);\n      }\n      v3 = *(_QWORD **)(v5 + 8);\n      *(_QWORD *)(v5 + 8) = v3[1];\n      free(v3);\n    }\n  }\n  else\n  {\n    printf(\"\\nlist is empty\");\n  }\n  return 0;\n}\n// === END INLINED FUNCTION: sub_4005B2 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  int v4; // [rsp+Ch] [rbp-14h] BYREF\n  int v5; // [rsp+10h] [rbp-10h] BYREF\n  int v6; // [rsp+14h] [rbp-Ch] BYREF\n  int v7; // [rsp+18h] [rbp-8h] BYREF\n  int v8; // [rsp+1Ch] [rbp-4h] BYREF\n\n  v8 = 0;\n  v7 = 0;\n  v6 = 0;\n  v5 = 0;\n  v4 = 0;\n  printf(\"\\n1.self test mode\");\n  printf(\"\\n2.interactive mode\");\n  printf(\"\\nenter your choice:\");\n  __isoc23_scanf(\"%d\", &v4);\n  if ( v4 != 1 )\n  {\n    if ( v4 != 2 )\n    {\n      printf(\"Invalid choice\");\n      return 0;\n    }\n    while ( 1 )\n    {\n      while ( 1 )\n      {\n        printf(\"\\n1.add value at the given location\");\n        printf(\"\\n2.delete value at the given location\");\n        printf(\"\\n3.view list\");\n        printf(\"\\nenter your choice :\");\n        __isoc23_scanf(\"%d\", &v8);\n        if ( v8 != 3 )\n          break;\n        sub_400686();\n      }\n      if ( v8 > 3 )\n      {\nLABEL_12:\n        printf(\"\\ninvalid choice\");\n      }\n      else if ( v8 == 1 )\n      {\n        printf(\"enter the position where the element is to be added :\");\n        __isoc23_scanf(\"%d\", &v6);\n        printf(\"enter the element is to be added :\");\n        __isoc23_scanf(\"%d\", &v5);\n        sub_4004D2(v6, v5);\n      }\n      else\n      {\n        if ( v8 != 2 )\n          goto LABEL_12;\n        printf(\"enter the position where the element is to be deleted :\");\n        __isoc23_scanf(\"%d\", &v7);\n        sub_4005B2(v7);\n      }\n    }\n  }\n  sub_4006E5();\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": ""
+        },
+        "inlined_count": 4
+    },
+    "0x40093c": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

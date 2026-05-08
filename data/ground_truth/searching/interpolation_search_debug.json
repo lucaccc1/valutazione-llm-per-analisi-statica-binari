@@ -1,0 +1,30 @@
+{
+    "0x400486": {
+        "nome_funzione_originale": "interpolationSearch",
+        "variabili": {
+            "arr": "",
+            "n": "",
+            "key": "",
+            "pos": "",
+            "high": "",
+            "low": ""
+        }
+    },
+    "0x4005a4": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "arr": "",
+            "x": "",
+            "index": "",
+            "n": "",
+            "i": ""
+        }
+    },
+    "0x403030": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    }
+}

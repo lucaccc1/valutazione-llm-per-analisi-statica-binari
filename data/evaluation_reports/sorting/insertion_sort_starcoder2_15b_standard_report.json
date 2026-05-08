@@ -1,0 +1,62 @@
+[
+    {
+        "address": "0x4004b6",
+        "ida_stripped_name": "sub_4004B6",
+        "ground_truth_name": "insertionSort",
+        "ai_predicted_name": "sort_list",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 23,
+            "execution_time": 8.77
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.55,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.3,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400578",
+        "ida_stripped_name": "sub_400578",
+        "ground_truth_name": "test",
+        "ai_predicted_name": "check_sorted",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 19,
+            "execution_time": 5.86
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.38,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.1,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40069b",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 9,
+            "execution_time": 7.9
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    }
+]

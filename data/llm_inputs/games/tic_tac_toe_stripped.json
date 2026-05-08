@@ -1,0 +1,134 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x400420": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x400460": {
+        "nome_corrente": "sub_400460",
+        "codice_decompilato": "FILE **sub_400460()\n{\n  return &stdin;\n}\n",
+        "variabili": {}
+    },
+    "0x4004d0": {
+        "nome_corrente": "sub_4004D0",
+        "codice_decompilato": "FILE **sub_4004D0()\n{\n  FILE **result; // rax\n\n  if ( !byte_403088 )\n  {\n    result = sub_400460();\n    byte_403088 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400500": {
+        "nome_corrente": "sub_400500",
+        "codice_decompilato": "__int64 sub_400500()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x400506": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  unsigned int v3; // eax\n  int v5; // [rsp+4h] [rbp-Ch] BYREF\n  int v6; // [rsp+8h] [rbp-8h] BYREF\n  int i; // [rsp+Ch] [rbp-4h]\n\n  v3 = time(0);\n  srand(v3);\n  v6 = 0;\n  do\n  {\n    v5 = 0;\n    for ( i = 0; i <= 8; ++i )\n      byte_403090[i] = 42;\n    puts(\"***************************************\");\n    puts(\"*************TIC TAC TOE***************\");\n    puts(\"***************************************\");\n    puts(\"***********1. YOU vs COMPUTER ***********\");\n    puts(\"***********2. YOU vs PLAYER ***********\");\n    puts(\"***********3.EXIT *********************\");\n    printf(\"Enter your choice : \");\n    __isoc23_scanf(\"%d\", &v5);\n    if ( v5 == 1 )\n    {\n      sub_400620();\n    }\n    else if ( v5 == 2 )\n    {\n      sub_400790();\n    }\n    else\n    {\n      printf(\"THANK YOU and EXIT!\");\n    }\n    printf(\"Next game ? : \");\n    printf(\"Enter 1 \u2013 YES and 0 - NO \");\n    __isoc23_scanf(\"%d\", &v6);\n  }\n  while ( v6 == 1 );\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v3": "",
+            "v5": "",
+            "v6": "",
+            "i": ""
+        }
+    },
+    "0x400620": {
+        "nome_corrente": "sub_400620",
+        "codice_decompilato": "void sub_400620()\n{\n  unsigned int v0; // [rsp+Ch] [rbp-24h] BYREF\n  unsigned int v1; // [rsp+10h] [rbp-20h]\n  int n; // [rsp+14h] [rbp-1Ch]\n  int m; // [rsp+18h] [rbp-18h]\n  int k; // [rsp+1Ch] [rbp-14h]\n  int j; // [rsp+20h] [rbp-10h]\n  int i; // [rsp+24h] [rbp-Ch]\n  int v7; // [rsp+28h] [rbp-8h]\n  int v8; // [rsp+2Ch] [rbp-4h]\n\n  v8 = 0;\n  v7 = 0;\n  for ( i = 0; i <= 2; ++i )\n  {\n    for ( j = 0; j <= 2; ++j )\n      printf(\"%c \", (unsigned int)byte_403090[v8++]);\n    putchar(10);\n  }\n  for ( k = 1; k <= 9; ++k )\n  {\n    v8 = 0;\n    printf(\"Where would you like to place 'x' \");\n    __isoc23_scanf(\"%d\", &v0);\n    sub_400A22(v0);\n    if ( v7 <= 3 )\n      sub_400AA1();\n    for ( m = 0; m <= 2; ++m )\n    {\n      for ( n = 0; n <= 2; ++n )\n        printf(\"%c \", (unsigned int)byte_403090[v8++]);\n      putchar(10);\n    }\n    ++v7;\n    v1 = sub_400BAB();\n    if ( v1 >= 0xFFFFFFFE )\n    {\n      if ( v1 == -1 )\n        puts(\"YOU WIN\");\n      if ( v1 == -2 )\n        puts(\"YOU LOSE\");\n      return;\n    }\n    if ( v7 == 4 )\n    {\n      printf(\"\\nDRAW \");\n      return;\n    }\n  }\n}\n",
+        "variabili": {
+            "v0": "",
+            "v1": "",
+            "n": "",
+            "m": "",
+            "k": "",
+            "j": "",
+            "i": "",
+            "v7": "",
+            "v8": ""
+        }
+    },
+    "0x400790": {
+        "nome_corrente": "sub_400790",
+        "codice_decompilato": "void sub_400790()\n{\n  unsigned int v0; // [rsp+8h] [rbp-28h] BYREF\n  unsigned int v1; // [rsp+Ch] [rbp-24h] BYREF\n  unsigned int v2; // [rsp+10h] [rbp-20h]\n  int n; // [rsp+14h] [rbp-1Ch]\n  int m; // [rsp+18h] [rbp-18h]\n  int k; // [rsp+1Ch] [rbp-14h]\n  int j; // [rsp+20h] [rbp-10h]\n  int i; // [rsp+24h] [rbp-Ch]\n  int v8; // [rsp+28h] [rbp-8h]\n  int v9; // [rsp+2Ch] [rbp-4h]\n\n  v9 = 0;\n  v8 = 0;\n  for ( i = 0; i <= 2; ++i )\n  {\n    for ( j = 0; j <= 2; ++j )\n      printf(\"%c \", (unsigned int)byte_403090[v9++]);\n    putchar(10);\n  }\n  for ( k = 1; k <= 9; ++k )\n  {\n    v9 = 0;\n    printf(\"PLAYER1 - where would you like to place 'x' : \");\n    __isoc23_scanf(\"%d\", &v1);\n    sub_400A22(v1);\n    if ( v8 <= 3 )\n    {\n      printf(\"PLAYER2 - where would you like to place 'o' : \");\n      __isoc23_scanf(\"%d\", &v0);\n      sub_400B2C(v0);\n    }\n    for ( m = 0; m <= 2; ++m )\n    {\n      for ( n = 0; n <= 2; ++n )\n        printf(\"%c \", (unsigned int)byte_403090[v9++]);\n      putchar(10);\n    }\n    ++v8;\n    v2 = sub_400BAB();\n    if ( v2 >= 0xFFFFFFFE )\n    {\n      if ( v2 == -1 )\n        puts(\"Player 1 WIN\");\n      if ( v2 == -2 )\n        puts(\"Player 2 WIN\");\n      return;\n    }\n    if ( v8 == 4 )\n    {\n      printf(\"\\nDRAW \");\n      return;\n    }\n  }\n}\n",
+        "variabili": {
+            "v0": "",
+            "v1": "",
+            "v2": "",
+            "n": "",
+            "m": "",
+            "k": "",
+            "j": "",
+            "i": "",
+            "v8": "",
+            "v9": ""
+        }
+    },
+    "0x40092a": {
+        "nome_corrente": "sub_40092A",
+        "codice_decompilato": "__int64 sub_40092A()\n{\n  unsigned int v1; // [rsp+Ch] [rbp-44h] BYREF\n  char s[64]; // [rsp+10h] [rbp-40h] BYREF\n\n  while ( 1 )\n  {\n    while ( 1 )\n    {\n      fgets(s, 49, stdin);\n      if ( strlen(s) <= 2 && s[0] && (unsigned int)__isoc23_sscanf(s, \"%d\", &v1) == 1 )\n        break;\n      fwrite(\"Invalid move, Enter number 1 - 9: \", 1u, 0x22u, stderr);\n    }\n    if ( byte_403090[v1 - 1] != 120 && byte_403090[v1 - 1] != 111 && v1 )\n      break;\n    fwrite(\"Already allocated, Enter number: \", 1u, 0x21u, stderr);\n  }\n  return v1;\n}\n",
+        "variabili": {
+            "v1": "",
+            "s": ""
+        }
+    },
+    "0x400a22": {
+        "nome_corrente": "sub_400A22",
+        "codice_decompilato": "__int64 __fastcall sub_400A22(int a1)\n{\n  __int64 result; // rax\n  unsigned int v2; // [rsp+14h] [rbp-Ch]\n  unsigned int v3; // [rsp+18h] [rbp-8h]\n\n  if ( a1 <= 0 || a1 > 9 )\n  {\n    v2 = sub_40092A();\n    return sub_400A22(v2);\n  }\n  else if ( byte_403090[a1 - 1] == 120 || byte_403090[a1 - 1] == 111 )\n  {\n    v3 = sub_40092A();\n    return sub_400A22(v3);\n  }\n  else\n  {\n    result = a1 - 1;\n    byte_403090[result] = 120;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "result": "",
+            "v2": "",
+            "v3": ""
+        }
+    },
+    "0x400aa1": {
+        "nome_corrente": "sub_400AA1",
+        "codice_decompilato": "int sub_400AA1()\n{\n  int v0; // kr00_4\n  int result; // eax\n  int v2; // [rsp+Ch] [rbp-4h]\n\n  v0 = rand();\n  result = 9 * (v0 / 9);\n  v2 = v0 % 9;\n  if ( v0 % 9 >= 0 )\n  {\n    if ( byte_403090[v2] == 120 || byte_403090[v2] == 111 )\n    {\n      return sub_400AA1();\n    }\n    else\n    {\n      byte_403090[v2] = 111;\n      return printf(\"\\n Computer placed at %d position\\n\", v2 + 1);\n    }\n  }\n  return result;\n}\n",
+        "variabili": {
+            "v0": "",
+            "result": "",
+            "v2": ""
+        }
+    },
+    "0x400b2c": {
+        "nome_corrente": "sub_400B2C",
+        "codice_decompilato": "__int64 __fastcall sub_400B2C(int a1)\n{\n  __int64 result; // rax\n  int v2; // [rsp+14h] [rbp-Ch]\n  int v3; // [rsp+18h] [rbp-8h]\n\n  if ( a1 <= 0 || a1 > 9 )\n  {\n    v2 = sub_40092A();\n    return sub_400A22(v2);\n  }\n  else if ( byte_403090[a1 - 1] == 120 || byte_403090[a1 - 1] == 111 )\n  {\n    v3 = sub_40092A();\n    return sub_400A22(v3);\n  }\n  else\n  {\n    result = a1 - 1;\n    byte_403090[result] = 111;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "result": "",
+            "v2": "",
+            "v3": ""
+        }
+    },
+    "0x400bab": {
+        "nome_corrente": "sub_400BAB",
+        "codice_decompilato": "__int64 sub_400BAB()\n{\n  if ( byte_403090[0] == byte_403091 && byte_403091 == byte_403092 )\n  {\n    if ( byte_403090[0] == 120 && byte_403091 == 120 && byte_403092 == 120 )\n      return 0xFFFFFFFFLL;\n    if ( byte_403090[0] == 111 && byte_403091 == 111 && byte_403092 == 111 )\n      return 4294967294LL;\n  }\n  else if ( byte_403090[0] == byte_403094 && byte_403094 == byte_403098 )\n  {\n    if ( byte_403090[0] == 120 && byte_403094 == 120 && byte_403098 == 120 )\n      return 0xFFFFFFFFLL;\n    if ( byte_403090[0] == 111 && byte_403094 == 111 && byte_403098 == 111 )\n      return 4294967294LL;\n  }\n  else if ( byte_403090[0] == byte_403093 && byte_403093 == byte_403096 )\n  {\n    if ( byte_403090[0] == 120 && byte_403093 == 120 && byte_403096 == 120 )\n      return 0xFFFFFFFFLL;\n    if ( byte_403090[0] == 111 && byte_403093 == 111 && byte_403096 == 111 )\n      return 4294967294LL;\n  }\n  else if ( byte_403093 == byte_403094 && byte_403094 == byte_403095 )\n  {\n    if ( byte_403093 == 120 && byte_403094 == 120 && byte_403095 == 120 )\n      return 0xFFFFFFFFLL;\n    if ( byte_403093 == 111 && byte_403094 == 111 && byte_403095 == 111 )\n      return 4294967294LL;\n  }\n  else if ( byte_403096 == byte_403097 && byte_403097 == byte_403098 )\n  {\n    if ( byte_403096 == 120 && byte_403097 == 120 && byte_403098 == 120 )\n      return 0xFFFFFFFFLL;\n    if ( byte_403096 == 111 && byte_403097 == 111 && byte_403098 == 111 )\n      return 4294967294LL;\n  }\n  else if ( byte_403091 == byte_403094 && byte_403094 == byte_403097 )\n  {\n    if ( byte_403091 == 120 && byte_403094 == 120 && byte_403097 == 120 )\n      return 0xFFFFFFFFLL;\n    if ( byte_403091 == 111 && byte_403094 == 111 && byte_403097 == 111 )\n      return 4294967294LL;\n  }\n  else if ( byte_403092 == byte_403095 && byte_403095 == byte_403098 )\n  {\n    if ( byte_403092 == 120 && byte_403095 == 120 && byte_403098 == 120 )\n      return 0xFFFFFFFFLL;\n    if ( byte_403092 == 111 && byte_403095 == 111 && byte_403098 == 111 )\n      return 4294967294LL;\n  }\n  else if ( byte_403092 == byte_403094 && byte_403094 == byte_403096 )\n  {\n    if ( byte_403092 == 120 && byte_403094 == 120 && byte_403096 == 120 )\n      return 0xFFFFFFFFLL;\n    if ( byte_403092 == 111 && byte_403094 == 111 && byte_403096 == 111 )\n      return 4294967294LL;\n  }\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x400fe8": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

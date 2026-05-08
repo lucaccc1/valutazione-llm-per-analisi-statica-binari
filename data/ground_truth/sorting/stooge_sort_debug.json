@@ -1,0 +1,31 @@
+{
+    "0x400496": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "n": "",
+            "arr": "",
+            "i": ""
+        }
+    },
+    "0x400574": {
+        "nome_funzione_originale": "stoogesort",
+        "variabili": {
+            "arr": "",
+            "i": "",
+            "j": "",
+            "k": "",
+            "temp": ""
+        }
+    },
+    "0x403030": {
+        "nome_funzione_originale": "putchar",
+        "variabili": {}
+    },
+    "0x403040": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    }
+}

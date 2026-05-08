@@ -1,0 +1,63 @@
+{
+    "0x4004b6": {
+        "nome_funzione_originale": "swap",
+        "variabili": {
+            "first": "",
+            "second": "",
+            "temp": ""
+        }
+    },
+    "0x4004e6": {
+        "nome_funzione_originale": "findIndex",
+        "variabili": {
+            "arr": "",
+            "size": "",
+            "min_index": ""
+        }
+    },
+    "0x400553": {
+        "nome_funzione_originale": "selectionSort",
+        "variabili": {
+            "arr": "",
+            "size": "",
+            "min_index": ""
+        }
+    },
+    "0x4005c0": {
+        "nome_funzione_originale": "test",
+        "variabili": {
+            "arr": "",
+            "i_0": "",
+            "i": ""
+        }
+    },
+    "0x4006a2": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "v3": ""
+        }
+    },
+    "0x403040": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x403058": {
+        "nome_funzione_originale": "srand",
+        "variabili": {}
+    },
+    "0x403060": {
+        "nome_funzione_originale": "calloc",
+        "variabili": {}
+    },
+    "0x403068": {
+        "nome_funzione_originale": "time",
+        "variabili": {}
+    },
+    "0x403070": {
+        "nome_funzione_originale": "rand",
+        "variabili": {}
+    }
+}

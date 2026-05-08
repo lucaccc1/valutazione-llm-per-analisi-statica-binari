@@ -1,0 +1,102 @@
+[
+    {
+        "address": "0x4004c6",
+        "ida_stripped_name": "sub_4004C6",
+        "ground_truth_name": "display",
+        "ai_predicted_name": "print_int32s_newline",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 8,
+            "execution_time": 7.31
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.22,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40051e",
+        "ida_stripped_name": "sub_40051E",
+        "ground_truth_name": "swap",
+        "ai_predicted_name": "swap_two_values",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 11,
+            "execution_time": 9.96
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.42,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 0.43,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40054b",
+        "ida_stripped_name": "sub_40054B",
+        "ground_truth_name": "partition",
+        "ai_predicted_name": "partition",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 32,
+            "execution_time": 12.52
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x400624",
+        "ida_stripped_name": "sub_400624",
+        "ground_truth_name": "quickSort",
+        "ai_predicted_name": "sort_int_array",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 35,
+            "execution_time": 10.52
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.35,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.25,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x400686",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 51,
+            "execution_time": 6.87
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 2
+    }
+]

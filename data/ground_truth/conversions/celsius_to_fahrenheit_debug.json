@@ -1,0 +1,28 @@
+{
+    "0x400486": {
+        "nome_funzione_originale": "celcius_to_fahrenheit",
+        "variabili": {
+            "celsius": ""
+        }
+    },
+    "0x4004be": {
+        "nome_funzione_originale": "test",
+        "variabili": {
+            "output": "",
+            "outputa": "",
+            "outputb": ""
+        }
+    },
+    "0x4006ff": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": ""
+        }
+    },
+    "0x403030": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "0x400476": {
+        "nome_funzione_originale": "rabin_karp_search",
+        "variabili": {
+            "str": "",
+            "pattern": "",
+            "d": "",
+            "q": "",
+            "len_pat": "",
+            "len_str": "",
+            "j": "",
+            "hash_p": "",
+            "hash_s": "",
+            "h": "",
+            "i": "",
+            "ia": "",
+            "ib": ""
+        }
+    },
+    "0x400619": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "pat3": "",
+            "pat2": "",
+            "pat1": "",
+            "str": ""
+        }
+    },
+    "0x403028": {
+        "nome_funzione_originale": "strlen",
+        "variabili": {}
+    }
+}

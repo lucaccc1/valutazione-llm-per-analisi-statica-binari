@@ -1,0 +1,63 @@
+{
+    "0x400486": {
+        "nome_funzione_originale": "xy_push",
+        "variabili": {
+            "arr": "",
+            "newval": ""
+        }
+    },
+    "0x4004ad": {
+        "nome_funzione_originale": "calculate_next_xy",
+        "variabili": {
+            "quotient": "",
+            "prev": ""
+        }
+    },
+    "0x4004e9": {
+        "nome_funzione_originale": "extended_euclidean_algorithm",
+        "variabili": {
+            "a": "",
+            "b": "",
+            "v2": "",
+            "v3": "",
+            "v4": "",
+            "ba": "",
+            "aa": "",
+            "div_result": "",
+            "previous_y_values": "",
+            "previous_x_values": "",
+            "previous_remainder": ""
+        }
+    },
+    "0x4005c6": {
+        "nome_funzione_originale": "single_test",
+        "variabili": {
+            "a": "",
+            "b": "",
+            "gcd": "",
+            "x": "",
+            "y": "",
+            "v5": ""
+        }
+    },
+    "0x400662": {
+        "nome_funzione_originale": "test",
+        "variabili": {}
+    },
+    "0x40070e": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": ""
+        }
+    },
+    "0x403030": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403040": {
+        "nome_funzione_originale": "div",
+        "variabili": {}
+    }
+}

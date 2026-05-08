@@ -1,0 +1,102 @@
+[
+    {
+        "address": "0x400486",
+        "ida_stripped_name": "sub_400486",
+        "ground_truth_name": "flip",
+        "ai_predicted_name": "swap_elements",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 17,
+            "execution_time": 4.52
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.12,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40050d",
+        "ida_stripped_name": "sub_40050D",
+        "ground_truth_name": "findMax",
+        "ai_predicted_name": "find_max_index",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 13,
+            "execution_time": 4.07
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.67,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 0.6,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40056f",
+        "ida_stripped_name": "sub_40056F",
+        "ground_truth_name": "pancakeSort",
+        "ai_predicted_name": "find_max_index",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 57,
+            "execution_time": 5.28
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.24,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 2
+    },
+    {
+        "address": "0x4005d8",
+        "ida_stripped_name": "sub_4005D8",
+        "ground_truth_name": "display",
+        "ai_predicted_name": "print_array",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 8,
+            "execution_time": 4.57
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.33,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.07,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400630",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 49,
+            "execution_time": 4.29
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 2
+    }
+]

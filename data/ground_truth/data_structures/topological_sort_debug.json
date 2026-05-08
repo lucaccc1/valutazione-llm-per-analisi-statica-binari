@@ -1,0 +1,98 @@
+{
+    "0x4004a6": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "dst": "",
+            "src": "",
+            "edges": "",
+            "vertices": "",
+            "graph": "",
+            "i": ""
+        }
+    },
+    "0x40059e": {
+        "nome_funzione_originale": "topologicalSortHelper",
+        "variabili": {
+            "vertex": "",
+            "graph": "",
+            "stack": "",
+            "temp": ""
+        }
+    },
+    "0x400652": {
+        "nome_funzione_originale": "topologicalSort",
+        "variabili": {
+            "graph": "",
+            "v1": "",
+            "stack": "",
+            "i": ""
+        }
+    },
+    "0x4006e8": {
+        "nome_funzione_originale": "createNode",
+        "variabili": {
+            "v": "",
+            "result": ""
+        }
+    },
+    "0x40071c": {
+        "nome_funzione_originale": "createGraph",
+        "variabili": {
+            "vertices": "",
+            "graph": "",
+            "i": ""
+        }
+    },
+    "0x4007c8": {
+        "nome_funzione_originale": "addEdge",
+        "variabili": {
+            "graph": "",
+            "src": "",
+            "dest": "",
+            "newNode": ""
+        }
+    },
+    "0x400827": {
+        "nome_funzione_originale": "printGraph",
+        "variabili": {
+            "graph": "",
+            "temp": "",
+            "v": ""
+        }
+    },
+    "0x4008b5": {
+        "nome_funzione_originale": "createStack",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x4008df": {
+        "nome_funzione_originale": "push",
+        "variabili": {
+            "stack": "",
+            "element": ""
+        }
+    },
+    "0x40091b": {
+        "nome_funzione_originale": "pop",
+        "variabili": {
+            "stack": "",
+            "top": ""
+        }
+    },
+    "0x403038": {
+        "nome_funzione_originale": "putchar",
+        "variabili": {}
+    },
+    "0x403048": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403060": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    }
+}

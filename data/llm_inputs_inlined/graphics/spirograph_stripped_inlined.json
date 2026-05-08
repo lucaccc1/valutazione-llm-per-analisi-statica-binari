@@ -1,0 +1,102 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400420": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400460": {
+        "nome_corrente": "sub_400460",
+        "codice_decompilato": "void (**sub_400460())(void *ptr)\n{\n  return &free;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4004d0": {
+        "nome_corrente": "sub_4004D0",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400460 ===\nvoid (**sub_400460())(void *ptr)\n{\n  return &free;\n}\n// === END INLINED FUNCTION: sub_400460 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid (**sub_4004D0())(void *ptr)\n{\n  void (**result)(void *); // rax\n\n  if ( !byte_40305C )\n  {\n    result = sub_400460();\n    byte_40305C = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400500": {
+        "nome_corrente": "sub_400500",
+        "codice_decompilato": "__int64 sub_400500()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400506": {
+        "nome_corrente": "sub_400506",
+        "codice_decompilato": "unsigned __int64 __fastcall sub_400506(__int64 a1, __int64 a2, unsigned __int64 a3, double a4, double a5, double a6)\n{\n  double v6; // xmm0_8\n  unsigned __int64 result; // rax\n  double v8; // [rsp+8h] [rbp-68h]\n  double v9; // [rsp+8h] [rbp-68h]\n  double v12; // [rsp+48h] [rbp-28h]\n  double v13; // [rsp+58h] [rbp-18h]\n  unsigned __int64 i; // [rsp+60h] [rbp-10h]\n  double x; // [rsp+68h] [rbp-8h]\n\n  if ( (a3 & 0x8000000000000000LL) != 0LL )\n    v6 = (double)(int)(a3 & 1 | (a3 >> 1)) + (double)(int)(a3 & 1 | (a3 >> 1));\n  else\n    v6 = (double)(int)a3;\n  v13 = (a6 + a6) * 3.141592653589793 / v6;\n  x = 0.0;\n  v12 = 1.0 - a5;\n  for ( i = 0; ; ++i )\n  {\n    result = i;\n    if ( i >= a3 )\n      break;\n    v8 = cos(x) * v12;\n    *(double *)(8 * i + a1) = (cos(v12 * x / a5) * (a4 * a5) + v8) * 1.0;\n    v9 = sin(x) * v12;\n    *(double *)(8 * i + a2) = (v9 - a4 * a5 * sin(v12 * x / a5)) * 1.0;\n    x = x + v13;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "a4": "",
+            "a5": "",
+            "a6": "",
+            "v6": "",
+            "result": "",
+            "v8": "",
+            "v9": "",
+            "v12": "",
+            "v13": "",
+            "i": "",
+            "x": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4006d1": {
+        "nome_corrente": "sub_4006D1",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400506 ===\nunsigned __int64 __fastcall sub_400506(__int64 a1, __int64 a2, unsigned __int64 a3, double a4, double a5, double a6)\n{\n  double v6; // xmm0_8\n  unsigned __int64 result; // rax\n  double v8; // [rsp+8h] [rbp-68h]\n  double v9; // [rsp+8h] [rbp-68h]\n  double v12; // [rsp+48h] [rbp-28h]\n  double v13; // [rsp+58h] [rbp-18h]\n  unsigned __int64 i; // [rsp+60h] [rbp-10h]\n  double x; // [rsp+68h] [rbp-8h]\n\n  if ( (a3 & 0x8000000000000000LL) != 0LL )\n    v6 = (double)(int)(a3 & 1 | (a3 >> 1)) + (double)(int)(a3 & 1 | (a3 >> 1));\n  else\n    v6 = (double)(int)a3;\n  v13 = (a6 + a6) * 3.141592653589793 / v6;\n  x = 0.0;\n  v12 = 1.0 - a5;\n  for ( i = 0; ; ++i )\n  {\n    result = i;\n    if ( i >= a3 )\n      break;\n    v8 = cos(x) * v12;\n    *(double *)(8 * i + a1) = (cos(v12 * x / a5) * (a4 * a5) + v8) * 1.0;\n    v9 = sin(x) * v12;\n    *(double *)(8 * i + a2) = (v9 - a4 * a5 * sin(v12 * x / a5)) * 1.0;\n    x = x + v13;\n  }\n  return result;\n}\n// === END INLINED FUNCTION: sub_400506 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid sub_4006D1()\n{\n  char s[64]; // [rsp+0h] [rbp-80h] BYREF\n  void *v1; // [rsp+40h] [rbp-40h]\n  void *ptr; // [rsp+48h] [rbp-38h]\n  FILE *stream; // [rsp+50h] [rbp-30h]\n  double v4; // [rsp+58h] [rbp-28h]\n  double v5; // [rsp+60h] [rbp-20h]\n  double v6; // [rsp+68h] [rbp-18h]\n  unsigned __int64 v7; // [rsp+70h] [rbp-10h]\n  unsigned __int64 i; // [rsp+78h] [rbp-8h]\n\n  v7 = 500;\n  v6 = 0.3;\n  v5 = 0.75;\n  v4 = 10.0;\n  snprintf(s, 0x32u, \"spirograph_%.2f_%.2f_%.2f.csv\", 0.3, 0.75, 10.0);\n  stream = fopen(s, \"wt\");\n  if ( !stream )\n  {\n    perror(s);\n    exit(1);\n  }\n  ptr = malloc(8 * v7);\n  v1 = malloc(8 * v7);\n  sub_400506((__int64)ptr, (__int64)v1, v7, v6, v5, v4);\n  for ( i = 0; i < v7; ++i )\n  {\n    fprintf(stream, \"%.5g, %.5g\", *((double *)ptr + i), *((double *)v1 + i));\n    if ( i < v7 - 1 )\n      fputc(10, stream);\n  }\n  fclose(stream);\n  free(ptr);\n  free(v1);\n}\n",
+        "variabili": {
+            "s": "",
+            "v1": "",
+            "ptr": "",
+            "stream": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "i": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400875": {
+        "nome_corrente": "main",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4006D1 ===\nvoid sub_4006D1()\n{\n  char s[64]; // [rsp+0h] [rbp-80h] BYREF\n  void *v1; // [rsp+40h] [rbp-40h]\n  void *ptr; // [rsp+48h] [rbp-38h]\n  FILE *stream; // [rsp+50h] [rbp-30h]\n  double v4; // [rsp+58h] [rbp-28h]\n  double v5; // [rsp+60h] [rbp-20h]\n  double v6; // [rsp+68h] [rbp-18h]\n  unsigned __int64 v7; // [rsp+70h] [rbp-10h]\n  unsigned __int64 i; // [rsp+78h] [rbp-8h]\n\n  v7 = 500;\n  v6 = 0.3;\n  v5 = 0.75;\n  v4 = 10.0;\n  snprintf(s, 0x32u, \"spirograph_%.2f_%.2f_%.2f.csv\", 0.3, 0.75, 10.0);\n  stream = fopen(s, \"wt\");\n  if ( !stream )\n  {\n    perror(s);\n    exit(1);\n  }\n  ptr = malloc(8 * v7);\n  v1 = malloc(8 * v7);\n  sub_400506((__int64)ptr, (__int64)v1, v7, v6, v5, v4);\n  for ( i = 0; i < v7; ++i )\n  {\n    fprintf(stream, \"%.5g, %.5g\", *((double *)ptr + i), *((double *)v1 + i));\n    if ( i < v7 - 1 )\n      fputc(10, stream);\n  }\n  fclose(stream);\n  free(ptr);\n  free(v1);\n}\n// === END INLINED FUNCTION: sub_4006D1 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  sub_4006D1();\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400890": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

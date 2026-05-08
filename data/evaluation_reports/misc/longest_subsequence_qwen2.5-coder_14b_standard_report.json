@@ -1,0 +1,42 @@
+[
+    {
+        "address": "0x400486",
+        "ida_stripped_name": "sub_400486",
+        "ground_truth_name": "longestSub",
+        "ai_predicted_name": "merge_and_sort_arrays",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 74,
+            "execution_time": 25.17
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.32,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.04,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4007bc",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 24,
+            "execution_time": 13.8
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    }
+]

@@ -1,0 +1,98 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x4003f0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x400430": {
+        "nome_corrente": "sub_400430",
+        "codice_decompilato": "void (**sub_400430())(void *ptr)\n{\n  return &free;\n}\n",
+        "variabili": {}
+    },
+    "0x4004a0": {
+        "nome_corrente": "sub_4004A0",
+        "codice_decompilato": "void (**sub_4004A0())(void *ptr)\n{\n  void (**result)(void *); // rax\n\n  if ( !byte_403044 )\n  {\n    result = sub_400430();\n    byte_403044 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x4004d0": {
+        "nome_corrente": "sub_4004D0",
+        "codice_decompilato": "__int64 sub_4004D0()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x4004d6": {
+        "nome_corrente": "sub_4004D6",
+        "codice_decompilato": "int __fastcall sub_4004D6(__int64 a1, int a2)\n{\n  int i; // [rsp+1Ch] [rbp-4h]\n\n  for ( i = 0; i < a2; ++i )\n    printf(\"%d \", *(_DWORD *)(4LL * i + a1));\n  return putchar(10);\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "i": ""
+        }
+    },
+    "0x40052e": {
+        "nome_corrente": "sub_40052E",
+        "codice_decompilato": "int *__fastcall sub_40052E(int *a1, int *a2)\n{\n  int *result; // rax\n  int v3; // [rsp+1Ch] [rbp-4h]\n\n  v3 = *a1;\n  *a1 = *a2;\n  result = a2;\n  *a2 = v3;\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "result": "",
+            "v3": ""
+        }
+    },
+    "0x40055b": {
+        "nome_corrente": "sub_40055B",
+        "codice_decompilato": "__int64 __fastcall sub_40055B(__int64 a1, int a2)\n{\n  __int64 result; // rax\n  int j; // [rsp+14h] [rbp-Ch]\n  unsigned __int8 v4; // [rsp+1Bh] [rbp-5h]\n  int i; // [rsp+1Ch] [rbp-4h]\n\n  for ( i = 0; ; ++i )\n  {\n    result = (unsigned int)(a2 - 1);\n    if ( i >= (int)result )\n      break;\n    v4 = 0;\n    for ( j = 0; j < a2 - 1 - i; ++j )\n    {\n      if ( *(_DWORD *)(4LL * j + a1) > *(_DWORD *)(4 * (j + 1LL) + a1) )\n      {\n        sub_40052E((int *)(4LL * j + a1), (int *)(a1 + 4 * (j + 1LL)));\n        v4 = 1;\n      }\n    }\n    result = v4 ^ 1u;\n    if ( v4 != 1 )\n      break;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "result": "",
+            "j": "",
+            "v4": "",
+            "i": ""
+        }
+    },
+    "0x40062c": {
+        "nome_corrente": "sub_40062C",
+        "codice_decompilato": "void sub_40062C()\n{\n  _DWORD *ptr; // [rsp+8h] [rbp-18h]\n  int j; // [rsp+18h] [rbp-8h]\n  int i; // [rsp+1Ch] [rbp-4h]\n\n  ptr = calloc(0xAu, 4u);\n  for ( i = 0; i < 10; ++i )\n    ptr[i] = rand() % 100;\n  sub_40055B((__int64)ptr, 10);\n  for ( j = 0; j < 9; ++j )\n  {\n    if ( ptr[j] > ptr[j + 1] )\n      __assert_fail(\"arr[i] <= arr[i + 1]\", \"dataset/src/sorting/bubble_sort.c\", 0x53u, \"test\");\n  }\n  free(ptr);\n}\n",
+        "variabili": {
+            "ptr": "",
+            "j": "",
+            "i": ""
+        }
+    },
+    "0x400727": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  unsigned int v3; // eax\n\n  v3 = time(0);\n  srand(v3);\n  sub_40062C();\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v3": ""
+        }
+    },
+    "0x400754": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

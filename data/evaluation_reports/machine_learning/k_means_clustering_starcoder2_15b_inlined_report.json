@@ -1,0 +1,142 @@
+[
+    {
+        "address": "0x4004f6",
+        "ida_stripped_name": "sub_4004F6",
+        "ground_truth_name": "calculateNearst",
+        "ai_predicted_name": "find_closest_point",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 20,
+            "execution_time": 11.13
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.3,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.03,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400630",
+        "ida_stripped_name": "sub_400630",
+        "ground_truth_name": "calculateCentroid",
+        "ai_predicted_name": "compute_averages",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 46,
+            "execution_time": 14.45
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.36,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.03,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40079f",
+        "ida_stripped_name": "sub_40079F",
+        "ground_truth_name": "kMeans",
+        "ai_predicted_name": null,
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 165,
+            "execution_time": 7.41
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 2
+    },
+    {
+        "address": "0x400dae",
+        "ida_stripped_name": "sub_400DAE",
+        "ground_truth_name": "printEPS",
+        "ai_predicted_name": "plot_points",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 69,
+            "execution_time": 7.9
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.53,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.19,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4013b6",
+        "ida_stripped_name": "sub_4013B6",
+        "ground_truth_name": "test",
+        "ai_predicted_name": null,
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 189,
+            "execution_time": 7.26
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 2
+    },
+    {
+        "address": "0x401543",
+        "ida_stripped_name": "sub_401543",
+        "ground_truth_name": "test2",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 189,
+            "execution_time": 15.88
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 2
+    },
+    {
+        "address": "0x4016d0",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "generate_data",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 35,
+            "execution_time": 8.19
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.12,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    }
+]

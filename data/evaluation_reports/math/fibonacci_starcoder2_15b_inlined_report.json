@@ -1,0 +1,82 @@
+[
+    {
+        "address": "0x4004e6",
+        "ida_stripped_name": "sub_4004E6",
+        "ground_truth_name": "fib",
+        "ai_predicted_name": "fibonacci",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 16,
+            "execution_time": 4.11
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.5,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.45,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40055e",
+        "ida_stripped_name": "sub_40055E",
+        "ground_truth_name": "getInput",
+        "ai_predicted_name": "read_valid_digit",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 23,
+            "execution_time": 9.13
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.25,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400626",
+        "ida_stripped_name": "sub_400626",
+        "ground_truth_name": "test",
+        "ai_predicted_name": "test_fibonacci",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 34,
+            "execution_time": 6.23
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.44,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 0.45,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x4006a5",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "fibonacci",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 83,
+            "execution_time": 12.19
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.31,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 3
+    }
+]

@@ -1,0 +1,202 @@
+[
+    {
+        "address": "0x400546",
+        "ida_stripped_name": "sub_400546",
+        "ground_truth_name": "endProgramAbruptly",
+        "ai_predicted_name": "print_error",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 5,
+            "execution_time": 4.32
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.28,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.08,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400579",
+        "ida_stripped_name": "sub_400579",
+        "ground_truth_name": "freeTreeMemory",
+        "ai_predicted_name": "free_tree",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 10,
+            "execution_time": 5.66
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.7,
+            "jaccard_index": 0.67,
+            "cosine_similarity": 0.61,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4005ca",
+        "ida_stripped_name": "sub_4005CA",
+        "ground_truth_name": "getPointerToWord",
+        "ai_predicted_name": "normalize_word",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 22,
+            "execution_time": 6.25
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.47,
+            "jaccard_index": 0.25,
+            "cosine_similarity": 0.21,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x400623",
+        "ida_stripped_name": "sub_400623",
+        "ground_truth_name": "closeFile",
+        "ai_predicted_name": "close_file",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 19,
+            "execution_time": 4.93
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.95,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 0.75,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x40064c",
+        "ida_stripped_name": "sub_40064C",
+        "ground_truth_name": "allocateMemoryForNode",
+        "ai_predicted_name": "allocate_structure",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 19,
+            "execution_time": 4.32
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.56,
+            "jaccard_index": 0.25,
+            "cosine_similarity": 0.35,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x400680",
+        "ida_stripped_name": "sub_400680",
+        "ground_truth_name": "writeContentOfTreeToFile",
+        "ai_predicted_name": "print_tree",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 18,
+            "execution_time": 6.54
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.47,
+            "jaccard_index": 0.17,
+            "cosine_similarity": 0.26,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400705",
+        "ida_stripped_name": "sub_400705",
+        "ground_truth_name": "addWordToTree",
+        "ai_predicted_name": "insert_into_tree",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 60,
+            "execution_time": 6.88
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.48,
+            "jaccard_index": 0.25,
+            "cosine_similarity": 0.22,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 2
+    },
+    {
+        "address": "0x4007eb",
+        "ida_stripped_name": "sub_4007EB",
+        "ground_truth_name": "readWordsInFileToTree",
+        "ai_predicted_name": null,
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 87,
+            "execution_time": 6.19
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x4009af",
+        "ida_stripped_name": "sub_4009AF",
+        "ground_truth_name": "test",
+        "ai_predicted_name": "words_alphabetical",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 181,
+            "execution_time": 10.43
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.18,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 4
+    },
+    {
+        "address": "0x400c71",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 89,
+            "execution_time": 8.96
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    }
+]

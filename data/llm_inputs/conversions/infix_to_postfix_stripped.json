@@ -1,0 +1,116 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x400390": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x4003d0": {
+        "nome_corrente": "sub_4003D0",
+        "codice_decompilato": "int (**sub_4003D0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n",
+        "variabili": {}
+    },
+    "0x400440": {
+        "nome_corrente": "sub_400440",
+        "codice_decompilato": "int (**sub_400440())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  int (**result)(int (*)(int, char **, char **), int, char **, void (*)(void), void (*)(void), void (*)(void), void *); // rax\n\n  if ( !byte_403014 )\n  {\n    result = sub_4003D0();\n    byte_403014 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400470": {
+        "nome_corrente": "sub_400470",
+        "codice_decompilato": "__int64 sub_400470()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x400476": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  char v4[32]; // [rsp+0h] [rbp-40h] BYREF\n  _BYTE v5[32]; // [rsp+20h] [rbp-20h] BYREF\n\n  printf(\"Enter infix expression: \");\n  __isoc23_scanf(\"%s\", v5);\n  sub_4005E4(v5, v4);\n  printf(\"Postfix expression is %s\", v4);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x4004d3": {
+        "nome_corrente": "sub_4004D3",
+        "codice_decompilato": "int __fastcall sub_4004D3(__int64 a1, char a2)\n{\n  __int64 v2; // rax\n\n  if ( *(_DWORD *)(a1 + 12) == 9 )\n  {\n    LODWORD(v2) = printf(\"Stack Overflow!\");\n  }\n  else\n  {\n    v2 = (int)++*(_DWORD *)(a1 + 12);\n    *(_BYTE *)(a1 + v2) = a2;\n  }\n  return v2;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "v2": ""
+        }
+    },
+    "0x400528": {
+        "nome_corrente": "sub_400528",
+        "codice_decompilato": "__int64 __fastcall sub_400528(__int64 a1)\n{\n  if ( *(_DWORD *)(a1 + 12) == -1 )\n  {\n    printf(\"Stack Underflow!\");\n    return 0;\n  }\n  else\n  {\n    return *(unsigned __int8 *)(a1 + (int)(*(_DWORD *)(a1 + 12))--);\n  }\n}\n",
+        "variabili": {
+            "a1": ""
+        }
+    },
+    "0x400581": {
+        "nome_corrente": "sub_400581",
+        "codice_decompilato": "_BOOL8 __fastcall sub_400581(char a1)\n{\n  return a1 > 64 && a1 <= 90 || a1 > 96 && a1 <= 122 || a1 > 47 && a1 <= 57;\n}\n",
+        "variabili": {
+            "a1": ""
+        }
+    },
+    "0x4005bc": {
+        "nome_corrente": "sub_4005BC",
+        "codice_decompilato": "_BOOL8 __fastcall sub_4005BC(__int64 a1, __int64 a2)\n{\n  return HIDWORD(a2) == -1;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a1": ""
+        }
+    },
+    "0x4005e4": {
+        "nome_corrente": "sub_4005E4",
+        "codice_decompilato": "_BYTE *__fastcall sub_4005E4(__int64 a1, __int64 a2)\n{\n  _BYTE *v2; // rbx\n  _BYTE *v3; // rbx\n  _BYTE *result; // rax\n  __int64 v5; // [rsp+10h] [rbp-40h] BYREF\n  __int64 v6; // [rsp+18h] [rbp-38h]\n  char v7; // [rsp+2Fh] [rbp-21h]\n  int v8; // [rsp+30h] [rbp-20h]\n  char v9; // [rsp+37h] [rbp-19h]\n  int v10; // [rsp+38h] [rbp-18h]\n  int i; // [rsp+3Ch] [rbp-14h]\n\n  HIDWORD(v6) = -1;\n  v10 = 0;\n  for ( i = 0; *(_BYTE *)(i + a1); ++i )\n  {\n    v9 = *(_BYTE *)(i + a1);\n    if ( sub_400581(v9) )\n    {\n      *(_BYTE *)(a2 + v10++) = v9;\n    }\n    else if ( v9 == 40 )\n    {\n      sub_4004D3((__int64)&v5, 40);\n    }\n    else if ( v9 == 41 )\n    {\n      while ( 1 )\n      {\n        v7 = sub_400528((__int64)&v5);\n        if ( v7 == 40 )\n          break;\n        *(_BYTE *)(a2 + v10++) = v7;\n      }\n    }\n    else\n    {\n      while ( !sub_4005BC(v5, v6) )\n      {\n        v8 = sub_40077C((unsigned int)v9, (unsigned int)*((char *)&v5 + SHIDWORD(v6)));\n        if ( v8 == 1 )\n          break;\n        v2 = (_BYTE *)(v10 + a2);\n        *v2 = sub_400528((__int64)&v5);\n        ++v10;\n      }\n      sub_4004D3((__int64)&v5, v9);\n    }\n  }\n  while ( !sub_4005BC(v5, v6) )\n  {\n    v3 = (_BYTE *)(v10 + a2);\n    *v3 = sub_400528((__int64)&v5);\n    ++v10;\n  }\n  result = (_BYTE *)(v10 + a2);\n  *result = 0;\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "v2": "",
+            "v3": "",
+            "result": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "v9": "",
+            "v10": "",
+            "i": ""
+        }
+    },
+    "0x40077c": {
+        "nome_corrente": "sub_40077C",
+        "codice_decompilato": "_BOOL8 __fastcall sub_40077C(char a1, char a2)\n{\n  if ( a2 == 36 )\n    return 0;\n  if ( a1 == 36 )\n    return 1;\n  if ( a2 == 42 || a2 == 47 || a2 == 37 )\n    return 0;\n  if ( a1 == 42 || a1 == 47 || a1 == 37 )\n    return 1;\n  return a2 != 43 && a2 != 45;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": ""
+        }
+    },
+    "0x4007f0": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

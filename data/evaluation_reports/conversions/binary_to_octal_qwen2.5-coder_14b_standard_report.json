@@ -1,0 +1,42 @@
+[
+    {
+        "address": "0x400476",
+        "ida_stripped_name": "sub_400476",
+        "ground_truth_name": "three_digits",
+        "ai_predicted_name": "extract_digits",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 16,
+            "execution_time": 10.43
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.69,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.48,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400505",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "convert_binary_to_octal",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 38,
+            "execution_time": 21.68
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.15,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.07,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    }
+]

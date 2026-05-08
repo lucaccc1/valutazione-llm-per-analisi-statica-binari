@@ -1,0 +1,62 @@
+[
+    {
+        "address": "0x400486",
+        "ida_stripped_name": "sub_400486",
+        "ground_truth_name": "celcius_to_fahrenheit",
+        "ai_predicted_name": "to_fahrenheit",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 4,
+            "execution_time": 4.19
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.76,
+            "jaccard_index": 0.67,
+            "cosine_similarity": 0.77,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4004be",
+        "ida_stripped_name": "sub_4004BE",
+        "ground_truth_name": "test",
+        "ai_predicted_name": "celsius_to_fahrenheit",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 40,
+            "execution_time": 10.2
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.24,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x4006ff",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "celsius_to_fahrenheit",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 41,
+            "execution_time": 8.73
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.16,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    }
+]

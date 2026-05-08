@@ -1,0 +1,135 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4003b0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4003f0": {
+        "nome_corrente": "sub_4003F0",
+        "codice_decompilato": "int (**sub_4003F0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400460": {
+        "nome_corrente": "sub_400460",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4003F0 ===\nint (**sub_4003F0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n// === END INLINED FUNCTION: sub_4003F0 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nint (**sub_400460())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  int (**result)(int (*)(int, char **, char **), int, char **, void (*)(void), void (*)(void), void (*)(void), void *); // rax\n\n  if ( !byte_403024 )\n  {\n    result = sub_4003F0();\n    byte_403024 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400490": {
+        "nome_corrente": "sub_400490",
+        "codice_decompilato": "__int64 sub_400490()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400496": {
+        "nome_corrente": "sub_400496",
+        "codice_decompilato": "_DWORD *__fastcall sub_400496(int a1, int a2)\n{\n  _DWORD *v3; // [rsp+18h] [rbp-8h]\n\n  v3 = malloc(0x10u);\n  *v3 = a1;\n  v3[1] = a2;\n  *((_QWORD *)v3 + 1) = malloc(12LL * a2);\n  return v3;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "v3": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4004f1": {
+        "nome_corrente": "sub_4004F1",
+        "codice_decompilato": "__int64 __fastcall sub_4004F1(__int64 a1, int a2)\n{\n  if ( a2 != *(_DWORD *)(8LL * a2 + a1) )\n    *(_DWORD *)(8LL * a2 + a1) = sub_4004F1(a1, *(unsigned int *)(8LL * a2 + a1));\n  return *(unsigned int *)(8LL * a2 + a1);\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400573": {
+        "nome_corrente": "sub_400573",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4004F1 ===\n__int64 __fastcall sub_4004F1(__int64 a1, int a2)\n{\n  if ( a2 != *(_DWORD *)(8LL * a2 + a1) )\n    *(_DWORD *)(8LL * a2 + a1) = sub_4004F1(a1, *(unsigned int *)(8LL * a2 + a1));\n  return *(unsigned int *)(8LL * a2 + a1);\n}\n// === END INLINED FUNCTION: sub_4004F1 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall sub_400573(__int64 a1, int a2, int a3)\n{\n  __int64 result; // rax\n  unsigned int v5; // [rsp+18h] [rbp-8h]\n  unsigned int v6; // [rsp+1Ch] [rbp-4h]\n\n  v6 = sub_4004F1(a1, a2);\n  v5 = sub_4004F1(a1, a3);\n  if ( *(_DWORD *)(8LL * (int)v6 + a1 + 4) >= *(_DWORD *)(8LL * (int)v5 + a1 + 4) )\n  {\n    if ( *(_DWORD *)(8LL * (int)v6 + a1 + 4) <= *(_DWORD *)(8LL * (int)v5 + a1 + 4) )\n    {\n      *(_DWORD *)(a1 + 8LL * (int)v5) = v6;\n      result = 8LL * (int)v6 + a1;\n      ++*(_DWORD *)(result + 4);\n    }\n    else\n    {\n      result = v6;\n      *(_DWORD *)(a1 + 8LL * (int)v5) = v6;\n    }\n  }\n  else\n  {\n    result = v5;\n    *(_DWORD *)(a1 + 8LL * (int)v6) = v5;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "result": "",
+            "v5": "",
+            "v6": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400683": {
+        "nome_corrente": "compar",
+        "codice_decompilato": "_BOOL8 __fastcall compar(_DWORD *a1, _DWORD *a2)\n{\n  return a1[2] > a2[2];\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4006b7": {
+        "nome_corrente": "sub_4006B7",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4004F1 ===\n__int64 __fastcall sub_4004F1(__int64 a1, int a2)\n{\n  if ( a2 != *(_DWORD *)(8LL * a2 + a1) )\n    *(_DWORD *)(8LL * a2 + a1) = sub_4004F1(a1, *(unsigned int *)(8LL * a2 + a1));\n  return *(unsigned int *)(8LL * a2 + a1);\n}\n// === END INLINED FUNCTION: sub_4004F1 ===\n\n// === START INLINED FUNCTION: sub_400573 ===\n__int64 __fastcall sub_400573(__int64 a1, int a2, int a3)\n{\n  __int64 result; // rax\n  unsigned int v5; // [rsp+18h] [rbp-8h]\n  unsigned int v6; // [rsp+1Ch] [rbp-4h]\n\n  v6 = sub_4004F1(a1, a2);\n  v5 = sub_4004F1(a1, a3);\n  if ( *(_DWORD *)(8LL * (int)v6 + a1 + 4) >= *(_DWORD *)(8LL * (int)v5 + a1 + 4) )\n  {\n    if ( *(_DWORD *)(8LL * (int)v6 + a1 + 4) <= *(_DWORD *)(8LL * (int)v5 + a1 + 4) )\n    {\n      *(_DWORD *)(a1 + 8LL * (int)v5) = v6;\n      result = 8LL * (int)v6 + a1;\n      ++*(_DWORD *)(result + 4);\n    }\n    else\n    {\n      result = v6;\n      *(_DWORD *)(a1 + 8LL * (int)v5) = v6;\n    }\n  }\n  else\n  {\n    result = v5;\n    *(_DWORD *)(a1 + 8LL * (int)v6) = v5;\n  }\n  return result;\n}\n// === END INLINED FUNCTION: sub_400573 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall sub_4006B7(void **a1)\n{\n  void *v1; // rsp\n  char *v2; // rcx\n  int v3; // eax\n  char *v4; // rax\n  int v5; // eax\n  char *v6; // rax\n  __int64 result; // rax\n  __int64 v8; // [rsp+0h] [rbp-60h] BYREF\n  void **v9; // [rsp+8h] [rbp-58h]\n  __int64 v10; // [rsp+14h] [rbp-4Ch]\n  int v11; // [rsp+1Ch] [rbp-44h]\n  int v12; // [rsp+20h] [rbp-40h]\n  int v13; // [rsp+24h] [rbp-3Ch]\n  _DWORD *v14; // [rsp+28h] [rbp-38h]\n  __int64 *v15; // [rsp+30h] [rbp-30h]\n  __int64 v16; // [rsp+38h] [rbp-28h]\n  int v17; // [rsp+40h] [rbp-20h]\n  int i; // [rsp+44h] [rbp-1Ch]\n  signed int j; // [rsp+48h] [rbp-18h]\n  int v20; // [rsp+4Ch] [rbp-14h]\n\n  v9 = a1;\n  v17 = *(_DWORD *)a1;\n  v16 = v17 - 1LL;\n  v1 = alloca(16 * ((12LL * v17 + 15) / 0x10uLL));\n  v15 = &v8;\n  v20 = 0;\n  j = 0;\n  qsort(v9[1], *((int *)v9 + 1), 0xCu, (__compar_fn_t)compar);\n  v14 = malloc(8LL * v17);\n  for ( i = 0; i < v17; ++i )\n  {\n    v14[2 * i] = i;\n    v14[2 * i + 1] = 0;\n  }\n  while ( v20 < v17 - 1 && j < *((_DWORD *)v9 + 1) )\n  {\n    v2 = (char *)v9[1];\n    v3 = j++;\n    v4 = &v2[12 * v3];\n    v10 = *(_QWORD *)v4;\n    v11 = *((_DWORD *)v4 + 2);\n    v13 = sub_4004F1((__int64)v14, v10);\n    v12 = sub_4004F1((__int64)v14, SHIDWORD(v10));\n    if ( v13 != v12 )\n    {\n      v5 = v20++;\n      v6 = (char *)v15 + 12 * v5;\n      *(_QWORD *)v6 = v10;\n      *((_DWORD *)v6 + 2) = v11;\n      sub_400573((__int64)v14, v13, v12);\n    }\n  }\n  puts(\"Following are the edges in the constructed MST\");\n  for ( j = 0; ; ++j )\n  {\n    result = (unsigned int)j;\n    if ( j >= v20 )\n      break;\n    printf(\"%d -- %d == %d\\n\", *((_DWORD *)v15 + 3 * j), *((_DWORD *)v15 + 3 * j + 1), *((_DWORD *)v15 + 3 * j + 2));\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "v1": "",
+            "v2": "",
+            "v3": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "result": "",
+            "v8": "",
+            "v9": "",
+            "v10": "",
+            "v11": "",
+            "v12": "",
+            "v13": "",
+            "v14": "",
+            "v15": "",
+            "v16": "",
+            "v17": "",
+            "i": "",
+            "j": "",
+            "v20": ""
+        },
+        "inlined_count": 2
+    },
+    "0x40096d": {
+        "nome_corrente": "main",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400496 ===\n_DWORD *__fastcall sub_400496(int a1, int a2)\n{\n  _DWORD *v3; // [rsp+18h] [rbp-8h]\n\n  v3 = malloc(0x10u);\n  *v3 = a1;\n  v3[1] = a2;\n  *((_QWORD *)v3 + 1) = malloc(12LL * a2);\n  return v3;\n}\n// === END INLINED FUNCTION: sub_400496 ===\n\n// === START INLINED FUNCTION: sub_4006B7 ===\n__int64 __fastcall sub_4006B7(void **a1)\n{\n  void *v1; // rsp\n  char *v2; // rcx\n  int v3; // eax\n  char *v4; // rax\n  int v5; // eax\n  char *v6; // rax\n  __int64 result; // rax\n  __int64 v8; // [rsp+0h] [rbp-60h] BYREF\n  void **v9; // [rsp+8h] [rbp-58h]\n  __int64 v10; // [rsp+14h] [rbp-4Ch]\n  int v11; // [rsp+1Ch] [rbp-44h]\n  int v12; // [rsp+20h] [rbp-40h]\n  int v13; // [rsp+24h] [rbp-3Ch]\n  _DWORD *v14; // [rsp+28h] [rbp-38h]\n  __int64 *v15; // [rsp+30h] [rbp-30h]\n  __int64 v16; // [rsp+38h] [rbp-28h]\n  int v17; // [rsp+40h] [rbp-20h]\n  int i; // [rsp+44h] [rbp-1Ch]\n  signed int j; // [rsp+48h] [rbp-18h]\n  int v20; // [rsp+4Ch] [rbp-14h]\n\n  v9 = a1;\n  v17 = *(_DWORD *)a1;\n  v16 = v17 - 1LL;\n  v1 = alloca(16 * ((12LL * v17 + 15) / 0x10uLL));\n  v15 = &v8;\n  v20 = 0;\n  j = 0;\n  qsort(v9[1], *((int *)v9 + 1), 0xCu, (__compar_fn_t)compar);\n  v14 = malloc(8LL * v17);\n  for ( i = 0; i < v17; ++i )\n  {\n    v14[2 * i] = i;\n    v14[2 * i + 1] = 0;\n  }\n  while ( v20 < v17 - 1 && j < *((_DWORD *)v9 + 1) )\n  {\n    v2 = (char *)v9[1];\n    v3 = j++;\n    v4 = &v2[12 * v3];\n    v10 = *(_QWORD *)v4;\n    v11 = *((_DWORD *)v4 + 2);\n    v13 = sub_4004F1((__int64)v14, v10);\n    v12 = sub_4004F1((__int64)v14, SHIDWORD(v10));\n    if ( v13 != v12 )\n    {\n      v5 = v20++;\n      v6 = (char *)v15 + 12 * v5;\n      *(_QWORD *)v6 = v10;\n      *((_DWORD *)v6 + 2) = v11;\n      sub_400573((__int64)v14, v13, v12);\n    }\n  }\n  puts(\"Following are the edges in the constructed MST\");\n  for ( j = 0; ; ++j )\n  {\n    result = (unsigned int)j;\n    if ( j >= v20 )\n      break;\n    printf(\"%d -- %d == %d\\n\", *((_DWORD *)v15 + 3 * j), *((_DWORD *)v15 + 3 * j + 1), *((_DWORD *)v15 + 3 * j + 2));\n  }\n  return result;\n}\n// === END INLINED FUNCTION: sub_4006B7 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  _DWORD *v4; // [rsp+0h] [rbp-10h]\n\n  v4 = sub_400496(4, 5);\n  **((_DWORD **)v4 + 1) = 0;\n  *(_DWORD *)(*((_QWORD *)v4 + 1) + 4LL) = 1;\n  *(_DWORD *)(*((_QWORD *)v4 + 1) + 8LL) = 10;\n  *(_DWORD *)(*((_QWORD *)v4 + 1) + 12LL) = 0;\n  *(_DWORD *)(*((_QWORD *)v4 + 1) + 16LL) = 2;\n  *(_DWORD *)(*((_QWORD *)v4 + 1) + 20LL) = 6;\n  *(_DWORD *)(*((_QWORD *)v4 + 1) + 24LL) = 0;\n  *(_DWORD *)(*((_QWORD *)v4 + 1) + 28LL) = 3;\n  *(_DWORD *)(*((_QWORD *)v4 + 1) + 32LL) = 5;\n  *(_DWORD *)(*((_QWORD *)v4 + 1) + 36LL) = 1;\n  *(_DWORD *)(*((_QWORD *)v4 + 1) + 40LL) = 3;\n  *(_DWORD *)(*((_QWORD *)v4 + 1) + 44LL) = 15;\n  *(_DWORD *)(*((_QWORD *)v4 + 1) + 48LL) = 2;\n  *(_DWORD *)(*((_QWORD *)v4 + 1) + 52LL) = 3;\n  *(_DWORD *)(*((_QWORD *)v4 + 1) + 56LL) = 4;\n  sub_4006B7((void **)v4);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": ""
+        },
+        "inlined_count": 2
+    },
+    "0x400ab8": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

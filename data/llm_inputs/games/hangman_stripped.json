@@ -1,0 +1,134 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x400470": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x4004b0": {
+        "nome_corrente": "sub_4004B0",
+        "codice_decompilato": "void *sub_4004B0()\n{\n  return &unk_403088;\n}\n",
+        "variabili": {}
+    },
+    "0x400520": {
+        "nome_corrente": "sub_400520",
+        "codice_decompilato": "void *sub_400520()\n{\n  void *result; // rax\n\n  if ( !byte_4030A8 )\n  {\n    result = sub_4004B0();\n    byte_4030A8 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400550": {
+        "nome_corrente": "sub_400550",
+        "codice_decompilato": "__int64 sub_400550()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x400556": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  char v4; // [rsp+Fh] [rbp-71h] BYREF\n  _BYTE v5[30]; // [rsp+10h] [rbp-70h] BYREF\n  char v6[30]; // [rsp+2Eh] [rbp-52h] BYREF\n  signed int v7; // [rsp+4Ch] [rbp-34h]\n  int v8; // [rsp+50h] [rbp-30h]\n  _BYTE v9[28]; // [rsp+54h] [rbp-2Ch] BYREF\n  int v10; // [rsp+70h] [rbp-10h]\n  int k; // [rsp+74h] [rbp-Ch]\n  int j; // [rsp+78h] [rbp-8h]\n  int i; // [rsp+7Ch] [rbp-4h]\n\n  sub_4007F2(v5, a2, a3);\n  while ( strchr(v6, 95) && v8 <= 12 )\n  {\n    do\n    {\n      puts(\"\\n****************************\");\n      printf(\"Your word: \");\n      for ( i = 0; i < v7; ++i )\n        printf(\"%c \", (unsigned int)v6[i]);\n      if ( v10 > 0 )\n      {\n        printf(\"\\nSo far, you have guessed: \");\n        for ( j = 0; j < v10; ++j )\n          printf(\"%c \", (unsigned int)(char)v9[j]);\n      }\n      printf(\"\\nYou have %d guesses left.\", 12 - v8);\n      printf(\"\\nPlease enter a letter: \");\n      __isoc23_scanf(\" %c\", &v4);\n      v4 = tolower(v4);\n    }\n    while ( (unsigned int)sub_40074F((unsigned int)v4, v9, (unsigned int)v10) != -1 );\n    v9[v10++] = v4;\n    if ( (unsigned int)sub_4007AA((unsigned int)v4, v5, (unsigned int)v7) == 1 )\n    {\n      printf(\"That letter is in the word!\");\n      for ( k = 0; k < v7; ++k )\n      {\n        if ( v5[k] == v4 )\n          v6[k] = v4;\n      }\n    }\n    else\n    {\n      puts(\"That letter is not in the word.\");\n      ++v8;\n    }\n    sub_400A39((unsigned int)v8);\n  }\n  sub_4009F0(v5, (unsigned int)v8);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "v9": "",
+            "v10": "",
+            "k": "",
+            "j": "",
+            "i": ""
+        }
+    },
+    "0x40074f": {
+        "nome_corrente": "sub_40074F",
+        "codice_decompilato": "__int64 __fastcall sub_40074F(char a1, __int64 a2, int a3)\n{\n  int i; // [rsp+1Ch] [rbp-4h]\n\n  for ( i = 0; i < a3; ++i )\n  {\n    if ( a1 == *(_BYTE *)(i + a2) )\n    {\n      printf(\"\\nYou have already guessed that letter.\");\n      return 1;\n    }\n  }\n  return 0xFFFFFFFFLL;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "i": ""
+        }
+    },
+    "0x4007aa": {
+        "nome_corrente": "sub_4007AA",
+        "codice_decompilato": "__int64 __fastcall sub_4007AA(char a1, __int64 a2, unsigned int a3)\n{\n  unsigned int i; // [rsp+1Ch] [rbp-4h]\n\n  for ( i = 0; i < a3; ++i )\n  {\n    if ( a1 == *(_BYTE *)((int)i + a2) )\n      return 1;\n  }\n  return 0xFFFFFFFFLL;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "i": ""
+        }
+    },
+    "0x4007f2": {
+        "nome_corrente": "sub_4007F2",
+        "codice_decompilato": "__int64 __fastcall sub_4007F2(__int64 a1)\n{\n  unsigned int v1; // eax\n  size_t v2; // rbx\n  __int64 v3; // rbx\n  __int64 v4; // rbx\n  __int64 v5; // rbx\n  __int64 v6; // rbx\n  __int64 v7; // rbx\n  __int64 v8; // rbx\n  char dest[8]; // [rsp+10h] [rbp-C0h] BYREF\n  __int64 v11; // [rsp+18h] [rbp-B8h]\n  __int64 v12; // [rsp+20h] [rbp-B0h]\n  _QWORD v13[4]; // [rsp+28h] [rbp-A8h]\n  __int64 v14; // [rsp+48h] [rbp-88h]\n  __int64 v15; // [rsp+50h] [rbp-80h]\n  __int64 v16; // [rsp+58h] [rbp-78h]\n  __int64 v17; // [rsp+60h] [rbp-70h]\n  __int64 v18; // [rsp+68h] [rbp-68h]\n  int v19; // [rsp+70h] [rbp-60h]\n  char s[36]; // [rsp+80h] [rbp-50h] BYREF\n  int v21; // [rsp+A4h] [rbp-2Ch]\n  FILE *stream; // [rsp+A8h] [rbp-28h]\n  int j; // [rsp+B4h] [rbp-1Ch]\n  int i; // [rsp+B8h] [rbp-18h]\n  int v25; // [rsp+BCh] [rbp-14h]\n\n  stream = fopen(\"games/words.txt\", \"r\");\n  if ( !stream )\n  {\n    fwrite(\"File not found.\\n\", 1u, 0x10u, stderr);\n    exit(1);\n  }\n  v25 = 0;\n  while ( fgets(s, 30, stream) )\n    ++v25;\n  rewind(stream);\n  v1 = time(0);\n  srand(v1);\n  v21 = rand() % v25;\n  for ( i = 0; i <= v21; ++i )\n    fgets(s, 30, stream);\n  if ( strchr(s, 10) )\n    s[strlen(s) - 1] = 0;\n  fclose(stream);\n  strcpy(dest, s);\n  HIDWORD(v14) = strlen(s);\n  for ( j = 0; ; ++j )\n  {\n    v2 = j;\n    if ( v2 >= strlen(s) )\n      break;\n    *((_BYTE *)v13 + j + 6) = 95;\n  }\n  LODWORD(v15) = 0;\n  v19 = 0;\n  v3 = v11;\n  *(_QWORD *)a1 = *(_QWORD *)dest;\n  *(_QWORD *)(a1 + 8) = v3;\n  v4 = v13[0];\n  *(_QWORD *)(a1 + 16) = v12;\n  *(_QWORD *)(a1 + 24) = v4;\n  v5 = v13[2];\n  *(_QWORD *)(a1 + 32) = v13[1];\n  *(_QWORD *)(a1 + 40) = v5;\n  v6 = v14;\n  *(_QWORD *)(a1 + 48) = v13[3];\n  *(_QWORD *)(a1 + 56) = v6;\n  v7 = v16;\n  *(_QWORD *)(a1 + 64) = v15;\n  *(_QWORD *)(a1 + 72) = v7;\n  v8 = v18;\n  *(_QWORD *)(a1 + 80) = v17;\n  *(_QWORD *)(a1 + 88) = v8;\n  *(_DWORD *)(a1 + 96) = v19;\n  return a1;\n}\n",
+        "variabili": {
+            "a1": "",
+            "v1": "",
+            "v2": "",
+            "v3": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "dest": "",
+            "v11": "",
+            "v12": "",
+            "v13": "",
+            "v14": "",
+            "v15": "",
+            "v16": "",
+            "v17": "",
+            "v18": "",
+            "v19": "",
+            "s": "",
+            "v21": "",
+            "stream": "",
+            "j": "",
+            "i": "",
+            "v25": ""
+        }
+    },
+    "0x4009f0": {
+        "nome_corrente": "sub_4009F0",
+        "codice_decompilato": "int __fastcall sub_4009F0(const char *a1, int a2)\n{\n  if ( a2 <= 12 )\n    return printf(\"\\nYou won! You had %d guesses left.\\n\", 12 - a2);\n  else\n    return printf(\"\\nYou lost! The word was: %s.\\n\", a1);\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": ""
+        }
+    },
+    "0x400a39": {
+        "nome_corrente": "sub_400A39",
+        "codice_decompilato": "int __fastcall sub_400A39(int a1)\n{\n  int result; // eax\n\n  if ( a1 == 12 )\n    return printf(\"\\n      _\\n  __( ' )> \\n \\\\_ < _ ) \");\n  if ( a1 > 12 )\n    return printf(\"\\n      _\\n  __( ' )> QUACK!\\n \\\\_ < _ ) \");\n  switch ( a1 )\n  {\n    case 11:\n      return printf(\"\\n      _\\n  __( ' )\\n \\\\_ < _ ) \");\n    case 10:\n      return printf(\"\\n      _\\n  __(   )\\n \\\\_ < _ ) \");\n    case 9:\n      return printf(\"\\n        \\n  __(   )\\n \\\\_ < _ ) \");\n    case 8:\n      return printf(\"\\n        \\n  __(    \\n \\\\_ < _ ) \");\n    case 7:\n      return printf(\"\\n        \\n  __     \\n \\\\_ < _ ) \");\n    case 6:\n      return printf(\"\\n        \\n  _      \\n \\\\_ < _ ) \");\n    case 5:\n      return printf(\"\\n        \\n  _      \\n   _ < _ ) \");\n    case 4:\n      return printf(\"\\n        \\n         \\n   _ < _ ) \");\n    case 3:\n      return printf(\"\\n        \\n         \\n     < _ ) \");\n    case 2:\n      return printf(\"\\n        \\n         \\n       _ ) \");\n    case 0:\n      return result;\n    case 1:\n      return printf(\"\\n        \\n         \\n         ) \");\n    default:\n      return printf(\"\\n      _\\n  __( ' )> QUACK!\\n \\\\_ < _ ) \");\n  }\n}\n",
+        "variabili": {
+            "a1": "",
+            "result": ""
+        }
+    },
+    "0x400c2c": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

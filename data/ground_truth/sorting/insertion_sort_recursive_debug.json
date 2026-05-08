@@ -1,0 +1,49 @@
+{
+    "0x4004b6": {
+        "nome_funzione_originale": "RecursionInsertionSort",
+        "variabili": {
+            "arr": "",
+            "size": "",
+            "key": "",
+            "j": ""
+        }
+    },
+    "0x40057f": {
+        "nome_funzione_originale": "test",
+        "variabili": {
+            "arr": "",
+            "size": "",
+            "i_0": "",
+            "i": ""
+        }
+    },
+    "0x40069f": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "v3": ""
+        }
+    },
+    "0x403040": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x403058": {
+        "nome_funzione_originale": "srand",
+        "variabili": {}
+    },
+    "0x403060": {
+        "nome_funzione_originale": "calloc",
+        "variabili": {}
+    },
+    "0x403068": {
+        "nome_funzione_originale": "time",
+        "variabili": {}
+    },
+    "0x403070": {
+        "nome_funzione_originale": "rand",
+        "variabili": {}
+    }
+}

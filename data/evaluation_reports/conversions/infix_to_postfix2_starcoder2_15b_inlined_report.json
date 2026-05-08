@@ -1,0 +1,162 @@
+[
+    {
+        "address": "0x4004d6",
+        "ida_stripped_name": "sub_4004D6",
+        "ground_truth_name": "push",
+        "ai_predicted_name": null,
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 13,
+            "execution_time": 4.09
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40052b",
+        "ida_stripped_name": "sub_40052B",
+        "ground_truth_name": "pop",
+        "ai_predicted_name": "pop",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 9,
+            "execution_time": 5.07
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 2
+    },
+    {
+        "address": "0x40057e",
+        "ida_stripped_name": "sub_40057E",
+        "ground_truth_name": "isEmpty",
+        "ai_predicted_name": "is_socket_closed",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 4,
+            "execution_time": 4.74
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.35,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.11,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40059b",
+        "ida_stripped_name": "sub_40059B",
+        "ground_truth_name": "Top",
+        "ai_predicted_name": "get_current_flag_char",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 4,
+            "execution_time": 7.4
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.08,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4005b0",
+        "ida_stripped_name": "sub_4005B0",
+        "ground_truth_name": "priority",
+        "ai_predicted_name": "is_valid_operator",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 8,
+            "execution_time": 4.66
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.32,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.05,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4005ec",
+        "ida_stripped_name": "sub_4005EC",
+        "ground_truth_name": "convert",
+        "ai_predicted_name": "shunting_yard",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 95,
+            "execution_time": 10.47
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.2,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 5
+    },
+    {
+        "address": "0x40078d",
+        "ida_stripped_name": "sub_40078D",
+        "ground_truth_name": "test",
+        "ai_predicted_name": "parse_parentheses",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 66,
+            "execution_time": 7.14
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.29,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.14,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x400806",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "evaluate_expression",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 82,
+            "execution_time": 8.35
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.26,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 2
+    }
+]

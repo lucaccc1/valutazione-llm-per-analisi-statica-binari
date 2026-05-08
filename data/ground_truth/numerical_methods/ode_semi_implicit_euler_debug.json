@@ -1,0 +1,96 @@
+{
+    "0x400506": {
+        "nome_funzione_originale": "problem",
+        "variabili": {
+            "x": "",
+            "y": "",
+            "dy": ""
+        }
+    },
+    "0x400569": {
+        "nome_funzione_originale": "exact_solution",
+        "variabili": {
+            "x": "",
+            "y": ""
+        }
+    },
+    "0x4005d0": {
+        "nome_funzione_originale": "semi_implicit_euler_step",
+        "variabili": {
+            "dx_0": "",
+            "x": "",
+            "y": "",
+            "dy": "",
+            "o": ""
+        }
+    },
+    "0x4006b4": {
+        "nome_funzione_originale": "semi_implicit_euler",
+        "variabili": {
+            "dx_0": "",
+            "x0": "",
+            "x_max": "",
+            "y": "",
+            "save_to_file": "",
+            "x": "",
+            "dy": "",
+            "t2": "",
+            "t1": "",
+            "fp": ""
+        }
+    },
+    "0x4007ef": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "x": "",
+            "step_size": "",
+            "Y0": "",
+            "t2": "",
+            "t1": "",
+            "y": "",
+            "fp": "",
+            "total_time": "",
+            "X_MAX": "",
+            "X0": ""
+        }
+    },
+    "0x403070": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403078": {
+        "nome_funzione_originale": "atof",
+        "variabili": {}
+    },
+    "0x403080": {
+        "nome_funzione_originale": "clock",
+        "variabili": {}
+    },
+    "0x403088": {
+        "nome_funzione_originale": "fclose",
+        "variabili": {}
+    },
+    "0x403098": {
+        "nome_funzione_originale": "cos",
+        "variabili": {}
+    },
+    "0x4030a8": {
+        "nome_funzione_originale": "fprintf",
+        "variabili": {}
+    },
+    "0x4030b0": {
+        "nome_funzione_originale": "fopen",
+        "variabili": {}
+    },
+    "0x4030b8": {
+        "nome_funzione_originale": "perror",
+        "variabili": {}
+    },
+    "0x4030c0": {
+        "nome_funzione_originale": "sin",
+        "variabili": {}
+    }
+}

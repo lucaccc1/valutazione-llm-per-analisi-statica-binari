@@ -1,0 +1,69 @@
+{
+    "0x4004d6": {
+        "nome_funzione_originale": "push",
+        "variabili": {
+            "opd": ""
+        }
+    },
+    "0x40052b": {
+        "nome_funzione_originale": "pop",
+        "variabili": {}
+    },
+    "0x40057e": {
+        "nome_funzione_originale": "isEmpty",
+        "variabili": {}
+    },
+    "0x40059b": {
+        "nome_funzione_originale": "Top",
+        "variabili": {}
+    },
+    "0x4005b0": {
+        "nome_funzione_originale": "priority",
+        "variabili": {
+            "opr": ""
+        }
+    },
+    "0x4005ec": {
+        "nome_funzione_originale": "convert",
+        "variabili": {
+            "inf": "",
+            "v1": "",
+            "v2": "",
+            "j": "",
+            "i": ""
+        }
+    },
+    "0x40078d": {
+        "nome_funzione_originale": "test",
+        "variabili": {
+            "v0": "",
+            "v1": ""
+        }
+    },
+    "0x400806": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "v3": "",
+            "inf": ""
+        }
+    },
+    "0x4030a0": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x4030a8": {
+        "nome_funzione_originale": "strlen",
+        "variabili": {}
+    },
+    "0x4030c8": {
+        "nome_funzione_originale": "strcmp",
+        "variabili": {}
+    },
+    "0x4030d0": {
+        "nome_funzione_originale": "exit",
+        "variabili": {}
+    }
+}

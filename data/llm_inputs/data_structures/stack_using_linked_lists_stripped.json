@@ -1,0 +1,82 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x4003c0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x400400": {
+        "nome_corrente": "sub_400400",
+        "codice_decompilato": "char *sub_400400()\n{\n  return &byte_403030;\n}\n",
+        "variabili": {}
+    },
+    "0x400470": {
+        "nome_corrente": "sub_400470",
+        "codice_decompilato": "char *sub_400470()\n{\n  char *result; // rax\n\n  if ( !byte_403030 )\n  {\n    result = sub_400400();\n    byte_403030 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x4004a0": {
+        "nome_corrente": "sub_4004A0",
+        "codice_decompilato": "__int64 sub_4004A0()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x4004a6": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  int v4; // [rsp+Ch] [rbp-4h] BYREF\n\n  v4 = 0;\n  puts(\"\\t****stack using linked list****\");\n  while ( v4 != 4 )\n  {\n    puts(\"\\n1. Push\\n2. Pop\\n3. Display\\n4. Exit\");\n    printf(\"Enter your choice: \");\n    __isoc23_scanf(\"%d\", &v4);\n    if ( v4 == 4 )\n      return 0;\n    if ( v4 <= 4 )\n    {\n      switch ( v4 )\n      {\n        case 3:\n          sub_400642(qword_403038);\n          break;\n        case 1:\n          sub_400563(qword_403038);\n          break;\n        case 2:\n          sub_4005D2(qword_403038);\n          break;\n      }\n    }\n  }\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": ""
+        }
+    },
+    "0x400563": {
+        "nome_corrente": "sub_400563",
+        "codice_decompilato": "int sub_400563()\n{\n  int v1; // [rsp+14h] [rbp-Ch] BYREF\n  _QWORD *v2; // [rsp+18h] [rbp-8h]\n\n  v2 = malloc(0x10u);\n  printf(\"\\nEnter element to be inserted: \");\n  __isoc23_scanf(\"%d\", &v1);\n  *(_DWORD *)v2 = v1;\n  v2[1] = qword_403038;\n  qword_403038 = (__int64)v2;\n  return puts(\"Inserted successfully.\");\n}\n",
+        "variabili": {
+            "v1": "",
+            "v2": ""
+        }
+    },
+    "0x4005d2": {
+        "nome_corrente": "sub_4005D2",
+        "codice_decompilato": "int sub_4005D2()\n{\n  void *ptr; // [rsp+10h] [rbp-10h]\n  int v2; // [rsp+1Ch] [rbp-4h]\n\n  if ( !qword_403038 )\n    return puts(\"\\nStack is empty.\");\n  v2 = *(_DWORD *)qword_403038;\n  ptr = (void *)qword_403038;\n  qword_403038 = *(_QWORD *)(qword_403038 + 8);\n  free(ptr);\n  return printf(\"\\nElement popped is %d.\\n\", v2);\n}\n",
+        "variabili": {
+            "ptr": "",
+            "v2": ""
+        }
+    },
+    "0x400642": {
+        "nome_corrente": "sub_400642",
+        "codice_decompilato": "int __fastcall sub_400642(__int64 a1)\n{\n  __int64 v1; // rax\n\n  if ( qword_403038 )\n  {\n    LODWORD(v1) = puts(\"\\nElements in the stack are:\");\n    while ( a1 )\n    {\n      printf(\"\\t%d\\n\", *(_DWORD *)a1);\n      v1 = *(_QWORD *)(a1 + 8);\n      a1 = v1;\n    }\n  }\n  else\n  {\n    LODWORD(v1) = puts(\"\\nStack is empty.\");\n  }\n  return v1;\n}\n",
+        "variabili": {
+            "a1": "",
+            "v1": ""
+        }
+    },
+    "0x4006a0": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

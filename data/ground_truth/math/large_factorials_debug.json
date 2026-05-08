@@ -1,0 +1,21 @@
+{
+    "0x400486": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "N": "",
+            "T": "",
+            "a": "",
+            "count": "",
+            "carry": "",
+            "j": "",
+            "i": ""
+        }
+    },
+    "0x403028": {
+        "nome_funzione_originale": "putchar",
+        "variabili": {}
+    }
+}

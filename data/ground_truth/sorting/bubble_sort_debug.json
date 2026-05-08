@@ -1,0 +1,69 @@
+{
+    "0x4004d6": {
+        "nome_funzione_originale": "display",
+        "variabili": {
+            "arr": "",
+            "n": "",
+            "i": ""
+        }
+    },
+    "0x40052e": {
+        "nome_funzione_originale": "swap",
+        "variabili": {
+            "first": "",
+            "second": "",
+            "temp": ""
+        }
+    },
+    "0x40055b": {
+        "nome_funzione_originale": "bubbleSort",
+        "variabili": {
+            "arr": "",
+            "size": "",
+            "j": "",
+            "swapped": "",
+            "i": ""
+        }
+    },
+    "0x40062c": {
+        "nome_funzione_originale": "test",
+        "variabili": {
+            "arr": "",
+            "i_0": "",
+            "i": ""
+        }
+    },
+    "0x400727": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "v3": ""
+        }
+    },
+    "0x403050": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x403058": {
+        "nome_funzione_originale": "putchar",
+        "variabili": {}
+    },
+    "0x403078": {
+        "nome_funzione_originale": "srand",
+        "variabili": {}
+    },
+    "0x403080": {
+        "nome_funzione_originale": "calloc",
+        "variabili": {}
+    },
+    "0x403088": {
+        "nome_funzione_originale": "time",
+        "variabili": {}
+    },
+    "0x403090": {
+        "nome_funzione_originale": "rand",
+        "variabili": {}
+    }
+}

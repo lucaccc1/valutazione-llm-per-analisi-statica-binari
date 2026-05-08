@@ -1,0 +1,92 @@
+{
+    "0x4004a6": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "v3": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "head": "",
+            "heada": ""
+        }
+    },
+    "0x400611": {
+        "nome_funzione_originale": "create_heap",
+        "variabili": {
+            "heap": "",
+            "heapa": ""
+        }
+    },
+    "0x400666": {
+        "nome_funzione_originale": "down_heapify",
+        "variabili": {
+            "heap": "",
+            "index": "",
+            "right": "",
+            "left": "",
+            "maximum": "",
+            "rightflag": "",
+            "leftflag": ""
+        }
+    },
+    "0x400816": {
+        "nome_funzione_originale": "up_heapify",
+        "variabili": {
+            "heap": "",
+            "index": "",
+            "temp": "",
+            "parent": ""
+        }
+    },
+    "0x4008e6": {
+        "nome_funzione_originale": "push",
+        "variabili": {
+            "heap": "",
+            "x": ""
+        }
+    },
+    "0x4009af": {
+        "nome_funzione_originale": "pop",
+        "variabili": {
+            "heap": "",
+            "temp": ""
+        }
+    },
+    "0x400a98": {
+        "nome_funzione_originale": "top",
+        "variabili": {
+            "heap": ""
+        }
+    },
+    "0x400abd": {
+        "nome_funzione_originale": "empty",
+        "variabili": {
+            "heap": ""
+        }
+    },
+    "0x400ade": {
+        "nome_funzione_originale": "size",
+        "variabili": {
+            "heap": ""
+        }
+    },
+    "0x403038": {
+        "nome_funzione_originale": "putchar",
+        "variabili": {}
+    },
+    "0x403048": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403058": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    },
+    "0x403060": {
+        "nome_funzione_originale": "realloc",
+        "variabili": {}
+    }
+}

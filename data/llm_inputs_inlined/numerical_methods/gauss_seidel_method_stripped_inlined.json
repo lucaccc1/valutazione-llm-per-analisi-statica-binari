@@ -1,0 +1,83 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400390": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4003d0": {
+        "nome_corrente": "sub_4003D0",
+        "codice_decompilato": "int (**sub_4003D0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400440": {
+        "nome_corrente": "sub_400440",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4003D0 ===\nint (**sub_4003D0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n// === END INLINED FUNCTION: sub_4003D0 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nint (**sub_400440())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  int (**result)(int (*)(int, char **, char **), int, char **, void (*)(void), void (*)(void), void (*)(void), void *); // rax\n\n  if ( !byte_403014 )\n  {\n    result = sub_4003D0();\n    byte_403014 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400470": {
+        "nome_corrente": "sub_400470",
+        "codice_decompilato": "__int64 sub_400470()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400476": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  float v4; // [rsp+8h] [rbp-48h] BYREF\n  float v5; // [rsp+Ch] [rbp-44h] BYREF\n  float v6; // [rsp+10h] [rbp-40h] BYREF\n  float v7; // [rsp+14h] [rbp-3Ch] BYREF\n  float v8; // [rsp+18h] [rbp-38h] BYREF\n  float v9; // [rsp+1Ch] [rbp-34h] BYREF\n  float v10; // [rsp+20h] [rbp-30h] BYREF\n  float v11; // [rsp+24h] [rbp-2Ch] BYREF\n  float v12; // [rsp+28h] [rbp-28h] BYREF\n  float v13; // [rsp+2Ch] [rbp-24h] BYREF\n  float v14; // [rsp+30h] [rbp-20h] BYREF\n  float v15; // [rsp+34h] [rbp-1Ch] BYREF\n  float v16; // [rsp+38h] [rbp-18h]\n  float v17; // [rsp+3Ch] [rbp-14h]\n  float v18; // [rsp+40h] [rbp-10h]\n  float v19; // [rsp+44h] [rbp-Ch]\n  float v20; // [rsp+48h] [rbp-8h]\n  float v21; // [rsp+4Ch] [rbp-4h]\n\n  printf(\"Enter values of eq1:\");\n  __isoc23_scanf(\"%f%f%f%f\", &v15, &v14, &v13, &v6);\n  printf(\"Enter values of eq2:\");\n  __isoc23_scanf(\"%f%f%f%f\", &v12, &v11, &v10, &v5);\n  printf(\"Enter values of eq3:\");\n  __isoc23_scanf(\"%f%f%f%f\", &v9, &v8, &v7, &v4);\n  v19 = 0.0;\n  v20 = 0.0;\n  v21 = 0.0;\n  do\n  {\n    v18 = v21;\n    v17 = v20;\n    v16 = v19;\n    v21 = (float)((float)(v6 - (float)(v14 * v20)) - (float)(v13 * v19)) * (float)(1.0 / v15);\n    v20 = (float)((float)(v5 - (float)(v12 * v21)) - (float)(v10 * v19)) * (float)(1.0 / v11);\n    v19 = (float)((float)(v4 - (float)(v9 * v21)) - (float)(v8 * v20)) * (float)(1.0 / v7);\n  }\n  while ( fabs(v21 - v18) > 0.0001 && fabs(v20 - v17) > 0.0001 && fabs(v19 - v16) > 0.0001 );\n  printf(\"x1=%f\\nx2=%f\\nx3=%f\", v21, v20, v19);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "v9": "",
+            "v10": "",
+            "v11": "",
+            "v12": "",
+            "v13": "",
+            "v14": "",
+            "v15": "",
+            "v16": "",
+            "v17": "",
+            "v18": "",
+            "v19": "",
+            "v20": "",
+            "v21": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4006c0": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

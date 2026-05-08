@@ -1,0 +1,22 @@
+[
+    {
+        "address": "0x400476",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "decimal_to_hexadecimal",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 20,
+            "execution_time": 10.84
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.23,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.11,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    }
+]

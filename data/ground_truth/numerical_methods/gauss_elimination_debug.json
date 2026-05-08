@@ -1,0 +1,60 @@
+{
+    "0x400496": {
+        "nome_funzione_originale": "display",
+        "variabili": {
+            "a": "",
+            "n": "",
+            "j": "",
+            "i": ""
+        }
+    },
+    "0x400526": {
+        "nome_funzione_originale": "interchange",
+        "variabili": {
+            "m": "",
+            "i": "",
+            "n": "",
+            "tmp": "",
+            "k": "",
+            "j": "",
+            "max": ""
+        }
+    },
+    "0x40076b": {
+        "nome_funzione_originale": "eliminate",
+        "variabili": {
+            "m": "",
+            "i": "",
+            "n": "",
+            "tmp": "",
+            "j": "",
+            "l": "",
+            "k": ""
+        }
+    },
+    "0x4008c3": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "v3": "",
+            "ans": "",
+            "m": "",
+            "n": "",
+            "mul": "",
+            "l": "",
+            "k": "",
+            "j": "",
+            "i": ""
+        }
+    },
+    "0x403030": {
+        "nome_funzione_originale": "putchar",
+        "variabili": {}
+    },
+    "0x403040": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    }
+}

@@ -1,0 +1,106 @@
+{
+    "0x4004a6": {
+        "nome_funzione_originale": "create_stack",
+        "variabili": {
+            "cap": "",
+            "ptr": ""
+        }
+    },
+    "0x40050c": {
+        "nome_funzione_originale": "double_array",
+        "variabili": {
+            "ptr": "",
+            "cap": "",
+            "temp": "",
+            "i": ""
+        }
+    },
+    "0x4005aa": {
+        "nome_funzione_originale": "shrink_array",
+        "variabili": {
+            "ptr": "",
+            "cap": "",
+            "temp": "",
+            "i": ""
+        }
+    },
+    "0x40064f": {
+        "nome_funzione_originale": "push",
+        "variabili": {
+            "ptr": "",
+            "data": "",
+            "ptra": ""
+        }
+    },
+    "0x400705": {
+        "nome_funzione_originale": "pop",
+        "variabili": {
+            "ptr": "",
+            "ele": ""
+        }
+    },
+    "0x4007d7": {
+        "nome_funzione_originale": "peek",
+        "variabili": {
+            "ptr": ""
+        }
+    },
+    "0x40081c": {
+        "nome_funzione_originale": "show_capacity",
+        "variabili": {
+            "ptr": ""
+        }
+    },
+    "0x40082c": {
+        "nome_funzione_originale": "isempty",
+        "variabili": {
+            "ptr": ""
+        }
+    },
+    "0x40084e": {
+        "nome_funzione_originale": "stack_size",
+        "variabili": {
+            "ptr": ""
+        }
+    },
+    "0x400862": {
+        "nome_funzione_originale": "test",
+        "variabili": {
+            "v0": "",
+            "v1": "",
+            "v2": "",
+            "v3": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "arr": "",
+            "topVal": "",
+            "ele": "",
+            "NewStack": "",
+            "capacity": "",
+            "i_0": "",
+            "i": ""
+        }
+    },
+    "0x400c1f": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": ""
+        }
+    },
+    "0x403038": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x403048": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403060": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    }
+}

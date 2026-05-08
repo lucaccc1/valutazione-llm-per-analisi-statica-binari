@@ -1,0 +1,122 @@
+[
+    {
+        "address": "0x400496",
+        "ida_stripped_name": "sub_400496",
+        "ground_truth_name": "createGraph",
+        "ai_predicted_name": "sub_400496",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 10,
+            "execution_time": 7.63
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4004f1",
+        "ida_stripped_name": "sub_4004F1",
+        "ground_truth_name": "find",
+        "ai_predicted_name": "calculate_something",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 6,
+            "execution_time": 4.92
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.17,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.08,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400573",
+        "ida_stripped_name": "sub_400573",
+        "ground_truth_name": "Union",
+        "ai_predicted_name": "merge",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 40,
+            "execution_time": 7.58
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x400683",
+        "ida_stripped_name": "compar",
+        "ground_truth_name": "myComp",
+        "ai_predicted_name": null,
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 4,
+            "execution_time": 13.01
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4006b7",
+        "ida_stripped_name": "sub_4006B7",
+        "ground_truth_name": "KruskalMST",
+        "ai_predicted_name": "get_minimum_spanning_tree",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 108,
+            "execution_time": 14.1
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.23,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 2
+    },
+    {
+        "address": "0x40096d",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "kruskals",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 106,
+            "execution_time": 10.85
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.17,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 2
+    }
+]

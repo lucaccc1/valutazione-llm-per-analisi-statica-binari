@@ -1,0 +1,118 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x4003d0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x400410": {
+        "nome_corrente": "sub_400410",
+        "codice_decompilato": "int (**sub_400410())(int c)\n{\n  return &putchar;\n}\n",
+        "variabili": {}
+    },
+    "0x400480": {
+        "nome_corrente": "sub_400480",
+        "codice_decompilato": "int (**sub_400480())(int c)\n{\n  int (**result)(int); // rax\n\n  if ( !byte_403034 )\n  {\n    result = sub_400410();\n    byte_403034 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x4004b0": {
+        "nome_corrente": "sub_4004B0",
+        "codice_decompilato": "__int64 sub_4004B0()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x4004b6": {
+        "nome_corrente": "sub_4004B6",
+        "codice_decompilato": "__int64 __fastcall sub_4004B6(__int64 a1, unsigned __int16 a2)\n{\n  unsigned __int16 i; // [rsp+16h] [rbp-6h]\n  unsigned __int16 v4; // [rsp+18h] [rbp-4h]\n  unsigned __int16 v5; // [rsp+1Ah] [rbp-2h]\n\n  v5 = 0;\n  v4 = 999;\n  for ( i = 0; i < a2; ++i )\n  {\n    if ( *(_WORD *)(2LL * i + a1) < v4 )\n    {\n      v4 = *(_WORD *)(2LL * i + a1);\n      v5 = i;\n    }\n  }\n  return v5;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "i": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x400529": {
+        "nome_corrente": "sub_400529",
+        "codice_decompilato": "__int64 __fastcall sub_400529(__int64 a1, __int64 a2, unsigned __int16 a3)\n{\n  __int64 result; // rax\n  _WORD v5[48]; // [rsp+20h] [rbp-A0h]\n  _WORD v6[27]; // [rsp+80h] [rbp-40h] BYREF\n  unsigned __int16 v7; // [rsp+B6h] [rbp-Ah]\n  unsigned __int16 k; // [rsp+B8h] [rbp-8h]\n  unsigned __int16 i; // [rsp+BAh] [rbp-6h]\n  __int16 v10; // [rsp+BCh] [rbp-4h]\n  unsigned __int16 j; // [rsp+BEh] [rbp-2h]\n\n  v6[0] = 0;\n  v5[0] = 1;\n  for ( i = 1; i < a3; ++i )\n  {\n    v6[i] = *(_WORD *)(a1 + 40LL * i);\n    v5[i + 24] = 0;\n    v5[i] = 0;\n  }\n  result = (unsigned int)a3 - 1;\n  v10 = a3 - 1;\n  while ( v10 )\n  {\n    for ( j = sub_4004B6((__int64)v6, a3); v5[j] == 1; j = sub_4004B6((__int64)v6, a3) )\n      v6[j] = 999;\n    v7 = v5[j + 24];\n    *(_WORD *)(40LL * v7 + a2 + 2LL * j) = v6[j];\n    *(_WORD *)(40LL * j + a2 + 2LL * v7) = v6[j];\n    --v10;\n    v5[j] = 1;\n    for ( k = 1; ; ++k )\n    {\n      result = k;\n      if ( k >= a3 )\n        break;\n      if ( !v5[k] && *(_WORD *)(a1 + 40LL * j + 2LL * k) < v6[k] )\n      {\n        v6[k] = *(_WORD *)(a1 + 40LL * j + 2LL * k);\n        v5[k + 24] = v7;\n      }\n    }\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "result": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "k": "",
+            "i": "",
+            "v10": "",
+            "j": ""
+        }
+    },
+    "0x40078a": {
+        "nome_corrente": "sub_40078A",
+        "codice_decompilato": "__int64 __fastcall sub_40078A(__int64 a1, __int64 a2)\n{\n  __int64 result; // rax\n  _WORD v3[16]; // [rsp+20h] [rbp-50h]\n  _WORD v4[20]; // [rsp+40h] [rbp-30h]\n  unsigned __int16 m; // [rsp+68h] [rbp-8h]\n  unsigned __int16 k; // [rsp+6Ah] [rbp-6h]\n  unsigned __int16 j; // [rsp+6Ch] [rbp-4h]\n  unsigned __int16 i; // [rsp+6Eh] [rbp-2h]\n\n  v4[0] = 0;\n  v4[1] = 1;\n  v4[2] = 2;\n  v4[3] = 3;\n  v4[4] = 1;\n  v4[5] = 0;\n  v4[6] = 4;\n  v4[7] = 6;\n  v4[8] = 2;\n  v4[9] = 4;\n  v4[10] = 0;\n  v4[11] = 5;\n  v4[12] = 3;\n  v4[13] = 6;\n  v4[14] = 5;\n  v4[15] = 0;\n  v3[0] = 0;\n  v3[1] = 1;\n  v3[2] = 2;\n  v3[3] = 3;\n  v3[4] = 1;\n  v3[5] = 0;\n  v3[6] = 0;\n  v3[7] = 0;\n  v3[8] = 2;\n  v3[9] = 0;\n  v3[10] = 0;\n  v3[11] = 0;\n  v3[12] = 3;\n  v3[13] = 0;\n  v3[14] = 0;\n  v3[15] = 0;\n  for ( i = 0; i < 4u; ++i )\n  {\n    for ( j = 0; j < 4u; ++j )\n      *(_WORD *)(40LL * i + a1 + 2LL * j) = v4[4 * i + j];\n  }\n  sub_400529(a1, a2, 4u);\n  for ( k = 0; ; ++k )\n  {\n    result = k;\n    if ( k >= 4u )\n      break;\n    for ( m = 0; m < 4u; ++m )\n    {\n      if ( *(_WORD *)(a2 + 40LL * k + 2LL * m) != v3[4 * k + m] )\n        __assert_fail(\"MST[i][j] == solution[i][j]\", \"dataset/src/greedy_approach/prim.c\", 0x87u, \"test\");\n    }\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "result": "",
+            "v3": "",
+            "v4": "",
+            "m": "",
+            "k": "",
+            "j": "",
+            "i": ""
+        }
+    },
+    "0x40097f": {
+        "nome_corrente": "sub_40097F",
+        "codice_decompilato": "__int64 __fastcall sub_40097F(__int64 a1, __int64 a2, unsigned __int16 a3)\n{\n  __int64 result; // rax\n  unsigned __int16 v4; // [rsp+Ch] [rbp-24h] BYREF\n  __int64 v5; // [rsp+10h] [rbp-20h]\n  __int64 v6; // [rsp+18h] [rbp-18h]\n  unsigned __int16 j; // [rsp+2Ch] [rbp-4h]\n  unsigned __int16 i; // [rsp+2Eh] [rbp-2h]\n\n  v6 = a1;\n  v5 = a2;\n  v4 = a3;\n  printf(\"Enter the number of vertices: \");\n  __isoc23_scanf(\" %hd\", &v4);\n  if ( v4 > 0x14u )\n    __assert_fail(\"V <= MAX\", \"dataset/src/greedy_approach/prim.c\", 0x96u, \"user_graph\");\n  puts(\"Enter the adj matrix\");\n  for ( i = 0; i < v4; ++i )\n  {\n    for ( j = 0; j < v4; ++j )\n    {\n      printf(\"G[%d][%d]: \", i, j);\n      __isoc23_scanf(\" %hd\", v6 + 40LL * i + 2LL * j);\n      if ( !*(_WORD *)(v6 + 40LL * i + 2LL * j) )\n        *(_WORD *)(v6 + 40LL * i + 2LL * j) = 999;\n    }\n  }\n  sub_400529(v6, v5, v4);\n  puts(\"minimum spanning tree:\");\n  for ( i = 0; ; ++i )\n  {\n    result = v4;\n    if ( i >= v4 )\n      break;\n    putchar(10);\n    for ( j = 0; j < v4; ++j )\n      printf(\"%d\\t\", *(unsigned __int16 *)(v5 + 40LL * i + 2LL * j));\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "result": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "j": "",
+            "i": ""
+        }
+    },
+    "0x400b63": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  _BYTE v4[800]; // [rsp+10h] [rbp-650h] BYREF\n  _BYTE v5[814]; // [rsp+330h] [rbp-330h] BYREF\n  unsigned __int16 v6; // [rsp+65Eh] [rbp-2h]\n\n  if ( a1 == 2 && !strcmp(a2[1], \"-test\") )\n    sub_40078A((__int64)v5, (__int64)v4);\n  else\n    sub_40097F((__int64)v5, (__int64)v4, v6);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": "",
+            "v5": "",
+            "v6": ""
+        }
+    },
+    "0x400be8": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

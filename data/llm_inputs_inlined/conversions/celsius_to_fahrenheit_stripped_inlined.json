@@ -1,0 +1,83 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4003a0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4003e0": {
+        "nome_corrente": "sub_4003E0",
+        "codice_decompilato": "int (**sub_4003E0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400450": {
+        "nome_corrente": "sub_400450",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4003E0 ===\nint (**sub_4003E0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n// === END INLINED FUNCTION: sub_4003E0 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nint (**sub_400450())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  int (**result)(int (*)(int, char **, char **), int, char **, void (*)(void), void (*)(void), void (*)(void), void *); // rax\n\n  if ( !byte_40301C )\n  {\n    result = sub_4003E0();\n    byte_40301C = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400480": {
+        "nome_corrente": "sub_400480",
+        "codice_decompilato": "__int64 sub_400480()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400486": {
+        "nome_corrente": "sub_400486",
+        "codice_decompilato": "double __fastcall sub_400486(double a1)\n{\n  return 9.0 * a1 / 5.0 + 32.0;\n}\n",
+        "variabili": {
+            "a1": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4004be": {
+        "nome_corrente": "sub_4004BE",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400486 ===\ndouble __fastcall sub_400486(double a1)\n{\n  return 9.0 * a1 / 5.0 + 32.0;\n}\n// === END INLINED FUNCTION: sub_400486 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nint sub_4004BE()\n{\n  double v1; // [rsp+8h] [rbp-18h]\n  double v2; // [rsp+8h] [rbp-18h]\n  double v3; // [rsp+8h] [rbp-18h]\n\n  v1 = sub_400486(0.0);\n  puts(\"TEST 1\");\n  printf(\"Input: %f\\n\", 0.0);\n  printf(\"Expected Output: %f\\n\", 32.0);\n  printf(\"Output: %f\\n\", v1);\n  if ( v1 != 32.0 )\n    __assert_fail(\"output == expected\", \"dataset/src/conversions/celsius_to_fahrenheit.c\", 0x25u, \"test\");\n  puts(\"== TEST PASSED ==\\n\");\n  v2 = sub_400486(100.0);\n  puts(\"TEST 2\");\n  printf(\"Input: %f\\n\", 100.0);\n  printf(\"Expected Output: %f\\n\", 212.0);\n  printf(\"Output: %f\\n\", v2);\n  if ( v2 != 212.0 )\n    __assert_fail(\"output == expected\", \"dataset/src/conversions/celsius_to_fahrenheit.c\", 0x32u, \"test\");\n  puts(\"== TEST PASSED ==\\n\");\n  v3 = sub_400486(22.5);\n  puts(\"TEST 3\");\n  printf(\"Input: %f\\n\", 22.5);\n  printf(\"Expected Output: %f\\n\", 72.5);\n  printf(\"Output: %f\\n\", v3);\n  if ( v3 != 72.5 )\n    __assert_fail(\"output == expected\", \"dataset/src/conversions/celsius_to_fahrenheit.c\", 0x3Fu, \"test\");\n  return puts(\"== TEST PASSED ==\\n\");\n}\n",
+        "variabili": {
+            "v1": "",
+            "v2": "",
+            "v3": ""
+        },
+        "inlined_count": 1
+    },
+    "0x4006ff": {
+        "nome_corrente": "main",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4004BE ===\nint sub_4004BE()\n{\n  double v1; // [rsp+8h] [rbp-18h]\n  double v2; // [rsp+8h] [rbp-18h]\n  double v3; // [rsp+8h] [rbp-18h]\n\n  v1 = sub_400486(0.0);\n  puts(\"TEST 1\");\n  printf(\"Input: %f\\n\", 0.0);\n  printf(\"Expected Output: %f\\n\", 32.0);\n  printf(\"Output: %f\\n\", v1);\n  if ( v1 != 32.0 )\n    __assert_fail(\"output == expected\", \"dataset/src/conversions/celsius_to_fahrenheit.c\", 0x25u, \"test\");\n  puts(\"== TEST PASSED ==\\n\");\n  v2 = sub_400486(100.0);\n  puts(\"TEST 2\");\n  printf(\"Input: %f\\n\", 100.0);\n  printf(\"Expected Output: %f\\n\", 212.0);\n  printf(\"Output: %f\\n\", v2);\n  if ( v2 != 212.0 )\n    __assert_fail(\"output == expected\", \"dataset/src/conversions/celsius_to_fahrenheit.c\", 0x32u, \"test\");\n  puts(\"== TEST PASSED ==\\n\");\n  v3 = sub_400486(22.5);\n  puts(\"TEST 3\");\n  printf(\"Input: %f\\n\", 22.5);\n  printf(\"Expected Output: %f\\n\", 72.5);\n  printf(\"Output: %f\\n\", v3);\n  if ( v3 != 72.5 )\n    __assert_fail(\"output == expected\", \"dataset/src/conversions/celsius_to_fahrenheit.c\", 0x3Fu, \"test\");\n  return puts(\"== TEST PASSED ==\\n\");\n}\n// === END INLINED FUNCTION: sub_4004BE ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  sub_4004BE();\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400710": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

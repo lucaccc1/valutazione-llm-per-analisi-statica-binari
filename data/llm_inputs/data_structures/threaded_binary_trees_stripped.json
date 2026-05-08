@@ -1,0 +1,125 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x4003d0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x400410": {
+        "nome_corrente": "sub_400410",
+        "codice_decompilato": "void (**sub_400410())(void *ptr)\n{\n  return &free;\n}\n",
+        "variabili": {}
+    },
+    "0x400480": {
+        "nome_corrente": "sub_400480",
+        "codice_decompilato": "void (**sub_400480())(void *ptr)\n{\n  void (**result)(void *); // rax\n\n  if ( !byte_403034 )\n  {\n    result = sub_400410();\n    byte_403034 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x4004b0": {
+        "nome_corrente": "sub_4004B0",
+        "codice_decompilato": "__int64 sub_4004B0()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x4004b6": {
+        "nome_corrente": "sub_4004B6",
+        "codice_decompilato": "_QWORD *__fastcall sub_4004B6(int a1)\n{\n  _QWORD *result; // rax\n\n  result = malloc(0x18u);\n  result[1] = 0;\n  result[2] = result[1];\n  *(_DWORD *)result = a1;\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "result": ""
+        }
+    },
+    "0x4004fa": {
+        "nome_corrente": "sub_4004FA",
+        "codice_decompilato": "unsigned int **__fastcall sub_4004FA(unsigned int **a1, int a2)\n{\n  unsigned int **result; // rax\n  unsigned int *v3; // [rsp+18h] [rbp-18h]\n  unsigned int **v4; // [rsp+20h] [rbp-10h]\n  unsigned int *v5; // [rsp+28h] [rbp-8h]\n\n  v3 = (unsigned int *)sub_4004B6(a2);\n  if ( *a1 )\n  {\n    v5 = *a1;\n    v4 = 0;\n    while ( v5 )\n    {\n      if ( (int)*v3 <= (int)*v5 )\n      {\n        result = (unsigned int **)*v5;\n        if ( (int)*v3 >= (int)result )\n          return result;\n        v4 = (unsigned int **)v5;\n        v5 = (unsigned int *)*((_QWORD *)v5 + 1);\n      }\n      else\n      {\n        v4 = (unsigned int **)v5;\n        v5 = (unsigned int *)*((_QWORD *)v5 + 2);\n      }\n    }\n    result = v4;\n    if ( (signed int)*v3 <= *(_DWORD *)v4 )\n      v4[1] = v3;\n    else\n      v4[2] = v3;\n  }\n  else\n  {\n    result = a1;\n    *a1 = v3;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "result": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x4005c8": {
+        "nome_corrente": "sub_4005C8",
+        "codice_decompilato": "int __fastcall sub_4005C8(__int64 a1, int a2)\n{\n  while ( a1 && a2 != *(_DWORD *)a1 )\n  {\n    if ( a2 <= *(_DWORD *)a1 )\n      a1 = *(_QWORD *)(a1 + 8);\n    else\n      a1 = *(_QWORD *)(a1 + 16);\n  }\n  if ( a1 )\n    return puts(\"Element found.\");\n  else\n    return puts(\"Element not found.\");\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": ""
+        }
+    },
+    "0x40063b": {
+        "nome_corrente": "sub_40063B",
+        "codice_decompilato": "__int64 __fastcall sub_40063B(__int64 a1)\n{\n  __int64 result; // rax\n\n  if ( a1 )\n  {\n    sub_40063B(*(_QWORD *)(a1 + 8));\n    printf(\"%d\\t\", *(_DWORD *)a1);\n    return sub_40063B(*(_QWORD *)(a1 + 16));\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "result": ""
+        }
+    },
+    "0x400688": {
+        "nome_corrente": "sub_400688",
+        "codice_decompilato": "int __fastcall sub_400688(__int64 a1)\n{\n  int result; // eax\n\n  if ( a1 )\n  {\n    sub_400688(*(_QWORD *)(a1 + 8));\n    sub_400688(*(_QWORD *)(a1 + 16));\n    return printf(\"%d\\t\", *(_DWORD *)a1);\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "result": ""
+        }
+    },
+    "0x4006d5": {
+        "nome_corrente": "sub_4006D5",
+        "codice_decompilato": "__int64 __fastcall sub_4006D5(__int64 a1)\n{\n  __int64 result; // rax\n\n  if ( a1 )\n  {\n    printf(\"%d\\t\", *(_DWORD *)a1);\n    sub_4006D5(*(_QWORD *)(a1 + 8));\n    return sub_4006D5(*(_QWORD *)(a1 + 16));\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "result": ""
+        }
+    },
+    "0x400722": {
+        "nome_corrente": "sub_400722",
+        "codice_decompilato": "unsigned int *__fastcall sub_400722(void **a1, signed int a2)\n{\n  unsigned int *result; // rax\n  _QWORD *i; // [rsp+10h] [rbp-20h]\n  _QWORD *v4; // [rsp+18h] [rbp-18h]\n  void **v5; // [rsp+20h] [rbp-10h]\n  unsigned int *v6; // [rsp+28h] [rbp-8h]\n\n  result = (unsigned int *)*a1;\n  if ( *a1 )\n  {\n    result = (unsigned int *)*a1;\n    v6 = (unsigned int *)*a1;\n    v5 = 0;\n    while ( v6 )\n    {\n      result = (unsigned int *)*v6;\n      if ( a2 == (_DWORD)result )\n        break;\n      v5 = (void **)v6;\n      if ( a2 <= (int)*v6 )\n        result = (unsigned int *)*((_QWORD *)v6 + 1);\n      else\n        result = (unsigned int *)*((_QWORD *)v6 + 2);\n      v6 = result;\n    }\n    if ( v6 )\n    {\n      if ( *((_QWORD *)v6 + 1) || *((_QWORD *)v6 + 2) )\n      {\n        if ( *((_QWORD *)v6 + 1) || !*((_QWORD *)v6 + 2) )\n        {\n          if ( !*((_QWORD *)v6 + 1) || *((_QWORD *)v6 + 2) )\n          {\n            v4 = (_QWORD *)*((_QWORD *)v6 + 2);\n            for ( i = v4; i[1]; i = (_QWORD *)i[1] )\n              ;\n            i[1] = *((_QWORD *)v6 + 1);\n          }\n          else\n          {\n            v4 = (_QWORD *)*((_QWORD *)v6 + 1);\n          }\n        }\n        else\n        {\n          v4 = (_QWORD *)*((_QWORD *)v6 + 2);\n        }\n      }\n      else\n      {\n        v4 = 0;\n      }\n      if ( v6 == *a1 )\n      {\n        free(*a1);\n        result = (unsigned int *)a1;\n        *a1 = v4;\n      }\n      else if ( v6 == v5[1] )\n      {\n        free(v5[1]);\n        result = (unsigned int *)v5;\n        v5[1] = v4;\n      }\n      else\n      {\n        result = (unsigned int *)v5[2];\n        if ( v6 == result )\n        {\n          free(v5[2]);\n          result = (unsigned int *)v5;\n          v5[2] = v4;\n        }\n      }\n    }\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "result": "",
+            "i": "",
+            "v4": "",
+            "v5": "",
+            "v6": ""
+        }
+    },
+    "0x4008e8": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  int v4; // [rsp+0h] [rbp-10h] BYREF\n  int v5; // [rsp+4h] [rbp-Ch] BYREF\n  __int64 v6; // [rsp+8h] [rbp-8h] BYREF\n\n  puts(\"BINARY THREADED TREE: \");\n  v6 = 0;\n  do\n  {\n    puts(\"1. Insert into BT\");\n    puts(\"2. Print BT - inorder\");\n    puts(\"3. Print BT - preorder\");\n    puts(\"4. print BT - postorder\");\n    puts(\"5. delete from BT\");\n    puts(\"6. search in BT\");\n    puts(\"Type 0 to exit\");\n    __isoc23_scanf(\"%d\", &v5);\n    if ( v5 == 6 )\n    {\n      puts(\"Enter a no:\");\n      __isoc23_scanf(\"%d\", &v4);\n      sub_4005C8(v6, v4);\n    }\n    else if ( v5 <= 6 )\n    {\n      switch ( v5 )\n      {\n        case 5:\n          puts(\"Enter a no:\");\n          __isoc23_scanf(\"%d\", &v4);\n          sub_400722((void **)&v6, v4);\n          break;\n        case 4:\n          sub_400688(v6);\n          putchar(10);\n          break;\n        case 3:\n          sub_4006D5(v6);\n          putchar(10);\n          break;\n        case 1:\n          puts(\"Enter a no:\");\n          __isoc23_scanf(\"%d\", &v4);\n          sub_4004FA((unsigned int **)&v6, v4);\n          break;\n        case 2:\n          sub_40063B(v6);\n          putchar(10);\n          break;\n      }\n    }\n  }\n  while ( v5 );\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": "",
+            "v5": "",
+            "v6": ""
+        }
+    },
+    "0x400aac": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

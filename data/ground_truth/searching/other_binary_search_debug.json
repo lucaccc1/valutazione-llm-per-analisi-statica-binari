@@ -1,0 +1,23 @@
+{
+    "0x400466": {
+        "nome_funzione_originale": "binarySearch",
+        "variabili": {
+            "array": "",
+            "leng": "",
+            "searchX": "",
+            "pos": "",
+            "left": "",
+            "right": ""
+        }
+    },
+    "0x40050b": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "array": "",
+            "position": ""
+        }
+    }
+}

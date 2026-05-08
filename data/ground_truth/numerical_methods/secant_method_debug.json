@@ -1,0 +1,37 @@
+{
+    "0x400476": {
+        "nome_funzione_originale": "func",
+        "variabili": {
+            "x": ""
+        }
+    },
+    "0x400496": {
+        "nome_funzione_originale": "secant_method",
+        "variabili": {
+            "x0": "",
+            "x1": "",
+            "tolerance": "",
+            "v3": "",
+            "v5": "",
+            "v6": "",
+            "x2": "",
+            "n": ""
+        }
+    },
+    "0x40057a": {
+        "nome_funzione_originale": "test",
+        "variabili": {}
+    },
+    "0x40074b": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": ""
+        }
+    },
+    "0x403028": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "0x400496": {
+        "nome_funzione_originale": "createGraph",
+        "variabili": {
+            "G": "",
+            "V": "",
+            "v2": "",
+            "j": "",
+            "i": ""
+        }
+    },
+    "0x400584": {
+        "nome_funzione_originale": "addEdge",
+        "variabili": {
+            "G": "",
+            "src": "",
+            "dst": "",
+            "weight": ""
+        }
+    },
+    "0x4005c2": {
+        "nome_funzione_originale": "minDistance",
+        "variabili": {
+            "mdist": "",
+            "vset": "",
+            "V": "",
+            "i": "",
+            "minVal": ""
+        }
+    },
+    "0x40064c": {
+        "nome_funzione_originale": "print",
+        "variabili": {
+            "dist": "",
+            "V": "",
+            "i": ""
+        }
+    },
+    "0x4006db": {
+        "nome_funzione_originale": "Dijkstra",
+        "variabili": {
+            "graph": "",
+            "src": "",
+            "v2": "",
+            "v3": "",
+            "v4": "",
+            "srca": "",
+            "grapha": "",
+            "u": "",
+            "p_vset": "",
+            "v9": "",
+            "p_mdist": "",
+            "v11": "",
+            "V": "",
+            "v": "",
+            "count": "",
+            "i": ""
+        }
+    },
+    "0x40092b": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "G": "",
+            "weight": "",
+            "dst": "",
+            "src": "",
+            "gsrc": "",
+            "E": "",
+            "V": "",
+            "i": ""
+        }
+    },
+    "0x403040": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403058": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    }
+}

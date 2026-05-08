@@ -1,0 +1,50 @@
+{
+    "0x4004b6": {
+        "nome_funzione_originale": "push",
+        "variabili": {
+            "opd": ""
+        }
+    },
+    "0x40050b": {
+        "nome_funzione_originale": "pop",
+        "variabili": {}
+    },
+    "0x40055e": {
+        "nome_funzione_originale": "evaluate",
+        "variabili": {
+            "post": "",
+            "v1": "",
+            "it1": "",
+            "it2": "",
+            "i": "",
+            "number": ""
+        }
+    },
+    "0x40073b": {
+        "nome_funzione_originale": "test",
+        "variabili": {
+            "temp2": "",
+            "temp1": ""
+        }
+    },
+    "0x400826": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": ""
+        }
+    },
+    "0x403078": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403080": {
+        "nome_funzione_originale": "strlen",
+        "variabili": {}
+    },
+    "0x403098": {
+        "nome_funzione_originale": "exit",
+        "variabili": {}
+    }
+}

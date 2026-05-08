@@ -1,0 +1,282 @@
+[
+    {
+        "address": "0x400546",
+        "ida_stripped_name": "sub_400546",
+        "ground_truth_name": "kohonen_data_3d",
+        "ai_predicted_name": "calculate_expression",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 4,
+            "execution_time": 8.38
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.17,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.06,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4005ff",
+        "ida_stripped_name": "sub_4005FF",
+        "ground_truth_name": "save_2d_data",
+        "ai_predicted_name": "write_matrix_to_file",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 31,
+            "execution_time": 8.86
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.25,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.07,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400749",
+        "ida_stripped_name": "sub_400749",
+        "ground_truth_name": "save_u_matrix",
+        "ai_predicted_name": "write_to_file",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 82,
+            "execution_time": 23.81
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.31,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.09,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400a2f",
+        "ida_stripped_name": "sub_400A2F",
+        "ground_truth_name": "get_min_2d",
+        "ai_predicted_name": "find_minimum_in_matrix",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 24,
+            "execution_time": 10.73
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.31,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.35,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400b07",
+        "ida_stripped_name": "sub_400B07",
+        "ground_truth_name": "kohonen_update_weights",
+        "ai_predicted_name": "calculate_matrix",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 69,
+            "execution_time": 24.43
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.32,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.17,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400ea6",
+        "ida_stripped_name": "sub_400EA6",
+        "ground_truth_name": "kohonen_som",
+        "ai_predicted_name": "calculate_alpha",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 36,
+            "execution_time": 19.34
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.15,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4010aa",
+        "ida_stripped_name": "sub_4010AA",
+        "ground_truth_name": "test_2d_classes",
+        "ai_predicted_name": "process_array",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 37,
+            "execution_time": 9.44
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.29,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.12,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x401244",
+        "ida_stripped_name": "sub_401244",
+        "ground_truth_name": "test1",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 58,
+            "execution_time": 33.61
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x401432",
+        "ida_stripped_name": "sub_401432",
+        "ground_truth_name": "test_3d_classes1",
+        "ai_predicted_name": "process_data",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 41,
+            "execution_time": 21.36
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.36,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.12,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4016d2",
+        "ida_stripped_name": "sub_4016D2",
+        "ground_truth_name": "test2",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 58,
+            "execution_time": 37.13
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4018c0",
+        "ida_stripped_name": "sub_4018C0",
+        "ground_truth_name": "test_3d_classes2",
+        "ai_predicted_name": "process_data",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 57,
+            "execution_time": 28.94
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.36,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.12,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x401c22",
+        "ida_stripped_name": "sub_401C22",
+        "ground_truth_name": "test3",
+        "ai_predicted_name": "generate_and_process_data",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 58,
+            "execution_time": 33.48
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.27,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.11,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x401e10",
+        "ida_stripped_name": "sub_401E10",
+        "ground_truth_name": "get_clock_diff",
+        "ai_predicted_name": "calculate_time_difference",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 4,
+            "execution_time": 5.73
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.41,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.2,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x401e3b",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 31,
+            "execution_time": 24.71
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    }
+]

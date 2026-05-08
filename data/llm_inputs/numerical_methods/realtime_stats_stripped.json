@@ -1,0 +1,109 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x4003c0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x400400": {
+        "nome_corrente": "sub_400400",
+        "codice_decompilato": "int *sub_400400()\n{\n  return &dword_403030;\n}\n",
+        "variabili": {}
+    },
+    "0x400470": {
+        "nome_corrente": "sub_400470",
+        "codice_decompilato": "int *sub_400470()\n{\n  int *result; // rax\n\n  if ( !byte_40302C )\n  {\n    result = sub_400400();\n    byte_40302C = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x4004a0": {
+        "nome_corrente": "sub_4004A0",
+        "codice_decompilato": "__int64 sub_4004A0()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x4004a6": {
+        "nome_corrente": "sub_4004A6",
+        "codice_decompilato": "unsigned __int64 __fastcall sub_4004A6(float *a1, unsigned int *a2, _DWORD *a3, float a4)\n{\n  unsigned __int64 result; // rax\n  __m128i v5; // xmm0\n\n  if ( !dword_403030 )\n    dword_403034 = LODWORD(a4);\n  result = (unsigned int)++dword_403030;\n  *(float *)&dword_403038 = *(float *)&dword_403038 + (float)(a4 - *(float *)&dword_403034);\n  *(float *)&dword_40303C = *(float *)&dword_40303C\n                          + (float)((float)(a4 - *(float *)&dword_403034) * (float)(a4 - *(float *)&dword_403034));\n  if ( a1 )\n  {\n    result = (unsigned __int64)a1;\n    *a1 = *(float *)&dword_403034 + (float)(*(float *)&dword_403038 / (float)dword_403030);\n  }\n  if ( a2 )\n  {\n    result = (unsigned __int64)a2;\n    *(float *)a2 = (float)(*(float *)&dword_40303C\n                         - (float)((float)(*(float *)&dword_403038 * *(float *)&dword_403038) / (float)dword_403030))\n                 / (float)(dword_403030 - 1);\n  }\n  if ( a3 )\n  {\n    v5 = _mm_cvtsi32_si128(*a2);\n    *(float *)v5.m128i_i32 = sqrtf(*(float *)v5.m128i_i32);\n    result = (unsigned int)_mm_cvtsi128_si32(v5);\n    *a3 = result;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "a4": "",
+            "result": "",
+            "v5": ""
+        }
+    },
+    "0x40064b": {
+        "nome_corrente": "sub_40064B",
+        "codice_decompilato": "unsigned int *__fastcall sub_40064B(unsigned int *a1, unsigned int *a2, _DWORD *a3, float a4)\n{\n  unsigned int *result; // rax\n  __m128i v5; // xmm0\n  float v7; // [rsp+2Ch] [rbp-4h]\n\n  ++dword_403040;\n  v7 = a4 - *(float *)&dword_403044;\n  result = (unsigned int *)(unsigned int)dword_403040;\n  *(float *)&dword_403044 = *(float *)&dword_403044\n                          + (float)((float)(a4 - *(float *)&dword_403044) / (float)dword_403040);\n  *(float *)&dword_403048 = *(float *)&dword_403048 + (float)(v7 * (float)(a4 - *(float *)&dword_403044));\n  if ( a1 )\n  {\n    result = a1;\n    *a1 = dword_403044;\n  }\n  if ( a2 )\n  {\n    result = a2;\n    *(float *)a2 = *(float *)&dword_403048 / (float)dword_403040;\n  }\n  if ( a3 )\n  {\n    v5 = _mm_cvtsi32_si128(*a2);\n    *(float *)v5.m128i_i32 = sqrtf(*(float *)v5.m128i_i32);\n    result = (unsigned int *)(unsigned int)_mm_cvtsi128_si32(v5);\n    *a3 = (_DWORD)result;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "a4": "",
+            "result": "",
+            "v5": "",
+            "v7": ""
+        }
+    },
+    "0x400794": {
+        "nome_corrente": "sub_400794",
+        "codice_decompilato": "int __fastcall sub_400794(__int64 a1, int a2)\n{\n  float v3; // [rsp+14h] [rbp-2Ch] BYREF\n  float v4; // [rsp+18h] [rbp-28h] BYREF\n  float v5; // [rsp+1Ch] [rbp-24h] BYREF\n  float v6; // [rsp+20h] [rbp-20h] BYREF\n  float v7; // [rsp+24h] [rbp-1Ch] BYREF\n  float v8; // [rsp+28h] [rbp-18h] BYREF\n  float v9; // [rsp+2Ch] [rbp-14h]\n  int j; // [rsp+30h] [rbp-10h]\n  int i; // [rsp+34h] [rbp-Ch]\n  float v12; // [rsp+38h] [rbp-8h]\n  float v13; // [rsp+3Ch] [rbp-4h]\n\n  v13 = 0.0;\n  v12 = 0.0;\n  v8 = 0.0;\n  v7 = 0.0;\n  v6 = 0.0;\n  v5 = 0.0;\n  v4 = 0.0;\n  v3 = 0.0;\n  for ( i = 0; i < a2; ++i )\n  {\n    sub_4004A6(&v8, (unsigned int *)&v7, &v6, *(float *)(4LL * i + a1));\n    sub_40064B((unsigned int *)&v5, (unsigned int *)&v4, &v3, *(float *)(4LL * i + a1));\n    v13 = *(float *)(4LL * i + a1) + v13;\n  }\n  v13 = v13 / (float)a2;\n  for ( j = 0; j < a2; ++j )\n  {\n    v9 = *(float *)(4LL * j + a1) - v13;\n    v12 = (float)(v9 * v9) + v12;\n  }\n  v12 = v12 / (float)a2;\n  puts(\"<<<<<<<< Test Function >>>>>>>>\");\n  printf(\"Expected: Mean: %.4f\\t Variance: %.4f\\n\", v13, v12);\n  printf(\"\\tMethod 1:\\tMean: %.4f\\t Variance: %.4f\\t Std: %.4f\\n\", v8, v7, v6);\n  printf(\"\\tMethod 2:\\tMean: %.4f\\t Variance: %.4f\\t Std: %.4f\\n\", v5, v4, v3);\n  if ( fabs(v8 - v13) >= 0.01 )\n    __assert_fail(\n      \"fabs(s1_mean - ref_mean) < 0.01\",\n      \"dataset/src/numerical_methods/realtime_stats.c\",\n      0x78u,\n      \"test_function\");\n  if ( fabs(v5 - v13) >= 0.01 )\n    __assert_fail(\n      \"fabs(s2_mean - ref_mean) < 0.01\",\n      \"dataset/src/numerical_methods/realtime_stats.c\",\n      0x79u,\n      \"test_function\");\n  if ( fabs(v4 - v12) >= 0.01 )\n    __assert_fail(\n      \"fabs(s2_variance - ref_variance) < 0.01\",\n      \"dataset/src/numerical_methods/realtime_stats.c\",\n      0x7Au,\n      \"test_function\");\n  return puts(\"(Tests passed)\\n\");\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "v9": "",
+            "j": "",
+            "i": "",
+            "v12": "",
+            "v13": ""
+        }
+    },
+    "0x400a9f": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  float v4; // [rsp+14h] [rbp-3Ch] BYREF\n  float v5; // [rsp+18h] [rbp-38h] BYREF\n  float v6; // [rsp+1Ch] [rbp-34h] BYREF\n  float v7; // [rsp+20h] [rbp-30h] BYREF\n  float v8; // [rsp+24h] [rbp-2Ch] BYREF\n  float v9; // [rsp+28h] [rbp-28h] BYREF\n  float v10; // [rsp+2Ch] [rbp-24h] BYREF\n  _DWORD v11[8]; // [rsp+30h] [rbp-20h] BYREF\n\n  v11[0] = 1077936128;\n  v11[1] = 1082130432;\n  v11[2] = 1084227584;\n  v11[3] = -1078774989;\n  v11[4] = -1067030938;\n  v11[5] = 1072902963;\n  v11[6] = 1065353216;\n  sub_400794((__int64)v11, 7);\n  v10 = 0.0;\n  v9 = 0.0;\n  v8 = 0.0;\n  v7 = 0.0;\n  v6 = 0.0;\n  v5 = 0.0;\n  puts(\"Enter data. Any non-numeric data will terminate the data input.\");\n  while ( 1 )\n  {\n    printf(\"Enter number: \");\n    if ( !(unsigned int)__isoc23_scanf(\"%f\", &v4) )\n      break;\n    sub_4004A6(&v10, (unsigned int *)&v9, &v8, v4);\n    sub_40064B((unsigned int *)&v7, (unsigned int *)&v6, &v5, v4);\n    printf(\"\\tMethod 1:\\tMean: %.4f\\t Variance: %.4f\\t Std: %.4f\\n\", v10, v9, v8);\n    printf(\"\\tMethod 2:\\tMean: %.4f\\t Variance: %.4f\\t Std: %.4f\\n\", v7, v6, v5);\n  }\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "v9": "",
+            "v10": "",
+            "v11": ""
+        }
+    },
+    "0x400c54": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

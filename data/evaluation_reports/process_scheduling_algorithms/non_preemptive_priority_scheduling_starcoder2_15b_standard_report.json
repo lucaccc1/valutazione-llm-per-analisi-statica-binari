@@ -1,0 +1,222 @@
+[
+    {
+        "address": "0x4004a6",
+        "ida_stripped_name": "sub_4004A6",
+        "ground_truth_name": "insert",
+        "ai_predicted_name": "initialize_linked_list",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 30,
+            "execution_time": 10.86
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.29,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.09,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40056d",
+        "ida_stripped_name": "sub_40056D",
+        "ground_truth_name": "delete",
+        "ai_predicted_name": "remove_node",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 28,
+            "execution_time": 8.98
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.35,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.08,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400607",
+        "ida_stripped_name": "sub_400607",
+        "ground_truth_name": "show_list",
+        "ai_predicted_name": "print_queue",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 21,
+            "execution_time": 5.11
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.2,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40067f",
+        "ida_stripped_name": "sub_40067F",
+        "ground_truth_name": "l_length",
+        "ai_predicted_name": null,
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 10,
+            "execution_time": 4.11
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4006b7",
+        "ida_stripped_name": "sub_4006B7",
+        "ground_truth_name": "update",
+        "ai_predicted_name": "set_properties",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 53,
+            "execution_time": 9.53
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.3,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400771",
+        "ida_stripped_name": "sub_400771",
+        "ground_truth_name": "compare",
+        "ai_predicted_name": "compare_by_key_then_value",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 17,
+            "execution_time": 8.78
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.44,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 0.47,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4007b9",
+        "ida_stripped_name": "sub_4007B9",
+        "ground_truth_name": "calculate_ct",
+        "ai_predicted_name": "compute_some_average",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 53,
+            "execution_time": 16.76
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.31,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.14,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4009f8",
+        "ida_stripped_name": "sub_4009F8",
+        "ground_truth_name": "calculate_tat",
+        "ai_predicted_name": "calculate_average_chunk_size",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 19,
+            "execution_time": 10.28
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.54,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.51,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400aa5",
+        "ida_stripped_name": "sub_400AA5",
+        "ground_truth_name": "calculate_wt",
+        "ai_predicted_name": "compute_average_size",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 19,
+            "execution_time": 8.08
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.31,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.14,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400b52",
+        "ida_stripped_name": "sub_400B52",
+        "ground_truth_name": "test",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 39,
+            "execution_time": 10.99
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400cec",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 5,
+            "execution_time": 4.97
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    }
+]

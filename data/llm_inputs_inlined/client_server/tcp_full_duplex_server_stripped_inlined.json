@@ -1,0 +1,77 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400470": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4004b0": {
+        "nome_corrente": "sub_4004B0",
+        "codice_decompilato": "void *sub_4004B0()\n{\n  return &unk_403088;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400520": {
+        "nome_corrente": "sub_400520",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4004B0 ===\nvoid *sub_4004B0()\n{\n  return &unk_403088;\n}\n// === END INLINED FUNCTION: sub_4004B0 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid *sub_400520()\n{\n  void *result; // rax\n\n  if ( !byte_403098 )\n  {\n    result = sub_4004B0();\n    byte_403098 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400550": {
+        "nome_corrente": "sub_400550",
+        "codice_decompilato": "__int64 sub_400550()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400556": {
+        "nome_corrente": "error",
+        "codice_decompilato": "void __noreturn error()\n{\n  perror(\"Socket Creation Failed\");\n  exit(1);\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x40056e": {
+        "nome_corrente": "main",
+        "codice_decompilato": "void __fastcall __noreturn main(int a1, char **a2, char **a3)\n{\n  size_t v3; // rax\n  sockaddr addr; // [rsp+10h] [rbp-820h] BYREF\n  char s[1024]; // [rsp+20h] [rbp-810h] BYREF\n  char buf[1028]; // [rsp+420h] [rbp-410h] BYREF\n  int v8; // [rsp+828h] [rbp-8h]\n  int fd; // [rsp+82Ch] [rbp-4h]\n\n  fd = socket(2, 1, 0);\n  addr = 0;\n  addr.sa_family = 2;\n  *(_WORD *)addr.sa_data = htons(0x2710u);\n  *(_DWORD *)&addr.sa_data[2] = htonl(0);\n  puts(\"Server is running...\");\n  if ( bind(fd, &addr, 0x10u) < 0 )\n    error();\n  listen(fd, 5);\n  puts(\"Server is listening...\");\n  v8 = accept(fd, 0, 0);\n  puts(\"Server is connected...\");\n  if ( !fork() )\n  {\n    while ( 1 )\n    {\n      memset(buf, 0, 0x400u);\n      recv(v8, buf, 0x400u, 0);\n      printf(\"\\nCLIENT : %s\\n\", buf);\n      sleep(5u);\n    }\n  }\n  while ( 1 )\n  {\n    memset(s, 0, sizeof(s));\n    printf(\"\\nType message here: \");\n    fgets(s, 1024, stdin);\n    v3 = strlen(s);\n    send(v8, s, v3 + 1, 0);\n    puts(\"\\nMessage Sent!\");\n    sleep(5u);\n  }\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v3": "",
+            "addr": "",
+            "s": "",
+            "buf": "",
+            "v8": "",
+            "fd": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400724": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

@@ -1,0 +1,82 @@
+[
+    {
+        "address": "0x400496",
+        "ida_stripped_name": "sub_400496",
+        "ground_truth_name": "display",
+        "ai_predicted_name": "print_matrix",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 17,
+            "execution_time": 4.98
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.21,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400526",
+        "ida_stripped_name": "sub_400526",
+        "ground_truth_name": "interchange",
+        "ai_predicted_name": "swap_column",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 25,
+            "execution_time": 7.82
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.18,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40076b",
+        "ida_stripped_name": "sub_40076B",
+        "ground_truth_name": "eliminate",
+        "ai_predicted_name": "determinant",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 18,
+            "execution_time": 8.05
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.6,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.36,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4008c3",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "solve_linear_equations",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 126,
+            "execution_time": 10.41
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.23,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.07,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 3
+    }
+]

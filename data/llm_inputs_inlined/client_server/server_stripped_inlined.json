@@ -1,0 +1,86 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400460": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4004a0": {
+        "nome_corrente": "sub_4004A0",
+        "codice_decompilato": "int (**sub_4004A0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400510": {
+        "nome_corrente": "sub_400510",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4004A0 ===\nint (**sub_4004A0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n// === END INLINED FUNCTION: sub_4004A0 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nint (**sub_400510())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  int (**result)(int (*)(int, char **, char **), int, char **, void (*)(void), void (*)(void), void (*)(void), void *); // rax\n\n  if ( !byte_40307C )\n  {\n    result = sub_4004A0();\n    byte_40307C = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400540": {
+        "nome_corrente": "sub_400540",
+        "codice_decompilato": "__int64 sub_400540()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400546": {
+        "nome_corrente": "sub_400546",
+        "codice_decompilato": "int __fastcall sub_400546(int a1)\n{\n  char v1; // cl\n  int v2; // eax\n  char buf[16]; // [rsp+10h] [rbp-60h] BYREF\n  __int128 v5; // [rsp+20h] [rbp-50h]\n  __int128 v6; // [rsp+30h] [rbp-40h]\n  __int128 v7; // [rsp+40h] [rbp-30h]\n  __int128 v8; // [rsp+50h] [rbp-20h]\n  int v9; // [rsp+6Ch] [rbp-4h]\n\n  do\n  {\n    *(_OWORD *)buf = 0;\n    v5 = 0;\n    v6 = 0;\n    v7 = 0;\n    v8 = 0;\n    read(a1, buf, 0x50u);\n    printf(\"From client: %s\\t To client : \", buf);\n    *(_OWORD *)buf = 0;\n    v5 = 0;\n    v6 = 0;\n    v7 = 0;\n    v8 = 0;\n    v9 = 0;\n    do\n    {\n      v1 = getchar();\n      v2 = v9++;\n      buf[v2] = v1;\n    }\n    while ( buf[v2] != 10 );\n    write(a1, buf, 0x50u);\n  }\n  while ( strncmp(\"exit\", buf, 4u) );\n  return puts(\"Server Exit...\");\n}\n",
+        "variabili": {
+            "a1": "",
+            "v1": "",
+            "v2": "",
+            "buf": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "v9": ""
+        },
+        "inlined_count": 0
+    },
+    "0x40061f": {
+        "nome_corrente": "main",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400546 ===\nint __fastcall sub_400546(int a1)\n{\n  char v1; // cl\n  int v2; // eax\n  char buf[16]; // [rsp+10h] [rbp-60h] BYREF\n  __int128 v5; // [rsp+20h] [rbp-50h]\n  __int128 v6; // [rsp+30h] [rbp-40h]\n  __int128 v7; // [rsp+40h] [rbp-30h]\n  __int128 v8; // [rsp+50h] [rbp-20h]\n  int v9; // [rsp+6Ch] [rbp-4h]\n\n  do\n  {\n    *(_OWORD *)buf = 0;\n    v5 = 0;\n    v6 = 0;\n    v7 = 0;\n    v8 = 0;\n    read(a1, buf, 0x50u);\n    printf(\"From client: %s\\t To client : \", buf);\n    *(_OWORD *)buf = 0;\n    v5 = 0;\n    v6 = 0;\n    v7 = 0;\n    v8 = 0;\n    v9 = 0;\n    do\n    {\n      v1 = getchar();\n      v2 = v9++;\n      buf[v2] = v1;\n    }\n    while ( buf[v2] != 10 );\n    write(a1, buf, 0x50u);\n  }\n  while ( strncmp(\"exit\", buf, 4u) );\n  return puts(\"Server Exit...\");\n}\n// === END INLINED FUNCTION: sub_400546 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  struct sockaddr v4; // [rsp+0h] [rbp-30h] BYREF\n  sockaddr addr; // [rsp+10h] [rbp-20h] BYREF\n  socklen_t addr_len; // [rsp+24h] [rbp-Ch] BYREF\n  int v7; // [rsp+28h] [rbp-8h]\n  int fd; // [rsp+2Ch] [rbp-4h]\n\n  fd = socket(2, 1, 0);\n  if ( fd == -1 )\n  {\n    perror(\"socket creation failed...\\n\");\n    exit(0);\n  }\n  puts(\"Socket successfully created..\");\n  addr = 0;\n  addr.sa_family = 2;\n  *(_DWORD *)&addr.sa_data[2] = htonl(0);\n  *(_WORD *)addr.sa_data = htons(0x1F90u);\n  if ( bind(fd, &addr, 0x10u) )\n  {\n    perror(\"socket bind failed...\\n\");\n    exit(0);\n  }\n  puts(\"Socket successfully binded..\");\n  if ( listen(fd, 5) )\n  {\n    perror(\"Listen failed...\\n\");\n    exit(0);\n  }\n  puts(\"Server listening..\");\n  addr_len = 16;\n  v7 = accept(fd, &v4, &addr_len);\n  if ( v7 < 0 )\n  {\n    perror(\"server acccept failed...\\n\");\n    exit(0);\n  }\n  puts(\"server acccept the client...\");\n  sub_400546(v7);\n  close(fd);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": "",
+            "addr": "",
+            "addr_len": "",
+            "v7": "",
+            "fd": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400758": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

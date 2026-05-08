@@ -1,0 +1,162 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400460": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4004a0": {
+        "nome_corrente": "sub_4004A0",
+        "codice_decompilato": "void *sub_4004A0()\n{\n  return &unk_403088;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400510": {
+        "nome_corrente": "sub_400510",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4004A0 ===\nvoid *sub_4004A0()\n{\n  return &unk_403088;\n}\n// === END INLINED FUNCTION: sub_4004A0 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid *sub_400510()\n{\n  void *result; // rax\n\n  if ( !byte_4030A8 )\n  {\n    result = sub_4004A0();\n    byte_4030A8 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400540": {
+        "nome_corrente": "sub_400540",
+        "codice_decompilato": "__int64 sub_400540()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400546": {
+        "nome_corrente": "sub_400546",
+        "codice_decompilato": "void __fastcall __noreturn sub_400546(const char *a1)\n{\n  fprintf(stderr, \"%s\\n\", a1);\n  exit(1);\n}\n",
+        "variabili": {
+            "a1": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400579": {
+        "nome_corrente": "sub_400579",
+        "codice_decompilato": "void __fastcall sub_400579(__int64 a1)\n{\n  if ( a1 )\n  {\n    sub_400579(*(_QWORD *)(a1 + 16));\n    sub_400579(*(_QWORD *)(a1 + 24));\n    free(*(void **)a1);\n    free((void *)a1);\n  }\n}\n",
+        "variabili": {
+            "a1": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4005ca": {
+        "nome_corrente": "sub_4005CA",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400546 ===\nvoid __fastcall __noreturn sub_400546(const char *a1)\n{\n  fprintf(stderr, \"%s\\n\", a1);\n  exit(1);\n}\n// === END INLINED FUNCTION: sub_400546 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nchar *__fastcall sub_4005CA(const char *a1)\n{\n  size_t v1; // rax\n  char *dest; // [rsp+18h] [rbp-8h]\n\n  v1 = strlen(a1);\n  dest = (char *)malloc(v1 + 1);\n  if ( !dest )\n    sub_400546(\"\\nA problem occurred while reserving memory for the word\\n\");\n  strcpy(dest, a1);\n  return dest;\n}\n",
+        "variabili": {
+            "a1": "",
+            "v1": "",
+            "dest": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400623": {
+        "nome_corrente": "sub_400623",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400546 ===\nvoid __fastcall __noreturn sub_400546(const char *a1)\n{\n  fprintf(stderr, \"%s\\n\", a1);\n  exit(1);\n}\n// === END INLINED FUNCTION: sub_400546 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nint __fastcall sub_400623(FILE *a1)\n{\n  int result; // eax\n\n  result = fclose(a1);\n  if ( result )\n    sub_400546(\"\\nA Problem Occurred while closing a file\\n\");\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x40064c": {
+        "nome_corrente": "sub_40064C",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400546 ===\nvoid __fastcall __noreturn sub_400546(const char *a1)\n{\n  fprintf(stderr, \"%s\\n\", a1);\n  exit(1);\n}\n// === END INLINED FUNCTION: sub_400546 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid *sub_40064C()\n{\n  void *v1; // [rsp+8h] [rbp-8h]\n\n  v1 = malloc(0x20u);\n  if ( !v1 )\n    sub_400546(\"\\nA problem occurred while reserving memory for the structure\\n\");\n  return v1;\n}\n",
+        "variabili": {
+            "v1": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400680": {
+        "nome_corrente": "sub_400680",
+        "codice_decompilato": "__int64 __fastcall sub_400680(__int64 a1, FILE *a2)\n{\n  const char *v2; // rsi\n  __int64 v3; // rdx\n  __int64 v4; // rax\n  __int64 result; // rax\n\n  if ( a1 )\n  {\n    sub_400680(*(_QWORD *)(a1 + 16), a2);\n    v2 = *(const char **)a1;\n    v3 = *(_QWORD *)(a1 + 8);\n    v4 = qword_403080++;\n    fprintf(a2, \"%-5lu \\t %-9lu \\t %s \\n\", v4, v3, v2);\n    return sub_400680(*(_QWORD *)(a1 + 24), a2);\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "v2": "",
+            "v3": "",
+            "v4": "",
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400705": {
+        "nome_corrente": "sub_400705",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_40064C ===\nvoid *sub_40064C()\n{\n  void *v1; // [rsp+8h] [rbp-8h]\n\n  v1 = malloc(0x20u);\n  if ( !v1 )\n    sub_400546(\"\\nA problem occurred while reserving memory for the structure\\n\");\n  return v1;\n}\n// === END INLINED FUNCTION: sub_40064C ===\n\n// === START INLINED FUNCTION: sub_4005CA ===\nchar *__fastcall sub_4005CA(const char *a1)\n{\n  size_t v1; // rax\n  char *dest; // [rsp+18h] [rbp-8h]\n\n  v1 = strlen(a1);\n  dest = (char *)malloc(v1 + 1);\n  if ( !dest )\n    sub_400546(\"\\nA problem occurred while reserving memory for the word\\n\");\n  strcpy(dest, a1);\n  return dest;\n}\n// === END INLINED FUNCTION: sub_4005CA ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n_QWORD *__fastcall sub_400705(const char *a1, __int64 a2)\n{\n  int v3; // eax\n  _QWORD *v4; // [rsp+10h] [rbp-10h]\n\n  if ( a2 )\n  {\n    v3 = strcmp(a1, *(const char **)a2);\n    if ( v3 <= 0 )\n    {\n      if ( v3 >= 0LL )\n        ++*(_QWORD *)(a2 + 8);\n      else\n        *(_QWORD *)(a2 + 16) = sub_400705(a1, *(_QWORD *)(a2 + 16));\n    }\n    else\n    {\n      *(_QWORD *)(a2 + 24) = sub_400705(a1, *(_QWORD *)(a2 + 24));\n    }\n    return (_QWORD *)a2;\n  }\n  else\n  {\n    v4 = sub_40064C();\n    *v4 = sub_4005CA(a1);\n    v4[1] = 1;\n    v4[2] = 0;\n    v4[3] = 0;\n    return v4;\n  }\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": ""
+        },
+        "inlined_count": 2
+    },
+    "0x4007eb": {
+        "nome_corrente": "sub_4007EB",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400705 ===\n_QWORD *__fastcall sub_400705(const char *a1, __int64 a2)\n{\n  int v3; // eax\n  _QWORD *v4; // [rsp+10h] [rbp-10h]\n\n  if ( a2 )\n  {\n    v3 = strcmp(a1, *(const char **)a2);\n    if ( v3 <= 0 )\n    {\n      if ( v3 >= 0LL )\n        ++*(_QWORD *)(a2 + 8);\n      else\n        *(_QWORD *)(a2 + 16) = sub_400705(a1, *(_QWORD *)(a2 + 16));\n    }\n    else\n    {\n      *(_QWORD *)(a2 + 24) = sub_400705(a1, *(_QWORD *)(a2 + 24));\n    }\n    return (_QWORD *)a2;\n  }\n  else\n  {\n    v4 = sub_40064C();\n    *v4 = sub_4005CA(a1);\n    v4[1] = 1;\n    v4[2] = 0;\n    v4[3] = 0;\n    return v4;\n  }\n}\n// === END INLINED FUNCTION: sub_400705 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n_QWORD *__fastcall sub_4007EB(FILE *a1, _QWORD *a2)\n{\n  char v2; // cl\n  unsigned __int8 v3; // al\n  unsigned __int8 v4; // al\n  char v7; // [rsp+1Fh] [rbp-11h]\n  char *ptr; // [rsp+20h] [rbp-10h]\n  unsigned __int8 v9; // [rsp+2Eh] [rbp-2h]\n  bool v10; // [rsp+2Fh] [rbp-1h]\n\n  ptr = (char *)malloc(0x2Eu);\n  v10 = 0;\n  v9 = 0;\n  while ( 1 )\n  {\n    v7 = fgetc(a1);\n    if ( v7 == -1 )\n      break;\n    if ( v9 )\n      v10 = ((*__ctype_b_loc())[ptr[v9 - 1]] & 0x400) != 0;\n    if ( ((*__ctype_b_loc())[v7] & 0x400) != 0 )\n    {\n      v2 = tolower(v7);\n      v3 = v9++;\n      ptr[v3] = v2;\n    }\n    else if ( (v7 == 39 || v7 == 45) && v10 )\n    {\n      v4 = v9++;\n      ptr[v4] = v7;\n    }\n    else if ( v9 )\n    {\n      if ( !v10 && ptr[v9 - 1] != 39 )\n        --v9;\n      ptr[v9] = 0;\n      v9 = 0;\n      v10 = 0;\n      a2 = sub_400705(ptr, (__int64)a2);\n    }\n  }\n  if ( v9 )\n  {\n    if ( !v10 && ptr[v9 - 1] != 39 )\n      --v9;\n    ptr[v9] = 0;\n    a2 = sub_400705(ptr, (__int64)a2);\n  }\n  free(ptr);\n  return a2;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "v2": "",
+            "v3": "",
+            "v4": "",
+            "v7": "",
+            "ptr": "",
+            "v9": "",
+            "v10": ""
+        },
+        "inlined_count": 1
+    },
+    "0x4009af": {
+        "nome_corrente": "sub_4009AF",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4007EB ===\n_QWORD *__fastcall sub_4007EB(FILE *a1, _QWORD *a2)\n{\n  char v2; // cl\n  unsigned __int8 v3; // al\n  unsigned __int8 v4; // al\n  char v7; // [rsp+1Fh] [rbp-11h]\n  char *ptr; // [rsp+20h] [rbp-10h]\n  unsigned __int8 v9; // [rsp+2Eh] [rbp-2h]\n  bool v10; // [rsp+2Fh] [rbp-1h]\n\n  ptr = (char *)malloc(0x2Eu);\n  v10 = 0;\n  v9 = 0;\n  while ( 1 )\n  {\n    v7 = fgetc(a1);\n    if ( v7 == -1 )\n      break;\n    if ( v9 )\n      v10 = ((*__ctype_b_loc())[ptr[v9 - 1]] & 0x400) != 0;\n    if ( ((*__ctype_b_loc())[v7] & 0x400) != 0 )\n    {\n      v2 = tolower(v7);\n      v3 = v9++;\n      ptr[v3] = v2;\n    }\n    else if ( (v7 == 39 || v7 == 45) && v10 )\n    {\n      v4 = v9++;\n      ptr[v4] = v7;\n    }\n    else if ( v9 )\n    {\n      if ( !v10 && ptr[v9 - 1] != 39 )\n        --v9;\n      ptr[v9] = 0;\n      v9 = 0;\n      v10 = 0;\n      a2 = sub_400705(ptr, (__int64)a2);\n    }\n  }\n  if ( v9 )\n  {\n    if ( !v10 && ptr[v9 - 1] != 39 )\n      --v9;\n    ptr[v9] = 0;\n    a2 = sub_400705(ptr, (__int64)a2);\n  }\n  free(ptr);\n  return a2;\n}\n// === END INLINED FUNCTION: sub_4007EB ===\n\n// === START INLINED FUNCTION: sub_400579 ===\nvoid __fastcall sub_400579(__int64 a1)\n{\n  if ( a1 )\n  {\n    sub_400579(*(_QWORD *)(a1 + 16));\n    sub_400579(*(_QWORD *)(a1 + 24));\n    free(*(void **)a1);\n    free((void *)a1);\n  }\n}\n// === END INLINED FUNCTION: sub_400579 ===\n\n// === START INLINED FUNCTION: sub_400680 ===\n__int64 __fastcall sub_400680(__int64 a1, FILE *a2)\n{\n  const char *v2; // rsi\n  __int64 v3; // rdx\n  __int64 v4; // rax\n  __int64 result; // rax\n\n  if ( a1 )\n  {\n    sub_400680(*(_QWORD *)(a1 + 16), a2);\n    v2 = *(const char **)a1;\n    v3 = *(_QWORD *)(a1 + 8);\n    v4 = qword_403080++;\n    fprintf(a2, \"%-5lu \\t %-9lu \\t %s \\n\", v4, v3, v2);\n    return sub_400680(*(_QWORD *)(a1 + 24), a2);\n  }\n  return result;\n}\n// === END INLINED FUNCTION: sub_400680 ===\n\n// === START INLINED FUNCTION: sub_400623 ===\nint __fastcall sub_400623(FILE *a1)\n{\n  int result; // eax\n\n  result = fclose(a1);\n  if ( result )\n    sub_400546(\"\\nA Problem Occurred while closing a file\\n\");\n  return result;\n}\n// === END INLINED FUNCTION: sub_400623 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid sub_4009AF()\n{\n  __int64 v0; // rax\n  __int16 v1; // [rsp+Eh] [rbp-22h]\n  FILE *sb; // [rsp+18h] [rbp-18h]\n  FILE *s; // [rsp+18h] [rbp-18h]\n  FILE *sa; // [rsp+18h] [rbp-18h]\n  const char **v5; // [rsp+20h] [rbp-10h]\n  __int64 i; // [rsp+28h] [rbp-8h]\n\n  sb = fopen(\"file.txt\", \"w\");\n  fwrite(\"hey_this, is a. test input \\n to a_file\", 1u, 0x26u, sb);\n  sub_400623(sb);\n  s = fopen(\"file.txt\", \"r\");\n  v5 = (const char **)sub_4007EB(s, 0);\n  if ( strcmp(*v5, \"hey\") )\n    __assert_fail(\n      \"strcmp(root->word, \\\"hey\\\") == 0\",\n      \"dataset/src/data_structures/binary_trees/words_alphabetical.c\",\n      0x107u,\n      \"test\");\n  if ( v5[1] != (const char *)1 )\n    __assert_fail(\n      \"root->frequency == 1\",\n      \"dataset/src/data_structures/binary_trees/words_alphabetical.c\",\n      0x108u,\n      \"test\");\n  if ( strcmp(*(const char **)v5[2], \"a\") )\n    __assert_fail(\n      \"strcmp(root->left->word, \\\"a\\\") == 0\",\n      \"dataset/src/data_structures/binary_trees/words_alphabetical.c\",\n      0x109u,\n      \"test\");\n  if ( *((_QWORD *)v5[2] + 1) != 2 )\n    __assert_fail(\n      \"root->left->frequency == 2\",\n      \"dataset/src/data_structures/binary_trees/words_alphabetical.c\",\n      0x10Au,\n      \"test\");\n  if ( strcmp(*(const char **)v5[3], \"this\") )\n    __assert_fail(\n      \"strcmp(root->right->word, \\\"this\\\") == 0\",\n      \"dataset/src/data_structures/binary_trees/words_alphabetical.c\",\n      0x10Bu,\n      \"test\");\n  if ( strcmp(**((const char ***)v5[2] + 3), \"file\") )\n    __assert_fail(\n      \"strcmp(root->left->right->word, \\\"file\\\") == 0\",\n      \"dataset/src/data_structures/binary_trees/words_alphabetical.c\",\n      0x10Cu,\n      \"test\");\n  if ( strcmp(**((const char ***)v5[3] + 2), \"is\") )\n    __assert_fail(\n      \"strcmp(root->right->left->word, \\\"is\\\") == 0\",\n      \"dataset/src/data_structures/binary_trees/words_alphabetical.c\",\n      0x10Du,\n      \"test\");\n  sub_400623(s);\n  remove(\"file.txt\");\n  sa = fopen(\"wordcount.txt\", \"a\");\n  fprintf(sa, \"%-5s \\t %9s \\t %s \\n\", \"S/N\", \"FREQUENCY\", \"WORD\");\n  sub_400680((__int64)v5, sa);\n  for ( i = 0; ; ++i )\n  {\n    v1 = fgetc(sa);\n    if ( v1 == -1 )\n      break;\n    v0 = i;\n    if ( v1 != aSNFrequencyWor[v0] )\n      __assert_fail(\n        \"inputChar == correctString[i++]\",\n        \"dataset/src/data_structures/binary_trees/words_alphabetical.c\",\n        0x12Bu,\n        \"test\");\n  }\n  sub_400623(sa);\n  remove(\"wordcount.txt\");\n  sub_400579((__int64)v5);\n}\n",
+        "variabili": {
+            "v0": "",
+            "v1": "",
+            "sb": "",
+            "s": "",
+            "sa": "",
+            "v5": "",
+            "i": ""
+        },
+        "inlined_count": 4
+    },
+    "0x400c71": {
+        "nome_corrente": "main",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4009AF ===\nvoid sub_4009AF()\n{\n  __int64 v0; // rax\n  __int16 v1; // [rsp+Eh] [rbp-22h]\n  FILE *sb; // [rsp+18h] [rbp-18h]\n  FILE *s; // [rsp+18h] [rbp-18h]\n  FILE *sa; // [rsp+18h] [rbp-18h]\n  const char **v5; // [rsp+20h] [rbp-10h]\n  __int64 i; // [rsp+28h] [rbp-8h]\n\n  sb = fopen(\"file.txt\", \"w\");\n  fwrite(\"hey_this, is a. test input \\n to a_file\", 1u, 0x26u, sb);\n  sub_400623(sb);\n  s = fopen(\"file.txt\", \"r\");\n  v5 = (const char **)sub_4007EB(s, 0);\n  if ( strcmp(*v5, \"hey\") )\n    __assert_fail(\n      \"strcmp(root->word, \\\"hey\\\") == 0\",\n      \"dataset/src/data_structures/binary_trees/words_alphabetical.c\",\n      0x107u,\n      \"test\");\n  if ( v5[1] != (const char *)1 )\n    __assert_fail(\n      \"root->frequency == 1\",\n      \"dataset/src/data_structures/binary_trees/words_alphabetical.c\",\n      0x108u,\n      \"test\");\n  if ( strcmp(*(const char **)v5[2], \"a\") )\n    __assert_fail(\n      \"strcmp(root->left->word, \\\"a\\\") == 0\",\n      \"dataset/src/data_structures/binary_trees/words_alphabetical.c\",\n      0x109u,\n      \"test\");\n  if ( *((_QWORD *)v5[2] + 1) != 2 )\n    __assert_fail(\n      \"root->left->frequency == 2\",\n      \"dataset/src/data_structures/binary_trees/words_alphabetical.c\",\n      0x10Au,\n      \"test\");\n  if ( strcmp(*(const char **)v5[3], \"this\") )\n    __assert_fail(\n      \"strcmp(root->right->word, \\\"this\\\") == 0\",\n      \"dataset/src/data_structures/binary_trees/words_alphabetical.c\",\n      0x10Bu,\n      \"test\");\n  if ( strcmp(**((const char ***)v5[2] + 3), \"file\") )\n    __assert_fail(\n      \"strcmp(root->left->right->word, \\\"file\\\") == 0\",\n      \"dataset/src/data_structures/binary_trees/words_alphabetical.c\",\n      0x10Cu,\n      \"test\");\n  if ( strcmp(**((const char ***)v5[3] + 2), \"is\") )\n    __assert_fail(\n      \"strcmp(root->right->left->word, \\\"is\\\") == 0\",\n      \"dataset/src/data_structures/binary_trees/words_alphabetical.c\",\n      0x10Du,\n      \"test\");\n  sub_400623(s);\n  remove(\"file.txt\");\n  sa = fopen(\"wordcount.txt\", \"a\");\n  fprintf(sa, \"%-5s \\t %9s \\t %s \\n\", \"S/N\", \"FREQUENCY\", \"WORD\");\n  sub_400680((__int64)v5, sa);\n  for ( i = 0; ; ++i )\n  {\n    v1 = fgetc(sa);\n    if ( v1 == -1 )\n      break;\n    v0 = i;\n    if ( v1 != aSNFrequencyWor[v0] )\n      __assert_fail(\n        \"inputChar == correctString[i++]\",\n        \"dataset/src/data_structures/binary_trees/words_alphabetical.c\",\n        0x12Bu,\n        \"test\");\n  }\n  sub_400623(sa);\n  remove(\"wordcount.txt\");\n  sub_400579((__int64)v5);\n}\n// === END INLINED FUNCTION: sub_4009AF ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  sub_4009AF();\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400c84": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

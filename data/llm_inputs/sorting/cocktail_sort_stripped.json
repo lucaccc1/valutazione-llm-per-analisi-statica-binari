@@ -1,0 +1,77 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x4003c0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x400400": {
+        "nome_corrente": "sub_400400",
+        "codice_decompilato": "void (**sub_400400())(void *ptr)\n{\n  return &free;\n}\n",
+        "variabili": {}
+    },
+    "0x400470": {
+        "nome_corrente": "sub_400470",
+        "codice_decompilato": "void (**sub_400470())(void *ptr)\n{\n  void (**result)(void *); // rax\n\n  if ( !byte_40302C )\n  {\n    result = sub_400400();\n    byte_40302C = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x4004a0": {
+        "nome_corrente": "sub_4004A0",
+        "codice_decompilato": "__int64 sub_4004A0()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x4004a6": {
+        "nome_corrente": "sub_4004A6",
+        "codice_decompilato": "__int64 __fastcall sub_4004A6(__int64 a1, int a2)\n{\n  __int64 result; // rax\n  int v3; // [rsp+18h] [rbp-14h]\n  int v4; // [rsp+18h] [rbp-14h]\n  int v5; // [rsp+1Ch] [rbp-10h]\n  int v6; // [rsp+20h] [rbp-Ch]\n  int v7; // [rsp+24h] [rbp-8h]\n  int v8; // [rsp+24h] [rbp-8h]\n  unsigned int i; // [rsp+28h] [rbp-4h]\n  unsigned int j; // [rsp+28h] [rbp-4h]\n\n  v7 = 1;\n  v6 = 0;\n  result = (unsigned int)(a2 - 1);\n  v5 = a2 - 1;\n  while ( v7 )\n  {\n    v8 = 0;\n    for ( i = v6; ; ++i )\n    {\n      result = i;\n      if ( (int)i >= v5 )\n        break;\n      if ( *(_DWORD *)(4LL * (int)i + a1) > *(_DWORD *)(4 * ((int)i + 1LL) + a1) )\n      {\n        v3 = *(_DWORD *)(4LL * (int)i + a1);\n        *(_DWORD *)(4LL * (int)i + a1) = *(_DWORD *)(4 * ((int)i + 1LL) + a1);\n        *(_DWORD *)(a1 + 4 * ((int)i + 1LL)) = v3;\n        v8 = 1;\n      }\n    }\n    --v5;\n    if ( !v8 )\n      break;\n    v7 = 0;\n    for ( j = v5 - 1; ; --j )\n    {\n      result = j;\n      if ( (int)j < v6 )\n        break;\n      if ( *(_DWORD *)(4 * ((int)j + 1LL) + a1) < *(_DWORD *)(4LL * (int)j + a1) )\n      {\n        v4 = *(_DWORD *)(4 * ((int)j + 1LL) + a1);\n        *(_DWORD *)(4 * ((int)j + 1LL) + a1) = *(_DWORD *)(4LL * (int)j + a1);\n        *(_DWORD *)(a1 + 4LL * (int)j) = v4;\n        v7 = 1;\n      }\n    }\n    ++v6;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "result": "",
+            "v3": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "i": "",
+            "j": ""
+        }
+    },
+    "0x40067a": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  int v4; // [rsp+Ch] [rbp-14h] BYREF\n  void *ptr; // [rsp+10h] [rbp-10h]\n  int i; // [rsp+1Ch] [rbp-4h]\n\n  printf(\"Enter the size of the array: \");\n  __isoc23_scanf(\"%d\", &v4);\n  ptr = malloc(4LL * v4);\n  for ( i = 0; i < v4; ++i )\n  {\n    printf(\"Number #%d: \", i + 1);\n    __isoc23_scanf(\"%d\", (char *)ptr + 4 * i);\n  }\n  printf(\"You entered:  \");\n  for ( i = 0; i < v4; ++i )\n    printf(\"%d \", *((_DWORD *)ptr + i));\n  sub_4004A6((__int64)ptr, v4);\n  printf(\"\\nSorted array: \");\n  for ( i = 0; i < v4; ++i )\n    printf(\"%d \", *((_DWORD *)ptr + i));\n  putchar(10);\n  free(ptr);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": "",
+            "ptr": "",
+            "i": ""
+        }
+    },
+    "0x4007d4": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

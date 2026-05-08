@@ -1,0 +1,80 @@
+{
+    "0x400556": {
+        "nome_funzione_originale": "error",
+        "variabili": {}
+    },
+    "0x40056e": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "v3": "",
+            "server_addr": "",
+            "sendbuff": "",
+            "recvbuff": "",
+            "conn": "",
+            "sockfd": ""
+        }
+    },
+    "0x4030a8": {
+        "nome_funzione_originale": "recv",
+        "variabili": {}
+    },
+    "0x4030b8": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x4030c0": {
+        "nome_funzione_originale": "strlen",
+        "variabili": {}
+    },
+    "0x4030c8": {
+        "nome_funzione_originale": "htons",
+        "variabili": {}
+    },
+    "0x4030d0": {
+        "nome_funzione_originale": "send",
+        "variabili": {}
+    },
+    "0x4030e0": {
+        "nome_funzione_originale": "htonl",
+        "variabili": {}
+    },
+    "0x4030e8": {
+        "nome_funzione_originale": "fgets",
+        "variabili": {}
+    },
+    "0x4030f0": {
+        "nome_funzione_originale": "listen",
+        "variabili": {}
+    },
+    "0x4030f8": {
+        "nome_funzione_originale": "bind",
+        "variabili": {}
+    },
+    "0x403100": {
+        "nome_funzione_originale": "perror",
+        "variabili": {}
+    },
+    "0x403108": {
+        "nome_funzione_originale": "accept",
+        "variabili": {}
+    },
+    "0x403110": {
+        "nome_funzione_originale": "exit",
+        "variabili": {}
+    },
+    "0x403118": {
+        "nome_funzione_originale": "sleep",
+        "variabili": {}
+    },
+    "0x403120": {
+        "nome_funzione_originale": "fork",
+        "variabili": {}
+    },
+    "0x403128": {
+        "nome_funzione_originale": "socket",
+        "variabili": {}
+    }
+}

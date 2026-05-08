@@ -1,0 +1,74 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x400380": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x4003c0": {
+        "nome_corrente": "sub_4003C0",
+        "codice_decompilato": "int (**sub_4003C0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n",
+        "variabili": {}
+    },
+    "0x400430": {
+        "nome_corrente": "sub_400430",
+        "codice_decompilato": "int (**sub_400430())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  int (**result)(int (*)(int, char **, char **), int, char **, void (*)(void), void (*)(void), void (*)(void), void *); // rax\n\n  if ( !byte_40300C )\n  {\n    result = sub_4003C0();\n    byte_40300C = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400460": {
+        "nome_corrente": "sub_400460",
+        "codice_decompilato": "__int64 sub_400460()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x400466": {
+        "nome_corrente": "sub_400466",
+        "codice_decompilato": "__int64 __fastcall sub_400466(unsigned int a1, unsigned int a2, unsigned int a3, __int64 a4)\n{\n  unsigned int v5; // [rsp+28h] [rbp-8h]\n  unsigned int v6; // [rsp+2Ch] [rbp-4h]\n\n  if ( (int)a2 < (int)a1 )\n    return 0xFFFFFFFFLL;\n  v6 = (int)(a2 - a1) / 3 + a1;\n  v5 = (int)(a2 - a1) / -3 + a2;\n  if ( a3 == *(_DWORD *)(4LL * (int)v6 + a4) )\n    return v6;\n  if ( a3 == *(_DWORD *)(4LL * (int)v5 + a4) )\n    return v5;\n  if ( (signed int)a3 < *(_DWORD *)(4LL * (int)v6 + a4) )\n    return sub_400466(a1, v6 - 1, a3, a4);\n  if ( (signed int)a3 <= *(_DWORD *)(4LL * (int)v5 + a4) )\n    return sub_400466(v6 + 1, v5 - 1, a3, a4);\n  return sub_400466(v5 + 1, a2, a3, a4);\n}\n",
+        "variabili": {
+            "a3": "",
+            "a4": "",
+            "a1": "",
+            "a2": "",
+            "v5": "",
+            "v6": ""
+        }
+    },
+    "0x40059f": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  _DWORD v4[12]; // [rsp+0h] [rbp-40h] BYREF\n  int v5; // [rsp+30h] [rbp-10h]\n  int v6; // [rsp+34h] [rbp-Ch]\n  unsigned int v7; // [rsp+38h] [rbp-8h]\n  unsigned int v8; // [rsp+3Ch] [rbp-4h]\n\n  v4[0] = 1;\n  v4[1] = 2;\n  v4[2] = 3;\n  v4[3] = 4;\n  v4[4] = 5;\n  v4[5] = 6;\n  v4[6] = 7;\n  v4[7] = 8;\n  v4[8] = 9;\n  v4[9] = 10;\n  v8 = 0;\n  v7 = 9;\n  v6 = 5;\n  v5 = sub_400466(0, 9u, 5u, (__int64)v4);\n  printf(\"Index of %d is %d\\n\", v6, v5);\n  v6 = 50;\n  v5 = sub_400466(v8, v7, 0x32u, (__int64)v4);\n  printf(\"Index of %d is %d\", v6, v5);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": ""
+        }
+    },
+    "0x40066c": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

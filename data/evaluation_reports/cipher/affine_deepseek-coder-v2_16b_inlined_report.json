@@ -1,0 +1,142 @@
+[
+    {
+        "address": "0x4004d6",
+        "ida_stripped_name": "sub_4004D6",
+        "ground_truth_name": "modular_multiplicative_inverse",
+        "ai_predicted_name": "euclidean_gcd",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 29,
+            "execution_time": 6.87
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.23,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.03,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40056c",
+        "ida_stripped_name": "sub_40056C",
+        "ground_truth_name": "inverse_key",
+        "ai_predicted_name": "calculate_gcd",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 42,
+            "execution_time": 3.42
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.17,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.05,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x4005ee",
+        "ida_stripped_name": "sub_4005EE",
+        "ground_truth_name": "affine_encrypt",
+        "ai_predicted_name": "process_encoded_string",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 14,
+            "execution_time": 4.55
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.33,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.19,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400684",
+        "ida_stripped_name": "sub_400684",
+        "ground_truth_name": "affine_decrypt",
+        "ai_predicted_name": "encode_string",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 29,
+            "execution_time": 6.23
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.3,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.13,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x40072e",
+        "ida_stripped_name": "sub_40072E",
+        "ground_truth_name": "test_string",
+        "ai_predicted_name": "encrypt_string",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 54,
+            "execution_time": 10.19
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.72,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.61,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 2
+    },
+    {
+        "address": "0x400814",
+        "ida_stripped_name": "sub_400814",
+        "ground_truth_name": "tests",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 36,
+            "execution_time": 7.47
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x4008d4",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 25,
+            "execution_time": 5.23
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    }
+]

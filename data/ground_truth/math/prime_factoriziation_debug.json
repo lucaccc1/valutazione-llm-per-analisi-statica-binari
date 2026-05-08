@@ -1,0 +1,66 @@
+{
+    "0x4004d6": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "n": "",
+            "r": ""
+        }
+    },
+    "0x400550": {
+        "nome_funzione_originale": "int_fact",
+        "variabili": {
+            "n": "",
+            "na": "",
+            "pstr": "",
+            "j": "",
+            "range": "",
+            "i": "",
+            "count": "",
+            "len": ""
+        }
+    },
+    "0x400784": {
+        "nome_funzione_originale": "print_arr",
+        "variabili": {
+            "pStr": "",
+            "i": ""
+        }
+    },
+    "0x400829": {
+        "nome_funzione_originale": "increase",
+        "variabili": {
+            "arr": "",
+            "len": "",
+            "tmp": ""
+        }
+    },
+    "0x4008a1": {
+        "nome_funzione_originale": "destroy",
+        "variabili": {
+            "r": ""
+        }
+    },
+    "0x403050": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x403058": {
+        "nome_funzione_originale": "putchar",
+        "variabili": {}
+    },
+    "0x403068": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403088": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    },
+    "0x403090": {
+        "nome_funzione_originale": "realloc",
+        "variabili": {}
+    }
+}

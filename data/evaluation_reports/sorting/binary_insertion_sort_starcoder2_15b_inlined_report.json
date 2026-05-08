@@ -1,0 +1,82 @@
+[
+    {
+        "address": "0x4004b6",
+        "ida_stripped_name": "sub_4004B6",
+        "ground_truth_name": "display",
+        "ai_predicted_name": "print_integers",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 8,
+            "execution_time": 3.58
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.19,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40050e",
+        "ida_stripped_name": "sub_40050E",
+        "ground_truth_name": "binarySearch",
+        "ai_predicted_name": null,
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 29,
+            "execution_time": 8.08
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4005e8",
+        "ida_stripped_name": "sub_4005E8",
+        "ground_truth_name": "insertionSort",
+        "ai_predicted_name": "insert_sorted",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 59,
+            "execution_time": 12.68
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.77,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.65,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x4006b1",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "sort_ints",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 61,
+            "execution_time": 12.18
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.31,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.12,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 2
+    }
+]

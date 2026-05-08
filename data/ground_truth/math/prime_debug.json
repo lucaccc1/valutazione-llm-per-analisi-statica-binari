@@ -1,0 +1,33 @@
+{
+    "0x400476": {
+        "nome_funzione_originale": "isPrime",
+        "variabili": {
+            "x": "",
+            "squareRoot": "",
+            "i": ""
+        }
+    },
+    "0x400502": {
+        "nome_funzione_originale": "test",
+        "variabili": {
+            "NonPrimers": "",
+            "primers": "",
+            "size_0": "",
+            "size": "",
+            "i_0": "",
+            "i": ""
+        }
+    },
+    "0x4006bf": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": ""
+        }
+    },
+    "0x403030": {
+        "nome_funzione_originale": "sqrt",
+        "variabili": {}
+    }
+}

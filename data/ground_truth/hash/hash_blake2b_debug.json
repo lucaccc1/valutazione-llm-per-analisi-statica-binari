@@ -1,0 +1,129 @@
+{
+    "0x4004a6": {
+        "nome_funzione_originale": "u128_fill",
+        "variabili": {
+            "dest": "",
+            "n": ""
+        }
+    },
+    "0x4004cf": {
+        "nome_funzione_originale": "u128_increment",
+        "variabili": {
+            "dest": "",
+            "n": ""
+        }
+    },
+    "0x400515": {
+        "nome_funzione_originale": "G",
+        "variabili": {
+            "v": "",
+            "a": "",
+            "b": "",
+            "c": "",
+            "d": "",
+            "x": "",
+            "y": ""
+        }
+    },
+    "0x4007bb": {
+        "nome_funzione_originale": "F",
+        "variabili": {
+            "h": "",
+            "m": "",
+            "t": "",
+            "f": "",
+            "v": "",
+            "s": "",
+            "i": ""
+        }
+    },
+    "0x400cad": {
+        "nome_funzione_originale": "BLAKE2B",
+        "variabili": {
+            "dest": "",
+            "d": "",
+            "dd": "",
+            "ll": "",
+            "kk": "",
+            "nn": "",
+            "t": "",
+            "h": "",
+            "bytes": "",
+            "mask": "",
+            "offset": "",
+            "j": "",
+            "i": ""
+        }
+    },
+    "0x400eb3": {
+        "nome_funzione_originale": "blake2b",
+        "variabili": {
+            "message": "",
+            "len": "",
+            "key": "",
+            "kk": "",
+            "nn": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "nna": "",
+            "kkb": "",
+            "ll": "",
+            "word_in_block": "",
+            "block_index": "",
+            "long_hold": "",
+            "has_key": "",
+            "blocks": "",
+            "dd": "",
+            "dest": "",
+            "i": ""
+        }
+    },
+    "0x401124": {
+        "nome_funzione_originale": "assert_bytes",
+        "variabili": {
+            "expected": "",
+            "actual": "",
+            "len": "",
+            "i": ""
+        }
+    },
+    "0x4011ee": {
+        "nome_funzione_originale": "test",
+        "variabili": {
+            "filled_answer": "",
+            "filled_key": "",
+            "zero_answer": "",
+            "zero_key": "",
+            "zero": "",
+            "key_answer": "",
+            "key": "",
+            "abc_answer": "",
+            "abc": ""
+        }
+    },
+    "0x4016f2": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": ""
+        }
+    },
+    "0x404038": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x404048": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x404058": {
+        "nome_funzione_originale": "calloc",
+        "variabili": {}
+    },
+    "0x404060": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    }
+}

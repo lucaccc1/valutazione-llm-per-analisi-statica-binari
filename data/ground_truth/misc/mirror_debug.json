@@ -1,0 +1,38 @@
+{
+    "0x400486": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "v3": "",
+            "chaine": ""
+        }
+    },
+    "0x4004c6": {
+        "nome_funzione_originale": "saisie",
+        "variabili": {
+            "cpointeur": ""
+        }
+    },
+    "0x4004f5": {
+        "nome_funzione_originale": "miroir",
+        "variabili": {
+            "s": "",
+            "aux": "",
+            "k": "",
+            "i": ""
+        }
+    },
+    "0x400577": {
+        "nome_funzione_originale": "compte",
+        "variabili": {
+            "s": "",
+            "k": ""
+        }
+    },
+    "0x403030": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    }
+}

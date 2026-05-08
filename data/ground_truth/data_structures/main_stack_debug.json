@@ -1,0 +1,44 @@
+{
+    "0x400486": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "x": ""
+        }
+    },
+    "0x400579": {
+        "nome_funzione_originale": "push",
+        "variabili": {
+            "n": ""
+        }
+    },
+    "0x4005d1": {
+        "nome_funzione_originale": "pop",
+        "variabili": {
+            "item": ""
+        }
+    },
+    "0x40062d": {
+        "nome_funzione_originale": "peek",
+        "variabili": {}
+    },
+    "0x40066f": {
+        "nome_funzione_originale": "update",
+        "variabili": {
+            "n": "",
+            "i": ""
+        }
+    },
+    "0x4006ff": {
+        "nome_funzione_originale": "display",
+        "variabili": {
+            "i": ""
+        }
+    },
+    "0x4031e0": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    }
+}

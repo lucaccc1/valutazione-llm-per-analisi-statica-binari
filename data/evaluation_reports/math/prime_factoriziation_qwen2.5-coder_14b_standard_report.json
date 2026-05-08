@@ -1,0 +1,102 @@
+[
+    {
+        "address": "0x4004d6",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 15,
+            "execution_time": 12.87
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400550",
+        "ida_stripped_name": "sub_400550",
+        "ground_truth_name": "int_fact",
+        "ai_predicted_name": "prime_factorize",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 58,
+            "execution_time": 20.02
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.52,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.36,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400784",
+        "ida_stripped_name": "sub_400784",
+        "ground_truth_name": "print_arr",
+        "ai_predicted_name": "print_prime_factors",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 18,
+            "execution_time": 7.86
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.57,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.48,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400829",
+        "ida_stripped_name": "sub_400829",
+        "ground_truth_name": "increase",
+        "ai_predicted_name": "resize_array",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 11,
+            "execution_time": 9.1
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.4,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.06,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4008a1",
+        "ida_stripped_name": "sub_4008A1",
+        "ground_truth_name": "destroy",
+        "ai_predicted_name": "free_resources",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 5,
+            "execution_time": 5.42
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.29,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.11,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    }
+]

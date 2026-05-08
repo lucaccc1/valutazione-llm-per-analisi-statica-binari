@@ -1,0 +1,64 @@
+{
+    "0x4004c6": {
+        "nome_funzione_originale": "createqueue",
+        "variabili": {}
+    },
+    "0x4004e6": {
+        "nome_funzione_originale": "empty",
+        "variabili": {}
+    },
+    "0x400504": {
+        "nome_funzione_originale": "insert",
+        "variabili": {
+            "x": "",
+            "pnode": ""
+        }
+    },
+    "0x40058e": {
+        "nome_funzione_originale": "removes",
+        "variabili": {
+            "x": "",
+            "p": ""
+        }
+    },
+    "0x400604": {
+        "nome_funzione_originale": "show",
+        "variabili": {
+            "p": ""
+        }
+    },
+    "0x40066f": {
+        "nome_funzione_originale": "destroyqueue",
+        "variabili": {}
+    },
+    "0x40068f": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "ch_0": "",
+            "x": ""
+        }
+    },
+    "0x403068": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x403070": {
+        "nome_funzione_originale": "putchar",
+        "variabili": {}
+    },
+    "0x403080": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403098": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    },
+    "0x4030a0": {
+        "nome_funzione_originale": "exit",
+        "variabili": {}
+    }
+}

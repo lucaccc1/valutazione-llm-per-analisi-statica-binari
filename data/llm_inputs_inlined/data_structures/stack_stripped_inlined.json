@@ -1,0 +1,117 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4003c0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400400": {
+        "nome_corrente": "sub_400400",
+        "codice_decompilato": "char *sub_400400()\n{\n  return &byte_403030;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400470": {
+        "nome_corrente": "sub_400470",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400400 ===\nchar *sub_400400()\n{\n  return &byte_403030;\n}\n// === END INLINED FUNCTION: sub_400400 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nchar *sub_400470()\n{\n  char *result; // rax\n\n  if ( !byte_403030 )\n  {\n    result = sub_400400();\n    byte_403030 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x4004a0": {
+        "nome_corrente": "sub_4004A0",
+        "codice_decompilato": "__int64 sub_4004A0()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4004a6": {
+        "nome_corrente": "main",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4005D7 ===\n__int64 __fastcall sub_4005D7(int a1)\n{\n  if ( ptr )\n  {\n    qword_403040 = (__int64)malloc(0x18u);\n    *(_DWORD *)qword_403040 = a1;\n    *(_QWORD *)(qword_403040 + 8) = 0;\n    *(_QWORD *)(qword_403040 + 16) = ptr;\n    *((_QWORD *)ptr + 1) = qword_403040;\n    ptr = (void *)qword_403040;\n  }\n  else\n  {\n    ptr = malloc(0x18u);\n    *((_QWORD *)ptr + 1) = 0;\n    *((_QWORD *)ptr + 2) = 0;\n    *(_DWORD *)ptr = a1;\n  }\n  return (unsigned int)++dword_403048;\n}\n// === END INLINED FUNCTION: sub_4005D7 ===\n\n// === START INLINED FUNCTION: sub_40069B ===\n__int64 sub_40069B()\n{\n  unsigned int v1; // [rsp+Ch] [rbp-4h]\n\n  if ( !ptr )\n  {\n    puts(\"ERROR: Pop from empty stack.\");\n    exit(1);\n  }\n  v1 = *(_DWORD *)ptr;\n  if ( *((_QWORD *)ptr + 2) )\n  {\n    ptr = (void *)*((_QWORD *)ptr + 2);\n    free(*((void **)ptr + 1));\n  }\n  else\n  {\n    free(ptr);\n    ptr = 0;\n  }\n  --dword_403048;\n  return v1;\n}\n// === END INLINED FUNCTION: sub_40069B ===\n\n// === START INLINED FUNCTION: sub_400776 ===\n_BOOL8 sub_400776()\n{\n  return dword_403048 == 0;\n}\n// === END INLINED FUNCTION: sub_400776 ===\n\n// === START INLINED FUNCTION: sub_4005C5 ===\nvoid sub_4005C5()\n{\n  ptr = 0;\n}\n// === END INLINED FUNCTION: sub_4005C5 ===\n\n// === START INLINED FUNCTION: sub_40076A ===\n__int64 sub_40076A()\n{\n  return (unsigned int)dword_403048;\n}\n// === END INLINED FUNCTION: sub_40076A ===\n\n// === START INLINED FUNCTION: sub_400734 ===\n__int64 sub_400734()\n{\n  if ( !ptr )\n  {\n    printf(\"ERROR: Peeking from empty stack.\");\n    exit(1);\n  }\n  return *(unsigned int *)ptr;\n}\n// === END INLINED FUNCTION: sub_400734 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall main(__int64 a1, char **a2, char **a3)\n{\n  int v3; // ebx\n  int v4; // eax\n  int v5; // ebx\n  int v6; // eax\n  int v7; // ebx\n  int v8; // eax\n  int v10; // [rsp+14h] [rbp-1Ch]\n  int v11; // [rsp+18h] [rbp-18h]\n  int v12; // [rsp+18h] [rbp-18h]\n  int v13; // [rsp+1Ch] [rbp-14h]\n  int v14; // [rsp+1Ch] [rbp-14h]\n  int v15; // [rsp+1Ch] [rbp-14h]\n\n  sub_4005C5(a1, a2, a3);\n  sub_4005D7(4);\n  v13 = sub_40069B();\n  v3 = sub_400776();\n  v4 = sub_40076A();\n  printf(\"%d.\\t\\tCount: %d.\\tEmpty: %d.\\n\", v13, v4, v3);\n  sub_4005D7(1);\n  sub_4005D7(2);\n  sub_4005D7(3);\n  v14 = sub_40069B();\n  v11 = sub_40069B();\n  v5 = sub_400776();\n  v6 = sub_40076A();\n  printf(\"%d, %d.\\t\\tCount: %d.\\tEmpty: %d.\\n\", v14, v11, v6, v5);\n  sub_40069B();\n  sub_4005D7(5);\n  sub_4005D7(6);\n  v15 = sub_400734();\n  sub_4005D7(7);\n  v12 = sub_40069B();\n  sub_4005D7(8);\n  v10 = sub_40069B();\n  v7 = sub_400776();\n  v8 = sub_40076A();\n  printf(\"%d, %d, %d.\\tCount: %d.\\tEmpty: %d.\\n\", v15, v12, v10, v8, v7);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v3": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "v10": "",
+            "v11": "",
+            "v12": "",
+            "v13": "",
+            "v14": "",
+            "v15": ""
+        },
+        "inlined_count": 6
+    },
+    "0x4005c5": {
+        "nome_corrente": "sub_4005C5",
+        "codice_decompilato": "void sub_4005C5()\n{\n  ptr = 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4005d7": {
+        "nome_corrente": "sub_4005D7",
+        "codice_decompilato": "__int64 __fastcall sub_4005D7(int a1)\n{\n  if ( ptr )\n  {\n    qword_403040 = (__int64)malloc(0x18u);\n    *(_DWORD *)qword_403040 = a1;\n    *(_QWORD *)(qword_403040 + 8) = 0;\n    *(_QWORD *)(qword_403040 + 16) = ptr;\n    *((_QWORD *)ptr + 1) = qword_403040;\n    ptr = (void *)qword_403040;\n  }\n  else\n  {\n    ptr = malloc(0x18u);\n    *((_QWORD *)ptr + 1) = 0;\n    *((_QWORD *)ptr + 2) = 0;\n    *(_DWORD *)ptr = a1;\n  }\n  return (unsigned int)++dword_403048;\n}\n",
+        "variabili": {
+            "a1": ""
+        },
+        "inlined_count": 0
+    },
+    "0x40069b": {
+        "nome_corrente": "sub_40069B",
+        "codice_decompilato": "__int64 sub_40069B()\n{\n  unsigned int v1; // [rsp+Ch] [rbp-4h]\n\n  if ( !ptr )\n  {\n    puts(\"ERROR: Pop from empty stack.\");\n    exit(1);\n  }\n  v1 = *(_DWORD *)ptr;\n  if ( *((_QWORD *)ptr + 2) )\n  {\n    ptr = (void *)*((_QWORD *)ptr + 2);\n    free(*((void **)ptr + 1));\n  }\n  else\n  {\n    free(ptr);\n    ptr = 0;\n  }\n  --dword_403048;\n  return v1;\n}\n",
+        "variabili": {
+            "v1": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400734": {
+        "nome_corrente": "sub_400734",
+        "codice_decompilato": "__int64 sub_400734()\n{\n  if ( !ptr )\n  {\n    printf(\"ERROR: Peeking from empty stack.\");\n    exit(1);\n  }\n  return *(unsigned int *)ptr;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x40076a": {
+        "nome_corrente": "sub_40076A",
+        "codice_decompilato": "__int64 sub_40076A()\n{\n  return (unsigned int)dword_403048;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400776": {
+        "nome_corrente": "sub_400776",
+        "codice_decompilato": "_BOOL8 sub_400776()\n{\n  return dword_403048 == 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400794": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

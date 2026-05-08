@@ -1,0 +1,152 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x4003c0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x400400": {
+        "nome_corrente": "sub_400400",
+        "codice_decompilato": "void (**sub_400400())(void *ptr)\n{\n  return &free;\n}\n",
+        "variabili": {}
+    },
+    "0x400470": {
+        "nome_corrente": "sub_400470",
+        "codice_decompilato": "void (**sub_400470())(void *ptr)\n{\n  void (**result)(void *); // rax\n\n  if ( !byte_40302C )\n  {\n    result = sub_400400();\n    byte_40302C = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x4004a0": {
+        "nome_corrente": "sub_4004A0",
+        "codice_decompilato": "__int64 sub_4004A0()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x4004a6": {
+        "nome_corrente": "sub_4004A6",
+        "codice_decompilato": "_DWORD *__fastcall sub_4004A6(int a1)\n{\n  _DWORD *v2; // [rsp+18h] [rbp-8h]\n\n  v2 = malloc(0x10u);\n  *v2 = a1;\n  v2[1] = -1;\n  *((_QWORD *)v2 + 1) = malloc(4LL * a1);\n  printf(\"\\nStack of capacity %d is successfully created.\\n\", *v2);\n  return v2;\n}\n",
+        "variabili": {
+            "a1": "",
+            "v2": ""
+        }
+    },
+    "0x40050c": {
+        "nome_corrente": "sub_40050C",
+        "codice_decompilato": "__int64 __fastcall sub_40050C(__int64 a1, int a2)\n{\n  _DWORD *v3; // [rsp+10h] [rbp-10h]\n  int i; // [rsp+1Ch] [rbp-4h]\n\n  v3 = malloc(8LL * a2);\n  for ( i = 0; i <= *(_DWORD *)(a1 + 4); ++i )\n    v3[i] = *(_DWORD *)(4LL * i + *(_QWORD *)(a1 + 8));\n  free(*(void **)(a1 + 8));\n  *(_QWORD *)(a1 + 8) = v3;\n  *(_DWORD *)a1 = 2 * a2;\n  return a1;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "i": ""
+        }
+    },
+    "0x4005aa": {
+        "nome_corrente": "sub_4005AA",
+        "codice_decompilato": "__int64 __fastcall sub_4005AA(__int64 a1, int a2)\n{\n  _DWORD *v3; // [rsp+10h] [rbp-10h]\n  int i; // [rsp+1Ch] [rbp-4h]\n\n  v3 = malloc(4LL * (a2 / 2));\n  for ( i = 0; i <= *(_DWORD *)(a1 + 4); ++i )\n    v3[i] = *(_DWORD *)(4LL * i + *(_QWORD *)(a1 + 8));\n  free(*(void **)(a1 + 8));\n  *(_QWORD *)(a1 + 8) = v3;\n  *(_DWORD *)a1 = a2 / 2;\n  return a1;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "i": ""
+        }
+    },
+    "0x40064f": {
+        "nome_corrente": "sub_40064F",
+        "codice_decompilato": "__int64 __fastcall sub_40064F(int *a1, int a2)\n{\n  __int64 v3; // [rsp+8h] [rbp-8h]\n\n  v3 = (__int64)a1;\n  if ( a1[1] == *a1 - 1 )\n    v3 = sub_40050C((__int64)a1, *a1);\n  *(_DWORD *)(4LL * (int)++*(_DWORD *)(v3 + 4) + *(_QWORD *)(v3 + 8)) = a2;\n  printf(\"Successfully pushed : %d\\n\", a2);\n  return *(unsigned int *)(v3 + 4);\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "v3": ""
+        }
+    },
+    "0x400705": {
+        "nome_corrente": "sub_400705",
+        "codice_decompilato": "__int64 __fastcall sub_400705(__int64 a1)\n{\n  unsigned int v2; // [rsp+1Ch] [rbp-4h]\n\n  if ( *(_DWORD *)(a1 + 4) == -1 )\n  {\n    puts(\"Stack is empty UNDERFLOW \");\n    return 0xFFFFFFFFLL;\n  }\n  else\n  {\n    v2 = *(_DWORD *)(*(_QWORD *)(a1 + 8) + 4LL * *(int *)(a1 + 4));\n    *(_DWORD *)(*(_QWORD *)(a1 + 8) + 4LL * (int)(*(_DWORD *)(a1 + 4))--) = 0;\n    if ( (*(_DWORD *)a1 & 1) == 0 && *(_DWORD *)a1 / 2 > *(_DWORD *)(a1 + 4) )\n      sub_4005AA(a1, *(_DWORD *)a1);\n    printf(\"Successfully popped: %d\\n\", v2);\n    return v2;\n  }\n}\n",
+        "variabili": {
+            "a1": "",
+            "v2": ""
+        }
+    },
+    "0x4007d7": {
+        "nome_corrente": "sub_4007D7",
+        "codice_decompilato": "__int64 __fastcall sub_4007D7(__int64 a1)\n{\n  if ( *(_DWORD *)(a1 + 4) != -1 )\n    return *(unsigned int *)(*(_QWORD *)(a1 + 8) + 4LL * *(int *)(a1 + 4));\n  puts(\"Stack is empty UNDERFLOW \");\n  return 0xFFFFFFFFLL;\n}\n",
+        "variabili": {
+            "a1": ""
+        }
+    },
+    "0x40081c": {
+        "nome_corrente": "sub_40081C",
+        "codice_decompilato": "__int64 __fastcall sub_40081C(unsigned int *a1)\n{\n  return *a1;\n}\n",
+        "variabili": {
+            "a1": ""
+        }
+    },
+    "0x40082c": {
+        "nome_corrente": "sub_40082C",
+        "codice_decompilato": "_BOOL8 __fastcall sub_40082C(__int64 a1)\n{\n  return *(_DWORD *)(a1 + 4) == -1;\n}\n",
+        "variabili": {
+            "a1": ""
+        }
+    },
+    "0x40084e": {
+        "nome_corrente": "sub_40084E",
+        "codice_decompilato": "__int64 __fastcall sub_40084E(__int64 a1)\n{\n  return (unsigned int)(*(_DWORD *)(a1 + 4) + 1);\n}\n",
+        "variabili": {
+            "a1": ""
+        }
+    },
+    "0x400862": {
+        "nome_corrente": "sub_400862",
+        "codice_decompilato": "__int64 sub_400862()\n{\n  int v0; // eax\n  int v1; // ebx\n  int v2; // eax\n  int v3; // eax\n  int v4; // eax\n  int v5; // eax\n  int v6; // eax\n  int v7; // eax\n  __int64 result; // rax\n  _QWORD v9[12]; // [rsp+0h] [rbp-90h]\n  int v10; // [rsp+60h] [rbp-30h]\n  int v11; // [rsp+64h] [rbp-2Ch]\n  int *v12; // [rsp+68h] [rbp-28h]\n  int v13; // [rsp+74h] [rbp-1Ch]\n  int j; // [rsp+78h] [rbp-18h]\n  int i; // [rsp+7Ch] [rbp-14h]\n\n  v13 = 1;\n  v12 = sub_4004A6(1);\n  v9[0] = 1;\n  v9[1] = 2;\n  v9[2] = 3;\n  v9[3] = 4;\n  v9[4] = 5;\n  v9[5] = 6;\n  v9[6] = 7;\n  v9[7] = 8;\n  v9[8] = 9;\n  v9[9] = 10;\n  v9[10] = 11;\n  v9[11] = 12;\n  printf(\"\\nTesting Empty stack: \");\n  if ( (unsigned int)sub_40084E((__int64)v12) )\n    __assert_fail(\"stack_size(NewStack) == 0\", \"dataset/src/data_structures/stack/dynamic_stack.c\", 0xCFu, \"test\");\n  if ( !sub_40082C((__int64)v12) )\n    __assert_fail(\"isempty(NewStack) == 1\", \"dataset/src/data_structures/stack/dynamic_stack.c\", 0xD0u, \"test\");\n  v0 = sub_40084E((__int64)v12);\n  printf(\"Size of an empty stack is %d\\n\", v0);\n  puts(\"\\nTesting PUSH operation:\");\n  for ( i = 0; i <= 11; ++i )\n  {\n    v10 = sub_40064F(v12, v9[i]);\n    v1 = sub_40081C((unsigned int *)v12);\n    v2 = sub_40084E((__int64)v12);\n    printf(\"Size: %d, Capacity: %d\\n\\n\", v2, v1);\n    if ( v10 != i )\n      __assert_fail(\"topVal == i\", \"dataset/src/data_structures/stack/dynamic_stack.c\", 0xD9u, \"test\");\n    v3 = sub_4007D7((__int64)v12);\n    if ( v3 != v9[i] )\n      __assert_fail(\"peek(NewStack) == arr[i]\", \"dataset/src/data_structures/stack/dynamic_stack.c\", 0xDAu, \"test\");\n    v4 = sub_40084E((__int64)v12);\n    if ( v4 != i + 1 )\n      __assert_fail(\"stack_size(NewStack) == i + 1\", \"dataset/src/data_structures/stack/dynamic_stack.c\", 0xDBu, \"test\");\n    if ( sub_40082C((__int64)v12) )\n      __assert_fail(\"isempty(NewStack) == 0\", \"dataset/src/data_structures/stack/dynamic_stack.c\", 0xDCu, \"test\");\n  }\n  puts(\"\\nTesting POP operation:\");\n  for ( j = 11; j >= 0; --j )\n  {\n    sub_4007D7((__int64)v12);\n    v5 = sub_4007D7((__int64)v12);\n    if ( v5 != v9[j] )\n      __assert_fail(\"peek(NewStack) == arr[i]\", \"dataset/src/data_structures/stack/dynamic_stack.c\", 0xE3u, \"test\");\n    v11 = sub_400705((__int64)v12);\n    if ( v11 != v9[j] )\n      __assert_fail(\"ele == arr[i]\", \"dataset/src/data_structures/stack/dynamic_stack.c\", 0xE5u, \"test\");\n    v6 = sub_40084E((__int64)v12);\n    if ( j != v6 )\n      __assert_fail(\"stack_size(NewStack) == i\", \"dataset/src/data_structures/stack/dynamic_stack.c\", 0xE6u, \"test\");\n  }\n  printf(\"\\nTesting Empty stack size: \");\n  if ( (unsigned int)sub_40084E((__int64)v12) )\n    __assert_fail(\"stack_size(NewStack) == 0\", \"dataset/src/data_structures/stack/dynamic_stack.c\", 0xEAu, \"test\");\n  if ( !sub_40082C((__int64)v12) )\n    __assert_fail(\"isempty(NewStack) == 1\", \"dataset/src/data_structures/stack/dynamic_stack.c\", 0xEBu, \"test\");\n  v7 = sub_40084E((__int64)v12);\n  printf(\"Size of an empty stack is %d\\n\", v7);\n  printf(\"\\nTesting POP operation on empty stack: \");\n  result = sub_400705((__int64)v12);\n  if ( (_DWORD)result != -1 )\n    __assert_fail(\"pop(NewStack) == -1\", \"dataset/src/data_structures/stack/dynamic_stack.c\", 0xEFu, \"test\");\n  return result;\n}\n",
+        "variabili": {
+            "v0": "",
+            "v1": "",
+            "v2": "",
+            "v3": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "result": "",
+            "v9": "",
+            "v10": "",
+            "v11": "",
+            "v12": "",
+            "v13": "",
+            "j": "",
+            "i": ""
+        }
+    },
+    "0x400c1f": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(__int64 a1, char **a2, char **a3)\n{\n  sub_400862(a1, a2, a3);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": ""
+        }
+    },
+    "0x400c30": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

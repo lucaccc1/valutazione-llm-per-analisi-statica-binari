@@ -1,0 +1,39 @@
+{
+    "0x400496": {
+        "nome_funzione_originale": "swap",
+        "variabili": {
+            "a": "",
+            "b": "",
+            "temp": ""
+        }
+    },
+    "0x4004c3": {
+        "nome_funzione_originale": "shakersort",
+        "variabili": {
+            "a": "",
+            "n": "",
+            "i": "",
+            "ia": "",
+            "p": ""
+        }
+    },
+    "0x4005fd": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "n": "",
+            "arr": "",
+            "i": ""
+        }
+    },
+    "0x403030": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x403050": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    }
+}

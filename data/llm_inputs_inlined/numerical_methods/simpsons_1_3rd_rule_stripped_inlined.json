@@ -1,0 +1,88 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400390": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4003d0": {
+        "nome_corrente": "sub_4003D0",
+        "codice_decompilato": "int (**sub_4003D0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400440": {
+        "nome_corrente": "sub_400440",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4003D0 ===\nint (**sub_4003D0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n// === END INLINED FUNCTION: sub_4003D0 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nint (**sub_400440())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  int (**result)(int (*)(int, char **, char **), int, char **, void (*)(void), void (*)(void), void (*)(void), void *); // rax\n\n  if ( !byte_403014 )\n  {\n    result = sub_4003D0();\n    byte_403014 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400470": {
+        "nome_corrente": "sub_400470",
+        "codice_decompilato": "__int64 sub_400470()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400476": {
+        "nome_corrente": "sub_400476",
+        "codice_decompilato": "float __fastcall sub_400476(float a1)\n{\n  return (float)((float)(a1 * a1) * a1) + 1.0;\n}\n",
+        "variabili": {
+            "a1": ""
+        },
+        "inlined_count": 0
+    },
+    "0x40049e": {
+        "nome_corrente": "main",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400476 ===\nfloat __fastcall sub_400476(float a1)\n{\n  return (float)((float)(a1 * a1) * a1) + 1.0;\n}\n// === END INLINED FUNCTION: sub_400476 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  __m128i v3; // xmm0\n  __m128i v4; // xmm0\n  float v5; // xmm0_4\n  float v7; // [rsp+Ch] [rbp-34h]\n  float v8; // [rsp+Ch] [rbp-34h]\n  float v9; // [rsp+18h] [rbp-28h] BYREF\n  float v10; // [rsp+1Ch] [rbp-24h] BYREF\n  int v11; // [rsp+20h] [rbp-20h] BYREF\n  float v12; // [rsp+24h] [rbp-1Ch]\n  float v13; // [rsp+28h] [rbp-18h]\n  float v14; // [rsp+2Ch] [rbp-14h]\n  float v15; // [rsp+30h] [rbp-10h]\n  float v16; // [rsp+34h] [rbp-Ch]\n  float v17; // [rsp+38h] [rbp-8h]\n  int i; // [rsp+3Ch] [rbp-4h]\n\n  printf(\"enter the lower limit of the integration:\");\n  __isoc23_scanf(\"%f\", &v10);\n  printf(\"enter the upper limit of the integration:\");\n  __isoc23_scanf(\"%f\", &v9);\n  printf(\"enter the number of intervals:\");\n  __isoc23_scanf(\"%d\", &v11);\n  v15 = (float)(v9 - v10) / (float)v11;\n  v7 = sub_400476(v10);\n  v14 = sub_400476(v9) + v7;\n  v16 = 0.0;\n  v17 = 0.0;\n  for ( i = 1; i < v11; i += 3 )\n  {\n    v12 = v10 + (float)((float)i * v15);\n    v3 = _mm_cvtsi32_si128(LODWORD(v12));\n    *(float *)v3.m128i_i32 = sub_400476(*(float *)v3.m128i_i32);\n    v8 = COERCE_FLOAT(_mm_cvtsi128_si32(v3)) + v16;\n    v4 = (__m128i)LODWORD(v12);\n    *(float *)v4.m128i_i32 = v12 + v15;\n    v16 = sub_400476(COERCE_FLOAT(_mm_cvtsi128_si32(v4))) + v8;\n  }\n  for ( i = 3; i < v11; i += 3 )\n  {\n    v12 = v10 + (float)((float)i * v15);\n    v17 = sub_400476(v12) + v17;\n  }\n  v5 = (float)((float)(4.0 * v16) + (float)((float)(v17 + v17) + v14)) * (v15 / 3.0);\n  v13 = v5;\n  printf(\"\\nValue of the integral = %9.4f\\n\", v5);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v3": "",
+            "v4": "",
+            "v5": "",
+            "v7": "",
+            "v8": "",
+            "v9": "",
+            "v10": "",
+            "v11": "",
+            "v12": "",
+            "v13": "",
+            "v14": "",
+            "v15": "",
+            "v16": "",
+            "v17": "",
+            "i": ""
+        },
+        "inlined_count": 1
+    },
+    "0x4006ac": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

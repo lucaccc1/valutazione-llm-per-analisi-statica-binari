@@ -1,0 +1,109 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4003f0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400430": {
+        "nome_corrente": "sub_400430",
+        "codice_decompilato": "void (**sub_400430())(void *ptr)\n{\n  return &free;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4004a0": {
+        "nome_corrente": "sub_4004A0",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400430 ===\nvoid (**sub_400430())(void *ptr)\n{\n  return &free;\n}\n// === END INLINED FUNCTION: sub_400430 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid (**sub_4004A0())(void *ptr)\n{\n  void (**result)(void *); // rax\n\n  if ( !byte_403044 )\n  {\n    result = sub_400430();\n    byte_403044 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x4004d0": {
+        "nome_corrente": "sub_4004D0",
+        "codice_decompilato": "__int64 sub_4004D0()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4004d6": {
+        "nome_corrente": "main",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400550 ===\n_DWORD *__fastcall sub_400550(int a1)\n{\n  int v2; // [rsp+Ch] [rbp-34h]\n  _DWORD *v3; // [rsp+18h] [rbp-28h]\n  int i; // [rsp+24h] [rbp-1Ch]\n  _DWORD *v5; // [rsp+28h] [rbp-18h]\n  int v6; // [rsp+34h] [rbp-Ch]\n  int v7; // [rsp+38h] [rbp-8h]\n  int v8; // [rsp+3Ch] [rbp-4h]\n\n  v2 = a1;\n  if ( a1 <= 1 )\n    __assert_fail(\"n > 1\", \"dataset/src/math/prime_factoriziation.c\", 0x3Eu, \"int_fact\");\n  v8 = 10;\n  v7 = 0;\n  v6 = 0;\n  v5 = malloc(0x28u);\n  if ( !v5 )\n    __assert_fail(\"range\", \"dataset/src/math/prime_factoriziation.c\", 0x44u, \"int_fact\");\n  v3 = malloc(8u);\n  if ( !v3 )\n    __assert_fail(\"pstr\", \"dataset/src/math/prime_factoriziation.c\", 0x46u, \"int_fact\");\n  while ( (v2 & 1) == 0 )\n  {\n    v2 /= 2;\n    if ( v6 >= v8 )\n    {\n      v5 = (_DWORD *)sub_400829(v5, (unsigned int)v8);\n      v8 += 5;\n    }\n    v5[v6++] = 2;\n    ++v7;\n  }\n  for ( i = 3; v2 >= i * i; i += 2 )\n  {\n    while ( !(v2 % i) )\n    {\n      v2 /= i;\n      if ( v6 >= v8 )\n      {\n        v5 = (_DWORD *)sub_400829(v5, (unsigned int)v8);\n        v8 += 5;\n      }\n      v5[v6++] = i;\n      ++v7;\n    }\n  }\n  if ( v2 > 1 )\n  {\n    if ( v6 >= v8 )\n      v5 = (_DWORD *)sub_400829(v5, (unsigned int)v8);\n    v5[v6] = v2;\n    ++v7;\n  }\n  *(_QWORD *)v3 = v5;\n  v3[2] = v7;\n  return v3;\n}\n// === END INLINED FUNCTION: sub_400550 ===\n\n// === START INLINED FUNCTION: sub_400784 ===\nint __fastcall sub_400784(__int64 a1)\n{\n  int v2; // [rsp+1Ch] [rbp-4h]\n\n  if ( !a1 )\n    __assert_fail(\"pStr\", \"dataset/src/math/prime_factoriziation.c\", 0x8Au, \"print_arr\");\n  v2 = 0;\n  putchar(10);\n  while ( v2 < *(_DWORD *)(a1 + 8) )\n  {\n    if ( v2 )\n      printf(\"-%d\", *(_DWORD *)(4LL * v2 + *(_QWORD *)a1));\n    else\n      printf(\"%d\", **(_DWORD **)a1);\n    ++v2;\n  }\n  return putchar(10);\n}\n// === END INLINED FUNCTION: sub_400784 ===\n\n// === START INLINED FUNCTION: sub_4008A1 ===\nvoid __fastcall sub_4008A1(void **a1)\n{\n  free(*a1);\n  free(a1);\n}\n// === END INLINED FUNCTION: sub_4008A1 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  unsigned int v4; // [rsp+4h] [rbp-Ch] BYREF\n  __int64 v5; // [rsp+8h] [rbp-8h]\n\n  v4 = 0;\n  puts(\"\\t\\tPrim factoriziation\\n\");\n  printf(\"positive integer (> 1) ? \");\n  __isoc23_scanf(\"%d\", &v4);\n  v5 = sub_400550(v4);\n  printf(\"\\nThe factoriziation are: \");\n  sub_400784(v5);\n  sub_4008A1(v5);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 3
+    },
+    "0x400550": {
+        "nome_corrente": "sub_400550",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400829 ===\nvoid *__fastcall sub_400829(void *a1, int a2)\n{\n  void *v3; // [rsp+18h] [rbp-8h]\n\n  if ( !a1 )\n    __assert_fail(\"arr\", \"dataset/src/math/prime_factoriziation.c\", 0x99u, \"increase\");\n  v3 = realloc(a1, 4LL * (a2 + 5));\n  if ( !v3 )\n    __assert_fail(\"tmp\", \"dataset/src/math/prime_factoriziation.c\", 0x9Bu, \"increase\");\n  return v3;\n}\n// === END INLINED FUNCTION: sub_400829 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n_DWORD *__fastcall sub_400550(int a1)\n{\n  int v2; // [rsp+Ch] [rbp-34h]\n  _DWORD *v3; // [rsp+18h] [rbp-28h]\n  int i; // [rsp+24h] [rbp-1Ch]\n  _DWORD *v5; // [rsp+28h] [rbp-18h]\n  int v6; // [rsp+34h] [rbp-Ch]\n  int v7; // [rsp+38h] [rbp-8h]\n  int v8; // [rsp+3Ch] [rbp-4h]\n\n  v2 = a1;\n  if ( a1 <= 1 )\n    __assert_fail(\"n > 1\", \"dataset/src/math/prime_factoriziation.c\", 0x3Eu, \"int_fact\");\n  v8 = 10;\n  v7 = 0;\n  v6 = 0;\n  v5 = malloc(0x28u);\n  if ( !v5 )\n    __assert_fail(\"range\", \"dataset/src/math/prime_factoriziation.c\", 0x44u, \"int_fact\");\n  v3 = malloc(8u);\n  if ( !v3 )\n    __assert_fail(\"pstr\", \"dataset/src/math/prime_factoriziation.c\", 0x46u, \"int_fact\");\n  while ( (v2 & 1) == 0 )\n  {\n    v2 /= 2;\n    if ( v6 >= v8 )\n    {\n      v5 = (_DWORD *)sub_400829(v5, (unsigned int)v8);\n      v8 += 5;\n    }\n    v5[v6++] = 2;\n    ++v7;\n  }\n  for ( i = 3; v2 >= i * i; i += 2 )\n  {\n    while ( !(v2 % i) )\n    {\n      v2 /= i;\n      if ( v6 >= v8 )\n      {\n        v5 = (_DWORD *)sub_400829(v5, (unsigned int)v8);\n        v8 += 5;\n      }\n      v5[v6++] = i;\n      ++v7;\n    }\n  }\n  if ( v2 > 1 )\n  {\n    if ( v6 >= v8 )\n      v5 = (_DWORD *)sub_400829(v5, (unsigned int)v8);\n    v5[v6] = v2;\n    ++v7;\n  }\n  *(_QWORD *)v3 = v5;\n  v3[2] = v7;\n  return v3;\n}\n",
+        "variabili": {
+            "a1": "",
+            "v2": "",
+            "v3": "",
+            "i": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400784": {
+        "nome_corrente": "sub_400784",
+        "codice_decompilato": "int __fastcall sub_400784(__int64 a1)\n{\n  int v2; // [rsp+1Ch] [rbp-4h]\n\n  if ( !a1 )\n    __assert_fail(\"pStr\", \"dataset/src/math/prime_factoriziation.c\", 0x8Au, \"print_arr\");\n  v2 = 0;\n  putchar(10);\n  while ( v2 < *(_DWORD *)(a1 + 8) )\n  {\n    if ( v2 )\n      printf(\"-%d\", *(_DWORD *)(4LL * v2 + *(_QWORD *)a1));\n    else\n      printf(\"%d\", **(_DWORD **)a1);\n    ++v2;\n  }\n  return putchar(10);\n}\n",
+        "variabili": {
+            "a1": "",
+            "v2": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400829": {
+        "nome_corrente": "sub_400829",
+        "codice_decompilato": "void *__fastcall sub_400829(void *a1, int a2)\n{\n  void *v3; // [rsp+18h] [rbp-8h]\n\n  if ( !a1 )\n    __assert_fail(\"arr\", \"dataset/src/math/prime_factoriziation.c\", 0x99u, \"increase\");\n  v3 = realloc(a1, 4LL * (a2 + 5));\n  if ( !v3 )\n    __assert_fail(\"tmp\", \"dataset/src/math/prime_factoriziation.c\", 0x9Bu, \"increase\");\n  return v3;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "v3": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4008a1": {
+        "nome_corrente": "sub_4008A1",
+        "codice_decompilato": "void __fastcall sub_4008A1(void **a1)\n{\n  free(*a1);\n  free(a1);\n}\n",
+        "variabili": {
+            "a1": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4008cc": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

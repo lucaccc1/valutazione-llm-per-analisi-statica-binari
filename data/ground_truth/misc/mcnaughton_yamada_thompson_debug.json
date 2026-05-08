@@ -1,0 +1,294 @@
+{
+    "0x4004c6": {
+        "nome_funzione_originale": "isLiteral",
+        "variabili": {
+            "ch_0": ""
+        }
+    },
+    "0x4004fb": {
+        "nome_funzione_originale": "preProcessing",
+        "variabili": {
+            "input": "",
+            "result": "",
+            "v2": "",
+            "v3": "",
+            "c1": "",
+            "c": "",
+            "str": "",
+            "len": "",
+            "i": "",
+            "op": ""
+        }
+    },
+    "0x400681": {
+        "nome_funzione_originale": "indexOf",
+        "variabili": {
+            "str": "",
+            "key": "",
+            "c": "",
+            "i": "",
+            "depth": ""
+        }
+    },
+    "0x4006fb": {
+        "nome_funzione_originale": "subString",
+        "variabili": {
+            "str": "",
+            "begin": "",
+            "end": "",
+            "res": ""
+        }
+    },
+    "0x400769": {
+        "nome_funzione_originale": "buildAST",
+        "variabili": {
+            "input": "",
+            "temp2": "",
+            "temp1": "",
+            "temp2_0": "",
+            "temp1_0": "",
+            "temp": "",
+            "index": "",
+            "indexa": "",
+            "temp_0": "",
+            "len": "",
+            "node": "",
+            "nodea": ""
+        }
+    },
+    "0x4009fa": {
+        "nome_funzione_originale": "redirect",
+        "variabili": {
+            "nfa": "",
+            "src": "",
+            "dest": "",
+            "rule": "",
+            "i_0": "",
+            "i": ""
+        }
+    },
+    "0x400aa3": {
+        "nome_funzione_originale": "compileFromAST",
+        "variabili": {
+            "root": "",
+            "Rule": "",
+            "v3": "",
+            "content": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "subs": "",
+            "subCount": "",
+            "v11": "",
+            "v12": "",
+            "v13": "",
+            "v14": "",
+            "v15": "",
+            "v16": "",
+            "v17": "",
+            "v18": "",
+            "v19": "",
+            "v20": "",
+            "v21": "",
+            "v22": "",
+            "wrapper": "",
+            "rn": "",
+            "ln": "",
+            "ln_1": "",
+            "rn_0": "",
+            "ln_0": "",
+            "nfa": ""
+        }
+    },
+    "0x400f6d": {
+        "nome_funzione_originale": "addState",
+        "variabili": {
+            "nfa": "",
+            "state": "",
+            "statePool": "",
+            "v3": ""
+        }
+    },
+    "0x400fa4": {
+        "nome_funzione_originale": "addRule",
+        "variabili": {
+            "nfa": "",
+            "rule": "",
+            "loc": "",
+            "rulePool": "",
+            "ruleCount": "",
+            "rules": "",
+            "v6": "",
+            "state": ""
+        }
+    },
+    "0x401024": {
+        "nome_funzione_originale": "postProcessing",
+        "variabili": {
+            "nfa": "",
+            "Rule": "",
+            "pState": "",
+            "j": "",
+            "f": "",
+            "i_0": "",
+            "i": ""
+        }
+    },
+    "0x40111c": {
+        "nome_funzione_originale": "contains",
+        "variabili": {
+            "states": "",
+            "len": "",
+            "state": "",
+            "i": "",
+            "f": ""
+        }
+    },
+    "0x401172": {
+        "nome_funzione_originale": "findEmpty",
+        "variabili": {
+            "target": "",
+            "states": "",
+            "sc": "",
+            "v3": "",
+            "pRule": "",
+            "i": ""
+        }
+    },
+    "0x401234": {
+        "nome_funzione_originale": "transit",
+        "variabili": {
+            "nfa": "",
+            "input": "",
+            "v2": "",
+            "v3": "",
+            "sc": "",
+            "states": "",
+            "pState": "",
+            "pRule": "",
+            "pState_0": "",
+            "newStates": "",
+            "i_1": "",
+            "j_0": "",
+            "i_0": "",
+            "j": "",
+            "i": "",
+            "NSCount": ""
+        }
+    },
+    "0x401490": {
+        "nome_funzione_originale": "isAccepting",
+        "variabili": {
+            "nfa": "",
+            "i": ""
+        }
+    },
+    "0x4014eb": {
+        "nome_funzione_originale": "testHelper",
+        "variabili": {
+            "regex": "",
+            "string": "",
+            "expected": "",
+            "statePool": "",
+            "currentStates": "",
+            "CSCount": "",
+            "nfa": "",
+            "node": "",
+            "temp": "",
+            "i": ""
+        }
+    },
+    "0x40163b": {
+        "nome_funzione_originale": "test",
+        "variabili": {}
+    },
+    "0x40173c": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": ""
+        }
+    },
+    "0x40174c": {
+        "nome_funzione_originale": "createNode",
+        "variabili": {
+            "content": "",
+            "result": ""
+        }
+    },
+    "0x40178f": {
+        "nome_funzione_originale": "destroyNode",
+        "variabili": {
+            "node": ""
+        }
+    },
+    "0x4017e4": {
+        "nome_funzione_originale": "createRule",
+        "variabili": {
+            "state": "",
+            "c": "",
+            "result": ""
+        }
+    },
+    "0x40181f": {
+        "nome_funzione_originale": "destroyRule",
+        "variabili": {
+            "rule": ""
+        }
+    },
+    "0x40183a": {
+        "nome_funzione_originale": "createState",
+        "variabili": {
+            "state": ""
+        }
+    },
+    "0x401875": {
+        "nome_funzione_originale": "destroyState",
+        "variabili": {
+            "state": ""
+        }
+    },
+    "0x4018a0": {
+        "nome_funzione_originale": "createNFA",
+        "variabili": {
+            "State": "",
+            "v1": "",
+            "nfa": ""
+        }
+    },
+    "0x401974": {
+        "nome_funzione_originale": "destroyNFA",
+        "variabili": {
+            "nfa": "",
+            "i_1": "",
+            "i_0": "",
+            "i": ""
+        }
+    },
+    "0x404048": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x404058": {
+        "nome_funzione_originale": "strncpy",
+        "variabili": {}
+    },
+    "0x404060": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x404068": {
+        "nome_funzione_originale": "strlen",
+        "variabili": {}
+    },
+    "0x404078": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    },
+    "0x404080": {
+        "nome_funzione_originale": "realloc",
+        "variabili": {}
+    }
+}

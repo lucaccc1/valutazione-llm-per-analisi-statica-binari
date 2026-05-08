@@ -1,0 +1,29 @@
+{
+    "0x400476": {
+        "nome_funzione_originale": "naive_search",
+        "variabili": {
+            "str": "",
+            "pattern": "",
+            "len_pat": "",
+            "len_str": "",
+            "j": "",
+            "i": ""
+        }
+    },
+    "0x40051d": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "pat3": "",
+            "pat2": "",
+            "pat1": "",
+            "str": ""
+        }
+    },
+    "0x403028": {
+        "nome_funzione_originale": "strlen",
+        "variabili": {}
+    }
+}

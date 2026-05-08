@@ -1,0 +1,18 @@
+{
+    "0x400466": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": ""
+        }
+    },
+    "0x400510": {
+        "nome_funzione_originale": "isPalindrome",
+        "variabili": {
+            "number": "",
+            "numbera": "",
+            "reversedNumber": ""
+        }
+    }
+}

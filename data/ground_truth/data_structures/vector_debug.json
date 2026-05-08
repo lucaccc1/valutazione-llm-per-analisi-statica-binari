@@ -1,0 +1,101 @@
+{
+    "0x4004b6": {
+        "nome_funzione_originale": "init",
+        "variabili": {
+            "vec": "",
+            "val": ""
+        }
+    },
+    "0x4004ff": {
+        "nome_funzione_originale": "delete",
+        "variabili": {
+            "vec": ""
+        }
+    },
+    "0x40051e": {
+        "nome_funzione_originale": "clear",
+        "variabili": {
+            "vec": ""
+        }
+    },
+    "0x40054a": {
+        "nome_funzione_originale": "len",
+        "variabili": {
+            "vec": ""
+        }
+    },
+    "0x40055a": {
+        "nome_funzione_originale": "push",
+        "variabili": {
+            "vec": "",
+            "val": ""
+        }
+    },
+    "0x4005c5": {
+        "nome_funzione_originale": "get",
+        "variabili": {
+            "vec": "",
+            "index": ""
+        }
+    },
+    "0x4005fb": {
+        "nome_funzione_originale": "set",
+        "variabili": {
+            "vec": "",
+            "index": "",
+            "val": ""
+        }
+    },
+    "0x400631": {
+        "nome_funzione_originale": "next",
+        "variabili": {
+            "vec": ""
+        }
+    },
+    "0x400688": {
+        "nome_funzione_originale": "begin",
+        "variabili": {
+            "vec": ""
+        }
+    },
+    "0x40069a": {
+        "nome_funzione_originale": "print",
+        "variabili": {
+            "vec": "",
+            "size": "",
+            "count": ""
+        }
+    },
+    "0x400708": {
+        "nome_funzione_originale": "test",
+        "variabili": {
+            "vec": ""
+        }
+    },
+    "0x400871": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "v3": "",
+            "vec": ""
+        }
+    },
+    "0x403040": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x403050": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403068": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    },
+    "0x403070": {
+        "nome_funzione_originale": "realloc",
+        "variabili": {}
+    }
+}

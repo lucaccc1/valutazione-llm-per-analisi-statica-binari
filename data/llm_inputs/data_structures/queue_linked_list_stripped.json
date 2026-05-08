@@ -1,0 +1,102 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x4003e0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x400420": {
+        "nome_corrente": "sub_400420",
+        "codice_decompilato": "char *sub_400420()\n{\n  return &byte_403040;\n}\n",
+        "variabili": {}
+    },
+    "0x400490": {
+        "nome_corrente": "sub_400490",
+        "codice_decompilato": "char *sub_400490()\n{\n  char *result; // rax\n\n  if ( !byte_403040 )\n  {\n    result = sub_400420();\n    byte_403040 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x4004c0": {
+        "nome_corrente": "sub_4004C0",
+        "codice_decompilato": "__int64 sub_4004C0()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x4004c6": {
+        "nome_corrente": "sub_4004C6",
+        "codice_decompilato": "__int64 sub_4004C6()\n{\n  __int64 result; // rax\n\n  qword_403058 = 0;\n  result = 0;\n  qword_403050 = 0;\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x4004e6": {
+        "nome_corrente": "sub_4004E6",
+        "codice_decompilato": "_BOOL8 sub_4004E6()\n{\n  return qword_403050 == 0;\n}\n",
+        "variabili": {}
+    },
+    "0x400504": {
+        "nome_corrente": "sub_400504",
+        "codice_decompilato": "_QWORD *__fastcall sub_400504(int a1)\n{\n  _QWORD *result; // rax\n  _QWORD *v2; // [rsp+18h] [rbp-8h]\n\n  v2 = malloc(0x10u);\n  if ( !v2 )\n  {\n    puts(\"Memory overflow. Unable to insert.\");\n    exit(1);\n  }\n  *(_DWORD *)v2 = a1;\n  v2[1] = 0;\n  if ( sub_4004E6() )\n  {\n    qword_403058 = (__int64)v2;\n    result = v2;\n    qword_403050 = (__int64)v2;\n  }\n  else\n  {\n    *(_QWORD *)(qword_403058 + 8) = v2;\n    result = v2;\n    qword_403058 = (__int64)v2;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "result": "",
+            "v2": ""
+        }
+    },
+    "0x40058e": {
+        "nome_corrente": "sub_40058E",
+        "codice_decompilato": "__int64 sub_40058E()\n{\n  unsigned int v1; // [rsp+4h] [rbp-Ch]\n  void *ptr; // [rsp+8h] [rbp-8h]\n\n  if ( sub_4004E6() )\n  {\n    puts(\"Queue Underflow. Unable to remove.\");\n    exit(1);\n  }\n  ptr = (void *)qword_403050;\n  v1 = *(_DWORD *)qword_403050;\n  qword_403050 = *(_QWORD *)(qword_403050 + 8);\n  if ( !qword_403050 )\n    qword_403058 = 0;\n  free(ptr);\n  return v1;\n}\n",
+        "variabili": {
+            "v1": "",
+            "ptr": ""
+        }
+    },
+    "0x400604": {
+        "nome_corrente": "sub_400604",
+        "codice_decompilato": "int sub_400604()\n{\n  __int64 i; // [rsp+8h] [rbp-8h]\n\n  if ( sub_4004E6() )\n    return puts(\"Queue empty. No data to display \");\n  puts(\"Queue from front to rear is as shown: \");\n  for ( i = qword_403050; i; i = *(_QWORD *)(i + 8) )\n    printf(\"%d \", *(_DWORD *)i);\n  return putchar(10);\n}\n",
+        "variabili": {
+            "i": ""
+        }
+    },
+    "0x40066f": {
+        "nome_corrente": "sub_40066F",
+        "codice_decompilato": "__int64 sub_40066F()\n{\n  __int64 result; // rax\n\n  qword_403058 = 0;\n  result = 0;\n  qword_403050 = 0;\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x40068f": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(__int64 a1, char **a2, char **a3)\n{\n  int v4; // [rsp+8h] [rbp-8h] BYREF\n  int v5; // [rsp+Ch] [rbp-4h] BYREF\n\n  sub_4004C6(a1, a2, a3);\n  do\n  {\n    puts(\"\\n\\n  Menu: \");\n    puts(\"1:Insert \");\n    puts(\"2:Remove \");\n    puts(\"3:exit \");\n    printf(\"Enter your choice: \");\n    __isoc23_scanf(\"%d\", &v4);\n    if ( v4 <= 2 )\n    {\n      if ( v4 == 1 )\n      {\n        printf(\"Enter element to be inserted: \");\n        __isoc23_scanf(\"%d\", &v5);\n        sub_400504(v5);\n        sub_400604();\n      }\n      else if ( v4 == 2 )\n      {\n        v5 = sub_40058E();\n        printf(\"Element removed is: %d\\n\", v5);\n        sub_400604();\n      }\n    }\n  }\n  while ( v4 != 3 );\n  sub_40066F();\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x400774": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

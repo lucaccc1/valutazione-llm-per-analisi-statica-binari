@@ -1,0 +1,67 @@
+{
+    "0x4004a6": {
+        "nome_funzione_originale": "func",
+        "variabili": {
+            "x": "",
+            "v1": "",
+            "v2": "",
+            "v3": "",
+            "v4": "",
+            "v5": "",
+            "imag": "",
+            "v7": "",
+            "v8": "",
+            "v9": "",
+            "v10": "",
+            "result": ""
+        }
+    },
+    "0x400527": {
+        "nome_funzione_originale": "d_func",
+        "variabili": {
+            "x": "",
+            "v1": "",
+            "v2": "",
+            "result": ""
+        }
+    },
+    "0x400579": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "v3": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "v9": "",
+            "v11": "",
+            "v12": "",
+            "c": "",
+            "counter": "",
+            "root": "",
+            "delta": "",
+            "v17": "",
+            "v18": ""
+        }
+    },
+    "0x404048": {
+        "nome_funzione_originale": "srand",
+        "variabili": {}
+    },
+    "0x404050": {
+        "nome_funzione_originale": "time",
+        "variabili": {}
+    },
+    "0x404058": {
+        "nome_funzione_originale": "cabs",
+        "variabili": {}
+    },
+    "0x404060": {
+        "nome_funzione_originale": "rand",
+        "variabili": {}
+    }
+}

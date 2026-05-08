@@ -1,0 +1,104 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x400440": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x400480": {
+        "nome_corrente": "sub_400480",
+        "codice_decompilato": "void *sub_400480()\n{\n  return &unk_403070;\n}\n",
+        "variabili": {}
+    },
+    "0x4004f0": {
+        "nome_corrente": "sub_4004F0",
+        "codice_decompilato": "void *sub_4004F0()\n{\n  void *result; // rax\n\n  if ( !byte_403088 )\n  {\n    result = sub_400480();\n    byte_403088 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400520": {
+        "nome_corrente": "sub_400520",
+        "codice_decompilato": "__int64 sub_400520()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x400526": {
+        "nome_corrente": "sub_400526",
+        "codice_decompilato": "__int64 __fastcall sub_400526(char a1)\n{\n  if ( a1 == 94 )\n    return 3;\n  if ( a1 <= 94 )\n  {\n    if ( a1 == 47 )\n      return 2;\n    if ( a1 > 47 )\n      goto LABEL_12;\n    if ( a1 == 45 )\n      return 1;\n    if ( a1 > 45 )\n      goto LABEL_12;\n    if ( a1 == 42 )\n      return 2;\n    if ( a1 == 43 )\n      return 1;\n  }\nLABEL_12:\n  fwrite(\"Error: Invalid operator\\n\", 1u, 0x18u, stderr);\n  return 0xFFFFFFFFLL;\n}\n",
+        "variabili": {
+            "a1": ""
+        }
+    },
+    "0x400599": {
+        "nome_corrente": "sub_400599",
+        "codice_decompilato": "__int64 __fastcall sub_400599(char a1)\n{\n  if ( a1 == 94 )\n    return 0;\n  if ( a1 > 94 )\n    goto LABEL_12;\n  if ( a1 == 47 )\n    return 1;\n  if ( a1 <= 47 )\n  {\n    if ( a1 > 43 )\n    {\n      if ( a1 != 45 )\n        goto LABEL_12;\n    }\n    else if ( a1 < 42 )\n    {\n      goto LABEL_12;\n    }\n    return 1;\n  }\nLABEL_12:\n  fwrite(\"Error: Invalid operator\\n\", 1u, 0x18u, stderr);\n  return 0xFFFFFFFFLL;\n}\n",
+        "variabili": {
+            "a1": ""
+        }
+    },
+    "0x400604": {
+        "nome_corrente": "sub_400604",
+        "codice_decompilato": "__int64 __fastcall sub_400604(const char *a1, char *a2)\n{\n  int v2; // eax\n  int v3; // eax\n  int v5; // eax\n  int v6; // eax\n  int v7; // eax\n  int v8; // eax\n  int v9; // [rsp+14h] [rbp-3Ch]\n  int v10; // [rsp+18h] [rbp-38h]\n  int v11; // [rsp+1Ch] [rbp-34h]\n  int v12; // [rsp+24h] [rbp-2Ch]\n  char *dest; // [rsp+28h] [rbp-28h]\n  _BYTE *ptr; // [rsp+30h] [rbp-20h]\n  unsigned int size; // [rsp+3Ch] [rbp-14h]\n  char *size_4; // [rsp+40h] [rbp-10h]\n  int v17; // [rsp+4Ch] [rbp-4h]\n\n  size = strlen(a1);\n  ptr = malloc(size);\n  v17 = 0;\n  dest = (char *)malloc(size + 1LL);\n  strcpy(dest, a1);\n  size_4 = strtok(dest, \" \");\n  *a2 = 0;\n  while ( size_4 )\n  {\n    if ( ((*__ctype_b_loc())[*size_4] & 0x800) != 0 )\n    {\n      strcat(a2, size_4);\n      *(_WORD *)&a2[strlen(a2)] = 32;\n      size_4 = strtok(0, \" \");\n    }\n    else\n    {\n      v2 = *size_4;\n      if ( v2 == 40 )\n      {\n        v3 = v17++;\n        ptr[v3] = *size_4;\n      }\n      else if ( v2 == 41 )\n      {\n        if ( !v17 )\n        {\nLABEL_9:\n          fwrite(\"Error: Mismatched parentheses\\n\", 1u, 0x1Eu, stderr);\n          free(ptr);\n          free(dest);\n          return 1;\n        }\n        while ( ptr[v17 - 1] != 40 )\n        {\n          v5 = v17--;\n          strncat(a2, &ptr[v5 - 1], 1u);\n          *(_WORD *)&a2[strlen(a2)] = 32;\n          if ( !v17 )\n            goto LABEL_9;\n        }\n        --v17;\n      }\n      else if ( v17 )\n      {\n        if ( v17 != 1 && ptr[v17 - 1] != 40 )\n        {\n          v11 = sub_400526(*size_4);\n          v10 = sub_400526(ptr[v17 - 1]);\n          v9 = sub_400599(*size_4);\n          while ( (v9 && v11 == v10 || v10 > v11) && v17 != 1 && ptr[v17 - 1] != 40 )\n          {\n            v6 = v17--;\n            strncat(a2, &ptr[v6 - 1], 1u);\n            *(_WORD *)&a2[strlen(a2)] = 32;\n          }\n        }\n        v7 = v17++;\n        ptr[v7] = *size_4;\n      }\n      else\n      {\n        v17 = 1;\n        *ptr = *size_4;\n      }\n      size_4 = strtok(0, \" \");\n    }\n  }\n  free(dest);\n  while ( v17 )\n  {\n    if ( ptr[v17 - 1] == 40 )\n    {\n      fwrite(\"Error: Mismatched parentheses\\n\", 1u, 0x1Eu, stderr);\n      free(ptr);\n      return 1;\n    }\n    v8 = v17--;\n    v12 = v8 - 1;\n    strncat(a2, &ptr[v8 - 1], 1u);\n    if ( v12 )\n      *(_WORD *)&a2[strlen(a2)] = 32;\n  }\n  free(ptr);\n  return 0;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "v2": "",
+            "v3": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "v9": "",
+            "v10": "",
+            "v11": "",
+            "v12": "",
+            "dest": "",
+            "ptr": "",
+            "size": "",
+            "size_4": "",
+            "v17": ""
+        }
+    },
+    "0x400a2b": {
+        "nome_corrente": "sub_400A2B",
+        "codice_decompilato": "void sub_400A2B()\n{\n  int v0; // [rsp+Ch] [rbp-14h]\n  int v1; // [rsp+Ch] [rbp-14h]\n  char *s1; // [rsp+10h] [rbp-10h]\n  char *ptr; // [rsp+18h] [rbp-8h]\n\n  ptr = (char *)malloc(0x32u);\n  s1 = (char *)malloc(0x32u);\n  strcpy(ptr, \"3 + 4 * ( 2 - 1 )\");\n  printf(\"Infix: %s\\n\", ptr);\n  v0 = sub_400604(ptr, s1);\n  printf(\"RPN: %s\\n\", s1);\n  printf(\"Return code: %d\\n\\n\", v0);\n  if ( strcmp(s1, \"3 4 2 1 - * +\") )\n    __assert_fail(\"strcmp(out,\\\"3 4 2 1 - * +\\\") == 0\", \"dataset/src/misc/shunting_yard.c\", 0xD7u, \"test\");\n  if ( v0 )\n    __assert_fail(\"i == 0\", \"dataset/src/misc/shunting_yard.c\", 0xD8u, \"test\");\n  strcpy(ptr, \"3 + 4 * 2 / ( 1 - 5 ) ^ 2 ^ 3\");\n  printf(\"Infix: %s\\n\", ptr);\n  v1 = sub_400604(ptr, s1);\n  printf(\"RPN: %s\\n\", s1);\n  printf(\"Return code: %d\\n\\n\", v1);\n  if ( strcmp(s1, \"3 4 2 * 1 5 - 2 3 ^ ^ / +\") )\n    __assert_fail(\"strcmp(out,\\\"3 4 2 * 1 5 - 2 3 ^ ^ / +\\\") == 0\", \"dataset/src/misc/shunting_yard.c\", 0xDFu, \"test\");\n  if ( v1 )\n    __assert_fail(\"i == 0\", \"dataset/src/misc/shunting_yard.c\", 0xE0u, \"test\");\n  puts(\"Testing successfully completed!\");\n  free(ptr);\n  free(s1);\n}\n",
+        "variabili": {
+            "v0": "",
+            "v1": "",
+            "s1": "",
+            "ptr": ""
+        }
+    },
+    "0x400c1a": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  sub_400A2B();\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": ""
+        }
+    },
+    "0x400c2c": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

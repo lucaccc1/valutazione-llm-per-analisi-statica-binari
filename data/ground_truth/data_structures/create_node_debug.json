@@ -1,0 +1,21 @@
+{
+    "0x400466": {
+        "nome_funzione_originale": "newNode",
+        "variabili": {
+            "data": "",
+            "result": ""
+        }
+    },
+    "0x4004a6": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": ""
+        }
+    },
+    "0x403020": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400400": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400440": {
+        "nome_corrente": "sub_400440",
+        "codice_decompilato": "void *sub_400440()\n{\n  return &unk_403050;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4004b0": {
+        "nome_corrente": "sub_4004B0",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400440 ===\nvoid *sub_400440()\n{\n  return &unk_403050;\n}\n// === END INLINED FUNCTION: sub_400440 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid *sub_4004B0()\n{\n  void *result; // rax\n\n  if ( !byte_403088 )\n  {\n    result = sub_400440();\n    byte_403088 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x4004e0": {
+        "nome_corrente": "sub_4004E0",
+        "codice_decompilato": "__int64 sub_4004E0()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4004e6": {
+        "nome_corrente": "sub_4004E6",
+        "codice_decompilato": "__int64 __fastcall sub_4004E6(int a1)\n{\n  int v2; // ebx\n\n  if ( a1 <= 0 )\n  {\n    fwrite(\"Illegal Argument Is Passed!\\n\", 1u, 0x1Cu, stderr);\n    exit(1);\n  }\n  if ( a1 == 1 )\n    return 0;\n  if ( a1 == 2 )\n    return 1;\n  v2 = sub_4004E6((unsigned int)(a1 - 1));\n  return v2 + (unsigned int)sub_4004E6((unsigned int)(a1 - 2));\n}\n",
+        "variabili": {
+            "a1": "",
+            "v2": ""
+        },
+        "inlined_count": 0
+    },
+    "0x40055e": {
+        "nome_corrente": "sub_40055E",
+        "codice_decompilato": "__int64 sub_40055E()\n{\n  char *v1; // [rsp+8h] [rbp-18h] BYREF\n  char s[3]; // [rsp+15h] [rbp-Bh] BYREF\n  int v3; // [rsp+18h] [rbp-8h]\n  int v4; // [rsp+1Ch] [rbp-4h]\n\n  do\n  {\n    printf(\"Please enter a valid number:\");\n    fgets(s, 3, stdin);\n    v4 = 0;\n    if ( s[0] != 10 && s[1] != 10 && s[2] != 10 )\n    {\n      while ( getchar() != 10 )\n        ++v4;\n    }\n    v3 = __isoc23_strtol(s, &v1, 10);\n  }\n  while ( v4 > 0 || v3 > 48 || *v1 && *v1 != 10 || v1 == s );\n  printf(\"\\nEntered digit: %d (it might take sometime)\\n\", v3);\n  return (unsigned int)v3;\n}\n",
+        "variabili": {
+            "v1": "",
+            "s": "",
+            "v3": "",
+            "v4": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400626": {
+        "nome_corrente": "sub_400626",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4004E6 ===\n__int64 __fastcall sub_4004E6(int a1)\n{\n  int v2; // ebx\n\n  if ( a1 <= 0 )\n  {\n    fwrite(\"Illegal Argument Is Passed!\\n\", 1u, 0x1Cu, stderr);\n    exit(1);\n  }\n  if ( a1 == 1 )\n    return 0;\n  if ( a1 == 2 )\n    return 1;\n  v2 = sub_4004E6((unsigned int)(a1 - 1));\n  return v2 + (unsigned int)sub_4004E6((unsigned int)(a1 - 2));\n}\n// === END INLINED FUNCTION: sub_4004E6 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 sub_400626()\n{\n  __int64 result; // rax\n\n  if ( (unsigned int)sub_4004E6(5) != 3 )\n    __assert_fail(\"fib(5) == 3\", \"dataset/src/math/fibonacci.c\", 0x5Eu, \"test\");\n  if ( (unsigned int)sub_4004E6(2) != 1 )\n    __assert_fail(\"fib(2) == 1\", \"dataset/src/math/fibonacci.c\", 0x5Fu, \"test\");\n  result = sub_4004E6(9);\n  if ( (_DWORD)result != 21 )\n    __assert_fail(\"fib(9) == 21\", \"dataset/src/math/fibonacci.c\", 0x60u, \"test\");\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x4006a5": {
+        "nome_corrente": "main",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_40055E ===\n__int64 sub_40055E()\n{\n  char *v1; // [rsp+8h] [rbp-18h] BYREF\n  char s[3]; // [rsp+15h] [rbp-Bh] BYREF\n  int v3; // [rsp+18h] [rbp-8h]\n  int v4; // [rsp+1Ch] [rbp-4h]\n\n  do\n  {\n    printf(\"Please enter a valid number:\");\n    fgets(s, 3, stdin);\n    v4 = 0;\n    if ( s[0] != 10 && s[1] != 10 && s[2] != 10 )\n    {\n      while ( getchar() != 10 )\n        ++v4;\n    }\n    v3 = __isoc23_strtol(s, &v1, 10);\n  }\n  while ( v4 > 0 || v3 > 48 || *v1 && *v1 != 10 || v1 == s );\n  printf(\"\\nEntered digit: %d (it might take sometime)\\n\", v3);\n  return (unsigned int)v3;\n}\n// === END INLINED FUNCTION: sub_40055E ===\n\n// === START INLINED FUNCTION: sub_400626 ===\n__int64 sub_400626()\n{\n  __int64 result; // rax\n\n  if ( (unsigned int)sub_4004E6(5) != 3 )\n    __assert_fail(\"fib(5) == 3\", \"dataset/src/math/fibonacci.c\", 0x5Eu, \"test\");\n  if ( (unsigned int)sub_4004E6(2) != 1 )\n    __assert_fail(\"fib(2) == 1\", \"dataset/src/math/fibonacci.c\", 0x5Fu, \"test\");\n  result = sub_4004E6(9);\n  if ( (_DWORD)result != 21 )\n    __assert_fail(\"fib(9) == 21\", \"dataset/src/math/fibonacci.c\", 0x60u, \"test\");\n  return result;\n}\n// === END INLINED FUNCTION: sub_400626 ===\n\n// === START INLINED FUNCTION: sub_4004E6 ===\n__int64 __fastcall sub_4004E6(int a1)\n{\n  int v2; // ebx\n\n  if ( a1 <= 0 )\n  {\n    fwrite(\"Illegal Argument Is Passed!\\n\", 1u, 0x1Cu, stderr);\n    exit(1);\n  }\n  if ( a1 == 1 )\n    return 0;\n  if ( a1 == 2 )\n    return 1;\n  v2 = sub_4004E6((unsigned int)(a1 - 1));\n  return v2 + (unsigned int)sub_4004E6((unsigned int)(a1 - 2));\n}\n// === END INLINED FUNCTION: sub_4004E6 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall main(__int64 a1, char **a2, char **a3)\n{\n  int v3; // eax\n  int v5; // [rsp+8h] [rbp-18h]\n  int v6; // [rsp+10h] [rbp-10h]\n  int v7; // [rsp+1Ch] [rbp-4h]\n\n  sub_400626(a1, a2, a3);\n  puts(\"Tests passed...\");\n  puts(\n    \"Enter n to find nth fibonacci element...\\n\"\n    \"Note: You would be asked to enter input until valid number ( less than or equal to 48 ) is entered.\");\n  v7 = sub_40055E();\n  v6 = clock();\n  v3 = sub_4004E6(v7);\n  printf(\"Fibonacci element %d is %u \", v7, v3);\n  v5 = clock();\n  printf(\"in %.3f seconds.\\n\", (double)(v5 - v6) / 1000000.0);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v3": "",
+            "v5": "",
+            "v6": "",
+            "v7": ""
+        },
+        "inlined_count": 3
+    },
+    "0x400740": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

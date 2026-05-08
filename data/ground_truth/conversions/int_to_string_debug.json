@@ -1,0 +1,65 @@
+{
+    "0x4004d6": {
+        "nome_funzione_originale": "int_to_string",
+        "variabili": {
+            "value": "",
+            "dest": "",
+            "base": "",
+            "v3": "",
+            "hex_table": "",
+            "t": "",
+            "limit": "",
+            "i": "",
+            "len": ""
+        }
+    },
+    "0x4005cf": {
+        "nome_funzione_originale": "test",
+        "variabili": {
+            "v0": "",
+            "v1": "",
+            "v2": "",
+            "value": "",
+            "str2": "",
+            "str1": "",
+            "i": ""
+        }
+    },
+    "0x4007a5": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "v3": ""
+        }
+    },
+    "0x403050": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x403060": {
+        "nome_funzione_originale": "snprintf",
+        "variabili": {}
+    },
+    "0x403070": {
+        "nome_funzione_originale": "srand",
+        "variabili": {}
+    },
+    "0x403078": {
+        "nome_funzione_originale": "calloc",
+        "variabili": {}
+    },
+    "0x403080": {
+        "nome_funzione_originale": "strcmp",
+        "variabili": {}
+    },
+    "0x403088": {
+        "nome_funzione_originale": "time",
+        "variabili": {}
+    },
+    "0x403090": {
+        "nome_funzione_originale": "rand",
+        "variabili": {}
+    }
+}

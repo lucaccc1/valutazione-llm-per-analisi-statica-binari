@@ -1,0 +1,63 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x4003c0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x400400": {
+        "nome_corrente": "sub_400400",
+        "codice_decompilato": "void (**sub_400400())(void *ptr)\n{\n  return &free;\n}\n",
+        "variabili": {}
+    },
+    "0x400470": {
+        "nome_corrente": "sub_400470",
+        "codice_decompilato": "void (**sub_400470())(void *ptr)\n{\n  void (**result)(void *); // rax\n\n  if ( !byte_40302C )\n  {\n    result = sub_400400();\n    byte_40302C = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x4004a0": {
+        "nome_corrente": "sub_4004A0",
+        "codice_decompilato": "__int64 sub_4004A0()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x4004a6": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  _DWORD *v3; // rax\n  int v5; // [rsp+4h] [rbp-1Ch] BYREF\n  void *s; // [rsp+8h] [rbp-18h]\n  void *ptr; // [rsp+10h] [rbp-10h]\n  int v8; // [rsp+18h] [rbp-8h]\n  int i; // [rsp+1Ch] [rbp-4h]\n\n  v8 = 0;\n  printf(\"Enter size of array = \");\n  __isoc23_scanf(\"%d\", &v5);\n  ptr = malloc(4LL * v5);\n  printf(\"Enter %d elements in array :\\n\", v5);\n  for ( i = 0; i < v5; ++i )\n  {\n    __isoc23_scanf(\"%d\", (char *)ptr + 4 * i);\n    if ( v8 < *((_DWORD *)ptr + i) )\n      v8 = *((_DWORD *)ptr + i);\n  }\n  s = malloc(4LL * (v8 + 1));\n  memset(s, 0, 4LL * (v8 + 1));\n  for ( i = 0; i < v5; ++i )\n  {\n    v3 = (char *)s + 4 * *((int *)ptr + i);\n    ++*v3;\n  }\n  for ( i = 0; v8 >= i; ++i )\n  {\n    if ( *((int *)s + i) > 0 )\n    {\n      while ( *((_DWORD *)s + i) )\n      {\n        printf(\"%d \", i);\n        --*((_DWORD *)s + i);\n      }\n    }\n  }\n  free(ptr);\n  free(s);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v3": "",
+            "v5": "",
+            "s": "",
+            "ptr": "",
+            "v8": "",
+            "i": ""
+        }
+    },
+    "0x400688": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

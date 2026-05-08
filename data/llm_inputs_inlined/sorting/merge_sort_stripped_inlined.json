@@ -1,0 +1,109 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4003e0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400420": {
+        "nome_corrente": "sub_400420",
+        "codice_decompilato": "void (**sub_400420())(void *ptr)\n{\n  return &free;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400490": {
+        "nome_corrente": "sub_400490",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400420 ===\nvoid (**sub_400420())(void *ptr)\n{\n  return &free;\n}\n// === END INLINED FUNCTION: sub_400420 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid (**sub_400490())(void *ptr)\n{\n  void (**result)(void *); // rax\n\n  if ( !byte_40303C )\n  {\n    result = sub_400420();\n    byte_40303C = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x4004c0": {
+        "nome_corrente": "sub_4004C0",
+        "codice_decompilato": "__int64 sub_4004C0()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4004c6": {
+        "nome_corrente": "sub_4004C6",
+        "codice_decompilato": "int *__fastcall sub_4004C6(int *a1, int *a2)\n{\n  int *result; // rax\n  int v3; // [rsp+1Ch] [rbp-4h]\n\n  v3 = *a1;\n  *a1 = *a2;\n  result = a2;\n  *a2 = v3;\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "result": "",
+            "v3": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4004f3": {
+        "nome_corrente": "sub_4004F3",
+        "codice_decompilato": "void __fastcall sub_4004F3(__int64 a1, int a2, int a3, int a4)\n{\n  int v4; // eax\n  int v5; // eax\n  int v6; // eax\n  _DWORD *ptr; // [rsp+28h] [rbp-18h]\n  int v9; // [rsp+34h] [rbp-Ch]\n  int v10; // [rsp+38h] [rbp-8h]\n  int v11; // [rsp+3Ch] [rbp-4h]\n  int i; // [rsp+3Ch] [rbp-4h]\n\n  ptr = malloc(4LL * a4);\n  if ( !ptr )\n  {\n    printf(\"Can't Malloc! Please try again.\");\n    exit(1);\n  }\n  v11 = a2;\n  v10 = a2;\n  v9 = (a2 + a3) / 2 + 1;\n  while ( v10 <= (a2 + a3) / 2 && a3 >= v9 )\n  {\n    v4 = v11++;\n    if ( *(_DWORD *)(4LL * v10 + a1) > *(_DWORD *)(4LL * v9 + a1) )\n      ptr[v4] = *(_DWORD *)(4LL * v9++ + a1);\n    else\n      ptr[v4] = *(_DWORD *)(4LL * v10++ + a1);\n  }\n  if ( v9 == a3 + 1 )\n  {\n    while ( v10 <= (a2 + a3) / 2 )\n    {\n      v5 = v11++;\n      ptr[v5] = *(_DWORD *)(4LL * v10++ + a1);\n    }\n  }\n  else\n  {\n    while ( a3 >= v9 )\n    {\n      v6 = v11++;\n      ptr[v6] = *(_DWORD *)(4LL * v9++ + a1);\n    }\n  }\n  for ( i = a2; a3 >= i; ++i )\n    *(_DWORD *)(4LL * i + a1) = ptr[i];\n  free(ptr);\n}\n",
+        "variabili": {
+            "a3": "",
+            "a4": "",
+            "a1": "",
+            "a2": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "ptr": "",
+            "v9": "",
+            "v10": "",
+            "v11": "",
+            "i": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400716": {
+        "nome_corrente": "sub_400716",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4004F3 ===\nvoid __fastcall sub_4004F3(__int64 a1, int a2, int a3, int a4)\n{\n  int v4; // eax\n  int v5; // eax\n  int v6; // eax\n  _DWORD *ptr; // [rsp+28h] [rbp-18h]\n  int v9; // [rsp+34h] [rbp-Ch]\n  int v10; // [rsp+38h] [rbp-8h]\n  int v11; // [rsp+3Ch] [rbp-4h]\n  int i; // [rsp+3Ch] [rbp-4h]\n\n  ptr = malloc(4LL * a4);\n  if ( !ptr )\n  {\n    printf(\"Can't Malloc! Please try again.\");\n    exit(1);\n  }\n  v11 = a2;\n  v10 = a2;\n  v9 = (a2 + a3) / 2 + 1;\n  while ( v10 <= (a2 + a3) / 2 && a3 >= v9 )\n  {\n    v4 = v11++;\n    if ( *(_DWORD *)(4LL * v10 + a1) > *(_DWORD *)(4LL * v9 + a1) )\n      ptr[v4] = *(_DWORD *)(4LL * v9++ + a1);\n    else\n      ptr[v4] = *(_DWORD *)(4LL * v10++ + a1);\n  }\n  if ( v9 == a3 + 1 )\n  {\n    while ( v10 <= (a2 + a3) / 2 )\n    {\n      v5 = v11++;\n      ptr[v5] = *(_DWORD *)(4LL * v10++ + a1);\n    }\n  }\n  else\n  {\n    while ( a3 >= v9 )\n    {\n      v6 = v11++;\n      ptr[v6] = *(_DWORD *)(4LL * v9++ + a1);\n    }\n  }\n  for ( i = a2; a3 >= i; ++i )\n    *(_DWORD *)(4LL * i + a1) = ptr[i];\n  free(ptr);\n}\n// === END INLINED FUNCTION: sub_4004F3 ===\n\n// === START INLINED FUNCTION: sub_4004C6 ===\nint *__fastcall sub_4004C6(int *a1, int *a2)\n{\n  int *result; // rax\n  int v3; // [rsp+1Ch] [rbp-4h]\n\n  v3 = *a1;\n  *a1 = *a2;\n  result = a2;\n  *a2 = v3;\n  return result;\n}\n// === END INLINED FUNCTION: sub_4004C6 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid __fastcall sub_400716(__int64 a1, unsigned int a2, int a3, int a4)\n{\n  if ( a4 - a3 == 1 )\n  {\n    if ( *(_DWORD *)(4LL * a3 + a1) > *(_DWORD *)(4LL * a4 + a1) )\n      sub_4004C6((int *)(4LL * a3 + a1), (int *)(a1 + 4LL * a4));\n  }\n  else if ( a3 != a4 )\n  {\n    sub_400716(a1, a2, (unsigned int)a3, (unsigned int)((a3 + a4) / 2));\n    sub_400716(a1, a2, (unsigned int)((a3 + a4) / 2 + 1), (unsigned int)a4);\n    sub_4004F3(a1, a3, a4, a2);\n  }\n}\n",
+        "variabili": {
+            "a3": "",
+            "a4": "",
+            "a1": "",
+            "a2": ""
+        },
+        "inlined_count": 2
+    },
+    "0x40080e": {
+        "nome_corrente": "main",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400716 ===\nvoid __fastcall sub_400716(__int64 a1, unsigned int a2, int a3, int a4)\n{\n  if ( a4 - a3 == 1 )\n  {\n    if ( *(_DWORD *)(4LL * a3 + a1) > *(_DWORD *)(4LL * a4 + a1) )\n      sub_4004C6((int *)(4LL * a3 + a1), (int *)(a1 + 4LL * a4));\n  }\n  else if ( a3 != a4 )\n  {\n    sub_400716(a1, a2, (unsigned int)a3, (unsigned int)((a3 + a4) / 2));\n    sub_400716(a1, a2, (unsigned int)((a3 + a4) / 2 + 1), (unsigned int)a4);\n    sub_4004F3(a1, a3, a4, a2);\n  }\n}\n// === END INLINED FUNCTION: sub_400716 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  signed int v4; // [rsp+Ch] [rbp-14h] BYREF\n  void *ptr; // [rsp+10h] [rbp-10h]\n  signed int i; // [rsp+1Ch] [rbp-4h]\n\n  printf(\"Enter Array size: \");\n  __isoc23_scanf(\"%d\", &v4);\n  if ( v4 > 0 )\n  {\n    ptr = malloc(4LL * v4);\n    if ( ptr )\n    {\n      for ( i = 0; i < v4; ++i )\n      {\n        printf(\"Enter number[%d]: \", i);\n        __isoc23_scanf(\"%d\", (char *)ptr + 4 * i);\n      }\n      sub_400716((__int64)ptr, v4, 0, v4 - 1);\n      printf(\"Sorted Array: \");\n      for ( i = 0; i < v4; ++i )\n        printf(\"%d \", *((_DWORD *)ptr + i));\n      putchar(10);\n      free(ptr);\n      return 0;\n    }\n    else\n    {\n      printf(\"Can't Malloc! Please try again.\");\n      return 1;\n    }\n  }\n  else\n  {\n    puts(\"Array size must be Greater than 0!\");\n    return 1;\n  }\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": "",
+            "ptr": "",
+            "i": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400960": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

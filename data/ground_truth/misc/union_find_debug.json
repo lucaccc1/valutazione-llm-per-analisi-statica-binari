@@ -1,0 +1,48 @@
+{
+    "0x4004a6": {
+        "nome_funzione_originale": "find",
+        "variabili": {
+            "p": "",
+            "x": ""
+        }
+    },
+    "0x40055e": {
+        "nome_funzione_originale": "join",
+        "variabili": {
+            "p": "",
+            "x": "",
+            "y": "",
+            "v3": ""
+        }
+    },
+    "0x4005ae": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "v3": "",
+            "union_set": "",
+            "i_2": "",
+            "i_1": "",
+            "i_0": "",
+            "i": ""
+        }
+    },
+    "0x403058": {
+        "nome_funzione_originale": "putchar",
+        "variabili": {}
+    },
+    "0x403068": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403078": {
+        "nome_funzione_originale": "exit",
+        "variabili": {}
+    },
+    "0x403080": {
+        "nome_funzione_originale": "fwrite",
+        "variabili": {}
+    }
+}

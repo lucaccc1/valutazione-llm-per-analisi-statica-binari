@@ -1,0 +1,97 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400420": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400460": {
+        "nome_corrente": "sub_400460",
+        "codice_decompilato": "FILE **sub_400460()\n{\n  return &stderr;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4004d0": {
+        "nome_corrente": "sub_4004D0",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400460 ===\nFILE **sub_400460()\n{\n  return &stderr;\n}\n// === END INLINED FUNCTION: sub_400460 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nFILE **sub_4004D0()\n{\n  FILE **result; // rax\n\n  if ( !byte_403068 )\n  {\n    result = sub_400460();\n    byte_403068 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400500": {
+        "nome_corrente": "sub_400500",
+        "codice_decompilato": "__int64 sub_400500()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400506": {
+        "nome_corrente": "sub_400506",
+        "codice_decompilato": "int __fastcall sub_400506(__int64 a1, __int64 a2)\n{\n  __int64 i; // [rsp+18h] [rbp-8h]\n\n  for ( i = 0; i < a2; ++i )\n    printf(\"%3d \", *(_DWORD *)(4 * i + a1));\n  return putchar(10);\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "i": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400562": {
+        "nome_corrente": "sub_400562",
+        "codice_decompilato": "__int64 __fastcall sub_400562(__int64 a1, __int64 a2)\n{\n  __int64 result; // rax\n  _DWORD v3[11]; // [rsp+10h] [rbp-50h]\n  int v4; // [rsp+3Ch] [rbp-24h]\n  int v5; // [rsp+40h] [rbp-20h]\n  int v6; // [rsp+44h] [rbp-1Ch]\n  __int64 i; // [rsp+48h] [rbp-18h]\n  __int64 k; // [rsp+50h] [rbp-10h]\n  __int64 j; // [rsp+58h] [rbp-8h]\n\n  v3[0] = 701;\n  v3[1] = 301;\n  v3[2] = 132;\n  v3[3] = 57;\n  v3[4] = 23;\n  v3[5] = 10;\n  v3[6] = 4;\n  v3[7] = 1;\n  v6 = 8;\n  for ( i = 0; ; ++i )\n  {\n    result = v6;\n    if ( i >= v6 )\n      break;\n    v5 = v3[i];\n    for ( j = v5; j < a2; ++j )\n    {\n      v4 = *(_DWORD *)(4 * j + a1);\n      for ( k = j; k >= v5 && *(_DWORD *)(4 * (k - v5) + a1) - v4 > 0; k -= v5 )\n        *(_DWORD *)(4 * k + a1) = *(_DWORD *)(4 * (k - v5) + a1);\n      *(_DWORD *)(a1 + 4 * k) = v4;\n    }\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "result": "",
+            "v3": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "i": "",
+            "k": "",
+            "j": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4006a8": {
+        "nome_corrente": "main",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400506 ===\nint __fastcall sub_400506(__int64 a1, __int64 a2)\n{\n  __int64 i; // [rsp+18h] [rbp-8h]\n\n  for ( i = 0; i < a2; ++i )\n    printf(\"%3d \", *(_DWORD *)(4 * i + a1));\n  return putchar(10);\n}\n// === END INLINED FUNCTION: sub_400506 ===\n\n// === START INLINED FUNCTION: sub_400562 ===\n__int64 __fastcall sub_400562(__int64 a1, __int64 a2)\n{\n  __int64 result; // rax\n  _DWORD v3[11]; // [rsp+10h] [rbp-50h]\n  int v4; // [rsp+3Ch] [rbp-24h]\n  int v5; // [rsp+40h] [rbp-20h]\n  int v6; // [rsp+44h] [rbp-1Ch]\n  __int64 i; // [rsp+48h] [rbp-18h]\n  __int64 k; // [rsp+50h] [rbp-10h]\n  __int64 j; // [rsp+58h] [rbp-8h]\n\n  v3[0] = 701;\n  v3[1] = 301;\n  v3[2] = 132;\n  v3[3] = 57;\n  v3[4] = 23;\n  v3[5] = 10;\n  v3[6] = 4;\n  v3[7] = 1;\n  v6 = 8;\n  for ( i = 0; ; ++i )\n  {\n    result = v6;\n    if ( i >= v6 )\n      break;\n    v5 = v3[i];\n    for ( j = v5; j < a2; ++j )\n    {\n      v4 = *(_DWORD *)(4 * j + a1);\n      for ( k = j; k >= v5 && *(_DWORD *)(4 * (k - v5) + a1) - v4 > 0; k -= v5 )\n        *(_DWORD *)(4 * k + a1) = *(_DWORD *)(4 * (k - v5) + a1);\n      *(_DWORD *)(a1 + 4 * k) = v4;\n    }\n  }\n  return result;\n}\n// === END INLINED FUNCTION: sub_400562 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall main(int a1, char **a2, char **a3, double a4)\n{\n  unsigned int v4; // eax\n  _DWORD *ptr; // [rsp+28h] [rbp-18h]\n  __int64 v7; // [rsp+30h] [rbp-10h]\n  int i; // [rsp+3Ch] [rbp-4h]\n\n  v7 = 500;\n  if ( a1 == 2 )\n  {\n    v7 = atol(a2[1]);\n  }\n  else if ( a1 > 2 )\n  {\n    fwrite(\"Usage: ./shell_sort [number of values]\\n\", 1u, 0x27u, stderr);\n  }\n  ptr = malloc(4 * v7);\n  v4 = time(0);\n  srand(v4);\n  for ( i = 0; v7 > i; ++i )\n    ptr[i] = rand() % 500 + 1;\n  sub_400506((__int64)ptr, v7);\n  clock();\n  sub_400562((__int64)ptr, v7);\n  clock();\n  puts(\"Data Sorted\");\n  sub_400506((__int64)ptr, v7);\n  printf(\"Time spent sorting: %.4g s\\n\", a4);\n  free(ptr);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "a4": "",
+            "v4": "",
+            "ptr": "",
+            "v7": "",
+            "i": ""
+        },
+        "inlined_count": 2
+    },
+    "0x400810": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

@@ -1,0 +1,142 @@
+[
+    {
+        "address": "0x400476",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 5,
+            "execution_time": 5.78
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400486",
+        "ida_stripped_name": "sub_400486",
+        "ground_truth_name": "create",
+        "ai_predicted_name": "create_point",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 10,
+            "execution_time": 4.47
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.67,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 0.65,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4004cc",
+        "ida_stripped_name": "sub_4004CC",
+        "ground_truth_name": "insert",
+        "ai_predicted_name": "insert_into_list",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 61,
+            "execution_time": 9.52
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.55,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 0.6,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400658",
+        "ida_stripped_name": "sub_400658",
+        "ground_truth_name": "delete",
+        "ai_predicted_name": "remove_node",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 65,
+            "execution_time": 7.4
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.35,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.08,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40077f",
+        "ida_stripped_name": "sub_40077F",
+        "ground_truth_name": "search",
+        "ai_predicted_name": "search_for_double",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 8,
+            "execution_time": 7.21
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.52,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 0.54,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4007d6",
+        "ida_stripped_name": "sub_4007D6",
+        "ground_truth_name": "print",
+        "ai_predicted_name": "print_list",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 11,
+            "execution_time": 7.43
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.67,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 0.64,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400817",
+        "ida_stripped_name": "sub_400817",
+        "ground_truth_name": "example",
+        "ai_predicted_name": "print_fibonacci",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 32,
+            "execution_time": 4.48
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.09,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    }
+]

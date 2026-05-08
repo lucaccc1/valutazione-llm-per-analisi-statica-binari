@@ -1,0 +1,26 @@
+{
+    "0x400466": {
+        "nome_funzione_originale": "ternarySearch",
+        "variabili": {
+            "l": "",
+            "r": "",
+            "key": "",
+            "ar": "",
+            "mid2": "",
+            "mid1": ""
+        }
+    },
+    "0x40059f": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "ar": "",
+            "p": "",
+            "key": "",
+            "r": "",
+            "l": ""
+        }
+    }
+}

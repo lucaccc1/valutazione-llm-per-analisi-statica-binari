@@ -1,0 +1,72 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x4003b0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x4003f0": {
+        "nome_corrente": "sub_4003F0",
+        "codice_decompilato": "int (**sub_4003F0())(int c)\n{\n  return &putchar;\n}\n",
+        "variabili": {}
+    },
+    "0x400460": {
+        "nome_corrente": "sub_400460",
+        "codice_decompilato": "int (**sub_400460())(int c)\n{\n  int (**result)(int); // rax\n\n  if ( !byte_403024 )\n  {\n    result = sub_4003F0();\n    byte_403024 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400490": {
+        "nome_corrente": "sub_400490",
+        "codice_decompilato": "__int64 sub_400490()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x400496": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  int v4; // [rsp+Ch] [rbp-1A4h] BYREF\n  _DWORD v5[103]; // [rsp+10h] [rbp-1A0h] BYREF\n  int i; // [rsp+1ACh] [rbp-4h]\n\n  printf(\"How many elements do you want to sort: \");\n  __isoc23_scanf(\"%d\", &v4);\n  for ( i = 0; i < v4; ++i )\n    __isoc23_scanf(\" %d\", &v5[i]);\n  sub_400574(v5, 0, (unsigned int)(v4 - 1));\n  puts(\"Sorted array : \");\n  for ( i = 0; i < v4; ++i )\n    printf(\"%d \", v5[i]);\n  putchar(10);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": "",
+            "v5": "",
+            "i": ""
+        }
+    },
+    "0x400574": {
+        "nome_corrente": "sub_400574",
+        "codice_decompilato": "__int64 __fastcall sub_400574(__int64 a1, unsigned int a2, int a3)\n{\n  __int64 result; // rax\n  int v5; // [rsp+18h] [rbp-8h]\n  int v6; // [rsp+1Ch] [rbp-4h]\n\n  if ( *(_DWORD *)(4LL * (int)a2 + a1) > *(_DWORD *)(4LL * a3 + a1) )\n  {\n    v6 = *(_DWORD *)(4LL * (int)a2 + a1);\n    *(_DWORD *)(4LL * (int)a2 + a1) = *(_DWORD *)(4LL * a3 + a1);\n    *(_DWORD *)(a1 + 4LL * a3) = v6;\n  }\n  result = a2 + 1;\n  if ( a3 > (int)result )\n  {\n    v5 = (int)(a3 - a2 + 1) / 3;\n    sub_400574(a1, a2, (unsigned int)(a3 - v5));\n    sub_400574(a1, a2 + v5, (unsigned int)a3);\n    return sub_400574(a1, a2, (unsigned int)(a3 - v5));\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "result": "",
+            "v5": "",
+            "v6": ""
+        }
+    },
+    "0x400694": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

@@ -1,0 +1,131 @@
+{
+    "0x4004f6": {
+        "nome_funzione_originale": "print_matrix",
+        "variabili": {
+            "A": "",
+            "M": "",
+            "N": "",
+            "col": "",
+            "row": ""
+        }
+    },
+    "0x400584": {
+        "nome_funzione_originale": "vector_dot",
+        "variabili": {
+            "a": "",
+            "b": "",
+            "L": "",
+            "i": "",
+            "mag": ""
+        }
+    },
+    "0x4005fa": {
+        "nome_funzione_originale": "vector_mag",
+        "variabili": {
+            "vector": "",
+            "L": "",
+            "dot": ""
+        }
+    },
+    "0x400638": {
+        "nome_funzione_originale": "vector_proj",
+        "variabili": {
+            "a": "",
+            "b": "",
+            "out": "",
+            "L": "",
+            "deno": "",
+            "num": "",
+            "i": ""
+        }
+    },
+    "0x400709": {
+        "nome_funzione_originale": "vector_sub",
+        "variabili": {
+            "a": "",
+            "b": "",
+            "out": "",
+            "L": "",
+            "i": ""
+        }
+    },
+    "0x400783": {
+        "nome_funzione_originale": "qr_decompose",
+        "variabili": {
+            "A": "",
+            "Q": "",
+            "R": "",
+            "M": "",
+            "N": "",
+            "v5": "",
+            "mag": "",
+            "tmp_vector": "",
+            "col_vector2": "",
+            "col_vector": "",
+            "kk_0": "",
+            "k_0": "",
+            "kk": "",
+            "k": "",
+            "j": "",
+            "ja": "",
+            "jb": "",
+            "jc": "",
+            "i": ""
+        }
+    },
+    "0x400b1d": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "COLUMNS": "",
+            "ROWS": "",
+            "dtime": "",
+            "t1": "",
+            "Q": "",
+            "R": "",
+            "A": "",
+            "i_2": "",
+            "i_1": "",
+            "j": "",
+            "i_0": "",
+            "i": ""
+        }
+    },
+    "0x403078": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x403080": {
+        "nome_funzione_originale": "putchar",
+        "variabili": {}
+    },
+    "0x403090": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403098": {
+        "nome_funzione_originale": "clock",
+        "variabili": {}
+    },
+    "0x4030b0": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    },
+    "0x4030b8": {
+        "nome_funzione_originale": "perror",
+        "variabili": {}
+    },
+    "0x4030c0": {
+        "nome_funzione_originale": "fwrite",
+        "variabili": {}
+    },
+    "0x4030c8": {
+        "nome_funzione_originale": "sqrt",
+        "variabili": {}
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "0x4004c6": {
+        "nome_funzione_originale": "swap",
+        "variabili": {
+            "a": "",
+            "b": "",
+            "t": ""
+        }
+    },
+    "0x4004f3": {
+        "nome_funzione_originale": "merge",
+        "variabili": {
+            "a": "",
+            "l": "",
+            "r": "",
+            "n": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "b": "",
+            "p2": "",
+            "p1": "",
+            "c": "",
+            "ca": ""
+        }
+    },
+    "0x400716": {
+        "nome_funzione_originale": "merge_sort",
+        "variabili": {
+            "a": "",
+            "n": "",
+            "l": "",
+            "r": ""
+        }
+    },
+    "0x40080e": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "n": "",
+            "a": "",
+            "i": ""
+        }
+    },
+    "0x403048": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x403050": {
+        "nome_funzione_originale": "putchar",
+        "variabili": {}
+    },
+    "0x403060": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403078": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    },
+    "0x403080": {
+        "nome_funzione_originale": "exit",
+        "variabili": {}
+    }
+}

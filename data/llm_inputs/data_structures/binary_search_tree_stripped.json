@@ -1,0 +1,128 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x4003c0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x400400": {
+        "nome_corrente": "sub_400400",
+        "codice_decompilato": "void (**sub_400400())(void *ptr)\n{\n  return &free;\n}\n",
+        "variabili": {}
+    },
+    "0x400470": {
+        "nome_corrente": "sub_400470",
+        "codice_decompilato": "void (**sub_400470())(void *ptr)\n{\n  void (**result)(void *); // rax\n\n  if ( !byte_40302C )\n  {\n    result = sub_400400();\n    byte_40302C = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x4004a0": {
+        "nome_corrente": "sub_4004A0",
+        "codice_decompilato": "__int64 sub_4004A0()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x4004a6": {
+        "nome_corrente": "sub_4004A6",
+        "codice_decompilato": "_DWORD *__fastcall sub_4004A6(int a1)\n{\n  _DWORD *result; // rax\n\n  result = malloc(0x18u);\n  result[4] = a1;\n  *(_QWORD *)result = 0;\n  *((_QWORD *)result + 1) = 0;\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "result": ""
+        }
+    },
+    "0x4004e6": {
+        "nome_corrente": "sub_4004E6",
+        "codice_decompilato": "_DWORD *__fastcall sub_4004E6(__int64 a1, int a2)\n{\n  __int64 v3; // [rsp+8h] [rbp-8h]\n\n  v3 = a1;\n  if ( !a1 )\n    return sub_4004A6(a2);\n  if ( a2 <= *(_DWORD *)(a1 + 16) )\n  {\n    if ( a2 < *(_DWORD *)(a1 + 16) )\n      *(_QWORD *)a1 = sub_4004E6(*(_QWORD *)a1, (unsigned int)a2);\n  }\n  else\n  {\n    *(_QWORD *)(a1 + 8) = sub_4004E6(*(_QWORD *)(a1 + 8), (unsigned int)a2);\n  }\n  return (_DWORD *)v3;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "v3": ""
+        }
+    },
+    "0x400564": {
+        "nome_corrente": "sub_400564",
+        "codice_decompilato": "__int64 __fastcall sub_400564(__int64 a1)\n{\n  if ( *(_QWORD *)(a1 + 8) )\n    return sub_400564(*(_QWORD *)(a1 + 8));\n  else\n    return a1;\n}\n",
+        "variabili": {
+            "a1": ""
+        }
+    },
+    "0x400595": {
+        "nome_corrente": "sub_400595",
+        "codice_decompilato": "_QWORD *__fastcall sub_400595(_QWORD *a1, unsigned int a2)\n{\n  void *ptr; // [rsp+8h] [rbp-28h]\n  void *ptra; // [rsp+8h] [rbp-28h]\n  __int64 v5; // [rsp+28h] [rbp-8h]\n\n  if ( !a1 )\n    return 0;\n  if ( (signed int)a2 <= *((_DWORD *)a1 + 4) )\n  {\n    if ( (signed int)a2 >= *((_DWORD *)a1 + 4) )\n    {\n      if ( a2 == *((_DWORD *)a1 + 4) )\n      {\n        if ( !*a1 && !a1[1] )\n        {\n          free(a1);\n          return 0;\n        }\n        if ( !*a1 )\n        {\n          ptr = (void *)a1[1];\n          free(a1);\n          return ptr;\n        }\n        if ( !a1[1] )\n        {\n          ptra = (void *)*a1;\n          free(a1);\n          return ptra;\n        }\n        v5 = sub_400564(*a1);\n        *((_DWORD *)a1 + 4) = *(_DWORD *)(v5 + 16);\n        *a1 = sub_400595(*a1, *(unsigned int *)(v5 + 16));\n      }\n    }\n    else\n    {\n      *a1 = sub_400595(*a1, a2);\n    }\n  }\n  else\n  {\n    a1[1] = sub_400595(a1[1], a2);\n  }\n  return a1;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "ptr": "",
+            "ptra": "",
+            "v5": ""
+        }
+    },
+    "0x4006f7": {
+        "nome_corrente": "sub_4006F7",
+        "codice_decompilato": "__int64 __fastcall sub_4006F7(__int64 a1, unsigned int a2)\n{\n  if ( !a1 )\n    return 0;\n  if ( (signed int)a2 > *(_DWORD *)(a1 + 16) )\n    return sub_4006F7(*(_QWORD *)(a1 + 8), a2);\n  if ( (signed int)a2 >= *(_DWORD *)(a1 + 16) )\n    return a2 == *(_DWORD *)(a1 + 16);\n  return sub_4006F7(*(_QWORD *)a1, a2);\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": ""
+        }
+    },
+    "0x400773": {
+        "nome_corrente": "sub_400773",
+        "codice_decompilato": "__int64 __fastcall sub_400773(_QWORD *a1)\n{\n  int v2; // [rsp+18h] [rbp-8h]\n  int v3; // [rsp+1Ch] [rbp-4h]\n\n  if ( !a1 )\n    return 0;\n  v3 = sub_400773(a1[1]);\n  v2 = sub_400773(*a1);\n  if ( v3 <= v2 )\n    return (unsigned int)(v2 + 1);\n  else\n    return (unsigned int)(v3 + 1);\n}\n",
+        "variabili": {
+            "a1": "",
+            "v2": "",
+            "v3": ""
+        }
+    },
+    "0x4007ca": {
+        "nome_corrente": "sub_4007CA",
+        "codice_decompilato": "void __fastcall sub_4007CA(_QWORD *a1)\n{\n  if ( a1 )\n  {\n    if ( *a1 )\n      sub_4007CA(*a1);\n    if ( a1[1] )\n      sub_4007CA(a1[1]);\n    free(a1);\n  }\n}\n",
+        "variabili": {
+            "a1": ""
+        }
+    },
+    "0x40082c": {
+        "nome_corrente": "sub_40082C",
+        "codice_decompilato": "__int64 __fastcall sub_40082C(__int64 a1)\n{\n  __int64 result; // rax\n\n  if ( a1 )\n  {\n    sub_40082C(*(_QWORD *)a1);\n    printf(\"\\t[ %d ]\\t\", *(_DWORD *)(a1 + 16));\n    return sub_40082C(*(_QWORD *)(a1 + 8));\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "result": ""
+        }
+    },
+    "0x400879": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  int v3; // eax\n  unsigned int v5; // [rsp+0h] [rbp-10h] BYREF\n  int v6; // [rsp+4h] [rbp-Ch] BYREF\n  _QWORD *v7; // [rsp+8h] [rbp-8h]\n\n  v7 = 0;\n  v6 = -1;\n  v5 = 0;\n  while ( v6 )\n  {\n    puts(\n      \"\\n\"\n      \"\\n\"\n      \"[1] Insert Node\\n\"\n      \"[2] Delete Node\\n\"\n      \"[3] Find a Node\\n\"\n      \"[4] Get current Height\\n\"\n      \"[5] Print Tree in Crescent Order\\n\"\n      \"[0] Quit\");\n    __isoc23_scanf(\"%d\", &v6);\n    if ( v6 == 5 )\n    {\n      sub_40082C((__int64)v7);\n    }\n    else if ( v6 <= 5 )\n    {\n      switch ( v6 )\n      {\n        case 4:\n          v3 = sub_400773(v7);\n          printf(\"Current height of the tree is: %d\\n\", v3);\n          break;\n        case 3:\n          puts(\"Enter the searched value:\");\n          __isoc23_scanf(\"%d\", &v5);\n          if ( (unsigned int)sub_4006F7((__int64)v7, v5) )\n            printf(\"The value is in the tree.\\n\");\n          else\n            printf(\"The value is not in the tree.\\n\");\n          break;\n        case 1:\n          puts(\"Enter the new node's value:\");\n          __isoc23_scanf(\"%d\", &v5);\n          v7 = sub_4004E6((__int64)v7, v5);\n          break;\n        case 2:\n          puts(\"Enter the value to be removed:\");\n          if ( v7 )\n          {\n            __isoc23_scanf(\"%d\", &v5);\n            v7 = sub_400595(v7, v5);\n          }\n          else\n          {\n            puts(\"Tree is already empty!\");\n          }\n          break;\n      }\n    }\n  }\n  sub_4007CA(v7);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v3": "",
+            "v5": "",
+            "v6": "",
+            "v7": ""
+        }
+    },
+    "0x400a30": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

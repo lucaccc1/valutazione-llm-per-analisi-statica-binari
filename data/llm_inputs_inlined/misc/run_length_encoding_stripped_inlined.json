@@ -1,0 +1,96 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400400": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400440": {
+        "nome_corrente": "sub_400440",
+        "codice_decompilato": "void (**sub_400440())(void *ptr)\n{\n  return &free;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4004b0": {
+        "nome_corrente": "sub_4004B0",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400440 ===\nvoid (**sub_400440())(void *ptr)\n{\n  return &free;\n}\n// === END INLINED FUNCTION: sub_400440 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid (**sub_4004B0())(void *ptr)\n{\n  void (**result)(void *); // rax\n\n  if ( !byte_40304C )\n  {\n    result = sub_400440();\n    byte_40304C = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x4004e0": {
+        "nome_corrente": "sub_4004E0",
+        "codice_decompilato": "__int64 sub_4004E0()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4004e6": {
+        "nome_corrente": "sub_4004E6",
+        "codice_decompilato": "char *__fastcall sub_4004E6(const char *a1)\n{\n  size_t v1; // rax\n  size_t v2; // rax\n  int v3; // eax\n  size_t v4; // rax\n  char src[24]; // [rsp+10h] [rbp-40h] BYREF\n  int v7; // [rsp+28h] [rbp-28h]\n  char v8; // [rsp+2Fh] [rbp-21h]\n  char *dest; // [rsp+30h] [rbp-20h]\n  char *v10; // [rsp+38h] [rbp-18h]\n  int v11; // [rsp+40h] [rbp-10h]\n  int v12; // [rsp+44h] [rbp-Ch]\n  int i; // [rsp+48h] [rbp-8h]\n  int v14; // [rsp+4Ch] [rbp-4h]\n\n  v11 = strlen(a1);\n  v14 = 0;\n  v1 = strlen(a1);\n  v10 = (char *)malloc(2 * v1);\n  for ( i = 0; i < v11; ++i )\n  {\n    v12 = 0;\n    v8 = a1[i];\n    while ( v8 == a1[i + v12] )\n      ++v12;\n    i += v12 - 1;\n    sprintf(src, \"%d\", v12);\n    v7 = strlen(src);\n    v2 = strlen(src);\n    strncpy(&v10[v14], src, v2);\n    v3 = strlen(src);\n    v14 += v3;\n    v10[v14++] = v8;\n  }\n  v10[v14] = 0;\n  v4 = strlen(v10);\n  dest = (char *)malloc(v4 + 1);\n  strcpy(dest, v10);\n  free(v10);\n  return dest;\n}\n",
+        "variabili": {
+            "a1": "",
+            "v1": "",
+            "v2": "",
+            "v3": "",
+            "v4": "",
+            "src": "",
+            "v7": "",
+            "v8": "",
+            "dest": "",
+            "v10": "",
+            "v11": "",
+            "v12": "",
+            "i": "",
+            "v14": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400653": {
+        "nome_corrente": "sub_400653",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4004E6 ===\nchar *__fastcall sub_4004E6(const char *a1)\n{\n  size_t v1; // rax\n  size_t v2; // rax\n  int v3; // eax\n  size_t v4; // rax\n  char src[24]; // [rsp+10h] [rbp-40h] BYREF\n  int v7; // [rsp+28h] [rbp-28h]\n  char v8; // [rsp+2Fh] [rbp-21h]\n  char *dest; // [rsp+30h] [rbp-20h]\n  char *v10; // [rsp+38h] [rbp-18h]\n  int v11; // [rsp+40h] [rbp-10h]\n  int v12; // [rsp+44h] [rbp-Ch]\n  int i; // [rsp+48h] [rbp-8h]\n  int v14; // [rsp+4Ch] [rbp-4h]\n\n  v11 = strlen(a1);\n  v14 = 0;\n  v1 = strlen(a1);\n  v10 = (char *)malloc(2 * v1);\n  for ( i = 0; i < v11; ++i )\n  {\n    v12 = 0;\n    v8 = a1[i];\n    while ( v8 == a1[i + v12] )\n      ++v12;\n    i += v12 - 1;\n    sprintf(src, \"%d\", v12);\n    v7 = strlen(src);\n    v2 = strlen(src);\n    strncpy(&v10[v14], src, v2);\n    v3 = strlen(src);\n    v14 += v3;\n    v10[v14++] = v8;\n  }\n  v10[v14] = 0;\n  v4 = strlen(v10);\n  dest = (char *)malloc(v4 + 1);\n  strcpy(dest, v10);\n  free(v10);\n  return dest;\n}\n// === END INLINED FUNCTION: sub_4004E6 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid sub_400653()\n{\n  char *s1; // [rsp+8h] [rbp-8h]\n  char *s1a; // [rsp+8h] [rbp-8h]\n  char *s1b; // [rsp+8h] [rbp-8h]\n\n  s1 = sub_4004E6(\"aaaaaaabbbaaccccdefaadr\");\n  if ( strcmp(s1, \"7a3b2a4c1d1e1f2a1d1r\") )\n    __assert_fail(\"!strcmp(test, \\\"7a3b2a4c1d1e1f2a1d1r\\\")\", \"dataset/src/misc/run_length_encoding.c\", 0x4Au, \"test\");\n  free(s1);\n  s1a = sub_4004E6(\"lidjhvipdurevbeirbgipeahapoeuhwaipefupwieofb\");\n  if ( strcmp(s1a, \"1l1i1d1j1h1v1i1p1d1u1r1e1v1b1e1i1r1b1g1i1p1e1a1h1a1p1o1e1u1h1w1a1i1p1e1f1u1p1w1i1e1o1f1bq\") )\n    __assert_fail(\n      \"!strcmp(test, \\\"1l1i1d1j1h1v1i1p1d1u1r1e1v1b1e1i1r1b1g1i1p1e1a1h1a1p1o1e1u1h1w1a1i1p1e1f1u1p1w1i1e1o1f1bq\\\")\",\n      \"dataset/src/misc/run_length_encoding.c\",\n      0x4Du,\n      \"test\");\n  free(s1a);\n  s1b = sub_4004E6(\"htuuuurwuquququuuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahghghrw\");\n  if ( strcmp(s1b, \"1h1t4u1r1w1u1q1u1q1u1q3u76a1h1g1h1g1h1r1w\") )\n    __assert_fail(\n      \"!strcmp(test, \\\"1h1t4u1r1w1u1q1u1q1u1q3u76a1h1g1h1g1h1r1w\\\")\",\n      \"dataset/src/misc/run_length_encoding.c\",\n      0x50u,\n      \"test\");\n  free(s1b);\n}\n",
+        "variabili": {
+            "s1": "",
+            "s1a": "",
+            "s1b": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400736": {
+        "nome_corrente": "main",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400653 ===\nvoid sub_400653()\n{\n  char *s1; // [rsp+8h] [rbp-8h]\n  char *s1a; // [rsp+8h] [rbp-8h]\n  char *s1b; // [rsp+8h] [rbp-8h]\n\n  s1 = sub_4004E6(\"aaaaaaabbbaaccccdefaadr\");\n  if ( strcmp(s1, \"7a3b2a4c1d1e1f2a1d1r\") )\n    __assert_fail(\"!strcmp(test, \\\"7a3b2a4c1d1e1f2a1d1r\\\")\", \"dataset/src/misc/run_length_encoding.c\", 0x4Au, \"test\");\n  free(s1);\n  s1a = sub_4004E6(\"lidjhvipdurevbeirbgipeahapoeuhwaipefupwieofb\");\n  if ( strcmp(s1a, \"1l1i1d1j1h1v1i1p1d1u1r1e1v1b1e1i1r1b1g1i1p1e1a1h1a1p1o1e1u1h1w1a1i1p1e1f1u1p1w1i1e1o1f1bq\") )\n    __assert_fail(\n      \"!strcmp(test, \\\"1l1i1d1j1h1v1i1p1d1u1r1e1v1b1e1i1r1b1g1i1p1e1a1h1a1p1o1e1u1h1w1a1i1p1e1f1u1p1w1i1e1o1f1bq\\\")\",\n      \"dataset/src/misc/run_length_encoding.c\",\n      0x4Du,\n      \"test\");\n  free(s1a);\n  s1b = sub_4004E6(\"htuuuurwuquququuuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahghghrw\");\n  if ( strcmp(s1b, \"1h1t4u1r1w1u1q1u1q1u1q3u76a1h1g1h1g1h1r1w\") )\n    __assert_fail(\n      \"!strcmp(test, \\\"1h1t4u1r1w1u1q1u1q1u1q3u76a1h1g1h1g1h1r1w\\\")\",\n      \"dataset/src/misc/run_length_encoding.c\",\n      0x50u,\n      \"test\");\n  free(s1b);\n}\n// === END INLINED FUNCTION: sub_400653 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  sub_400653();\n  puts(\"All tests have passed!\");\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400750": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

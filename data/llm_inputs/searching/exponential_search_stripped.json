@@ -1,0 +1,92 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x400390": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x4003d0": {
+        "nome_corrente": "sub_4003D0",
+        "codice_decompilato": "int (**sub_4003D0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n",
+        "variabili": {}
+    },
+    "0x400440": {
+        "nome_corrente": "sub_400440",
+        "codice_decompilato": "int (**sub_400440())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  int (**result)(int (*)(int, char **, char **), int, char **, void (*)(void), void (*)(void), void (*)(void), void *); // rax\n\n  if ( !byte_403014 )\n  {\n    result = sub_4003D0();\n    byte_403014 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400470": {
+        "nome_corrente": "sub_400470",
+        "codice_decompilato": "__int64 sub_400470()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x400476": {
+        "nome_corrente": "sub_400476",
+        "codice_decompilato": "__int64 __fastcall sub_400476(__int64 a1, unsigned __int16 a2, __int64 a3)\n{\n  unsigned __int16 v4; // [rsp+2Ah] [rbp-6h]\n  unsigned int i; // [rsp+2Ch] [rbp-4h]\n\n  if ( !a2 )\n    return -1;\n  for ( i = 1; a2 >= i && a3 > *(_QWORD *)(8LL * i + a1); i *= 2 )\n    ;\n  v4 = i >> 1;\n  if ( a2 < i )\n    LOWORD(i) = a2;\n  return sub_400501(a1, v4, (unsigned __int16)i, a3);\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v4": "",
+            "i": ""
+        }
+    },
+    "0x400501": {
+        "nome_corrente": "sub_400501",
+        "codice_decompilato": "__int64 __fastcall sub_400501(__int64 a1, unsigned __int16 a2, unsigned __int16 a3, __int64 a4)\n{\n  unsigned __int16 v5; // [rsp+2Eh] [rbp-2h]\n\n  v5 = (((a3 < (unsigned int)a2) + a3 - a2) >> 1) + a2;\n  if ( a3 < a2 )\n    return -1;\n  if ( a4 == *(_QWORD *)(8LL * v5 + a1) )\n    return v5;\n  if ( a4 >= *(_QWORD *)(8LL * v5 + a1) )\n    return sub_400501(a1, (unsigned __int16)(v5 + 1), a3, a4);\n  return sub_400501(a1, a2, (unsigned __int16)(v5 - 1), a4);\n}\n",
+        "variabili": {
+            "a3": "",
+            "a4": "",
+            "a1": "",
+            "a2": "",
+            "v5": ""
+        }
+    },
+    "0x4005cd": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(__int64 a1, char **a2, char **a3)\n{\n  sub_4005DD(a1, a2, a3);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": ""
+        }
+    },
+    "0x4005dd": {
+        "nome_corrente": "sub_4005DD",
+        "codice_decompilato": "int sub_4005DD()\n{\n  _QWORD v1[6]; // [rsp+0h] [rbp-E0h] BYREF\n  _QWORD v2[6]; // [rsp+30h] [rbp-B0h] BYREF\n  _QWORD v3[6]; // [rsp+60h] [rbp-80h] BYREF\n  _QWORD v4[2]; // [rsp+90h] [rbp-50h] BYREF\n  _QWORD v5[4]; // [rsp+A0h] [rbp-40h] BYREF\n  _QWORD v6[3]; // [rsp+C0h] [rbp-20h] BYREF\n  __int64 v7; // [rsp+D8h] [rbp-8h] BYREF\n\n  v7 = 0;\n  if ( sub_400476((__int64)&v7, 0, 10) != -1 )\n    __assert_fail(\n      \"exponential_search(arr_empty, 0, 10) == -1\",\n      \"dataset/src/searching/exponential_search.c\",\n      0x56u,\n      \"test\");\n  v6[0] = 1;\n  v6[1] = 2;\n  v6[2] = 3;\n  if ( sub_400476((__int64)v6, 3u, 10) != -1 )\n    __assert_fail(\n      \"exponential_search(arr_found, 3, 10) == -1\",\n      \"dataset/src/searching/exponential_search.c\",\n      0x59u,\n      \"test\");\n  v5[3] = 1;\n  if ( sub_400476((__int64)v6, 1u, 1) )\n    __assert_fail(\n      \"exponential_search(arr_found, 1, 1) == 0\",\n      \"dataset/src/searching/exponential_search.c\",\n      0x5Cu,\n      \"test\");\n  v5[0] = 1;\n  v5[1] = 2;\n  if ( sub_400476((__int64)v5, 2u, 1) )\n    __assert_fail(\n      \"exponential_search(arr_first_2, 2, 1) == 0\",\n      \"dataset/src/searching/exponential_search.c\",\n      0x5Fu,\n      \"test\");\n  v4[0] = 1;\n  v4[1] = 2;\n  if ( sub_400476((__int64)v4, 2u, 2) != 1 )\n    __assert_fail(\n      \"exponential_search(arr_last_2, 2, 2) == 1\",\n      \"dataset/src/searching/exponential_search.c\",\n      0x62u,\n      \"test\");\n  v3[0] = -1;\n  v3[1] = 2;\n  v3[2] = 4;\n  v3[3] = 6;\n  v3[4] = 8;\n  if ( sub_400476((__int64)v3, 5u, -1) )\n    __assert_fail(\n      \"exponential_search(arr_first_n, 5, -1) == 0\",\n      \"dataset/src/searching/exponential_search.c\",\n      0x65u,\n      \"test\");\n  v2[0] = -1;\n  v2[1] = 2;\n  v2[2] = 4;\n  v2[3] = 6;\n  v2[4] = 8;\n  if ( sub_400476((__int64)v2, 5u, 8) != 4 )\n    __assert_fail(\n      \"exponential_search(arr_last_n, 5, 8) == 4\",\n      \"dataset/src/searching/exponential_search.c\",\n      0x68u,\n      \"test\");\n  v1[0] = -1;\n  v1[1] = 2;\n  v1[2] = 4;\n  v1[3] = 6;\n  v1[4] = 8;\n  if ( sub_400476((__int64)v1, 5u, 6) != 3 )\n    __assert_fail(\n      \"exponential_search(arr_middle, 5, 6) == 3\",\n      \"dataset/src/searching/exponential_search.c\",\n      0x6Bu,\n      \"test\");\n  return puts(\"All tests have successfully passed!\");\n}\n",
+        "variabili": {
+            "v1": "",
+            "v2": "",
+            "v3": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": ""
+        }
+    },
+    "0x400880": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

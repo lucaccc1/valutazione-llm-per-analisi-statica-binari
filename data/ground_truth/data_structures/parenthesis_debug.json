@@ -1,0 +1,55 @@
+{
+    "0x4004a6": {
+        "nome_funzione_originale": "push",
+        "variabili": {
+            "x": "",
+            "temp": "",
+            "p": ""
+        }
+    },
+    "0x400546": {
+        "nome_funzione_originale": "pop",
+        "variabili": {
+            "x": "",
+            "p": ""
+        }
+    },
+    "0x400593": {
+        "nome_funzione_originale": "isBalanced",
+        "variabili": {
+            "s": "",
+            "x": "",
+            "i": ""
+        }
+    },
+    "0x4006ae": {
+        "nome_funzione_originale": "destroyStack",
+        "variabili": {
+            "tmp": "",
+            "p": ""
+        }
+    },
+    "0x400707": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "s": "",
+            "t": "",
+            "a0": ""
+        }
+    },
+    "0x403050": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x403060": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403078": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    }
+}

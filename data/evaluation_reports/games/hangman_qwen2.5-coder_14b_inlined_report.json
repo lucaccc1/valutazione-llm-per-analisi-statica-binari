@@ -1,0 +1,122 @@
+[
+    {
+        "address": "0x400556",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "hangman_game",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 218,
+            "execution_time": 36.13
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.38,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.09,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 5
+    },
+    {
+        "address": "0x40074f",
+        "ida_stripped_name": "sub_40074F",
+        "ground_truth_name": "new_guess",
+        "ai_predicted_name": "check_letter_guessed",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 14,
+            "execution_time": 12.34
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.48,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.38,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4007aa",
+        "ida_stripped_name": "sub_4007AA",
+        "ground_truth_name": "in_word",
+        "ai_predicted_name": "check_char_in_buffer",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 11,
+            "execution_time": 10.18
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.3,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.14,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4007f2",
+        "ida_stripped_name": "sub_4007F2",
+        "ground_truth_name": "new_game",
+        "ai_predicted_name": "load_random_word",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 77,
+            "execution_time": 62.85
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.25,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4009f0",
+        "ida_stripped_name": "sub_4009F0",
+        "ground_truth_name": "won",
+        "ai_predicted_name": "display_game_result",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 7,
+            "execution_time": 8.1
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400a39",
+        "ida_stripped_name": "sub_400A39",
+        "ground_truth_name": "picture",
+        "ai_predicted_name": "print_duck_art",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 38,
+            "execution_time": 8.83
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.48,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    }
+]

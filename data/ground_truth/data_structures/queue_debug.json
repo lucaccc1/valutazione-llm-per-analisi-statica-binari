@@ -1,0 +1,42 @@
+{
+    "0x400486": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": ""
+        }
+    },
+    "0x4004ab": {
+        "nome_funzione_originale": "create",
+        "variabili": {}
+    },
+    "0x4004c8": {
+        "nome_funzione_originale": "enque",
+        "variabili": {
+            "x": ""
+        }
+    },
+    "0x40055b": {
+        "nome_funzione_originale": "deque",
+        "variabili": {
+            "returnData": ""
+        }
+    },
+    "0x4005d9": {
+        "nome_funzione_originale": "size",
+        "variabili": {}
+    },
+    "0x403058": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403060": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    },
+    "0x403068": {
+        "nome_funzione_originale": "exit",
+        "variabili": {}
+    }
+}

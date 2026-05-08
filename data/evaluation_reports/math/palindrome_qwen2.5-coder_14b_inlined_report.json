@@ -1,0 +1,42 @@
+[
+    {
+        "address": "0x400466",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 35,
+            "execution_time": 17.34
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x400510",
+        "ida_stripped_name": "sub_400510",
+        "ground_truth_name": "isPalindrome",
+        "ai_predicted_name": "is_palindrome_number",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 14,
+            "execution_time": 9.07
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.75,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 0.65,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    }
+]

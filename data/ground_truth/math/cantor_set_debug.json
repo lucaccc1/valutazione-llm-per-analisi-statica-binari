@@ -1,0 +1,59 @@
+{
+    "0x4004d6": {
+        "nome_funzione_originale": "propagate",
+        "variabili": {
+            "head": "",
+            "diff": "",
+            "newNode": ""
+        }
+    },
+    "0x40059c": {
+        "nome_funzione_originale": "print",
+        "variabili": {
+            "head": ""
+        }
+    },
+    "0x400613": {
+        "nome_funzione_originale": "free_memory",
+        "variabili": {
+            "head": ""
+        }
+    },
+    "0x400654": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "head": "",
+            "levels": "",
+            "end_num": "",
+            "start_num": "",
+            "i": ""
+        }
+    },
+    "0x403078": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x403080": {
+        "nome_funzione_originale": "putchar",
+        "variabili": {}
+    },
+    "0x403090": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x4030a8": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    },
+    "0x4030b0": {
+        "nome_funzione_originale": "atoi",
+        "variabili": {}
+    },
+    "0x4030b8": {
+        "nome_funzione_originale": "fwrite",
+        "variabili": {}
+    }
+}

@@ -1,0 +1,222 @@
+[
+    {
+        "address": "0x400496",
+        "ida_stripped_name": "sub_400496",
+        "ground_truth_name": "vector_sub",
+        "ai_predicted_name": "subtract_float_arrays",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 8,
+            "execution_time": 10.24
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.32,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.15,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400512",
+        "ida_stripped_name": "sub_400512",
+        "ground_truth_name": "vector_add",
+        "ai_predicted_name": "add_float_pairs",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 8,
+            "execution_time": 8.82
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.24,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.14,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40058e",
+        "ida_stripped_name": "sub_40058E",
+        "ground_truth_name": "dot_prod",
+        "ai_predicted_name": "calculate_dot_product",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 4,
+            "execution_time": 7.76
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.55,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.58,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400602",
+        "ida_stripped_name": "sub_400602",
+        "ground_truth_name": "vector_prod",
+        "ai_predicted_name": "calculate_cross_product",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 8,
+            "execution_time": 8.5
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.47,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.31,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4006d5",
+        "ida_stripped_name": "sub_4006D5",
+        "ground_truth_name": "print_vector",
+        "ai_predicted_name": "format_vector_string",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 5,
+            "execution_time": 9.03
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.56,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.59,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40074c",
+        "ida_stripped_name": "sub_40074C",
+        "ground_truth_name": "vector_norm",
+        "ai_predicted_name": "calculate_dot_product_and_sqrt",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 18,
+            "execution_time": 10.93
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.34,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.03,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x40078c",
+        "ida_stripped_name": "sub_40078C",
+        "ground_truth_name": "unit_vec",
+        "ai_predicted_name": "normalize_vector",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 31,
+            "execution_time": 10.74
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.5,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.25,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x400865",
+        "ida_stripped_name": "sub_400865",
+        "ground_truth_name": "get_cross_matrix",
+        "ai_predicted_name": "transform_data",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 21,
+            "execution_time": 14.15
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.4,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.07,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400933",
+        "ida_stripped_name": "sub_400933",
+        "ground_truth_name": "get_angle",
+        "ai_predicted_name": "calculate_angle",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 44,
+            "execution_time": 17.4
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.58,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.45,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 2
+    },
+    {
+        "address": "0x400a13",
+        "ida_stripped_name": "sub_400A13",
+        "ground_truth_name": "test",
+        "ai_predicted_name": "calculate_vector_properties",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 111,
+            "execution_time": 30.63
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.19,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.13,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 4
+    },
+    {
+        "address": "0x400cfd",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 63,
+            "execution_time": 10.4
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    }
+]

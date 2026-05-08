@@ -1,0 +1,23 @@
+{
+    "0x400496": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "bits": "",
+            "inputNumber": "",
+            "re": "",
+            "i": "",
+            "j": ""
+        }
+    },
+    "0x403030": {
+        "nome_funzione_originale": "putchar",
+        "variabili": {}
+    },
+    "0x403040": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    }
+}

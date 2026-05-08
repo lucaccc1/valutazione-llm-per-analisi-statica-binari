@@ -1,0 +1,91 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x4003a0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x4003e0": {
+        "nome_corrente": "sub_4003E0",
+        "codice_decompilato": "int (**sub_4003E0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n",
+        "variabili": {}
+    },
+    "0x400450": {
+        "nome_corrente": "sub_400450",
+        "codice_decompilato": "int (**sub_400450())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  int (**result)(int (*)(int, char **, char **), int, char **, void (*)(void), void (*)(void), void (*)(void), void *); // rax\n\n  if ( !byte_40301C )\n  {\n    result = sub_4003E0();\n    byte_40301C = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400480": {
+        "nome_corrente": "sub_400480",
+        "codice_decompilato": "__int64 sub_400480()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x400486": {
+        "nome_corrente": "sub_400486",
+        "codice_decompilato": "__int64 __fastcall sub_400486(__int64 a1, unsigned int a2, unsigned int a3, unsigned int a4)\n{\n  unsigned int v5; // [rsp+2Ch] [rbp-4h]\n\n  if ( (int)a3 < (int)a2 )\n    return 0xFFFFFFFFLL;\n  v5 = (int)(a3 - a2) / 2 + a2;\n  if ( a4 == *(_DWORD *)(4LL * (int)v5 + a1) )\n    return v5;\n  if ( (signed int)a4 >= *(_DWORD *)(4LL * (int)v5 + a1) )\n    return sub_400486(a1, v5 + 1, a3, a4);\n  return sub_400486(a1, a2, v5 - 1, a4);\n}\n",
+        "variabili": {
+            "a3": "",
+            "a4": "",
+            "a1": "",
+            "a2": "",
+            "v5": ""
+        }
+    },
+    "0x40053a": {
+        "nome_corrente": "sub_40053A",
+        "codice_decompilato": "__int64 __fastcall sub_40053A(__int64 a1, int a2, int a3, int a4)\n{\n  int v5; // [rsp+4h] [rbp-20h]\n  int v6; // [rsp+8h] [rbp-1Ch]\n  unsigned int i; // [rsp+20h] [rbp-4h]\n\n  v6 = a2;\n  v5 = a3;\n  for ( i = (a3 - a2) / 2 + a2; a4 != *(_DWORD *)(4LL * (int)i + a1); i = (v5 - v6) / 2 + v6 )\n  {\n    if ( v5 <= v6 || v5 < 0 )\n      return 0xFFFFFFFFLL;\n    if ( a4 >= *(_DWORD *)(4LL * (int)i + a1) )\n      v6 = i + 1;\n    else\n      v5 = i - 1;\n  }\n  return i;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a4": "",
+            "a1": "",
+            "a2": "",
+            "v5": "",
+            "v6": "",
+            "i": ""
+        }
+    },
+    "0x4005e3": {
+        "nome_corrente": "sub_4005E3",
+        "codice_decompilato": "int sub_4005E3()\n{\n  _DWORD v1[5]; // [rsp+0h] [rbp-20h] BYREF\n  int v2; // [rsp+14h] [rbp-Ch]\n  int v3; // [rsp+18h] [rbp-8h]\n  int v4; // [rsp+1Ch] [rbp-4h]\n\n  v1[0] = 2;\n  v1[1] = 3;\n  v1[2] = 4;\n  v1[3] = 10;\n  v1[4] = 40;\n  v4 = 5;\n  printf(\"Test 1.... \");\n  v3 = 10;\n  v2 = sub_400486((__int64)v1, 0, 4u, 0xAu);\n  if ( v2 != 3 )\n    __assert_fail(\"result == 3\", \"dataset/src/searching/binary_search.c\", 0x57u, \"test\");\n  printf(\"passed recursive... \");\n  v2 = sub_40053A((__int64)v1, 0, v4 - 1, v3);\n  if ( v2 != 3 )\n    __assert_fail(\"result == 3\", \"dataset/src/searching/binary_search.c\", 0x5Au, \"test\");\n  puts(\"passed iterative...\");\n  printf(\"Test 2.... \");\n  v3 = 5;\n  v2 = sub_400486((__int64)v1, 0, v4 - 1, 5u);\n  if ( v2 != -1 )\n    __assert_fail(\"result == -1\", \"dataset/src/searching/binary_search.c\", 0x61u, \"test\");\n  printf(\"passed recursive... \");\n  v2 = sub_40053A((__int64)v1, 0, v4 - 1, v3);\n  if ( v2 != -1 )\n    __assert_fail(\"result == -1\", \"dataset/src/searching/binary_search.c\", 0x64u, \"test\");\n  return puts(\"passed iterative...\");\n}\n",
+        "variabili": {
+            "v1": "",
+            "v2": "",
+            "v3": "",
+            "v4": ""
+        }
+    },
+    "0x400776": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  sub_4005E3();\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": ""
+        }
+    },
+    "0x400788": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "0x400486": {
+        "nome_funzione_originale": "pid_step",
+        "variabili": {
+            "controller": "",
+            "dt": "",
+            "error": "",
+            "p": "",
+            "d": ""
+        }
+    },
+    "0x40054c": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "v3": "",
+            "error_value": "",
+            "controller": "",
+            "output": "",
+            "time_step": ""
+        }
+    },
+    "0x403030": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    }
+}

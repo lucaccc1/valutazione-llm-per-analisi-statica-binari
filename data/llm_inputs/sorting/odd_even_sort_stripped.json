@@ -1,0 +1,91 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x400390": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x4003d0": {
+        "nome_corrente": "sub_4003D0",
+        "codice_decompilato": "int (**sub_4003D0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n",
+        "variabili": {}
+    },
+    "0x400440": {
+        "nome_corrente": "sub_400440",
+        "codice_decompilato": "int (**sub_400440())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  int (**result)(int (*)(int, char **, char **), int, char **, void (*)(void), void (*)(void), void (*)(void), void *); // rax\n\n  if ( !byte_403014 )\n  {\n    result = sub_4003D0();\n    byte_403014 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400470": {
+        "nome_corrente": "sub_400470",
+        "codice_decompilato": "__int64 sub_400470()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x400476": {
+        "nome_corrente": "sub_400476",
+        "codice_decompilato": "int *__fastcall sub_400476(int *a1, int *a2)\n{\n  int *result; // rax\n  int v3; // [rsp+1Ch] [rbp-4h]\n\n  v3 = *a1;\n  *a1 = *a2;\n  result = a2;\n  *a2 = v3;\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "result": "",
+            "v3": ""
+        }
+    },
+    "0x4004a3": {
+        "nome_corrente": "sub_4004A3",
+        "codice_decompilato": "__int64 __fastcall sub_4004A3(__int64 a1, int a2)\n{\n  __int64 result; // rax\n  int i; // [rsp+18h] [rbp-8h]\n  int j; // [rsp+18h] [rbp-8h]\n  unsigned __int8 v5; // [rsp+1Fh] [rbp-1h]\n\n  v5 = 0;\n  while ( 1 )\n  {\n    result = v5 ^ 1u;\n    if ( v5 == 1 )\n      break;\n    v5 = 1;\n    for ( i = 0; i < a2 - 1; i += 2 )\n    {\n      if ( *(_DWORD *)(4LL * i + a1) > *(_DWORD *)(4 * (i + 1LL) + a1) )\n      {\n        sub_400476((int *)(4LL * i + a1), (int *)(a1 + 4 * (i + 1LL)));\n        v5 = 0;\n      }\n    }\n    for ( j = 1; j < a2 - 1; j += 2 )\n    {\n      if ( *(_DWORD *)(4LL * j + a1) > *(_DWORD *)(4 * (j + 1LL) + a1) )\n      {\n        sub_400476((int *)(4LL * j + a1), (int *)(a1 + 4 * (j + 1LL)));\n        v5 = 0;\n      }\n    }\n  }\n  return result;\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "result": "",
+            "i": "",
+            "j": "",
+            "v5": ""
+        }
+    },
+    "0x4005e0": {
+        "nome_corrente": "sub_4005E0",
+        "codice_decompilato": "int sub_4005E0()\n{\n  _DWORD v1[12]; // [rsp+0h] [rbp-90h]\n  _DWORD v2[12]; // [rsp+30h] [rbp-60h] BYREF\n  _DWORD v3[4]; // [rsp+60h] [rbp-30h]\n  _DWORD v4[6]; // [rsp+70h] [rbp-20h] BYREF\n  int j; // [rsp+88h] [rbp-8h]\n  int i; // [rsp+8Ch] [rbp-4h]\n\n  v4[0] = -9;\n  v4[1] = 2;\n  v4[2] = 3;\n  v4[3] = 1;\n  v3[0] = -9;\n  v3[1] = 1;\n  v3[2] = 2;\n  v3[3] = 3;\n  v2[0] = 9;\n  v2[1] = 7;\n  v2[2] = 5;\n  v2[3] = 3;\n  v2[4] = 8;\n  v2[5] = 2;\n  v2[6] = 1;\n  v2[7] = 4;\n  v2[8] = 0;\n  v2[9] = 6;\n  v1[0] = 0;\n  v1[1] = 1;\n  v1[2] = 2;\n  v1[3] = 3;\n  v1[4] = 4;\n  v1[5] = 5;\n  v1[6] = 6;\n  v1[7] = 7;\n  v1[8] = 8;\n  v1[9] = 9;\n  sub_4004A3((__int64)v4, 4);\n  sub_4004A3((__int64)v2, 10);\n  for ( i = 0; i <= 3; ++i )\n  {\n    if ( v4[i] != v3[i] )\n      __assert_fail(\"arr1[i] == arr1Soln[i]\", \"dataset/src/sorting/odd_even_sort.c\", 0x66u, \"test\");\n  }\n  for ( j = 0; j <= 9; ++j )\n  {\n    if ( v2[j] != v1[j] )\n      __assert_fail(\"arr2[i] == arr2Soln[i]\", \"dataset/src/sorting/odd_even_sort.c\", 0x6Bu, \"test\");\n  }\n  return puts(\"All tests have passed!\");\n}\n",
+        "variabili": {
+            "v1": "",
+            "v2": "",
+            "v3": "",
+            "v4": "",
+            "j": "",
+            "i": ""
+        }
+    },
+    "0x400771": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  sub_4005E0();\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": ""
+        }
+    },
+    "0x400784": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

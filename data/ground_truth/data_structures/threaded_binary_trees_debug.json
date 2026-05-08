@@ -1,0 +1,82 @@
+{
+    "0x4004b6": {
+        "nome_funzione_originale": "create_node",
+        "variabili": {
+            "data": "",
+            "result": ""
+        }
+    },
+    "0x4004fa": {
+        "nome_funzione_originale": "insert_bt",
+        "variabili": {
+            "root": "",
+            "data": "",
+            "new_node": "",
+            "prev": "",
+            "temp": ""
+        }
+    },
+    "0x4005c8": {
+        "nome_funzione_originale": "search",
+        "variabili": {
+            "root": "",
+            "ele": ""
+        }
+    },
+    "0x40063b": {
+        "nome_funzione_originale": "inorder_display",
+        "variabili": {
+            "curr": ""
+        }
+    },
+    "0x400688": {
+        "nome_funzione_originale": "postorder_display",
+        "variabili": {
+            "curr": ""
+        }
+    },
+    "0x4006d5": {
+        "nome_funzione_originale": "preorder_display",
+        "variabili": {
+            "curr": ""
+        }
+    },
+    "0x400722": {
+        "nome_funzione_originale": "delete_bt",
+        "variabili": {
+            "root": "",
+            "ele": "",
+            "t": "",
+            "replacement": "",
+            "prev": "",
+            "temp": ""
+        }
+    },
+    "0x4008e8": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "n": "",
+            "choice": "",
+            "root": ""
+        }
+    },
+    "0x403040": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x403048": {
+        "nome_funzione_originale": "putchar",
+        "variabili": {}
+    },
+    "0x403058": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403070": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    }
+}

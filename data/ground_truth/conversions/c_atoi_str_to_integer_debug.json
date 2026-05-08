@@ -1,0 +1,40 @@
+{
+    "0x400496": {
+        "nome_funzione_originale": "c_atoi",
+        "variabili": {
+            "str": "",
+            "prev": "",
+            "value": "",
+            "sign": "",
+            "i": ""
+        }
+    },
+    "0x400606": {
+        "nome_funzione_originale": "test_c_atoi",
+        "variabili": {
+            "v0": "",
+            "v1": "",
+            "v2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x40075c": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "v3": ""
+        }
+    },
+    "0x403038": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403050": {
+        "nome_funzione_originale": "atoi",
+        "variabili": {}
+    }
+}

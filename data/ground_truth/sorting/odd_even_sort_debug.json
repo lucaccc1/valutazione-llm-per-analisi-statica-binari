@@ -1,0 +1,43 @@
+{
+    "0x400476": {
+        "nome_funzione_originale": "swap",
+        "variabili": {
+            "first": "",
+            "second": "",
+            "temp": ""
+        }
+    },
+    "0x4004a3": {
+        "nome_funzione_originale": "oddEvenSort",
+        "variabili": {
+            "arr": "",
+            "size": "",
+            "i": "",
+            "ia": "",
+            "isSorted": ""
+        }
+    },
+    "0x4005e0": {
+        "nome_funzione_originale": "test",
+        "variabili": {
+            "arr2Soln": "",
+            "arr2": "",
+            "arr1Soln": "",
+            "arr1": "",
+            "i_0": "",
+            "i": ""
+        }
+    },
+    "0x400771": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": ""
+        }
+    },
+    "0x403028": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    }
+}

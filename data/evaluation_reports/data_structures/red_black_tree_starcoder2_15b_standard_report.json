@@ -1,0 +1,222 @@
+[
+    {
+        "address": "0x4004a6",
+        "ida_stripped_name": "sub_4004A6",
+        "ground_truth_name": "newNode",
+        "ai_predicted_name": "create_connection",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 12,
+            "execution_time": 5.8
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.25,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.05,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4004fe",
+        "ida_stripped_name": "sub_4004FE",
+        "ground_truth_name": "isLeaf",
+        "ai_predicted_name": "is_valid",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 4,
+            "execution_time": 5.07
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.43,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.09,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40052e",
+        "ida_stripped_name": "sub_40052E",
+        "ground_truth_name": "leftRotate",
+        "ai_predicted_name": "insert_into_doubly_linked_list",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 22,
+            "execution_time": 7.57
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.25,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4005d4",
+        "ida_stripped_name": "sub_4005D4",
+        "ground_truth_name": "rightRotate",
+        "ai_predicted_name": "link_node",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 22,
+            "execution_time": 6.7
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.3,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40067a",
+        "ida_stripped_name": "sub_40067A",
+        "ground_truth_name": "checkNode",
+        "ai_predicted_name": "link_new_node",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 137,
+            "execution_time": 11.5
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.45,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.26,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400ace",
+        "ida_stripped_name": "sub_400ACE",
+        "ground_truth_name": "insertNode",
+        "ai_predicted_name": "find_node",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 51,
+            "execution_time": 6.26
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.63,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.38,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400bec",
+        "ida_stripped_name": "sub_400BEC",
+        "ground_truth_name": "checkForCase2",
+        "ai_predicted_name": "chosen_name",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 173,
+            "execution_time": 14.83
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.42,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.1,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40122b",
+        "ida_stripped_name": "sub_40122B",
+        "ground_truth_name": "deleteNode",
+        "ai_predicted_name": "delete_node_with_rebalancing",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 81,
+            "execution_time": 14.11
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.53,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 0.49,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4014b7",
+        "ida_stripped_name": "sub_4014B7",
+        "ground_truth_name": "printInorder",
+        "ai_predicted_name": "print_nodes",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 12,
+            "execution_time": 4.46
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.78,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.48,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40150b",
+        "ida_stripped_name": "sub_40150B",
+        "ground_truth_name": "checkBlack",
+        "ai_predicted_name": "print_tree",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 12,
+            "execution_time": 7.46
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.1,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x401572",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": "main",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 54,
+            "execution_time": 7.91
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    }
+]

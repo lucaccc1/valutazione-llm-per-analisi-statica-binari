@@ -1,0 +1,105 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4003d0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400410": {
+        "nome_corrente": "sub_400410",
+        "codice_decompilato": "void (**sub_400410())(void *ptr)\n{\n  return &free;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400480": {
+        "nome_corrente": "sub_400480",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400410 ===\nvoid (**sub_400410())(void *ptr)\n{\n  return &free;\n}\n// === END INLINED FUNCTION: sub_400410 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid (**sub_400480())(void *ptr)\n{\n  void (**result)(void *); // rax\n\n  if ( !byte_403034 )\n  {\n    result = sub_400410();\n    byte_403034 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x4004b0": {
+        "nome_corrente": "sub_4004B0",
+        "codice_decompilato": "__int64 sub_4004B0()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4004b6": {
+        "nome_corrente": "sub_4004B6",
+        "codice_decompilato": "_BYTE *__fastcall sub_4004B6(const char *a1, unsigned __int16 a2)\n{\n  unsigned __int16 v3; // ax\n  unsigned __int16 v4; // ax\n  unsigned __int16 v5; // ax\n  unsigned __int16 v6; // [rsp+4h] [rbp-2Ch]\n  __int16 v7; // [rsp+14h] [rbp-1Ch]\n  _BYTE *dest; // [rsp+18h] [rbp-18h]\n  unsigned __int16 v9; // [rsp+26h] [rbp-Ah]\n  unsigned __int16 i; // [rsp+28h] [rbp-8h]\n  __int16 v11; // [rsp+2Ah] [rbp-6h]\n  unsigned __int16 v12; // [rsp+2Ch] [rbp-4h]\n  unsigned __int16 v13; // [rsp+2Eh] [rbp-2h]\n  unsigned __int16 v14; // [rsp+2Eh] [rbp-2h]\n  unsigned __int16 j; // [rsp+2Eh] [rbp-2h]\n\n  v6 = a2;\n  v9 = strlen(a1);\n  if ( v9 < a2 )\n    v6 = v9;\n  dest = calloc(v9 + 1, 1u);\n  if ( v6 > 1u )\n  {\n    v7 = 2 * (v6 - 1);\n    v13 = 0;\n    v12 = 0;\n    while ( v13 < v9 )\n    {\n      v3 = v12++;\n      dest[v3] = a1[v13];\n      v13 += v7;\n    }\n    for ( i = 1; i < (unsigned __int16)(v6 - 1); ++i )\n    {\n      v14 = i;\n      v11 = 2 * i;\n      while ( v14 < v9 )\n      {\n        v4 = v12++;\n        dest[v4] = a1[v14];\n        v11 = v7 - v11;\n        v14 += v11;\n      }\n    }\n    for ( j = v6 - 1; j < v9; j += v7 )\n    {\n      v5 = v12++;\n      dest[v5] = a1[j];\n    }\n    return dest;\n  }\n  else\n  {\n    memcpy(dest, a1, v9 + 1);\n    return dest;\n  }\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "dest": "",
+            "v9": "",
+            "i": "",
+            "v11": "",
+            "v12": "",
+            "v13": "",
+            "v14": "",
+            "j": ""
+        },
+        "inlined_count": 0
+    },
+    "0x40064f": {
+        "nome_corrente": "sub_40064F",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4004B6 ===\n_BYTE *__fastcall sub_4004B6(const char *a1, unsigned __int16 a2)\n{\n  unsigned __int16 v3; // ax\n  unsigned __int16 v4; // ax\n  unsigned __int16 v5; // ax\n  unsigned __int16 v6; // [rsp+4h] [rbp-2Ch]\n  __int16 v7; // [rsp+14h] [rbp-1Ch]\n  _BYTE *dest; // [rsp+18h] [rbp-18h]\n  unsigned __int16 v9; // [rsp+26h] [rbp-Ah]\n  unsigned __int16 i; // [rsp+28h] [rbp-8h]\n  __int16 v11; // [rsp+2Ah] [rbp-6h]\n  unsigned __int16 v12; // [rsp+2Ch] [rbp-4h]\n  unsigned __int16 v13; // [rsp+2Eh] [rbp-2h]\n  unsigned __int16 v14; // [rsp+2Eh] [rbp-2h]\n  unsigned __int16 j; // [rsp+2Eh] [rbp-2h]\n\n  v6 = a2;\n  v9 = strlen(a1);\n  if ( v9 < a2 )\n    v6 = v9;\n  dest = calloc(v9 + 1, 1u);\n  if ( v6 > 1u )\n  {\n    v7 = 2 * (v6 - 1);\n    v13 = 0;\n    v12 = 0;\n    while ( v13 < v9 )\n    {\n      v3 = v12++;\n      dest[v3] = a1[v13];\n      v13 += v7;\n    }\n    for ( i = 1; i < (unsigned __int16)(v6 - 1); ++i )\n    {\n      v14 = i;\n      v11 = 2 * i;\n      while ( v14 < v9 )\n      {\n        v4 = v12++;\n        dest[v4] = a1[v14];\n        v11 = v7 - v11;\n        v14 += v11;\n      }\n    }\n    for ( j = v6 - 1; j < v9; j += v7 )\n    {\n      v5 = v12++;\n      dest[v5] = a1[j];\n    }\n    return dest;\n  }\n  else\n  {\n    memcpy(dest, a1, v9 + 1);\n    return dest;\n  }\n}\n// === END INLINED FUNCTION: sub_4004B6 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid __fastcall sub_40064F(const char *a1, unsigned __int16 a2, const char *a3)\n{\n  int v4; // [rsp+24h] [rbp-Ch]\n  char *s1; // [rsp+28h] [rbp-8h]\n\n  s1 = sub_4004B6(a1, a2);\n  v4 = strlen(a1);\n  if ( strncmp(s1, a3, v4) )\n    __assert_fail(\"!cmp\", \"dataset/src/leetcode/src/6.c\", 0x5Bu, \"testZigZag\");\n  free(s1);\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v4": "",
+            "s1": ""
+        },
+        "inlined_count": 1
+    },
+    "0x4006d3": {
+        "nome_corrente": "sub_4006D3",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_40064F ===\nvoid __fastcall sub_40064F(const char *a1, unsigned __int16 a2, const char *a3)\n{\n  int v4; // [rsp+24h] [rbp-Ch]\n  char *s1; // [rsp+28h] [rbp-8h]\n\n  s1 = sub_4004B6(a1, a2);\n  v4 = strlen(a1);\n  if ( strncmp(s1, a3, v4) )\n    __assert_fail(\"!cmp\", \"dataset/src/leetcode/src/6.c\", 0x5Bu, \"testZigZag\");\n  free(s1);\n}\n// === END INLINED FUNCTION: sub_40064F ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid sub_4006D3()\n{\n  sub_40064F(\"PAYPALISHIRING\", 4u, \"PINALSIGYAHRPI\");\n  sub_40064F(\"PAYPALISHIRING\", 3u, \"PAHNAPLSIIGYIR\");\n  sub_40064F(\"A\", 1u, \"A\");\n  sub_40064F(\"A\", 3u, \"A\");\n  sub_40064F(\n    \"cbxdwjccgtdoqiscyspqzvuqivzptlpvooynyapgvswoaosaghrffnxnjyeeltzaizniccozwknwyhzgpqlwfkjqipuujvwtxlbznryjdohbvghmyuig\"\n    \"gtyqjtmuqinntqmihntkddnalwnmsxsatqqeldacnnpjfermrnyuqnwbjjpdjhdeavknykpoxhxclqqedqavdwzoiorrwwxyrhlsrdgqkduvtmzzczuf\"\n    \"vtvfioygkvedervvudneghbctcbxdxezrzgbpfhzanffeccbgqfmzjqtlrsppxqiywjobspefujlxnmddurddiyobqfspvcoulcvdrzkmkwlyiqdchgh\"\n    \"rgytzdnobqcvdeqjystmepxcaniewqmoxkjwpymqorluxedvywhcoghotpusfgiestckrpaigocfufbubiyrrffmwaeeimidfnnzcphkflpbqsvtdwlu\"\n    \"dsgaungfzoihbxifoprwcjzsdxngtacw\",\n    0x1D8u,\n    \"cbxdwjccgtdoqiscyspqzvuqivzptlpvooynyapgvswoaosaghrffnxnjyeeltzaizniccozwknwyhzgpqlwfkjqipuujvwtxlbznryjdohbvghmyuig\"\n    \"gtyqjtmuqinntqmihntkddnalwnmsxsatqqeldacnnpjfermrnyuqnwbjjpdjhdeavknykpoxhxclqqedqavdwzoiorrwwxyrhlsrdgqkduvtmzzczuf\"\n    \"vtvfioygkvedervvudneghbctcbxdxezrzgbpfhzanffeccbgqfmzjqtlrsppxqiywjobspefujlxnmddurddiyobqfspvcoulcvdrzkmkwlyiqdchgh\"\n    \"rgytzdnobqcvdeqjystmepxcaniewqmoxkjwpymqorluxedvywhcoghotpusfgiestckrpaigocfufbubiyrrffmwaeeimidfnnzwccpahtkgfnlxpdb\"\n    \"sqzsjvctwdrwploufdisxgbahuinogzf\");\n}\n",
+        "variabili": {},
+        "inlined_count": 1
+    },
+    "0x400777": {
+        "nome_corrente": "main",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4006D3 ===\nvoid sub_4006D3()\n{\n  sub_40064F(\"PAYPALISHIRING\", 4u, \"PINALSIGYAHRPI\");\n  sub_40064F(\"PAYPALISHIRING\", 3u, \"PAHNAPLSIIGYIR\");\n  sub_40064F(\"A\", 1u, \"A\");\n  sub_40064F(\"A\", 3u, \"A\");\n  sub_40064F(\n    \"cbxdwjccgtdoqiscyspqzvuqivzptlpvooynyapgvswoaosaghrffnxnjyeeltzaizniccozwknwyhzgpqlwfkjqipuujvwtxlbznryjdohbvghmyuig\"\n    \"gtyqjtmuqinntqmihntkddnalwnmsxsatqqeldacnnpjfermrnyuqnwbjjpdjhdeavknykpoxhxclqqedqavdwzoiorrwwxyrhlsrdgqkduvtmzzczuf\"\n    \"vtvfioygkvedervvudneghbctcbxdxezrzgbpfhzanffeccbgqfmzjqtlrsppxqiywjobspefujlxnmddurddiyobqfspvcoulcvdrzkmkwlyiqdchgh\"\n    \"rgytzdnobqcvdeqjystmepxcaniewqmoxkjwpymqorluxedvywhcoghotpusfgiestckrpaigocfufbubiyrrffmwaeeimidfnnzcphkflpbqsvtdwlu\"\n    \"dsgaungfzoihbxifoprwcjzsdxngtacw\",\n    0x1D8u,\n    \"cbxdwjccgtdoqiscyspqzvuqivzptlpvooynyapgvswoaosaghrffnxnjyeeltzaizniccozwknwyhzgpqlwfkjqipuujvwtxlbznryjdohbvghmyuig\"\n    \"gtyqjtmuqinntqmihntkddnalwnmsxsatqqeldacnnpjfermrnyuqnwbjjpdjhdeavknykpoxhxclqqedqavdwzoiorrwwxyrhlsrdgqkduvtmzzczuf\"\n    \"vtvfioygkvedervvudneghbctcbxdxezrzgbpfhzanffeccbgqfmzjqtlrsppxqiywjobspefujlxnmddurddiyobqfspvcoulcvdrzkmkwlyiqdchgh\"\n    \"rgytzdnobqcvdeqjystmepxcaniewqmoxkjwpymqorluxedvywhcoghotpusfgiestckrpaigocfufbubiyrrffmwaeeimidfnnzwccpahtkgfnlxpdb\"\n    \"sqzsjvctwdrwploufdisxgbahuinogzf\");\n}\n// === END INLINED FUNCTION: sub_4006D3 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  sub_4006D3();\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400788": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

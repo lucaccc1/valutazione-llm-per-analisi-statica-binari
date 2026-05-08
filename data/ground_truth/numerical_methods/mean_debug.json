@@ -1,0 +1,39 @@
+{
+    "0x4004c6": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "a": "",
+            "sum": "",
+            "i": "",
+            "ia": "",
+            "n": ""
+        }
+    },
+    "0x403058": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x403060": {
+        "nome_funzione_originale": "putchar",
+        "variabili": {}
+    },
+    "0x403078": {
+        "nome_funzione_originale": "fprintf",
+        "variabili": {}
+    },
+    "0x403080": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    },
+    "0x403088": {
+        "nome_funzione_originale": "atoi",
+        "variabili": {}
+    },
+    "0x403090": {
+        "nome_funzione_originale": "rand",
+        "variabili": {}
+    }
+}

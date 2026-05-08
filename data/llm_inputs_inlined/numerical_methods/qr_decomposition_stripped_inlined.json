@@ -1,0 +1,166 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400410": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400450": {
+        "nome_corrente": "sub_400450",
+        "codice_decompilato": "void *sub_400450()\n{\n  return &unk_403058;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4004c0": {
+        "nome_corrente": "sub_4004C0",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400450 ===\nvoid *sub_400450()\n{\n  return &unk_403058;\n}\n// === END INLINED FUNCTION: sub_400450 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid *sub_4004C0()\n{\n  void *result; // rax\n\n  if ( !byte_403068 )\n  {\n    result = sub_400450();\n    byte_403068 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x4004f0": {
+        "nome_corrente": "sub_4004F0",
+        "codice_decompilato": "__int64 sub_4004F0()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4004f6": {
+        "nome_corrente": "sub_4004F6",
+        "codice_decompilato": "int __fastcall sub_4004F6(__int64 a1, int a2, int a3)\n{\n  int j; // [rsp+18h] [rbp-8h]\n  int i; // [rsp+1Ch] [rbp-4h]\n\n  for ( i = 0; i < a2; ++i )\n  {\n    for ( j = 0; j < a3; ++j )\n      printf(\"% 9.3g\\t\", *(double *)(8LL * j + *(_QWORD *)(8LL * i + a1)));\n    putchar(10);\n  }\n  return putchar(10);\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "j": "",
+            "i": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400584": {
+        "nome_corrente": "sub_400584",
+        "codice_decompilato": "double __fastcall sub_400584(__int64 a1, __int64 a2, int a3)\n{\n  int i; // [rsp+18h] [rbp-Ch]\n  double v5; // [rsp+1Ch] [rbp-8h]\n\n  v5 = 0.0;\n  for ( i = 0; i < a3; ++i )\n    v5 = *(double *)(8LL * i + a2) * *(double *)(8LL * i + a1) + v5;\n  return v5;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "i": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4005fa": {
+        "nome_corrente": "sub_4005FA",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400584 ===\ndouble __fastcall sub_400584(__int64 a1, __int64 a2, int a3)\n{\n  int i; // [rsp+18h] [rbp-Ch]\n  double v5; // [rsp+1Ch] [rbp-8h]\n\n  v5 = 0.0;\n  for ( i = 0; i < a3; ++i )\n    v5 = *(double *)(8LL * i + a2) * *(double *)(8LL * i + a1) + v5;\n  return v5;\n}\n// === END INLINED FUNCTION: sub_400584 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\ndouble __fastcall sub_4005FA(__int64 a1, int a2)\n{\n  double v2; // xmm0_8\n\n  v2 = sub_400584(a1, a1, a2);\n  return sqrt(v2);\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "v2": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400638": {
+        "nome_corrente": "sub_400638",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400584 ===\ndouble __fastcall sub_400584(__int64 a1, __int64 a2, int a3)\n{\n  int i; // [rsp+18h] [rbp-Ch]\n  double v5; // [rsp+1Ch] [rbp-8h]\n\n  v5 = 0.0;\n  for ( i = 0; i < a3; ++i )\n    v5 = *(double *)(8LL * i + a2) * *(double *)(8LL * i + a1) + v5;\n  return v5;\n}\n// === END INLINED FUNCTION: sub_400584 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall sub_400638(__int64 a1, __int64 a2, __int64 a3, int a4)\n{\n  double v7; // [rsp+28h] [rbp-18h]\n  double v8; // [rsp+30h] [rbp-10h]\n  int i; // [rsp+3Ch] [rbp-4h]\n\n  v8 = sub_400584(a1, a2, a4);\n  v7 = sub_400584(a2, a2, a4);\n  if ( v7 == 0.0 )\n    return 0;\n  for ( i = 0; i < a4; ++i )\n    *(double *)(8LL * i + a3) = *(double *)(8LL * i + a2) * (v8 / v7);\n  return a3;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a4": "",
+            "a1": "",
+            "a2": "",
+            "v7": "",
+            "v8": "",
+            "i": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400709": {
+        "nome_corrente": "sub_400709",
+        "codice_decompilato": "__int64 __fastcall sub_400709(__int64 a1, __int64 a2, __int64 a3, int a4)\n{\n  int i; // [rsp+28h] [rbp-4h]\n\n  for ( i = 0; i < a4; ++i )\n    *(double *)(8LL * i + a3) = *(double *)(8LL * i + a1) - *(double *)(8LL * i + a2);\n  return a3;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a4": "",
+            "a1": "",
+            "a2": "",
+            "i": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400783": {
+        "nome_corrente": "sub_400783",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4005FA ===\ndouble __fastcall sub_4005FA(__int64 a1, int a2)\n{\n  double v2; // xmm0_8\n\n  v2 = sub_400584(a1, a1, a2);\n  return sqrt(v2);\n}\n// === END INLINED FUNCTION: sub_4005FA ===\n\n// === START INLINED FUNCTION: sub_400584 ===\ndouble __fastcall sub_400584(__int64 a1, __int64 a2, int a3)\n{\n  int i; // [rsp+18h] [rbp-Ch]\n  double v5; // [rsp+1Ch] [rbp-8h]\n\n  v5 = 0.0;\n  for ( i = 0; i < a3; ++i )\n    v5 = *(double *)(8LL * i + a2) * *(double *)(8LL * i + a1) + v5;\n  return v5;\n}\n// === END INLINED FUNCTION: sub_400584 ===\n\n// === START INLINED FUNCTION: sub_400638 ===\n__int64 __fastcall sub_400638(__int64 a1, __int64 a2, __int64 a3, int a4)\n{\n  double v7; // [rsp+28h] [rbp-18h]\n  double v8; // [rsp+30h] [rbp-10h]\n  int i; // [rsp+3Ch] [rbp-4h]\n\n  v8 = sub_400584(a1, a2, a4);\n  v7 = sub_400584(a2, a2, a4);\n  if ( v7 == 0.0 )\n    return 0;\n  for ( i = 0; i < a4; ++i )\n    *(double *)(8LL * i + a3) = *(double *)(8LL * i + a2) * (v8 / v7);\n  return a3;\n}\n// === END INLINED FUNCTION: sub_400638 ===\n\n// === START INLINED FUNCTION: sub_400709 ===\n__int64 __fastcall sub_400709(__int64 a1, __int64 a2, __int64 a3, int a4)\n{\n  int i; // [rsp+28h] [rbp-4h]\n\n  for ( i = 0; i < a4; ++i )\n    *(double *)(8LL * i + a3) = *(double *)(8LL * i + a1) - *(double *)(8LL * i + a2);\n  return a3;\n}\n// === END INLINED FUNCTION: sub_400709 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid __fastcall sub_400783(__int64 a1, __int64 a2, __int64 a3, int a4, int a5)\n{\n  double *v5; // rbx\n  double v9; // [rsp+28h] [rbp-48h]\n  _QWORD *v10; // [rsp+30h] [rbp-40h]\n  _QWORD *v11; // [rsp+38h] [rbp-38h]\n  _QWORD *ptr; // [rsp+40h] [rbp-30h]\n  int mm; // [rsp+48h] [rbp-28h]\n  int kk; // [rsp+4Ch] [rbp-24h]\n  int jj; // [rsp+50h] [rbp-20h]\n  int n; // [rsp+54h] [rbp-1Ch]\n  int j; // [rsp+58h] [rbp-18h]\n  int k; // [rsp+58h] [rbp-18h]\n  int m; // [rsp+58h] [rbp-18h]\n  int ii; // [rsp+58h] [rbp-18h]\n  int i; // [rsp+5Ch] [rbp-14h]\n\n  ptr = malloc(8LL * a4);\n  v11 = malloc(8LL * a4);\n  v10 = malloc(8LL * a4);\n  for ( i = 0; i < a5; ++i )\n  {\n    for ( j = 0; j < i; ++j )\n      *(_QWORD *)(8LL * j + *(_QWORD *)(8LL * i + a3)) = 0;\n    for ( k = 0; k < a4; ++k )\n    {\n      v10[k] = *(_QWORD *)(*(_QWORD *)(8LL * k + a1) + 8LL * i);\n      ptr[k] = *(_QWORD *)(*(_QWORD *)(8LL * k + a1) + 8LL * i);\n    }\n    for ( m = 0; m < i; ++m )\n    {\n      for ( n = 0; n < a4; ++n )\n        v11[n] = *(_QWORD *)(*(_QWORD *)(8LL * n + a2) + 8LL * m);\n      sub_400638((__int64)ptr, (__int64)v11, (__int64)v11, a4);\n      sub_400709((__int64)v10, (__int64)v11, (__int64)v10, a4);\n    }\n    v9 = sub_4005FA((__int64)v10, a4);\n    for ( ii = 0; ii < a4; ++ii )\n      *(double *)(8LL * i + *(_QWORD *)(8LL * ii + a2)) = *(double *)&v10[ii] / v9;\n    for ( jj = 0; jj < a4; ++jj )\n      ptr[jj] = *(_QWORD *)(*(_QWORD *)(8LL * jj + a2) + 8LL * i);\n    for ( kk = i; kk < a5; ++kk )\n    {\n      for ( mm = 0; mm < a4; ++mm )\n        v11[mm] = *(_QWORD *)(*(_QWORD *)(8LL * mm + a1) + 8LL * kk);\n      v5 = (double *)(*(_QWORD *)(8LL * i + a3) + 8LL * kk);\n      *v5 = sub_400584((__int64)ptr, (__int64)v11, a4);\n    }\n  }\n  free(ptr);\n  free(v11);\n  free(v10);\n}\n",
+        "variabili": {
+            "a3": "",
+            "a4": "",
+            "a1": "",
+            "a2": "",
+            "a5": "",
+            "v5": "",
+            "v9": "",
+            "v10": "",
+            "v11": "",
+            "ptr": "",
+            "mm": "",
+            "kk": "",
+            "jj": "",
+            "n": "",
+            "j": "",
+            "k": "",
+            "m": "",
+            "ii": "",
+            "i": ""
+        },
+        "inlined_count": 4
+    },
+    "0x400b1d": {
+        "nome_corrente": "main",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400783 ===\nvoid __fastcall sub_400783(__int64 a1, __int64 a2, __int64 a3, int a4, int a5)\n{\n  double *v5; // rbx\n  double v9; // [rsp+28h] [rbp-48h]\n  _QWORD *v10; // [rsp+30h] [rbp-40h]\n  _QWORD *v11; // [rsp+38h] [rbp-38h]\n  _QWORD *ptr; // [rsp+40h] [rbp-30h]\n  int mm; // [rsp+48h] [rbp-28h]\n  int kk; // [rsp+4Ch] [rbp-24h]\n  int jj; // [rsp+50h] [rbp-20h]\n  int n; // [rsp+54h] [rbp-1Ch]\n  int j; // [rsp+58h] [rbp-18h]\n  int k; // [rsp+58h] [rbp-18h]\n  int m; // [rsp+58h] [rbp-18h]\n  int ii; // [rsp+58h] [rbp-18h]\n  int i; // [rsp+5Ch] [rbp-14h]\n\n  ptr = malloc(8LL * a4);\n  v11 = malloc(8LL * a4);\n  v10 = malloc(8LL * a4);\n  for ( i = 0; i < a5; ++i )\n  {\n    for ( j = 0; j < i; ++j )\n      *(_QWORD *)(8LL * j + *(_QWORD *)(8LL * i + a3)) = 0;\n    for ( k = 0; k < a4; ++k )\n    {\n      v10[k] = *(_QWORD *)(*(_QWORD *)(8LL * k + a1) + 8LL * i);\n      ptr[k] = *(_QWORD *)(*(_QWORD *)(8LL * k + a1) + 8LL * i);\n    }\n    for ( m = 0; m < i; ++m )\n    {\n      for ( n = 0; n < a4; ++n )\n        v11[n] = *(_QWORD *)(*(_QWORD *)(8LL * n + a2) + 8LL * m);\n      sub_400638((__int64)ptr, (__int64)v11, (__int64)v11, a4);\n      sub_400709((__int64)v10, (__int64)v11, (__int64)v10, a4);\n    }\n    v9 = sub_4005FA((__int64)v10, a4);\n    for ( ii = 0; ii < a4; ++ii )\n      *(double *)(8LL * i + *(_QWORD *)(8LL * ii + a2)) = *(double *)&v10[ii] / v9;\n    for ( jj = 0; jj < a4; ++jj )\n      ptr[jj] = *(_QWORD *)(*(_QWORD *)(8LL * jj + a2) + 8LL * i);\n    for ( kk = i; kk < a5; ++kk )\n    {\n      for ( mm = 0; mm < a4; ++mm )\n        v11[mm] = *(_QWORD *)(*(_QWORD *)(8LL * mm + a1) + 8LL * kk);\n      v5 = (double *)(*(_QWORD *)(8LL * i + a3) + 8LL * kk);\n      *v5 = sub_400584((__int64)ptr, (__int64)v11, a4);\n    }\n  }\n  free(ptr);\n  free(v11);\n  free(v10);\n}\n// === END INLINED FUNCTION: sub_400783 ===\n\n// === START INLINED FUNCTION: sub_4004F6 ===\nint __fastcall sub_4004F6(__int64 a1, int a2, int a3)\n{\n  int j; // [rsp+18h] [rbp-8h]\n  int i; // [rsp+1Ch] [rbp-4h]\n\n  for ( i = 0; i < a2; ++i )\n  {\n    for ( j = 0; j < a3; ++j )\n      printf(\"% 9.3g\\t\", *(double *)(8LL * j + *(_QWORD *)(8LL * i + a1)));\n    putchar(10);\n  }\n  return putchar(10);\n}\n// === END INLINED FUNCTION: sub_4004F6 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  void **v4; // rbx\n  void **v5; // rbx\n  void **v6; // rbx\n  unsigned int v7; // [rsp+8h] [rbp-58h] BYREF\n  unsigned int v8; // [rsp+Ch] [rbp-54h] BYREF\n  double v9; // [rsp+10h] [rbp-50h]\n  clock_t v10; // [rsp+18h] [rbp-48h]\n  void *v11; // [rsp+20h] [rbp-40h]\n  void *v12; // [rsp+28h] [rbp-38h]\n  void *ptr; // [rsp+30h] [rbp-30h]\n  signed int n; // [rsp+3Ch] [rbp-24h]\n  signed int m; // [rsp+40h] [rbp-20h]\n  unsigned int k; // [rsp+44h] [rbp-1Ch]\n  unsigned int j; // [rsp+48h] [rbp-18h]\n  unsigned int i; // [rsp+4Ch] [rbp-14h]\n\n  printf(\"Enter the number of rows and columns: \");\n  __isoc23_scanf(\"%u %u\", &v8, &v7);\n  if ( v8 >= v7 )\n  {\n    puts(\"Enter matrix elements row-wise:\");\n    ptr = malloc(8LL * v8);\n    for ( i = 0; i < v8; ++i )\n    {\n      v4 = (void **)((char *)ptr + 8 * (int)i);\n      *v4 = malloc(8LL * v7);\n    }\n    for ( j = 0; j < v8; ++j )\n    {\n      for ( k = 0; k < v7; ++k )\n        __isoc23_scanf(\"%lf\", 8LL * (int)k + *((_QWORD *)ptr + (int)j));\n    }\n    sub_4004F6((__int64)ptr, v8, v7);\n    v12 = malloc(8LL * v8);\n    v11 = malloc(8LL * v8);\n    if ( v11 && v12 )\n    {\n      for ( m = 0; m < v8; ++m )\n      {\n        v5 = (void **)((char *)v12 + 8 * m);\n        *v5 = malloc(8LL * v7);\n        v6 = (void **)((char *)v11 + 8 * m);\n        *v6 = malloc(8LL * v8);\n        if ( !*((_QWORD *)v11 + m) || !*((_QWORD *)v12 + m) )\n        {\n          perror(\"Unable to allocate memory for Q & R.\");\n          return 0xFFFFFFFFLL;\n        }\n      }\n      v10 = clock();\n      sub_400783((__int64)ptr, (__int64)v11, (__int64)v12, v8, v7);\n      v9 = (double)(int)(clock() - v10) / 1000000.0;\n      sub_4004F6((__int64)v12, v8, v7);\n      sub_4004F6((__int64)v11, v8, v7);\n      printf(\"Time taken to compute: %.4g sec\\n\", v9);\n      for ( n = 0; n < v8; ++n )\n      {\n        free(*((void **)ptr + n));\n        free(*((void **)v12 + n));\n        free(*((void **)v11 + n));\n      }\n      free(ptr);\n      free(v12);\n      free(v11);\n      return 0;\n    }\n    else\n    {\n      perror(\"Unable to allocate memory for Q & R!\");\n      return 0xFFFFFFFFLL;\n    }\n  }\n  else\n  {\n    fwrite(\"Number of rows must be greater than or equal to number of columns.\\n\", 1u, 0x43u, stderr);\n    return 0xFFFFFFFFLL;\n  }\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "v9": "",
+            "v10": "",
+            "v11": "",
+            "v12": "",
+            "ptr": "",
+            "n": "",
+            "m": "",
+            "k": "",
+            "j": "",
+            "i": ""
+        },
+        "inlined_count": 2
+    },
+    "0x400ea0": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

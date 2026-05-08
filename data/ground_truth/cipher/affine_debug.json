@@ -1,0 +1,92 @@
+{
+    "0x4004d6": {
+        "nome_funzione_originale": "modular_multiplicative_inverse",
+        "variabili": {
+            "a": "",
+            "m": "",
+            "ma": "",
+            "aa": "",
+            "div_result": "",
+            "x": "",
+            "x_4": "",
+            "next": ""
+        }
+    },
+    "0x40056c": {
+        "nome_funzione_originale": "inverse_key",
+        "variabili": {
+            "key": "",
+            "inverse": ""
+        }
+    },
+    "0x4005ee": {
+        "nome_funzione_originale": "affine_encrypt",
+        "variabili": {
+            "s": "",
+            "key": "",
+            "i": ""
+        }
+    },
+    "0x400684": {
+        "nome_funzione_originale": "affine_decrypt",
+        "variabili": {
+            "s": "",
+            "key": "",
+            "inverse": "",
+            "i": ""
+        }
+    },
+    "0x40072e": {
+        "nome_funzione_originale": "test_string",
+        "variabili": {
+            "s": "",
+            "ciphertext": "",
+            "a": "",
+            "b": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "copy": ""
+        }
+    },
+    "0x400814": {
+        "nome_funzione_originale": "tests",
+        "variabili": {}
+    },
+    "0x4008d4": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": ""
+        }
+    },
+    "0x403050": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x403060": {
+        "nome_funzione_originale": "strcpy",
+        "variabili": {}
+    },
+    "0x403068": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403070": {
+        "nome_funzione_originale": "strlen",
+        "variabili": {}
+    },
+    "0x403080": {
+        "nome_funzione_originale": "strcmp",
+        "variabili": {}
+    },
+    "0x403088": {
+        "nome_funzione_originale": "div",
+        "variabili": {}
+    },
+    "0x403090": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    }
+}

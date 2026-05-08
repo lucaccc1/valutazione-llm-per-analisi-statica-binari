@@ -1,0 +1,84 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x4003a0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x4003e0": {
+        "nome_corrente": "sub_4003E0",
+        "codice_decompilato": "char *sub_4003E0()\n{\n  return &byte_403020;\n}\n",
+        "variabili": {}
+    },
+    "0x400450": {
+        "nome_corrente": "sub_400450",
+        "codice_decompilato": "char *sub_400450()\n{\n  char *result; // rax\n\n  if ( !byte_403020 )\n  {\n    result = sub_4003E0();\n    byte_403020 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400480": {
+        "nome_corrente": "sub_400480",
+        "codice_decompilato": "__int64 sub_400480()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x400486": {
+        "nome_corrente": "sub_400486",
+        "codice_decompilato": "__int64 sub_400486()\n{\n  __int64 result; // rax\n  __int64 v1; // [rsp+0h] [rbp-20h]\n  __int64 v2; // [rsp+8h] [rbp-18h]\n  __int64 v3; // [rsp+10h] [rbp-10h]\n  __int64 v4; // [rsp+18h] [rbp-8h]\n\n  v4 = qword_403028;\n  result = qword_403030;\n  v3 = qword_403030;\n  v2 = 0;\n  while ( v4 && v3 )\n  {\n    v1 = *(_QWORD *)(v4 + 8);\n    *(_QWORD *)(v4 + 8) = v3;\n    if ( v1 )\n    {\n      v2 = *(_QWORD *)(v3 + 8);\n      *(_QWORD *)(v3 + 8) = v1;\n    }\n    v4 = v1;\n    result = v2;\n    v3 = v2;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": "",
+            "v1": "",
+            "v2": "",
+            "v3": "",
+            "v4": ""
+        }
+    },
+    "0x40050a": {
+        "nome_corrente": "sub_40050A",
+        "codice_decompilato": "int __fastcall sub_40050A(__int64 a1)\n{\n  __int64 i; // [rsp+8h] [rbp-8h]\n\n  printf(\"%d\", *(_DWORD *)a1);\n  for ( i = *(_QWORD *)(a1 + 8); i; i = *(_QWORD *)(i + 8) )\n    printf(\"->%d\", *(_DWORD *)i);\n  return putchar(10);\n}\n",
+        "variabili": {
+            "a1": "",
+            "i": ""
+        }
+    },
+    "0x400572": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  __int64 v3; // rdi\n  _QWORD *v5; // [rsp+8h] [rbp-38h]\n  _QWORD *v6; // [rsp+10h] [rbp-30h]\n  _QWORD *v7; // [rsp+18h] [rbp-28h]\n  _QWORD *v8; // [rsp+20h] [rbp-20h]\n  _QWORD *v9; // [rsp+28h] [rbp-18h]\n  _QWORD *v10; // [rsp+30h] [rbp-10h]\n  _QWORD *v11; // [rsp+38h] [rbp-8h]\n\n  v11 = malloc(0x10u);\n  v10 = malloc(0x10u);\n  v9 = malloc(0x10u);\n  v8 = malloc(0x10u);\n  v7 = malloc(0x10u);\n  v6 = malloc(0x10u);\n  v5 = malloc(0x10u);\n  qword_403028 = (__int64)v11;\n  qword_403030 = (__int64)v10;\n  *(_DWORD *)v11 = 1;\n  v11[1] = v9;\n  *(_DWORD *)v10 = 2;\n  v10[1] = v8;\n  *(_DWORD *)v9 = 3;\n  v9[1] = v7;\n  *(_DWORD *)v8 = 4;\n  v8[1] = v6;\n  *(_DWORD *)v7 = 5;\n  v7[1] = v5;\n  *(_DWORD *)v6 = 6;\n  v6[1] = 0;\n  *(_DWORD *)v5 = 7;\n  v5[1] = 0;\n  printf(\"Linked List 1: \");\n  sub_40050A(qword_403028);\n  printf(\"\\nLinked List 2: \");\n  v3 = qword_403030;\n  sub_40050A(qword_403030);\n  sub_400486(v3, a2);\n  printf(\"\\nMerged Linked List: \");\n  sub_40050A(qword_403028);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v3": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "v9": "",
+            "v10": "",
+            "v11": ""
+        }
+    },
+    "0x4006f4": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

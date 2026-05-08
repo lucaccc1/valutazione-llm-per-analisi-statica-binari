@@ -1,0 +1,129 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x4003e0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x400420": {
+        "nome_corrente": "sub_400420",
+        "codice_decompilato": "FILE **sub_400420()\n{\n  return &stderr;\n}\n",
+        "variabili": {}
+    },
+    "0x400490": {
+        "nome_corrente": "sub_400490",
+        "codice_decompilato": "FILE **sub_400490()\n{\n  FILE **result; // rax\n\n  if ( !byte_403048 )\n  {\n    result = sub_400420();\n    byte_403048 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x4004c0": {
+        "nome_corrente": "sub_4004C0",
+        "codice_decompilato": "__int64 sub_4004C0()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x4004c6": {
+        "nome_corrente": "sub_4004C6",
+        "codice_decompilato": "double __fastcall sub_4004C6(unsigned int *a1)\n{\n  __m128i v1; // xmm1\n  __m128i v2; // xmm0\n  __m128i v3; // xmm1\n  __m128i v4; // xmm0\n  __m128i v5; // xmm1\n  __m128i v6; // xmm0\n  __m128i v7; // xmm1\n  __m128i v8; // xmm0\n  __m128i v9; // xmm1\n  __m128i v10; // xmm0\n  __m128i v11; // xmm1\n  __m128i v12; // xmm0\n  double v14; // [rsp+20h] [rbp-50h]\n  double v15; // [rsp+30h] [rbp-40h]\n  float v17; // [rsp+58h] [rbp-18h]\n  float v18; // [rsp+5Ch] [rbp-14h]\n  float v19; // [rsp+60h] [rbp-10h]\n  float v20; // [rsp+64h] [rbp-Ch]\n  float v21; // [rsp+68h] [rbp-8h]\n  float v22; // [rsp+6Ch] [rbp-4h]\n\n  if ( a1 )\n  {\n    v1 = (__m128i)a1[2];\n    *(float *)v1.m128i_i32 = *(float *)v1.m128i_i32 * 0.5;\n    v2 = _mm_cvtsi32_si128(_mm_cvtsi128_si32(v1));\n    *(float *)v2.m128i_i32 = cosf(*(float *)v2.m128i_i32);\n    v22 = COERCE_FLOAT(_mm_cvtsi128_si32(v2));\n    v3 = (__m128i)a1[2];\n    *(float *)v3.m128i_i32 = *(float *)v3.m128i_i32 * 0.5;\n    v4 = _mm_cvtsi32_si128(_mm_cvtsi128_si32(v3));\n    *(float *)v4.m128i_i32 = sinf(*(float *)v4.m128i_i32);\n    v21 = COERCE_FLOAT(_mm_cvtsi128_si32(v4));\n    v5 = (__m128i)a1[1];\n    *(float *)v5.m128i_i32 = *(float *)v5.m128i_i32 * 0.5;\n    v6 = _mm_cvtsi32_si128(_mm_cvtsi128_si32(v5));\n    *(float *)v6.m128i_i32 = cosf(*(float *)v6.m128i_i32);\n    v20 = COERCE_FLOAT(_mm_cvtsi128_si32(v6));\n    v7 = (__m128i)a1[1];\n    *(float *)v7.m128i_i32 = *(float *)v7.m128i_i32 * 0.5;\n    v8 = _mm_cvtsi32_si128(_mm_cvtsi128_si32(v7));\n    *(float *)v8.m128i_i32 = sinf(*(float *)v8.m128i_i32);\n    v19 = COERCE_FLOAT(_mm_cvtsi128_si32(v8));\n    v9 = (__m128i)*a1;\n    *(float *)v9.m128i_i32 = *(float *)v9.m128i_i32 * 0.5;\n    v10 = _mm_cvtsi32_si128(_mm_cvtsi128_si32(v9));\n    *(float *)v10.m128i_i32 = cosf(*(float *)v10.m128i_i32);\n    v18 = COERCE_FLOAT(_mm_cvtsi128_si32(v10));\n    v11 = (__m128i)*a1;\n    *(float *)v11.m128i_i32 = *(float *)v11.m128i_i32 * 0.5;\n    v12 = _mm_cvtsi32_si128(_mm_cvtsi128_si32(v11));\n    *(float *)v12.m128i_i32 = sinf(*(float *)v12.m128i_i32);\n    v17 = COERCE_FLOAT(_mm_cvtsi128_si32(v12));\n    *(float *)&v14 = (float)((float)(v17 * v19) * v21) + (float)((float)(v18 * v20) * v22);\n    *((float *)&v14 + 1) = (float)((float)(v17 * v20) * v22) - (float)((float)(v18 * v19) * v21);\n    return v14;\n  }\n  else\n  {\n    fprintf(stderr, \"%s: Invalid input.\", \"quat_from_euler\");\n    return v15;\n  }\n}\n",
+        "variabili": {
+            "a1": "",
+            "v1": "",
+            "v2": "",
+            "v3": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "v9": "",
+            "v10": "",
+            "v11": "",
+            "v12": "",
+            "v14": "",
+            "v15": "",
+            "v17": "",
+            "v18": "",
+            "v19": "",
+            "v20": "",
+            "v21": "",
+            "v22": ""
+        }
+    },
+    "0x4006c6": {
+        "nome_corrente": "sub_4006C6",
+        "codice_decompilato": "double __fastcall sub_4006C6(__int64 a1)\n{\n  float v1; // xmm1_4\n  __m128i v2; // xmm0\n  __m128i v3; // xmm0\n  __m128i v4; // xmm0\n  __m128i v5; // xmm0\n  float v6; // xmm1_4\n  __m128i v7; // xmm0\n  double v9; // [rsp+28h] [rbp-18h]\n\n  if ( a1 )\n  {\n    v1 = (float)(*(float *)(a1 + 8) * *(float *)(a1 + 8)) + (float)(*(float *)(a1 + 4) * *(float *)(a1 + 4));\n    v2 = (__m128i)*(unsigned int *)(a1 + 12);\n    *(float *)v2.m128i_i32 = (float)(*(float *)v2.m128i_i32 * *(float *)(a1 + 8))\n                           + (float)(*(float *)a1 * *(float *)(a1 + 4));\n    *(float *)v2.m128i_i32 = *(float *)v2.m128i_i32 + *(float *)v2.m128i_i32;\n    v3 = _mm_cvtsi32_si128(_mm_cvtsi128_si32(v2));\n    *(float *)v3.m128i_i32 = atan2f(*(float *)v3.m128i_i32, 1.0 - (float)(v1 + v1));\n    LODWORD(v9) = _mm_cvtsi128_si32(v3);\n    v4 = (__m128i)*(unsigned int *)(a1 + 12);\n    *(float *)v4.m128i_i32 = (float)((float)(*(float *)v4.m128i_i32 * *(float *)(a1 + 4))\n                                   + (float)(*(float *)a1 * *(float *)(a1 + 8)))\n                           + (float)((float)(*(float *)v4.m128i_i32 * *(float *)(a1 + 4))\n                                   + (float)(*(float *)a1 * *(float *)(a1 + 8)));\n    v5 = _mm_cvtsi32_si128(_mm_cvtsi128_si32(v4));\n    *(float *)v5.m128i_i32 = asinf(*(float *)v5.m128i_i32);\n    HIDWORD(v9) = _mm_cvtsi128_si32(v5);\n    v6 = (float)(*(float *)(a1 + 12) * *(float *)(a1 + 12)) + (float)(*(float *)(a1 + 8) * *(float *)(a1 + 8));\n    v7 = (__m128i)*(unsigned int *)(a1 + 8);\n    *(float *)v7.m128i_i32 = (float)(*(float *)v7.m128i_i32 * *(float *)(a1 + 4))\n                           + (float)(*(float *)a1 * *(float *)(a1 + 12));\n    *(float *)v7.m128i_i32 = *(float *)v7.m128i_i32 + *(float *)v7.m128i_i32;\n    atan2f(COERCE_FLOAT(_mm_cvtsi128_si32(v7)), 1.0 - (float)(v6 + v6));\n  }\n  else\n  {\n    fprintf(stderr, \"%s: Invalid input.\", \"euler_from_quat\");\n  }\n  return v9;\n}\n",
+        "variabili": {
+            "a1": "",
+            "v1": "",
+            "v2": "",
+            "v3": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v9": ""
+        }
+    },
+    "0x400892": {
+        "nome_corrente": "sub_400892",
+        "codice_decompilato": "double __fastcall sub_400892(float *a1, float *a2)\n{\n  double v3; // [rsp+20h] [rbp-20h]\n  double v4; // [rsp+20h] [rbp-20h]\n\n  if ( a1 && a2 )\n  {\n    *(float *)&v4 = (float)((float)((float)(*a2 * *a1) - (float)(a2[1] * a1[1])) - (float)(a2[2] * a1[2]))\n                  - (float)(a2[3] * a1[3]);\n    *((float *)&v4 + 1) = (float)((float)(a2[3] * a1[2]) + (float)((float)(*a1 * a2[1]) + (float)(*a2 * a1[1])))\n                        - (float)(a2[2] * a1[3]);\n    return v4;\n  }\n  else\n  {\n    fprintf(stderr, \"%s: Invalid input.\", \"quaternion_multiply\");\n    return v3;\n  }\n}\n",
+        "variabili": {
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": ""
+        }
+    },
+    "0x400aa9": {
+        "nome_corrente": "sub_400AA9",
+        "codice_decompilato": "double __fastcall sub_400AA9(double a1, float a2)\n{\n  double v2; // xmm2_8\n  double v3; // xmm1_8\n  double result; // xmm0_8\n  double v5; // [rsp+0h] [rbp-30h]\n  double v6; // [rsp+14h] [rbp-1Ch] BYREF\n  float v7; // [rsp+1Ch] [rbp-14h]\n  float v8; // [rsp+20h] [rbp-10h] BYREF\n  float v9; // [rsp+24h] [rbp-Ch]\n  float v10; // [rsp+28h] [rbp-8h]\n  float v11; // [rsp+2Ch] [rbp-4h]\n\n  v8 = 0.70709997;\n  v9 = 0.70709997;\n  v10 = 0.0;\n  v11 = 0.0;\n  v6 = sub_4006C6((__int64)&v8);\n  v7 = a2;\n  v2 = a2;\n  v3 = *(float *)&v6;\n  printf(\"Euler: %.4g, %.4g, %.4g\\n\", *((float *)&v6 + 1), *(float *)&v6, v2);\n  v5 = sub_4004C6((unsigned int *)&v6);\n  printf(\"Quaternion: %.4g %+.4g %+.4g %+.4g\\n\", *(float *)&v5, *((float *)&v5 + 1), *(float *)&v3, *((float *)&v3 + 1));\n  if ( fabs(*(float *)&v5 - v8) >= 0.01 )\n    __assert_fail(\"fabsf(test_quat.w - quat.w) < .01\", \"dataset/src/geometry/quaternions.c\", 0xA3u, \"test\");\n  if ( fabs(*((float *)&v5 + 1) - v9) >= 0.01 )\n    __assert_fail(\"fabsf(test_quat.q1 - quat.q1) < .01\", \"dataset/src/geometry/quaternions.c\", 0xA4u, \"test\");\n  if ( fabs(*(float *)&v3 - v10) >= 0.01 )\n    __assert_fail(\"fabsf(test_quat.q2 - quat.q2) < .01\", \"dataset/src/geometry/quaternions.c\", 0xA5u, \"test\");\n  result = 0.01;\n  if ( fabs(*((float *)&v3 + 1) - v11) >= 0.01 )\n    __assert_fail(\"fabsf(test_quat.q3 - quat.q3) < .01\", \"dataset/src/geometry/quaternions.c\", 0xA6u, \"test\");\n  return result;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a1": "",
+            "v2": "",
+            "v3": "",
+            "result": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "v9": "",
+            "v10": "",
+            "v11": ""
+        }
+    },
+    "0x400cd4": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3, double a4, float a5)\n{\n  sub_400AA9(a4, a5);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "a5": "",
+            "a1": ""
+        }
+    },
+    "0x400ce4": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400380": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4003c0": {
+        "nome_corrente": "sub_4003C0",
+        "codice_decompilato": "int (**sub_4003C0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400430": {
+        "nome_corrente": "sub_400430",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4003C0 ===\nint (**sub_4003C0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n// === END INLINED FUNCTION: sub_4003C0 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nint (**sub_400430())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  int (**result)(int (*)(int, char **, char **), int, char **, void (*)(void), void (*)(void), void (*)(void), void *); // rax\n\n  if ( !byte_40300C )\n  {\n    result = sub_4003C0();\n    byte_40300C = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400460": {
+        "nome_corrente": "sub_400460",
+        "codice_decompilato": "__int64 sub_400460()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400466": {
+        "nome_corrente": "main",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400510 ===\nbool __fastcall sub_400510(int a1)\n{\n  int v2; // [rsp+0h] [rbp-14h]\n  int v3; // [rsp+10h] [rbp-4h]\n\n  v2 = a1;\n  v3 = 0;\n  while ( v2 )\n  {\n    v3 = 10 * v3 + v2 % 10;\n    v2 /= 10;\n  }\n  return a1 == v3;\n}\n// === END INLINED FUNCTION: sub_400510 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  __int64 v3; // rdx\n  __int64 v4; // rdx\n  __int64 v5; // rdx\n\n  if ( !(unsigned __int8)sub_400510(0, a2, a3) )\n    __assert_fail(\"isPalindrome(0)\", \"dataset/src/math/palindrome.c\", 0x10u, \"main\");\n  if ( !(unsigned __int8)sub_400510(1, a2, v3) )\n    __assert_fail(\"isPalindrome(1)\", \"dataset/src/math/palindrome.c\", 0x11u, \"main\");\n  if ( !(unsigned __int8)sub_400510(12321, a2, v4) )\n    __assert_fail(\"isPalindrome(12321)\", \"dataset/src/math/palindrome.c\", 0x12u, \"main\");\n  if ( (unsigned __int8)sub_400510(1234, a2, v5) == 1 )\n    __assert_fail(\"!isPalindrome(1234)\", \"dataset/src/math/palindrome.c\", 0x13u, \"main\");\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 1
+    },
+    "0x400510": {
+        "nome_corrente": "sub_400510",
+        "codice_decompilato": "bool __fastcall sub_400510(int a1)\n{\n  int v2; // [rsp+0h] [rbp-14h]\n  int v3; // [rsp+10h] [rbp-4h]\n\n  v2 = a1;\n  v3 = 0;\n  while ( v2 )\n  {\n    v3 = 10 * v3 + v2 % 10;\n    v2 /= 10;\n  }\n  return a1 == v3;\n}\n",
+        "variabili": {
+            "a1": "",
+            "v2": "",
+            "v3": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400598": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

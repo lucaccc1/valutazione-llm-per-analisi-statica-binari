@@ -1,0 +1,199 @@
+{
+    "0x400536": {
+        "nome_funzione_originale": "new_adaline",
+        "variabili": {
+            "retstr": "",
+            "num_features": "",
+            "eta": "",
+            "ada_8": "",
+            "ada_16": "",
+            "i": ""
+        }
+    },
+    "0x400641": {
+        "nome_funzione_originale": "delete_adaline",
+        "variabili": {
+            "ada": ""
+        }
+    },
+    "0x400669": {
+        "nome_funzione_originale": "adaline_activation",
+        "variabili": {
+            "x": ""
+        }
+    },
+    "0x40068f": {
+        "nome_funzione_originale": "adaline_get_weights_str",
+        "variabili": {
+            "ada": "",
+            "i": ""
+        }
+    },
+    "0x400746": {
+        "nome_funzione_originale": "adaline_predict",
+        "variabili": {
+            "ada": "",
+            "x": "",
+            "out": "",
+            "i": "",
+            "y": ""
+        }
+    },
+    "0x400802": {
+        "nome_funzione_originale": "adaline_fit_sample",
+        "variabili": {
+            "ada": "",
+            "x": "",
+            "y": "",
+            "correction_factor": "",
+            "i": ""
+        }
+    },
+    "0x40090e": {
+        "nome_funzione_originale": "adaline_fit",
+        "variabili": {
+            "ada": "",
+            "X": "",
+            "y": "",
+            "N": "",
+            "weights_str": "",
+            "i": "",
+            "iter": "",
+            "avg_pred_error": "",
+            "avg_pred_errora": ""
+        }
+    },
+    "0x400a5c": {
+        "nome_funzione_originale": "test1",
+        "variabili": {
+            "eta": "",
+            "weights_str": "",
+            "v2": "",
+            "test_x2": "",
+            "test_x": "",
+            "Y": "",
+            "saved_X": "",
+            "ada": "",
+            "pred": "",
+            "X": "",
+            "N": "",
+            "i": ""
+        }
+    },
+    "0x400ddb": {
+        "nome_funzione_originale": "test2",
+        "variabili": {
+            "eta": "",
+            "v1": "",
+            "v2": "",
+            "weights_str": "",
+            "v4": "",
+            "test_x": "",
+            "ada": "",
+            "x1": "",
+            "x0": "",
+            "pred": "",
+            "x1_0": "",
+            "x0_0": "",
+            "N_test_cases": "",
+            "range2": "",
+            "range": "",
+            "Y": "",
+            "X": "",
+            "N": "",
+            "i_2": "",
+            "expected_val": "",
+            "i_1": "",
+            "i_0": "",
+            "i": ""
+        }
+    },
+    "0x401183": {
+        "nome_funzione_originale": "test3",
+        "variabili": {
+            "eta": "",
+            "v1": "",
+            "v2": "",
+            "weights_str": "",
+            "v4": "",
+            "test_x": "",
+            "ada": "",
+            "x2": "",
+            "x1": "",
+            "x0": "",
+            "pred": "",
+            "x2_0": "",
+            "x1_0": "",
+            "x0_0": "",
+            "N_test_cases": "",
+            "range2": "",
+            "range": "",
+            "Y": "",
+            "X": "",
+            "N": "",
+            "i_2": "",
+            "expected_val": "",
+            "i_1": "",
+            "i_0": "",
+            "i": ""
+        }
+    },
+    "0x40167f": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "v3": "",
+            "eta": ""
+        }
+    },
+    "0x404110": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x404120": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x404138": {
+        "nome_funzione_originale": "strtof",
+        "variabili": {}
+    },
+    "0x404140": {
+        "nome_funzione_originale": "srand",
+        "variabili": {}
+    },
+    "0x404148": {
+        "nome_funzione_originale": "getchar",
+        "variabili": {}
+    },
+    "0x404150": {
+        "nome_funzione_originale": "time",
+        "variabili": {}
+    },
+    "0x404158": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    },
+    "0x404160": {
+        "nome_funzione_originale": "perror",
+        "variabili": {}
+    },
+    "0x404168": {
+        "nome_funzione_originale": "sprintf",
+        "variabili": {}
+    },
+    "0x404170": {
+        "nome_funzione_originale": "exit",
+        "variabili": {}
+    },
+    "0x404178": {
+        "nome_funzione_originale": "fwrite",
+        "variabili": {}
+    },
+    "0x404180": {
+        "nome_funzione_originale": "rand",
+        "variabili": {}
+    }
+}

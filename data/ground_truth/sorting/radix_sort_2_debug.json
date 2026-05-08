@@ -1,0 +1,69 @@
+{
+    "0x4004b6": {
+        "nome_funzione_originale": "MAX",
+        "variabili": {
+            "ar": "",
+            "size": "",
+            "max": "",
+            "i": ""
+        }
+    },
+    "0x400518": {
+        "nome_funzione_originale": "countSort",
+        "variabili": {
+            "arr": "",
+            "n": "",
+            "place": "",
+            "v3": "",
+            "v4": "",
+            "freq": "",
+            "output": "",
+            "i": ""
+        }
+    },
+    "0x400721": {
+        "nome_funzione_originale": "radixsort2",
+        "variabili": {
+            "arr": "",
+            "n": "",
+            "max": "",
+            "mul": ""
+        }
+    },
+    "0x400787": {
+        "nome_funzione_originale": "display",
+        "variabili": {
+            "arr": "",
+            "N": "",
+            "i": ""
+        }
+    },
+    "0x4007df": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "n": "",
+            "max": "",
+            "arr": "",
+            "i": ""
+        }
+    },
+    "0x403040": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x403048": {
+        "nome_funzione_originale": "putchar",
+        "variabili": {}
+    },
+    "0x403058": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403070": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    }
+}

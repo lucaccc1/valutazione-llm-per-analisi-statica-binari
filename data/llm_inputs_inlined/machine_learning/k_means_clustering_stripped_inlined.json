@@ -1,0 +1,169 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_403FF8();\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x400410": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400450": {
+        "nome_corrente": "sub_400450",
+        "codice_decompilato": "void (**sub_400450())(void *ptr)\n{\n  return &free;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4004c0": {
+        "nome_corrente": "sub_4004C0",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400450 ===\nvoid (**sub_400450())(void *ptr)\n{\n  return &free;\n}\n// === END INLINED FUNCTION: sub_400450 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid (**sub_4004C0())(void *ptr)\n{\n  void (**result)(void *); // rax\n\n  if ( !byte_404054 )\n  {\n    result = sub_400450();\n    byte_404054 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        },
+        "inlined_count": 1
+    },
+    "0x4004f0": {
+        "nome_corrente": "sub_4004F0",
+        "codice_decompilato": "__int64 sub_4004F0()\n{\n  return 0;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    },
+    "0x4004f6": {
+        "nome_corrente": "sub_4004F6",
+        "codice_decompilato": "__int64 __fastcall sub_4004F6(double *a1, __int64 a2, signed int a3)\n{\n  signed int i; // [rsp+24h] [rbp-10h]\n  unsigned int v5; // [rsp+28h] [rbp-Ch]\n  double v6; // [rsp+2Ch] [rbp-8h]\n\n  v6 = 1.797693134862316e308;\n  v5 = -1;\n  for ( i = 0; i < a3; ++i )\n  {\n    if ( v6 > (*(double *)(24LL * i + a2 + 8) - a1[1]) * (*(double *)(24LL * i + a2 + 8) - a1[1])\n            + (*(double *)(24LL * i + a2) - *a1) * (*(double *)(24LL * i + a2) - *a1) )\n    {\n      v6 = (*(double *)(24LL * i + a2 + 8) - a1[1]) * (*(double *)(24LL * i + a2 + 8) - a1[1])\n         + (*(double *)(24LL * i + a2) - *a1) * (*(double *)(24LL * i + a2) - *a1);\n      v5 = i;\n    }\n  }\n  return v5;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "i": "",
+            "v5": "",
+            "v6": ""
+        },
+        "inlined_count": 0
+    },
+    "0x400630": {
+        "nome_corrente": "sub_400630",
+        "codice_decompilato": "double *__fastcall sub_400630(__int64 a1, unsigned __int64 a2, double *a3)\n{\n  __int64 v3; // rax\n  double v4; // xmm0_8\n  __int64 v5; // rdx\n  __int64 v6; // rax\n  double v7; // xmm0_8\n  __int64 v8; // rdx\n  double *result; // rax\n  unsigned __int64 v11; // [rsp+20h] [rbp-8h]\n\n  v11 = 0;\n  *a3 = 0.0;\n  a3[1] = 0.0;\n  *((_QWORD *)a3 + 2) = a2;\n  while ( v11 < a2 )\n  {\n    *a3 = *(double *)(24 * v11 + a1) + *a3;\n    a3[1] = *(double *)(24 * v11 + a1 + 8) + a3[1];\n    *(_DWORD *)(24 * v11++ + a1 + 16) = 0;\n  }\n  v3 = *((_QWORD *)a3 + 2);\n  if ( v3 < 0 )\n  {\n    v5 = (_QWORD)a3[2] & 1LL | ((unsigned __int64)v3 >> 1);\n    v4 = (double)(int)v5 + (double)(int)v5;\n  }\n  else\n  {\n    v4 = (double)(int)v3;\n  }\n  *a3 = *a3 / v4;\n  v6 = *((_QWORD *)a3 + 2);\n  if ( v6 < 0 )\n  {\n    v8 = (_QWORD)a3[2] & 1LL | ((unsigned __int64)v6 >> 1);\n    v7 = (double)(int)v8 + (double)(int)v8;\n  }\n  else\n  {\n    v7 = (double)(int)v6;\n  }\n  result = a3;\n  a3[1] = a3[1] / v7;\n  return result;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "result": "",
+            "v11": ""
+        },
+        "inlined_count": 0
+    },
+    "0x40079f": {
+        "nome_corrente": "sub_40079F",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4004F6 ===\n__int64 __fastcall sub_4004F6(double *a1, __int64 a2, signed int a3)\n{\n  signed int i; // [rsp+24h] [rbp-10h]\n  unsigned int v5; // [rsp+28h] [rbp-Ch]\n  double v6; // [rsp+2Ch] [rbp-8h]\n\n  v6 = 1.797693134862316e308;\n  v5 = -1;\n  for ( i = 0; i < a3; ++i )\n  {\n    if ( v6 > (*(double *)(24LL * i + a2 + 8) - a1[1]) * (*(double *)(24LL * i + a2 + 8) - a1[1])\n            + (*(double *)(24LL * i + a2) - *a1) * (*(double *)(24LL * i + a2) - *a1) )\n    {\n      v6 = (*(double *)(24LL * i + a2 + 8) - a1[1]) * (*(double *)(24LL * i + a2 + 8) - a1[1])\n         + (*(double *)(24LL * i + a2) - *a1) * (*(double *)(24LL * i + a2) - *a1);\n      v5 = i;\n    }\n  }\n  return v5;\n}\n// === END INLINED FUNCTION: sub_4004F6 ===\n\n// === START INLINED FUNCTION: sub_400630 ===\ndouble *__fastcall sub_400630(__int64 a1, unsigned __int64 a2, double *a3)\n{\n  __int64 v3; // rax\n  double v4; // xmm0_8\n  __int64 v5; // rdx\n  __int64 v6; // rax\n  double v7; // xmm0_8\n  __int64 v8; // rdx\n  double *result; // rax\n  unsigned __int64 v11; // [rsp+20h] [rbp-8h]\n\n  v11 = 0;\n  *a3 = 0.0;\n  a3[1] = 0.0;\n  *((_QWORD *)a3 + 2) = a2;\n  while ( v11 < a2 )\n  {\n    *a3 = *(double *)(24 * v11 + a1) + *a3;\n    a3[1] = *(double *)(24 * v11 + a1 + 8) + a3[1];\n    *(_DWORD *)(24 * v11++ + a1 + 16) = 0;\n  }\n  v3 = *((_QWORD *)a3 + 2);\n  if ( v3 < 0 )\n  {\n    v5 = (_QWORD)a3[2] & 1LL | ((unsigned __int64)v3 >> 1);\n    v4 = (double)(int)v5 + (double)(int)v5;\n  }\n  else\n  {\n    v4 = (double)(int)v3;\n  }\n  *a3 = *a3 / v4;\n  v6 = *((_QWORD *)a3 + 2);\n  if ( v6 < 0 )\n  {\n    v8 = (_QWORD)a3[2] & 1LL | ((unsigned __int64)v6 >> 1);\n    v7 = (double)(int)v8 + (double)(int)v8;\n  }\n  else\n  {\n    v7 = (double)(int)v6;\n  }\n  result = a3;\n  a3[1] = a3[1] / v7;\n  return result;\n}\n// === END INLINED FUNCTION: sub_400630 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid *__fastcall sub_40079F(__int64 a1, unsigned __int64 a2, signed int a3)\n{\n  __int64 v3; // rax\n  double v4; // xmm0_8\n  __int64 v5; // rax\n  double v6; // xmm0_8\n  int v9; // [rsp+24h] [rbp-4Ch]\n  int v10; // [rsp+24h] [rbp-4Ch]\n  int i; // [rsp+34h] [rbp-3Ch]\n  unsigned __int64 ii; // [rsp+38h] [rbp-38h]\n  signed int n; // [rsp+44h] [rbp-2Ch]\n  unsigned __int64 m; // [rsp+48h] [rbp-28h]\n  signed int k; // [rsp+54h] [rbp-1Ch]\n  unsigned __int64 v16; // [rsp+58h] [rbp-18h]\n  unsigned __int64 j; // [rsp+60h] [rbp-10h]\n  void *s; // [rsp+68h] [rbp-8h]\n\n  if ( a3 > 1 )\n  {\n    if ( a3 >= a2 )\n    {\n      s = malloc(24LL * a3);\n      memset(s, 0, 24LL * a3);\n      for ( i = 0; i < a2; ++i )\n      {\n        *((_QWORD *)s + 3 * i) = *(_QWORD *)(24LL * i + a1);\n        *((_QWORD *)s + 3 * i + 1) = *(_QWORD *)(24LL * i + a1 + 8);\n        *((_QWORD *)s + 3 * i + 2) = 1;\n        *(_DWORD *)(a1 + 24LL * i + 16) = i;\n      }\n    }\n    else\n    {\n      s = malloc(24LL * a3);\n      memset(s, 0, 24LL * a3);\n      for ( j = 0; j < a2; ++j )\n        *(_DWORD *)(24 * j + a1 + 16) = rand() % a3;\n      do\n      {\n        for ( k = 0; k < a3; ++k )\n        {\n          *((_QWORD *)s + 3 * k) = 0;\n          *((_QWORD *)s + 3 * k + 1) = 0;\n          *((_QWORD *)s + 3 * k + 2) = 0;\n        }\n        for ( m = 0; m < a2; ++m )\n        {\n          v9 = *(_DWORD *)(24 * m + a1 + 16);\n          *((double *)s + 3 * v9) = *(double *)(24 * m + a1) + *((double *)s + 3 * v9);\n          *((double *)s + 3 * v9 + 1) = *(double *)(24 * m + a1 + 8) + *((double *)s + 3 * v9 + 1);\n          ++*((_QWORD *)s + 3 * v9 + 2);\n        }\n        for ( n = 0; n < a3; ++n )\n        {\n          v3 = *((_QWORD *)s + 3 * n + 2);\n          if ( v3 < 0 )\n            v4 = (double)(int)(v3 & 1 | ((unsigned __int64)v3 >> 1))\n               + (double)(int)(v3 & 1 | ((unsigned __int64)v3 >> 1));\n          else\n            v4 = (double)(int)v3;\n          *((double *)s + 3 * n) = *((double *)s + 3 * n) / v4;\n          v5 = *((_QWORD *)s + 3 * n + 2);\n          if ( v5 < 0 )\n            v6 = (double)(int)(v5 & 1 | ((unsigned __int64)v5 >> 1))\n               + (double)(int)(v5 & 1 | ((unsigned __int64)v5 >> 1));\n          else\n            v6 = (double)(int)v5;\n          *((double *)s + 3 * n + 1) = *((double *)s + 3 * n + 1) / v6;\n        }\n        v16 = 0;\n        for ( ii = 0; ii < a2; ++ii )\n        {\n          v10 = sub_4004F6((double *)(24 * ii + a1), (__int64)s, a3);\n          if ( v10 != *(_DWORD *)(24 * ii + a1 + 16) )\n          {\n            ++v16;\n            *(_DWORD *)(a1 + 24 * ii + 16) = v10;\n          }\n        }\n      }\n      while ( a2 / 0x2710 < v16 );\n    }\n  }\n  else\n  {\n    s = malloc(0x18u);\n    memset(s, 0, 0x18u);\n    sub_400630(a1, a2, (double *)s);\n  }\n  return s;\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "v9": "",
+            "v10": "",
+            "i": "",
+            "ii": "",
+            "n": "",
+            "m": "",
+            "k": "",
+            "v16": "",
+            "j": "",
+            "s": ""
+        },
+        "inlined_count": 2
+    },
+    "0x400dae": {
+        "nome_corrente": "sub_400DAE",
+        "codice_decompilato": "void __fastcall sub_400DAE(__int64 a1, unsigned __int64 a2, __int64 a3, int a4)\n{\n  double v6; // [rsp+28h] [rbp-68h]\n  double *ptr; // [rsp+30h] [rbp-60h]\n  double v8; // [rsp+38h] [rbp-58h]\n  double v9; // [rsp+40h] [rbp-50h]\n  int k; // [rsp+54h] [rbp-3Ch]\n  unsigned __int64 j; // [rsp+58h] [rbp-38h]\n  unsigned __int64 m; // [rsp+58h] [rbp-38h]\n  int i; // [rsp+64h] [rbp-2Ch]\n  double v14; // [rsp+68h] [rbp-28h]\n  double v15; // [rsp+70h] [rbp-20h]\n  double v16; // [rsp+78h] [rbp-18h]\n  double v17; // [rsp+80h] [rbp-10h]\n  double v18; // [rsp+88h] [rbp-8h]\n\n  v18 = 1.797693134862316e308;\n  v17 = 2.225073858507201e-308;\n  v16 = 1.797693134862316e308;\n  v15 = 2.225073858507201e-308;\n  ptr = (double *)malloc(24LL * a4);\n  v6 = (double)a4;\n  for ( i = 0; i < a4; ++i )\n  {\n    ptr[3 * i] = (double)(3 * (i + 1) % a4) / v6;\n    ptr[3 * i + 1] = (double)(7 * i % a4) / v6;\n    ptr[3 * i + 2] = (double)(9 * i % a4) / v6;\n  }\n  for ( j = 0; j < a2; ++j )\n  {\n    if ( *(double *)(24 * j + a1) > v17 )\n      v17 = *(double *)(24 * j + a1);\n    if ( v18 > *(double *)(24 * j + a1) )\n      v18 = *(double *)(24 * j + a1);\n    if ( *(double *)(24 * j + a1 + 8) > v15 )\n      v15 = *(double *)(24 * j + a1 + 8);\n    if ( v16 > *(double *)(24 * j + a1 + 8) )\n      v16 = *(double *)(24 * j + a1 + 8);\n  }\n  v14 = (double)400 / (v17 - v18);\n  if ( v14 > (double)400 / (v15 - v16) )\n    v14 = (double)400 / (v15 - v16);\n  v9 = (v17 + v18) / 2.0;\n  v8 = (v15 + v16) / 2.0;\n  printf(\"%%!PS-Adobe-3.0 EPSF-3.0\\n%%%%BoundingBox: -5 -5 %d %d\\n\", 410, 410);\n  puts(\n    \"/l {rlineto} def /m {rmoveto} def\\n\"\n    \"/c { .25 sub exch .25 sub exch .5 0 360 arc fill } def\\n\"\n    \"/s { moveto -2 0 m 2 2 l 2 -2 l -2 -2 l closepath \\tgsave 1 setgray fill grestore gsave 3 setlinewidth 1 setgray str\"\n    \"oke grestore 0 setgray stroke }def\");\n  for ( k = 0; k < a4; ++k )\n  {\n    printf(\"%g %g %g setrgbcolor\\n\", ptr[3 * k], ptr[3 * k + 1], ptr[3 * k + 2]);\n    for ( m = 0; m < a2; ++m )\n    {\n      if ( k == *(_DWORD *)(24 * m + a1 + 16) )\n        printf(\n          \"%.3f %.3f c\\n\",\n          (*(double *)(24 * m + a1) - v9) * v14 + (double)200,\n          (*(double *)(24 * m + a1 + 8) - v8) * v14 + (double)200);\n    }\n    printf(\n      \"\\n0 setgray %g %g s\\n\",\n      (*(double *)(24LL * k + a3) - v9) * v14 + (double)200,\n      (*(double *)(24LL * k + a3 + 8) - v8) * v14 + (double)200);\n  }\n  printf(\"\\n%%%%EOF\");\n  free(ptr);\n}\n",
+        "variabili": {
+            "a3": "",
+            "a4": "",
+            "a1": "",
+            "a2": "",
+            "v6": "",
+            "ptr": "",
+            "v8": "",
+            "v9": "",
+            "k": "",
+            "j": "",
+            "m": "",
+            "i": "",
+            "v14": "",
+            "v15": "",
+            "v16": "",
+            "v17": "",
+            "v18": ""
+        },
+        "inlined_count": 0
+    },
+    "0x4013b6": {
+        "nome_corrente": "sub_4013B6",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400DAE ===\nvoid __fastcall sub_400DAE(__int64 a1, unsigned __int64 a2, __int64 a3, int a4)\n{\n  double v6; // [rsp+28h] [rbp-68h]\n  double *ptr; // [rsp+30h] [rbp-60h]\n  double v8; // [rsp+38h] [rbp-58h]\n  double v9; // [rsp+40h] [rbp-50h]\n  int k; // [rsp+54h] [rbp-3Ch]\n  unsigned __int64 j; // [rsp+58h] [rbp-38h]\n  unsigned __int64 m; // [rsp+58h] [rbp-38h]\n  int i; // [rsp+64h] [rbp-2Ch]\n  double v14; // [rsp+68h] [rbp-28h]\n  double v15; // [rsp+70h] [rbp-20h]\n  double v16; // [rsp+78h] [rbp-18h]\n  double v17; // [rsp+80h] [rbp-10h]\n  double v18; // [rsp+88h] [rbp-8h]\n\n  v18 = 1.797693134862316e308;\n  v17 = 2.225073858507201e-308;\n  v16 = 1.797693134862316e308;\n  v15 = 2.225073858507201e-308;\n  ptr = (double *)malloc(24LL * a4);\n  v6 = (double)a4;\n  for ( i = 0; i < a4; ++i )\n  {\n    ptr[3 * i] = (double)(3 * (i + 1) % a4) / v6;\n    ptr[3 * i + 1] = (double)(7 * i % a4) / v6;\n    ptr[3 * i + 2] = (double)(9 * i % a4) / v6;\n  }\n  for ( j = 0; j < a2; ++j )\n  {\n    if ( *(double *)(24 * j + a1) > v17 )\n      v17 = *(double *)(24 * j + a1);\n    if ( v18 > *(double *)(24 * j + a1) )\n      v18 = *(double *)(24 * j + a1);\n    if ( *(double *)(24 * j + a1 + 8) > v15 )\n      v15 = *(double *)(24 * j + a1 + 8);\n    if ( v16 > *(double *)(24 * j + a1 + 8) )\n      v16 = *(double *)(24 * j + a1 + 8);\n  }\n  v14 = (double)400 / (v17 - v18);\n  if ( v14 > (double)400 / (v15 - v16) )\n    v14 = (double)400 / (v15 - v16);\n  v9 = (v17 + v18) / 2.0;\n  v8 = (v15 + v16) / 2.0;\n  printf(\"%%!PS-Adobe-3.0 EPSF-3.0\\n%%%%BoundingBox: -5 -5 %d %d\\n\", 410, 410);\n  puts(\n    \"/l {rlineto} def /m {rmoveto} def\\n\"\n    \"/c { .25 sub exch .25 sub exch .5 0 360 arc fill } def\\n\"\n    \"/s { moveto -2 0 m 2 2 l 2 -2 l -2 -2 l closepath \\tgsave 1 setgray fill grestore gsave 3 setlinewidth 1 setgray str\"\n    \"oke grestore 0 setgray stroke }def\");\n  for ( k = 0; k < a4; ++k )\n  {\n    printf(\"%g %g %g setrgbcolor\\n\", ptr[3 * k], ptr[3 * k + 1], ptr[3 * k + 2]);\n    for ( m = 0; m < a2; ++m )\n    {\n      if ( k == *(_DWORD *)(24 * m + a1 + 16) )\n        printf(\n          \"%.3f %.3f c\\n\",\n          (*(double *)(24 * m + a1) - v9) * v14 + (double)200,\n          (*(double *)(24 * m + a1 + 8) - v8) * v14 + (double)200);\n    }\n    printf(\n      \"\\n0 setgray %g %g s\\n\",\n      (*(double *)(24LL * k + a3) - v9) * v14 + (double)200,\n      (*(double *)(24LL * k + a3 + 8) - v8) * v14 + (double)200);\n  }\n  printf(\"\\n%%%%EOF\");\n  free(ptr);\n}\n// === END INLINED FUNCTION: sub_400DAE ===\n\n// === START INLINED FUNCTION: sub_40079F ===\nvoid *__fastcall sub_40079F(__int64 a1, unsigned __int64 a2, signed int a3)\n{\n  __int64 v3; // rax\n  double v4; // xmm0_8\n  __int64 v5; // rax\n  double v6; // xmm0_8\n  int v9; // [rsp+24h] [rbp-4Ch]\n  int v10; // [rsp+24h] [rbp-4Ch]\n  int i; // [rsp+34h] [rbp-3Ch]\n  unsigned __int64 ii; // [rsp+38h] [rbp-38h]\n  signed int n; // [rsp+44h] [rbp-2Ch]\n  unsigned __int64 m; // [rsp+48h] [rbp-28h]\n  signed int k; // [rsp+54h] [rbp-1Ch]\n  unsigned __int64 v16; // [rsp+58h] [rbp-18h]\n  unsigned __int64 j; // [rsp+60h] [rbp-10h]\n  void *s; // [rsp+68h] [rbp-8h]\n\n  if ( a3 > 1 )\n  {\n    if ( a3 >= a2 )\n    {\n      s = malloc(24LL * a3);\n      memset(s, 0, 24LL * a3);\n      for ( i = 0; i < a2; ++i )\n      {\n        *((_QWORD *)s + 3 * i) = *(_QWORD *)(24LL * i + a1);\n        *((_QWORD *)s + 3 * i + 1) = *(_QWORD *)(24LL * i + a1 + 8);\n        *((_QWORD *)s + 3 * i + 2) = 1;\n        *(_DWORD *)(a1 + 24LL * i + 16) = i;\n      }\n    }\n    else\n    {\n      s = malloc(24LL * a3);\n      memset(s, 0, 24LL * a3);\n      for ( j = 0; j < a2; ++j )\n        *(_DWORD *)(24 * j + a1 + 16) = rand() % a3;\n      do\n      {\n        for ( k = 0; k < a3; ++k )\n        {\n          *((_QWORD *)s + 3 * k) = 0;\n          *((_QWORD *)s + 3 * k + 1) = 0;\n          *((_QWORD *)s + 3 * k + 2) = 0;\n        }\n        for ( m = 0; m < a2; ++m )\n        {\n          v9 = *(_DWORD *)(24 * m + a1 + 16);\n          *((double *)s + 3 * v9) = *(double *)(24 * m + a1) + *((double *)s + 3 * v9);\n          *((double *)s + 3 * v9 + 1) = *(double *)(24 * m + a1 + 8) + *((double *)s + 3 * v9 + 1);\n          ++*((_QWORD *)s + 3 * v9 + 2);\n        }\n        for ( n = 0; n < a3; ++n )\n        {\n          v3 = *((_QWORD *)s + 3 * n + 2);\n          if ( v3 < 0 )\n            v4 = (double)(int)(v3 & 1 | ((unsigned __int64)v3 >> 1))\n               + (double)(int)(v3 & 1 | ((unsigned __int64)v3 >> 1));\n          else\n            v4 = (double)(int)v3;\n          *((double *)s + 3 * n) = *((double *)s + 3 * n) / v4;\n          v5 = *((_QWORD *)s + 3 * n + 2);\n          if ( v5 < 0 )\n            v6 = (double)(int)(v5 & 1 | ((unsigned __int64)v5 >> 1))\n               + (double)(int)(v5 & 1 | ((unsigned __int64)v5 >> 1));\n          else\n            v6 = (double)(int)v5;\n          *((double *)s + 3 * n + 1) = *((double *)s + 3 * n + 1) / v6;\n        }\n        v16 = 0;\n        for ( ii = 0; ii < a2; ++ii )\n        {\n          v10 = sub_4004F6((double *)(24 * ii + a1), (__int64)s, a3);\n          if ( v10 != *(_DWORD *)(24 * ii + a1 + 16) )\n          {\n            ++v16;\n            *(_DWORD *)(a1 + 24 * ii + 16) = v10;\n          }\n        }\n      }\n      while ( a2 / 0x2710 < v16 );\n    }\n  }\n  else\n  {\n    s = malloc(0x18u);\n    memset(s, 0, 0x18u);\n    sub_400630(a1, a2, (double *)s);\n  }\n  return s;\n}\n// === END INLINED FUNCTION: sub_40079F ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid sub_4013B6()\n{\n  void *v0; // [rsp+0h] [rbp-40h]\n  double x; // [rsp+10h] [rbp-30h]\n  double v2; // [rsp+18h] [rbp-28h]\n  double *ptr; // [rsp+28h] [rbp-18h]\n  unsigned __int64 i; // [rsp+38h] [rbp-8h]\n\n  ptr = (double *)malloc(0x249F00u);\n  for ( i = 0; i < 0x186A0; ++i )\n  {\n    v2 = (double)rand() / 2147483647.0 * 20.0;\n    x = 6.283185307179586 * ((double)rand() / 2147483647.0);\n    ptr[3 * i] = cos(x) * v2;\n    ptr[3 * i + 1] = sin(x) * v2;\n  }\n  v0 = sub_40079F((__int64)ptr, 0x186A0u, 5);\n  sub_400DAE((__int64)ptr, 0x186A0u, (__int64)v0, 5);\n  free(ptr);\n  free(v0);\n}\n",
+        "variabili": {
+            "v0": "",
+            "x": "",
+            "v2": "",
+            "ptr": "",
+            "i": ""
+        },
+        "inlined_count": 2
+    },
+    "0x401543": {
+        "nome_corrente": "sub_401543",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_400DAE ===\nvoid __fastcall sub_400DAE(__int64 a1, unsigned __int64 a2, __int64 a3, int a4)\n{\n  double v6; // [rsp+28h] [rbp-68h]\n  double *ptr; // [rsp+30h] [rbp-60h]\n  double v8; // [rsp+38h] [rbp-58h]\n  double v9; // [rsp+40h] [rbp-50h]\n  int k; // [rsp+54h] [rbp-3Ch]\n  unsigned __int64 j; // [rsp+58h] [rbp-38h]\n  unsigned __int64 m; // [rsp+58h] [rbp-38h]\n  int i; // [rsp+64h] [rbp-2Ch]\n  double v14; // [rsp+68h] [rbp-28h]\n  double v15; // [rsp+70h] [rbp-20h]\n  double v16; // [rsp+78h] [rbp-18h]\n  double v17; // [rsp+80h] [rbp-10h]\n  double v18; // [rsp+88h] [rbp-8h]\n\n  v18 = 1.797693134862316e308;\n  v17 = 2.225073858507201e-308;\n  v16 = 1.797693134862316e308;\n  v15 = 2.225073858507201e-308;\n  ptr = (double *)malloc(24LL * a4);\n  v6 = (double)a4;\n  for ( i = 0; i < a4; ++i )\n  {\n    ptr[3 * i] = (double)(3 * (i + 1) % a4) / v6;\n    ptr[3 * i + 1] = (double)(7 * i % a4) / v6;\n    ptr[3 * i + 2] = (double)(9 * i % a4) / v6;\n  }\n  for ( j = 0; j < a2; ++j )\n  {\n    if ( *(double *)(24 * j + a1) > v17 )\n      v17 = *(double *)(24 * j + a1);\n    if ( v18 > *(double *)(24 * j + a1) )\n      v18 = *(double *)(24 * j + a1);\n    if ( *(double *)(24 * j + a1 + 8) > v15 )\n      v15 = *(double *)(24 * j + a1 + 8);\n    if ( v16 > *(double *)(24 * j + a1 + 8) )\n      v16 = *(double *)(24 * j + a1 + 8);\n  }\n  v14 = (double)400 / (v17 - v18);\n  if ( v14 > (double)400 / (v15 - v16) )\n    v14 = (double)400 / (v15 - v16);\n  v9 = (v17 + v18) / 2.0;\n  v8 = (v15 + v16) / 2.0;\n  printf(\"%%!PS-Adobe-3.0 EPSF-3.0\\n%%%%BoundingBox: -5 -5 %d %d\\n\", 410, 410);\n  puts(\n    \"/l {rlineto} def /m {rmoveto} def\\n\"\n    \"/c { .25 sub exch .25 sub exch .5 0 360 arc fill } def\\n\"\n    \"/s { moveto -2 0 m 2 2 l 2 -2 l -2 -2 l closepath \\tgsave 1 setgray fill grestore gsave 3 setlinewidth 1 setgray str\"\n    \"oke grestore 0 setgray stroke }def\");\n  for ( k = 0; k < a4; ++k )\n  {\n    printf(\"%g %g %g setrgbcolor\\n\", ptr[3 * k], ptr[3 * k + 1], ptr[3 * k + 2]);\n    for ( m = 0; m < a2; ++m )\n    {\n      if ( k == *(_DWORD *)(24 * m + a1 + 16) )\n        printf(\n          \"%.3f %.3f c\\n\",\n          (*(double *)(24 * m + a1) - v9) * v14 + (double)200,\n          (*(double *)(24 * m + a1 + 8) - v8) * v14 + (double)200);\n    }\n    printf(\n      \"\\n0 setgray %g %g s\\n\",\n      (*(double *)(24LL * k + a3) - v9) * v14 + (double)200,\n      (*(double *)(24LL * k + a3 + 8) - v8) * v14 + (double)200);\n  }\n  printf(\"\\n%%%%EOF\");\n  free(ptr);\n}\n// === END INLINED FUNCTION: sub_400DAE ===\n\n// === START INLINED FUNCTION: sub_40079F ===\nvoid *__fastcall sub_40079F(__int64 a1, unsigned __int64 a2, signed int a3)\n{\n  __int64 v3; // rax\n  double v4; // xmm0_8\n  __int64 v5; // rax\n  double v6; // xmm0_8\n  int v9; // [rsp+24h] [rbp-4Ch]\n  int v10; // [rsp+24h] [rbp-4Ch]\n  int i; // [rsp+34h] [rbp-3Ch]\n  unsigned __int64 ii; // [rsp+38h] [rbp-38h]\n  signed int n; // [rsp+44h] [rbp-2Ch]\n  unsigned __int64 m; // [rsp+48h] [rbp-28h]\n  signed int k; // [rsp+54h] [rbp-1Ch]\n  unsigned __int64 v16; // [rsp+58h] [rbp-18h]\n  unsigned __int64 j; // [rsp+60h] [rbp-10h]\n  void *s; // [rsp+68h] [rbp-8h]\n\n  if ( a3 > 1 )\n  {\n    if ( a3 >= a2 )\n    {\n      s = malloc(24LL * a3);\n      memset(s, 0, 24LL * a3);\n      for ( i = 0; i < a2; ++i )\n      {\n        *((_QWORD *)s + 3 * i) = *(_QWORD *)(24LL * i + a1);\n        *((_QWORD *)s + 3 * i + 1) = *(_QWORD *)(24LL * i + a1 + 8);\n        *((_QWORD *)s + 3 * i + 2) = 1;\n        *(_DWORD *)(a1 + 24LL * i + 16) = i;\n      }\n    }\n    else\n    {\n      s = malloc(24LL * a3);\n      memset(s, 0, 24LL * a3);\n      for ( j = 0; j < a2; ++j )\n        *(_DWORD *)(24 * j + a1 + 16) = rand() % a3;\n      do\n      {\n        for ( k = 0; k < a3; ++k )\n        {\n          *((_QWORD *)s + 3 * k) = 0;\n          *((_QWORD *)s + 3 * k + 1) = 0;\n          *((_QWORD *)s + 3 * k + 2) = 0;\n        }\n        for ( m = 0; m < a2; ++m )\n        {\n          v9 = *(_DWORD *)(24 * m + a1 + 16);\n          *((double *)s + 3 * v9) = *(double *)(24 * m + a1) + *((double *)s + 3 * v9);\n          *((double *)s + 3 * v9 + 1) = *(double *)(24 * m + a1 + 8) + *((double *)s + 3 * v9 + 1);\n          ++*((_QWORD *)s + 3 * v9 + 2);\n        }\n        for ( n = 0; n < a3; ++n )\n        {\n          v3 = *((_QWORD *)s + 3 * n + 2);\n          if ( v3 < 0 )\n            v4 = (double)(int)(v3 & 1 | ((unsigned __int64)v3 >> 1))\n               + (double)(int)(v3 & 1 | ((unsigned __int64)v3 >> 1));\n          else\n            v4 = (double)(int)v3;\n          *((double *)s + 3 * n) = *((double *)s + 3 * n) / v4;\n          v5 = *((_QWORD *)s + 3 * n + 2);\n          if ( v5 < 0 )\n            v6 = (double)(int)(v5 & 1 | ((unsigned __int64)v5 >> 1))\n               + (double)(int)(v5 & 1 | ((unsigned __int64)v5 >> 1));\n          else\n            v6 = (double)(int)v5;\n          *((double *)s + 3 * n + 1) = *((double *)s + 3 * n + 1) / v6;\n        }\n        v16 = 0;\n        for ( ii = 0; ii < a2; ++ii )\n        {\n          v10 = sub_4004F6((double *)(24 * ii + a1), (__int64)s, a3);\n          if ( v10 != *(_DWORD *)(24 * ii + a1 + 16) )\n          {\n            ++v16;\n            *(_DWORD *)(a1 + 24 * ii + 16) = v10;\n          }\n        }\n      }\n      while ( a2 / 0x2710 < v16 );\n    }\n  }\n  else\n  {\n    s = malloc(0x18u);\n    memset(s, 0, 0x18u);\n    sub_400630(a1, a2, (double *)s);\n  }\n  return s;\n}\n// === END INLINED FUNCTION: sub_40079F ===\n\n// === MAIN FUNCTION TO ANALYZE ===\nvoid sub_401543()\n{\n  void *v0; // [rsp+0h] [rbp-40h]\n  double x; // [rsp+10h] [rbp-30h]\n  double v2; // [rsp+18h] [rbp-28h]\n  double *ptr; // [rsp+28h] [rbp-18h]\n  unsigned __int64 i; // [rsp+38h] [rbp-8h]\n\n  ptr = (double *)malloc(0x16E3600u);\n  for ( i = 0; i < 0xF4240; ++i )\n  {\n    v2 = (double)rand() / 2147483647.0 * 20.0;\n    x = 6.283185307179586 * ((double)rand() / 2147483647.0);\n    ptr[3 * i] = cos(x) * v2;\n    ptr[3 * i + 1] = sin(x) * v2;\n  }\n  v0 = sub_40079F((__int64)ptr, 0xF4240u, 11);\n  sub_400DAE((__int64)ptr, 0xF4240u, (__int64)v0, 11);\n  free(ptr);\n  free(v0);\n}\n",
+        "variabili": {
+            "v0": "",
+            "x": "",
+            "v2": "",
+            "ptr": "",
+            "i": ""
+        },
+        "inlined_count": 2
+    },
+    "0x4016d0": {
+        "nome_corrente": "main",
+        "codice_decompilato": "// === MORE CONTEXT: CALLED FUNCTIONS ===\n// === START INLINED FUNCTION: sub_4013B6 ===\nvoid sub_4013B6()\n{\n  void *v0; // [rsp+0h] [rbp-40h]\n  double x; // [rsp+10h] [rbp-30h]\n  double v2; // [rsp+18h] [rbp-28h]\n  double *ptr; // [rsp+28h] [rbp-18h]\n  unsigned __int64 i; // [rsp+38h] [rbp-8h]\n\n  ptr = (double *)malloc(0x249F00u);\n  for ( i = 0; i < 0x186A0; ++i )\n  {\n    v2 = (double)rand() / 2147483647.0 * 20.0;\n    x = 6.283185307179586 * ((double)rand() / 2147483647.0);\n    ptr[3 * i] = cos(x) * v2;\n    ptr[3 * i + 1] = sin(x) * v2;\n  }\n  v0 = sub_40079F((__int64)ptr, 0x186A0u, 5);\n  sub_400DAE((__int64)ptr, 0x186A0u, (__int64)v0, 5);\n  free(ptr);\n  free(v0);\n}\n// === END INLINED FUNCTION: sub_4013B6 ===\n\n// === MAIN FUNCTION TO ANALYZE ===\n__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  unsigned int v3; // eax\n\n  v3 = time(0);\n  srand(v3);\n  sub_4013B6();\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v3": ""
+        },
+        "inlined_count": 1
+    },
+    "0x4016f4": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {},
+        "inlined_count": 0
+    }
+}

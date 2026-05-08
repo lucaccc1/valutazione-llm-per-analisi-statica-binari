@@ -1,0 +1,13 @@
+{
+    "0x400486": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "n": "",
+            "num_steps": "",
+            "curr_no": ""
+        }
+    }
+}

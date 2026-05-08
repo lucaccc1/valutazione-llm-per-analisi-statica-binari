@@ -1,0 +1,342 @@
+[
+    {
+        "address": "0x4004b6",
+        "ida_stripped_name": "sub_4004B6",
+        "ground_truth_name": "max",
+        "ai_predicted_name": "max",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 9,
+            "execution_time": 4.51
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4004cd",
+        "ida_stripped_name": "sub_4004CD",
+        "ground_truth_name": "newNode",
+        "ai_predicted_name": "make_node",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 18,
+            "execution_time": 5.66
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.62,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.39,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40052b",
+        "ida_stripped_name": "sub_40052B",
+        "ground_truth_name": "nodeHeight",
+        "ai_predicted_name": null,
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 7,
+            "execution_time": 3.52
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40054a",
+        "ida_stripped_name": "sub_40054A",
+        "ground_truth_name": "heightDiff",
+        "ai_predicted_name": "sub_40052B",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 26,
+            "execution_time": 4.93
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 1
+    },
+    {
+        "address": "0x400593",
+        "ida_stripped_name": "sub_400593",
+        "ground_truth_name": "minNode",
+        "ai_predicted_name": "last",
+        "dimension": {
+            "category": "SMALL",
+            "lines_of_code": 6,
+            "execution_time": 4.19
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x4005c4",
+        "ida_stripped_name": "sub_4005C4",
+        "ground_truth_name": "printAVL",
+        "ai_predicted_name": "print_tree",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 16,
+            "execution_time": 4.74
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.56,
+            "jaccard_index": 0.5,
+            "cosine_similarity": 0.47,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x40064d",
+        "ida_stripped_name": "sub_40064D",
+        "ground_truth_name": "rightRotate",
+        "ai_predicted_name": "swap_queue",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 45,
+            "execution_time": 5.88
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.19,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 2
+    },
+    {
+        "address": "0x4006fe",
+        "ida_stripped_name": "sub_4006FE",
+        "ground_truth_name": "leftRotate",
+        "ai_predicted_name": "link_lists",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 45,
+            "execution_time": 7.81
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.2,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 2
+    },
+    {
+        "address": "0x4007af",
+        "ida_stripped_name": "sub_4007AF",
+        "ground_truth_name": "LeftRightRotate",
+        "ai_predicted_name": null,
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 55,
+            "execution_time": 5.59
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 2
+    },
+    {
+        "address": "0x4007e1",
+        "ida_stripped_name": "sub_4007E1",
+        "ground_truth_name": "RightLeftRotate",
+        "ai_predicted_name": "do_something_with_queue",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 55,
+            "execution_time": 9.8
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.26,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 2
+    },
+    {
+        "address": "0x400813",
+        "ida_stripped_name": "sub_400813",
+        "ground_truth_name": "insert",
+        "ai_predicted_name": "insert",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 159,
+            "execution_time": 11.69
+        },
+        "metrics": {
+            "exact_match": 1,
+            "levenshtein_similarity": 1.0,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 1.0,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 8
+    },
+    {
+        "address": "0x400969",
+        "ida_stripped_name": "sub_400969",
+        "ground_truth_name": "delete",
+        "ai_predicted_name": "delete_node",
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 186,
+            "execution_time": 15.99
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.71,
+            "jaccard_index": 1.0,
+            "cosine_similarity": 0.73,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 8
+    },
+    {
+        "address": "0x400bb6",
+        "ida_stripped_name": "sub_400BB6",
+        "ground_truth_name": "findNode",
+        "ai_predicted_name": "sub_400BB6",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 19,
+            "execution_time": 8.95
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400c1c",
+        "ida_stripped_name": "sub_400C1C",
+        "ground_truth_name": "printPreOrder",
+        "ai_predicted_name": "print_tree",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 12,
+            "execution_time": 4.98
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.7,
+            "jaccard_index": 0.33,
+            "cosine_similarity": 0.44,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400c6b",
+        "ida_stripped_name": "sub_400C6B",
+        "ground_truth_name": "printInOrder",
+        "ai_predicted_name": "print_tree",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 12,
+            "execution_time": 6.16
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.64,
+            "jaccard_index": 0.33,
+            "cosine_similarity": 0.4,
+            "llm_as_a_judge": 1.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400cba",
+        "ida_stripped_name": "sub_400CBA",
+        "ground_truth_name": "printPostOrder",
+        "ai_predicted_name": "sub_400CBA",
+        "dimension": {
+            "category": "MEDIUM",
+            "lines_of_code": 12,
+            "execution_time": 6.57
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.08,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 0
+    },
+    {
+        "address": "0x400d09",
+        "ida_stripped_name": "main",
+        "ground_truth_name": "main",
+        "ai_predicted_name": null,
+        "dimension": {
+            "category": "LARGE",
+            "lines_of_code": 309,
+            "execution_time": 10.0
+        },
+        "metrics": {
+            "exact_match": 0,
+            "levenshtein_similarity": 0.0,
+            "jaccard_index": 0.0,
+            "cosine_similarity": 0.0,
+            "llm_as_a_judge": 0.0
+        },
+        "error_flag": false,
+        "inlined_count": 7
+    }
+]

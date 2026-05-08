@@ -1,0 +1,41 @@
+{
+    "0x400486": {
+        "nome_funzione_originale": "merge",
+        "variabili": {
+            "holder1": "",
+            "holder2": "",
+            "temp2": "",
+            "temp1": ""
+        }
+    },
+    "0x40050a": {
+        "nome_funzione_originale": "printlist",
+        "variabili": {
+            "temp": "",
+            "tempa": ""
+        }
+    },
+    "0x400572": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "seven": "",
+            "six": "",
+            "five": "",
+            "four": "",
+            "three": "",
+            "two": "",
+            "one": ""
+        }
+    },
+    "0x403040": {
+        "nome_funzione_originale": "putchar",
+        "variabili": {}
+    },
+    "0x403058": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    }
+}

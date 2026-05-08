@@ -1,0 +1,87 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x4003f0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x400430": {
+        "nome_corrente": "sub_400430",
+        "codice_decompilato": "void (**sub_400430())(void *ptr)\n{\n  return &free;\n}\n",
+        "variabili": {}
+    },
+    "0x4004a0": {
+        "nome_corrente": "sub_4004A0",
+        "codice_decompilato": "void (**sub_4004A0())(void *ptr)\n{\n  void (**result)(void *); // rax\n\n  if ( !byte_403044 )\n  {\n    result = sub_400430();\n    byte_403044 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x4004d0": {
+        "nome_corrente": "sub_4004D0",
+        "codice_decompilato": "__int64 sub_4004D0()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x4004d6": {
+        "nome_corrente": "sub_4004D6",
+        "codice_decompilato": "__int64 __fastcall sub_4004D6(__int64 a1)\n{\n  int v1; // eax\n  int v4; // [rsp+14h] [rbp-Ch]\n  __int64 v5; // [rsp+18h] [rbp-8h]\n\n  v5 = 0;\n  v4 = 0;\n  while ( a1 )\n  {\n    v1 = v4++;\n    v5 = (unsigned int)(int)((double)(int)v5 + (double)(a1 % 10) * pow(8.0, (double)v1));\n    a1 /= 10;\n  }\n  return v5;\n}\n",
+        "variabili": {
+            "a1": "",
+            "v1": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x4005b9": {
+        "nome_corrente": "sub_4005B9",
+        "codice_decompilato": "char *__fastcall sub_4005B9(__int64 a1)\n{\n  __int64 v1; // rax\n  char *s; // [rsp+18h] [rbp-8h]\n\n  s = (char *)malloc(0x100u);\n  v1 = sub_4004D6(a1);\n  sprintf(s, \"%lX\", v1);\n  return s;\n}\n",
+        "variabili": {
+            "a1": "",
+            "v1": "",
+            "s": ""
+        }
+    },
+    "0x4005fe": {
+        "nome_corrente": "sub_4005FE",
+        "codice_decompilato": "int sub_4005FE()\n{\n  char *v0; // rax\n  char *v1; // rax\n  int result; // eax\n\n  v0 = sub_4005B9(213);\n  if ( strcmp(v0, \"8B\") )\n    __assert_fail(\n      \"strcmp(octalToHexadecimal(213), \\\"8B\\\") == 0\",\n      \"dataset/src/conversions/octal_to_hexadecimal.c\",\n      0x32u,\n      \"test\");\n  v1 = sub_4005B9(174);\n  result = strcmp(v1, \"7C\");\n  if ( result )\n    __assert_fail(\n      \"strcmp(octalToHexadecimal(174), \\\"7C\\\") == 0\",\n      \"dataset/src/conversions/octal_to_hexadecimal.c\",\n      0x35u,\n      \"test\");\n  return result;\n}\n",
+        "variabili": {
+            "v0": "",
+            "v1": "",
+            "result": ""
+        }
+    },
+    "0x40066d": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  int v4; // [rsp+4h] [rbp-Ch] BYREF\n  void *ptr; // [rsp+8h] [rbp-8h]\n\n  sub_4005FE();\n  printf(\"Enter an octal number: \");\n  __isoc23_scanf(\"%d\", &v4);\n  ptr = sub_4005B9(v4);\n  printf(\"Equivalent hexadecimal number is: %s\", (const char *)ptr);\n  free(ptr);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": "",
+            "ptr": ""
+        }
+    },
+    "0x4006dc": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "0x400506": {
+        "nome_funzione_originale": "spirograph",
+        "variabili": {
+            "x": "",
+            "y": "",
+            "l": "",
+            "k": "",
+            "N": "",
+            "rot": "",
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "k1_0": "",
+            "dt": "",
+            "dk": "",
+            "t": ""
+        }
+    },
+    "0x4006d1": {
+        "nome_funzione_originale": "test",
+        "variabili": {
+            "fname": "",
+            "y": "",
+            "x": "",
+            "fp": "",
+            "rot": "",
+            "k": "",
+            "l": "",
+            "N": "",
+            "i": ""
+        }
+    },
+    "0x400875": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": ""
+        }
+    },
+    "0x403068": {
+        "nome_funzione_originale": "free",
+        "variabili": {}
+    },
+    "0x403078": {
+        "nome_funzione_originale": "fclose",
+        "variabili": {}
+    },
+    "0x403080": {
+        "nome_funzione_originale": "snprintf",
+        "variabili": {}
+    },
+    "0x403088": {
+        "nome_funzione_originale": "cos",
+        "variabili": {}
+    },
+    "0x403090": {
+        "nome_funzione_originale": "fputc",
+        "variabili": {}
+    },
+    "0x403098": {
+        "nome_funzione_originale": "fprintf",
+        "variabili": {}
+    },
+    "0x4030a0": {
+        "nome_funzione_originale": "malloc",
+        "variabili": {}
+    },
+    "0x4030a8": {
+        "nome_funzione_originale": "fopen",
+        "variabili": {}
+    },
+    "0x4030b0": {
+        "nome_funzione_originale": "perror",
+        "variabili": {}
+    },
+    "0x4030b8": {
+        "nome_funzione_originale": "sin",
+        "variabili": {}
+    },
+    "0x4030c0": {
+        "nome_funzione_originale": "exit",
+        "variabili": {}
+    }
+}

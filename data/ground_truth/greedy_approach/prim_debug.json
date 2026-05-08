@@ -1,0 +1,78 @@
+{
+    "0x4004b6": {
+        "nome_funzione_originale": "minimum",
+        "variabili": {
+            "arr": "",
+            "N": "",
+            "i": "",
+            "min": "",
+            "index": ""
+        }
+    },
+    "0x400529": {
+        "nome_funzione_originale": "prim",
+        "variabili": {
+            "G": "",
+            "MST": "",
+            "V": "",
+            "V_t": "",
+            "path": "",
+            "E_t": "",
+            "v": "",
+            "i_0": "",
+            "i": "",
+            "no_of_edges": "",
+            "u": ""
+        }
+    },
+    "0x40078a": {
+        "nome_funzione_originale": "test",
+        "variabili": {
+            "G": "",
+            "MST": "",
+            "V": "",
+            "solution": "",
+            "v4": "",
+            "j_0": "",
+            "i_0": "",
+            "j": "",
+            "i": ""
+        }
+    },
+    "0x40097f": {
+        "nome_funzione_originale": "user_graph",
+        "variabili": {
+            "G": "",
+            "MST": "",
+            "V": "",
+            "Va": "",
+            "MSTa": "",
+            "Ga": "",
+            "j": "",
+            "i": ""
+        }
+    },
+    "0x400b63": {
+        "nome_funzione_originale": "main",
+        "variabili": {
+            "argc": "",
+            "argv": "",
+            "envp": "",
+            "MST": "",
+            "G": "",
+            "V": ""
+        }
+    },
+    "0x403040": {
+        "nome_funzione_originale": "putchar",
+        "variabili": {}
+    },
+    "0x403050": {
+        "nome_funzione_originale": "puts",
+        "variabili": {}
+    },
+    "0x403070": {
+        "nome_funzione_originale": "strcmp",
+        "variabili": {}
+    }
+}

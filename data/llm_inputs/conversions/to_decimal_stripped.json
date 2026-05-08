@@ -1,0 +1,62 @@
+{
+    "0x40033c": {
+        "nome_corrente": ".init_proc",
+        "codice_decompilato": "__int64 (**init_proc())(void)\n{\n  __int64 (**result)(void); // rax\n\n  result = &_gmon_start__;\n  if ( &_gmon_start__ )\n    return (__int64 (**)(void))_gmon_start__();\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400360": {
+        "nome_corrente": "sub_400360",
+        "codice_decompilato": "__int64 sub_400360()\n{\n  return qword_402FF8();\n}\n",
+        "variabili": {}
+    },
+    "0x4003b0": {
+        "nome_corrente": "start",
+        "codice_decompilato": "// positive sp value has been detected, the output may be wrong!\nvoid __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))\n{\n  __int64 v3; // rax\n  int v4; // esi\n  __int64 v5; // [rsp-8h] [rbp-8h] BYREF\n  char *retaddr; // [rsp+0h] [rbp+0h] BYREF\n\n  v4 = v5;\n  v5 = v3;\n  _libc_start_main(main, v4, &retaddr, 0, 0, a3, &v5);\n  __halt();\n}\n",
+        "variabili": {
+            "a3": "",
+            "a1": "",
+            "a2": "",
+            "v3": "",
+            "v4": "",
+            "v5": ""
+        }
+    },
+    "0x4003f0": {
+        "nome_corrente": "sub_4003F0",
+        "codice_decompilato": "int (**sub_4003F0())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  return &_libc_start_main;\n}\n",
+        "variabili": {}
+    },
+    "0x400460": {
+        "nome_corrente": "sub_400460",
+        "codice_decompilato": "int (**sub_400460())(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end)\n{\n  int (**result)(int (*)(int, char **, char **), int, char **, void (*)(void), void (*)(void), void (*)(void), void *); // rax\n\n  if ( !byte_403024 )\n  {\n    result = sub_4003F0();\n    byte_403024 = 1;\n  }\n  return result;\n}\n",
+        "variabili": {
+            "result": ""
+        }
+    },
+    "0x400490": {
+        "nome_corrente": "sub_400490",
+        "codice_decompilato": "__int64 sub_400490()\n{\n  return 0;\n}\n",
+        "variabili": {}
+    },
+    "0x400496": {
+        "nome_corrente": "main",
+        "codice_decompilato": "__int64 __fastcall main(int a1, char **a2, char **a3)\n{\n  _BYTE v4[108]; // [rsp+0h] [rbp-80h] BYREF\n  int v5; // [rsp+6Ch] [rbp-14h] BYREF\n  __int64 v6; // [rsp+70h] [rbp-10h]\n  int j; // [rsp+78h] [rbp-8h]\n  int i; // [rsp+7Ch] [rbp-4h]\n\n  v6 = 0;\n  printf(\"Enter the base: \");\n  __isoc23_scanf(\"%d\", &v5);\n  printf(\"Enter the number: \");\n  __isoc23_scanf(\"%s\", v4);\n  for ( i = 0; v4[i]; ++i )\n  {\n    if ( ((*__ctype_b_loc())[(char)v4[i]] & 0x800) != 0 )\n    {\n      v4[i] -= 48;\n    }\n    else if ( ((*__ctype_b_loc())[(char)v4[i]] & 0x100) != 0 )\n    {\n      v4[i] -= 55;\n    }\n    else if ( ((*__ctype_b_loc())[(char)v4[i]] & 0x200) != 0 )\n    {\n      v4[i] -= 87;\n    }\n    else\n    {\n      v4[i] = v5 + 1;\n    }\n    if ( (char)v4[i] >= v5 )\n    {\n      puts(\"invalid number\");\n      return 0;\n    }\n  }\n  for ( j = 0; j < i; ++j )\n  {\n    v6 *= v5;\n    v6 += (char)v4[j];\n  }\n  printf(\"%lu\\n\", v6);\n  return 0;\n}\n",
+        "variabili": {
+            "a2": "",
+            "a3": "",
+            "a1": "",
+            "v4": "",
+            "v5": "",
+            "v6": "",
+            "j": "",
+            "i": ""
+        }
+    },
+    "0x400670": {
+        "nome_corrente": ".term_proc",
+        "codice_decompilato": "void term_proc()\n{\n  ;\n}\n",
+        "variabili": {}
+    }
+}
