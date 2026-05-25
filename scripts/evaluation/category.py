@@ -12,9 +12,14 @@ def genera(df, df_plot, output_dir):
             n_cat = len(df_base_tipo[df_base_tipo['Category'] == cat]) 
             nome_file_pulito = cat.replace('/', '_').replace('\\', '_')
             plt.figure(figsize=(12, 7))
-            sns.barplot(data=df_cat, x='Metric', y='Score', hue='Model', palette='rocket', errorbar=None)
+            
+            ax = sns.barplot(data=df_cat, x='Metric', y='Score', hue='Model', palette='rocket', errorbar=None)
+            
+            for container in ax.containers:
+                ax.bar_label(container, fmt='%.2f', padding=3, fontsize=10, fontweight='bold', color='#333333')
+
             plt.title(f"Category Analysis: {cat.upper()} ({tipo} Context)", fontsize=16, fontweight='bold', pad=20)
-            plt.text(0.5, 1.02, f"Total functions analyzed: {n_cat}", transform=plt.gca().transAxes, ha='center', fontsize=12, color='gray')
+            plt.text(0.5, 1.02, f"Total functions analyzed: {n_cat}", transform=ax.transAxes, ha='center', fontsize=12, color='gray')
             plt.ylim(0, 1.1) 
             plt.ylabel('Average Score (0.0 - 1.0)', fontsize=12)
             plt.legend(title='Models', bbox_to_anchor=(1.02, 1), loc='upper left')

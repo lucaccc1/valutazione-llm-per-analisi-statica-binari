@@ -35,6 +35,9 @@ def genera(df_funzioni, output_dir):
             plt.figure(figsize=(10, 6))
             ax = sns.barplot(data=df_plot, x='Model', y='Win Rate (%)', hue='Model', palette='magma', legend=False)
 
+            for container in ax.containers:
+                ax.bar_label(container, fmt='%.1f', padding=3, fontsize=10, fontweight='bold', color='#333333')
+
             plt.title(f"Performance on Controversial Functions ({tipo} Context)\n(Subset of {len(df_controversy)} functions where models disagreed)", fontsize=14, fontweight='bold', pad=20)
             plt.ylabel("Accuracy (%) on Controversial Set")
             plt.xlabel("Models")

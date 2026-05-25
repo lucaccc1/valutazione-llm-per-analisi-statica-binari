@@ -9,6 +9,10 @@ def genera(df, output_dir):
         df_filtrato = df[df['Input_Type'] == tipo]
         plt.figure(figsize=(10, 6))
         ax = sns.barplot(data=df_filtrato, x='Size_Category', y='LLM Judge', hue='Model', palette='rocket_r', errorbar=None, order=categorie)
+        
+        for container in ax.containers:
+            ax.bar_label(container, fmt='%.2f', padding=3, fontsize=10, fontweight='bold', color='#333333')
+
         ax.set_xticks(range(len(categorie)))
         ax.set_xticklabels(categorie)
 

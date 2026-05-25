@@ -74,8 +74,8 @@ def cosine_evaluation(gt, ai):
     vectorizer = CountVectorizer(analyzer='char', ngram_range=(2, 3))
     
     try:
-        tfidf_matrix = vectorizer.fit_transform([gt, ai])
-        score = cosine_similarity(tfidf_matrix[0:1], tfidf_matrix[1:2])[0][0]
+        count_matrix = vectorizer.fit_transform([gt, ai])
+        score = cosine_similarity(count_matrix[0:1], count_matrix[1:2])[0][0]
         return round(float(score), 2)
     except ValueError:
         return 0.0
