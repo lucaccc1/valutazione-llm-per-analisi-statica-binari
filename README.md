@@ -11,6 +11,7 @@ L'intero progetto è oggetto della mia tesi di laurea triennale presso La Sapien
 Serve avere installato IDA e Ollama. Di seguito i link ufficiali per il download:
 
 https://hex-rays.com/pricing?section=individuals
+
 https://ollama.com/download
 
 ### Gestione Modelli Locali (Ollama)
