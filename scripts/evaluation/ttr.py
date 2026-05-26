@@ -71,4 +71,4 @@ latex_table = df.to_latex(
 with open(output_file, 'w', encoding='utf-8') as f:
     f.write(latex_table)
     
-print(f"Tabella generata con successo usando Pandas! Salvata in: {output_file}")
+print(f"Tabella generata con successo. Salvata in: {output_file}")
