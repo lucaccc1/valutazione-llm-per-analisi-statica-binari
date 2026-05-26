@@ -1,4 +1,4 @@
-# RECoN/DIR
+#RECoN/DIR
 
 Questo repository contiene l'intera infrastruttura software sviluppata per l'analisi, la predizione e la validazione semantica di codice C decompilato attraverso l'utilizzo di LLM. 
 
