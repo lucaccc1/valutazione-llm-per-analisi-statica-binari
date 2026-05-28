@@ -1,0 +1,16 @@
+\begin{table}
+\caption{Relazione quantitativa tra l'esito della predizione, la dimensione dell'input e la lunghezza dell'output generato.}
+\label{tab:tempi_lunghezza_output}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l c c c c}
+\toprule
+Contesto & Risultato Predizione & Campioni & Tempo Medio (s) & LOC Medie & Lunghezza Output (char) \\
+\midrule
+Inlined & Successo & 2216 & 10.80 & 45.41 & 12.9 \\
+Inlined & Fallimento & 417 & 13.10 & 64.60 & 9.4 \\
+Standard & Successo & 2213 & 10.54 & 23.44 & 12.8 \\
+Standard & Fallimento & 421 & 10.13 & 27.16 & 10.4 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
