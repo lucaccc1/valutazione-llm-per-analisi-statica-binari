@@ -15,30 +15,42 @@ def estrai_token(nome_funzione):
 current_dir = os.path.dirname(os.path.abspath(__file__))
 scripts_dir = os.path.dirname(current_dir)
 base_dir = os.path.dirname(scripts_dir)
-gt_dir = os.path.join(base_dir, 'data', 'ground_truth')
+eval_dir = os.path.join(base_dir, 'data', 'evaluation_reports') 
 output_dir = os.path.join(base_dir, 'data', 'graphs')
 output_file = os.path.join(output_dir, 'tabella_ttr.txt')
 os.makedirs(output_dir, exist_ok=True)
-
-json_files = glob.glob(os.path.join(gt_dir, '**', '*.json'), recursive=True)
+json_files = glob.glob(os.path.join(eval_dir, '**', '*.json'), recursive=True)
+MODELLO_TARGET = "qwen" 
 
 domini_stats = {}
 for file_path in json_files:
-    percorso_relativo = os.path.relpath(file_path, gt_dir)
-    dominio = os.path.dirname(percorso_relativo) or "root"
+    if MODELLO_TARGET not in file_path.lower():
+        continue
+        
+    if "inlined" in file_path.lower():
+        continue
+
+    percorso_relativo = os.path.relpath(file_path, eval_dir)
+    dominio = percorso_relativo.replace('\\', '/').split('/')[0] if percorso_relativo else "root"
 
     if dominio not in domini_stats:
         domini_stats[dominio] = {"num_funzioni": 0, "parole_totali": 0, "parole_uniche_set": set()}
 
     with open(file_path, 'r') as f:
         try:
-            dati_gt = json.load(f)
-            for address, info in dati_gt.items():
-                tokens = estrai_token(info.get("nome_funzione_originale", ""))
+            dati_eval = json.load(f)
+            
+            records = dati_eval.values() if isinstance(dati_eval, dict) else dati_eval
+            
+            for info in records:
+                nome_originale = info.get("ground_truth_name", "")
+                tokens = estrai_token(nome_originale)
+                
                 if tokens:
                     domini_stats[dominio]["num_funzioni"] += 1
                     domini_stats[dominio]["parole_totali"] += len(tokens)
                     domini_stats[dominio]["parole_uniche_set"].update(tokens)
+                    
         except Exception as e:
             print(f"Errore lettura {file_path}: {e}")
 

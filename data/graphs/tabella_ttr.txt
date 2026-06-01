@@ -5,26 +5,26 @@
 \toprule
 Dominio Applicativo & Funzioni Analizzate & Parole Totali & Parole Uniche & TTR \\
 \midrule
-Client Server & 138 & 139 & 30 & 0.216 \\
-Sorting & 273 & 319 & 85 & 0.266 \\
-Data Structures & 346 & 486 & 149 & 0.307 \\
-Numerical Methods & 166 & 204 & 76 & 0.373 \\
-Conversions & 101 & 135 & 56 & 0.415 \\
-Math & 119 & 139 & 63 & 0.453 \\
-Machine Learning & 92 & 140 & 64 & 0.457 \\
-Hash & 33 & 41 & 19 & 0.463 \\
-Searching & 49 & 66 & 31 & 0.470 \\
-Misc & 145 & 182 & 92 & 0.505 \\
-Games & 50 & 67 & 47 & 0.701 \\
-Geometry & 24 & 39 & 28 & 0.718 \\
-Cipher & 19 & 25 & 19 & 0.760 \\
-Developer Tools & 17 & 36 & 28 & 0.778 \\
-Dynamic Programming & 18 & 21 & 18 & 0.857 \\
-Process Scheduling Algorithms & 14 & 19 & 17 & 0.895 \\
-Leetcode & 9 & 11 & 10 & 0.909 \\
-Audio & 5 & 5 & 5 & 1.000 \\
-Greedy Approach & 8 & 9 & 9 & 1.000 \\
-Graphics & 14 & 14 & 14 & 1.000 \\
+Client Server & 18 & 18 & 3 & 0.167 \\
+Data Structures & 237 & 377 & 129 & 0.342 \\
+Sorting & 142 & 188 & 70 & 0.372 \\
+Conversions & 63 & 97 & 39 & 0.402 \\
+Numerical Methods & 68 & 106 & 48 & 0.453 \\
+Machine Learning & 44 & 92 & 42 & 0.457 \\
+Hash & 24 & 32 & 15 & 0.469 \\
+Searching & 35 & 52 & 25 & 0.481 \\
+Math & 65 & 85 & 44 & 0.518 \\
+Misc & 82 & 119 & 72 & 0.605 \\
+Geometry & 16 & 31 & 20 & 0.645 \\
+Games & 26 & 43 & 32 & 0.744 \\
+Developer Tools & 13 & 32 & 24 & 0.750 \\
+Cipher & 10 & 16 & 12 & 0.750 \\
+Dynamic Programming & 8 & 11 & 9 & 0.818 \\
+Leetcode & 4 & 6 & 5 & 0.833 \\
+Process Scheduling Algorithms & 11 & 16 & 14 & 0.875 \\
+Audio & 4 & 4 & 4 & 1.000 \\
+Greedy Approach & 5 & 6 & 6 & 1.000 \\
+Graphics & 3 & 3 & 3 & 1.000 \\
 \bottomrule
 \end{tabular}
 \end{table}
